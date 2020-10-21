@@ -82,14 +82,16 @@ public:
     }
     vector<vector<int>> findDenseSubGraph(int currentIndex, vector<vector<int>> pairs)
     {
-        vector<float> density;
-        if(currentIndex >= n){
+        if (currentIndex >= n)
+        {
             return pairs;
         }
+        vector<float> density;
+
         if (visited[currentIndex])
         {
-            currentIndex = currentIndex +1;
-            return findDenseSubGraph(currentIndex,pairs);
+            currentIndex = currentIndex + 1;
+            return findDenseSubGraph(currentIndex, pairs);
         }
         visited[currentIndex] = true;
         for (size_t i = 0; i < n; i++)
@@ -108,6 +110,7 @@ public:
         }
         // cerr << "acceptable: " << acceptable << endl;
         vector<int> accepted;
+        accepted.push_back(currentIndex);
         for (size_t i = 0; i < n; i++)
         {
             if (i == currentIndex)

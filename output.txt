@@ -1,3 +1,5206 @@
+Scanning dependencies of target GroupTestingAdjacentyMatrix
+[ 25%] Building CXX object CMakeFiles/GroupTestingAdjacentyMatrix.dir/groupTestingAdjacentyMatrix.cpp.o
+[ 50%] Linking CXX executable GroupTestingAdjacentyMatrix
 [ 50%] Built target GroupTestingAdjacentyMatrix
 [100%] Built target GroupTesting
 number of test cases: 19
+At: 0 Number of nodes per subgraph: 35
+0
+3
+6
+13
+14
+18
+21
+22
+23
+25
+27
+31
+33
+34
+38
+41
+45
+46
+49
+54
+57
+58
+59
+70
+83
+85
+86
+87
+89
+91
+93
+94
+95
+97
+98
+At: 1 Number of nodes per subgraph: 1
+1
+At: 2 Number of nodes per subgraph: 5
+2
+11
+39
+61
+63
+At: 3 Number of nodes per subgraph: 8
+4
+5
+35
+42
+43
+51
+55
+81
+At: 4 Number of nodes per subgraph: 1
+8
+At: 5 Number of nodes per subgraph: 5
+9
+47
+53
+82
+90
+At: 6 Number of nodes per subgraph: 4
+10
+19
+29
+37
+At: 7 Number of nodes per subgraph: 1
+12
+At: 8 Number of nodes per subgraph: 1
+26
+At: 9 Number of nodes per subgraph: 1
+50
+At: 10 Number of nodes per subgraph: 1
+79
+At: 11 Number of nodes per subgraph: 1
+99
+Number of subgraphs: 12
+Number of nodes: 100
+Test case 1: success
+At: 0 Number of nodes per subgraph: 1
+0
+At: 1 Number of nodes per subgraph: 42
+1
+2
+3
+4
+6
+10
+11
+12
+13
+14
+18
+22
+38
+39
+40
+41
+42
+43
+44
+46
+49
+51
+55
+61
+63
+67
+69
+70
+71
+73
+75
+78
+85
+86
+87
+89
+90
+91
+93
+94
+95
+98
+At: 2 Number of nodes per subgraph: 8
+5
+17
+45
+50
+74
+77
+79
+97
+At: 3 Number of nodes per subgraph: 1
+8
+At: 4 Number of nodes per subgraph: 1
+9
+At: 5 Number of nodes per subgraph: 1
+19
+At: 6 Number of nodes per subgraph: 1
+31
+At: 7 Number of nodes per subgraph: 1
+53
+At: 8 Number of nodes per subgraph: 1
+54
+At: 9 Number of nodes per subgraph: 2
+57
+58
+At: 10 Number of nodes per subgraph: 1
+59
+At: 11 Number of nodes per subgraph: 1
+65
+At: 12 Number of nodes per subgraph: 1
+66
+At: 13 Number of nodes per subgraph: 1
+81
+At: 14 Number of nodes per subgraph: 1
+82
+At: 15 Number of nodes per subgraph: 1
+83
+At: 16 Number of nodes per subgraph: 1
+99
+Number of subgraphs: 17
+Number of nodes: 100
+Test case 2: success
+At: 0 Number of nodes per subgraph: 99
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+At: 1 Number of nodes per subgraph: 1
+99
+Number of subgraphs: 2
+Number of nodes: 100
+Test case 3: success
+At: 0 Number of nodes per subgraph: 221
+0
+1
+2
+3
+4
+6
+8
+9
+10
+11
+12
+13
+14
+18
+19
+21
+22
+23
+25
+26
+27
+28
+29
+31
+33
+34
+38
+42
+43
+46
+47
+54
+58
+59
+60
+63
+64
+65
+66
+68
+72
+74
+76
+78
+82
+86
+87
+90
+92
+93
+95
+99
+102
+105
+106
+107
+110
+111
+114
+118
+119
+123
+124
+127
+134
+137
+138
+139
+140
+145
+147
+151
+157
+159
+161
+162
+163
+165
+166
+169
+171
+174
+175
+178
+179
+182
+191
+195
+196
+198
+200
+202
+203
+204
+205
+206
+210
+211
+222
+223
+232
+233
+235
+236
+237
+238
+247
+250
+251
+254
+255
+262
+264
+265
+267
+269
+270
+274
+282
+287
+289
+291
+293
+294
+306
+307
+310
+311
+312
+314
+315
+316
+317
+318
+319
+320
+321
+322
+323
+325
+326
+331
+332
+334
+338
+340
+341
+342
+344
+346
+350
+354
+357
+358
+366
+370
+371
+373
+374
+378
+379
+383
+386
+387
+389
+391
+392
+394
+397
+398
+400
+402
+406
+409
+410
+411
+412
+415
+416
+417
+421
+422
+425
+426
+427
+428
+429
+430
+434
+435
+436
+437
+438
+440
+441
+442
+443
+444
+445
+446
+450
+453
+454
+458
+459
+463
+465
+466
+469
+470
+474
+476
+477
+479
+483
+487
+490
+491
+494
+495
+498
+At: 1 Number of nodes per subgraph: 2
+5
+218
+At: 2 Number of nodes per subgraph: 1
+20
+At: 3 Number of nodes per subgraph: 1
+24
+At: 4 Number of nodes per subgraph: 1
+35
+At: 5 Number of nodes per subgraph: 1
+37
+At: 6 Number of nodes per subgraph: 1
+39
+At: 7 Number of nodes per subgraph: 7
+41
+150
+192
+273
+302
+382
+486
+At: 8 Number of nodes per subgraph: 5
+50
+303
+345
+355
+363
+At: 9 Number of nodes per subgraph: 5
+51
+70
+126
+214
+407
+At: 10 Number of nodes per subgraph: 1
+55
+At: 11 Number of nodes per subgraph: 1
+61
+At: 12 Number of nodes per subgraph: 6
+62
+142
+234
+339
+367
+388
+At: 13 Number of nodes per subgraph: 2
+67
+375
+At: 14 Number of nodes per subgraph: 1
+69
+At: 15 Number of nodes per subgraph: 1
+73
+At: 16 Number of nodes per subgraph: 3
+75
+413
+414
+At: 17 Number of nodes per subgraph: 1
+77
+At: 18 Number of nodes per subgraph: 1
+83
+At: 19 Number of nodes per subgraph: 1
+91
+At: 20 Number of nodes per subgraph: 6
+97
+146
+283
+333
+359
+424
+At: 21 Number of nodes per subgraph: 4
+98
+101
+141
+187
+At: 22 Number of nodes per subgraph: 1
+103
+At: 23 Number of nodes per subgraph: 2
+115
+167
+At: 24 Number of nodes per subgraph: 1
+122
+At: 25 Number of nodes per subgraph: 7
+125
+219
+275
+278
+328
+361
+419
+At: 26 Number of nodes per subgraph: 3
+136
+183
+194
+At: 27 Number of nodes per subgraph: 1
+154
+At: 28 Number of nodes per subgraph: 2
+155
+313
+At: 29 Number of nodes per subgraph: 7
+156
+186
+242
+347
+405
+471
+482
+At: 30 Number of nodes per subgraph: 1
+170
+At: 31 Number of nodes per subgraph: 5
+190
+295
+369
+401
+451
+At: 32 Number of nodes per subgraph: 1
+193
+At: 33 Number of nodes per subgraph: 1
+197
+At: 34 Number of nodes per subgraph: 1
+201
+At: 35 Number of nodes per subgraph: 1
+215
+At: 36 Number of nodes per subgraph: 1
+230
+At: 37 Number of nodes per subgraph: 1
+241
+At: 38 Number of nodes per subgraph: 1
+243
+At: 39 Number of nodes per subgraph: 1
+246
+At: 40 Number of nodes per subgraph: 1
+266
+At: 41 Number of nodes per subgraph: 1
+268
+At: 42 Number of nodes per subgraph: 1
+279
+At: 43 Number of nodes per subgraph: 1
+290
+At: 44 Number of nodes per subgraph: 1
+298
+At: 45 Number of nodes per subgraph: 1
+299
+At: 46 Number of nodes per subgraph: 1
+324
+At: 47 Number of nodes per subgraph: 1
+329
+At: 48 Number of nodes per subgraph: 4
+330
+365
+408
+418
+At: 49 Number of nodes per subgraph: 1
+348
+At: 50 Number of nodes per subgraph: 2
+349
+455
+At: 51 Number of nodes per subgraph: 1
+362
+At: 52 Number of nodes per subgraph: 1
+390
+At: 53 Number of nodes per subgraph: 1
+393
+At: 54 Number of nodes per subgraph: 1
+395
+At: 55 Number of nodes per subgraph: 1
+396
+At: 56 Number of nodes per subgraph: 1
+399
+At: 57 Number of nodes per subgraph: 1
+403
+At: 58 Number of nodes per subgraph: 1
+404
+At: 59 Number of nodes per subgraph: 1
+420
+At: 60 Number of nodes per subgraph: 1
+467
+At: 61 Number of nodes per subgraph: 1
+475
+At: 62 Number of nodes per subgraph: 1
+499
+Number of subgraphs: 63
+Number of nodes: 500
+Test case 4: success
+At: 0 Number of nodes per subgraph: 381
+0
+1
+3
+4
+5
+6
+14
+19
+24
+27
+31
+34
+35
+37
+39
+41
+42
+43
+48
+49
+50
+51
+52
+57
+58
+59
+60
+61
+62
+64
+65
+66
+68
+69
+70
+78
+83
+86
+87
+90
+91
+94
+111
+113
+114
+117
+118
+119
+122
+123
+127
+131
+134
+135
+138
+139
+142
+143
+146
+147
+151
+154
+155
+156
+157
+159
+162
+163
+164
+166
+168
+170
+171
+173
+174
+176
+177
+181
+182
+190
+194
+195
+198
+202
+203
+207
+210
+211
+214
+215
+218
+219
+222
+223
+227
+231
+234
+239
+254
+257
+258
+262
+271
+273
+278
+282
+283
+286
+290
+291
+294
+295
+302
+304
+306
+307
+308
+309
+310
+318
+322
+323
+326
+327
+330
+331
+334
+335
+336
+337
+338
+339
+342
+350
+354
+355
+358
+359
+362
+363
+367
+369
+373
+375
+378
+379
+382
+386
+387
+390
+391
+398
+399
+417
+418
+419
+421
+422
+423
+426
+427
+431
+434
+435
+437
+439
+441
+443
+445
+446
+447
+450
+451
+454
+455
+459
+463
+467
+469
+470
+473
+474
+479
+482
+486
+487
+490
+491
+494
+495
+499
+502
+503
+506
+507
+509
+510
+511
+513
+514
+515
+516
+517
+518
+526
+528
+529
+531
+532
+533
+542
+546
+550
+551
+555
+559
+561
+562
+563
+566
+570
+571
+575
+578
+579
+582
+583
+587
+589
+590
+591
+596
+597
+598
+606
+608
+610
+611
+615
+623
+625
+626
+627
+629
+631
+633
+634
+635
+638
+639
+643
+647
+648
+650
+651
+652
+654
+657
+658
+659
+660
+661
+662
+670
+674
+675
+678
+679
+682
+686
+687
+694
+706
+707
+710
+719
+721
+722
+723
+725
+726
+727
+730
+734
+738
+742
+743
+746
+747
+748
+749
+750
+751
+754
+755
+756
+757
+758
+766
+769
+770
+774
+775
+790
+798
+802
+803
+807
+810
+811
+814
+815
+831
+834
+835
+838
+839
+843
+844
+846
+854
+856
+857
+858
+859
+860
+861
+863
+866
+867
+870
+871
+874
+875
+879
+882
+883
+886
+887
+891
+893
+894
+895
+897
+898
+900
+901
+902
+910
+913
+918
+930
+931
+933
+934
+935
+938
+945
+946
+947
+949
+950
+951
+953
+954
+955
+959
+962
+963
+966
+967
+970
+978
+979
+981
+983
+986
+987
+991
+995
+998
+At: 1 Number of nodes per subgraph: 5
+2
+23
+45
+161
+414
+At: 2 Number of nodes per subgraph: 2
+18
+209
+At: 3 Number of nodes per subgraph: 4
+22
+172
+433
+771
+At: 4 Number of nodes per subgraph: 2
+26
+478
+At: 5 Number of nodes per subgraph: 9
+30
+130
+178
+275
+305
+534
+567
+890
+939
+At: 6 Number of nodes per subgraph: 1
+38
+At: 7 Number of nodes per subgraph: 3
+47
+501
+574
+At: 8 Number of nodes per subgraph: 3
+53
+458
+929
+At: 9 Number of nodes per subgraph: 8
+54
+67
+82
+150
+199
+287
+466
+656
+At: 10 Number of nodes per subgraph: 1
+56
+At: 11 Number of nodes per subgraph: 2
+95
+649
+At: 12 Number of nodes per subgraph: 9
+102
+226
+235
+438
+483
+614
+739
+752
+878
+At: 13 Number of nodes per subgraph: 5
+115
+341
+395
+783
+801
+At: 14 Number of nodes per subgraph: 1
+126
+At: 15 Number of nodes per subgraph: 1
+160
+At: 16 Number of nodes per subgraph: 2
+165
+169
+At: 17 Number of nodes per subgraph: 1
+179
+At: 18 Number of nodes per subgraph: 5
+180
+370
+371
+505
+705
+At: 19 Number of nodes per subgraph: 1
+230
+At: 20 Number of nodes per subgraph: 2
+246
+642
+At: 21 Number of nodes per subgraph: 2
+259
+340
+At: 22 Number of nodes per subgraph: 1
+274
+At: 23 Number of nodes per subgraph: 3
+279
+547
+683
+At: 24 Number of nodes per subgraph: 1
+374
+At: 25 Number of nodes per subgraph: 3
+383
+673
+958
+At: 26 Number of nodes per subgraph: 1
+394
+At: 27 Number of nodes per subgraph: 1
+406
+At: 28 Number of nodes per subgraph: 1
+442
+At: 29 Number of nodes per subgraph: 2
+465
+593
+At: 30 Number of nodes per subgraph: 1
+471
+At: 31 Number of nodes per subgraph: 1
+475
+At: 32 Number of nodes per subgraph: 2
+498
+990
+At: 33 Number of nodes per subgraph: 4
+512
+842
+896
+994
+At: 34 Number of nodes per subgraph: 2
+530
+630
+At: 35 Number of nodes per subgraph: 2
+554
+735
+At: 36 Number of nodes per subgraph: 2
+586
+655
+At: 37 Number of nodes per subgraph: 1
+592
+At: 38 Number of nodes per subgraph: 1
+594
+At: 39 Number of nodes per subgraph: 2
+595
+926
+At: 40 Number of nodes per subgraph: 1
+646
+At: 41 Number of nodes per subgraph: 1
+653
+At: 42 Number of nodes per subgraph: 1
+702
+At: 43 Number of nodes per subgraph: 1
+731
+At: 44 Number of nodes per subgraph: 1
+753
+At: 45 Number of nodes per subgraph: 1
+806
+At: 46 Number of nodes per subgraph: 1
+822
+At: 47 Number of nodes per subgraph: 1
+845
+At: 48 Number of nodes per subgraph: 1
+899
+At: 49 Number of nodes per subgraph: 1
+943
+At: 50 Number of nodes per subgraph: 1
+971
+At: 51 Number of nodes per subgraph: 1
+975
+At: 52 Number of nodes per subgraph: 1
+977
+At: 53 Number of nodes per subgraph: 1
+982
+At: 54 Number of nodes per subgraph: 1
+999
+Number of subgraphs: 55
+Number of nodes: 1000
+Test case 5: success
+At: 0 Number of nodes per subgraph: 45
+0
+1
+2
+3
+4
+5
+6
+8
+9
+10
+11
+12
+13
+14
+18
+19
+20
+21
+22
+30
+34
+35
+36
+37
+38
+46
+50
+51
+52
+53
+54
+62
+66
+67
+68
+69
+70
+78
+82
+83
+84
+85
+86
+94
+98
+At: 1 Number of nodes per subgraph: 1
+99
+Number of subgraphs: 2
+Number of nodes: 100
+Test case 6: success
+At: 0 Number of nodes per subgraph: 24
+0
+1
+4
+6
+14
+18
+19
+27
+29
+30
+33
+34
+37
+38
+49
+50
+53
+65
+70
+82
+86
+89
+91
+97
+At: 1 Number of nodes per subgraph: 1
+2
+At: 2 Number of nodes per subgraph: 1
+3
+At: 3 Number of nodes per subgraph: 1
+5
+At: 4 Number of nodes per subgraph: 1
+21
+At: 5 Number of nodes per subgraph: 5
+22
+31
+63
+90
+93
+At: 6 Number of nodes per subgraph: 4
+23
+26
+52
+62
+At: 7 Number of nodes per subgraph: 4
+25
+48
+81
+94
+At: 8 Number of nodes per subgraph: 1
+35
+At: 9 Number of nodes per subgraph: 3
+36
+54
+79
+At: 10 Number of nodes per subgraph: 1
+47
+At: 11 Number of nodes per subgraph: 1
+51
+At: 12 Number of nodes per subgraph: 1
+83
+At: 13 Number of nodes per subgraph: 3
+85
+95
+98
+At: 14 Number of nodes per subgraph: 1
+87
+At: 15 Number of nodes per subgraph: 1
+99
+Number of subgraphs: 16
+Number of nodes: 100
+Test case 7: success
+At: 0 Number of nodes per subgraph: 37
+0
+2
+4
+5
+11
+13
+18
+19
+20
+30
+35
+37
+38
+39
+41
+43
+45
+47
+49
+50
+51
+53
+54
+55
+58
+59
+63
+70
+79
+81
+82
+83
+86
+89
+90
+93
+98
+At: 1 Number of nodes per subgraph: 5
+1
+14
+91
+94
+97
+At: 2 Number of nodes per subgraph: 1
+3
+At: 3 Number of nodes per subgraph: 1
+6
+At: 4 Number of nodes per subgraph: 1
+8
+At: 5 Number of nodes per subgraph: 4
+9
+10
+57
+61
+At: 6 Number of nodes per subgraph: 1
+12
+At: 7 Number of nodes per subgraph: 1
+17
+At: 8 Number of nodes per subgraph: 1
+21
+At: 9 Number of nodes per subgraph: 1
+22
+At: 10 Number of nodes per subgraph: 1
+33
+At: 11 Number of nodes per subgraph: 3
+34
+85
+95
+At: 12 Number of nodes per subgraph: 1
+42
+At: 13 Number of nodes per subgraph: 1
+46
+At: 14 Number of nodes per subgraph: 1
+87
+At: 15 Number of nodes per subgraph: 1
+99
+Number of subgraphs: 16
+Number of nodes: 100
+Test case 8: success
+At: 0 Number of nodes per subgraph: 41
+0
+1
+2
+5
+14
+18
+19
+21
+22
+23
+25
+27
+29
+31
+32
+34
+36
+46
+50
+51
+53
+54
+57
+58
+59
+63
+65
+66
+67
+69
+71
+74
+75
+77
+78
+81
+82
+83
+85
+86
+94
+At: 1 Number of nodes per subgraph: 1
+3
+At: 2 Number of nodes per subgraph: 2
+4
+73
+At: 3 Number of nodes per subgraph: 1
+6
+At: 4 Number of nodes per subgraph: 1
+26
+At: 5 Number of nodes per subgraph: 1
+30
+At: 6 Number of nodes per subgraph: 1
+33
+At: 7 Number of nodes per subgraph: 1
+35
+At: 8 Number of nodes per subgraph: 3
+37
+70
+84
+At: 9 Number of nodes per subgraph: 1
+38
+At: 10 Number of nodes per subgraph: 1
+55
+At: 11 Number of nodes per subgraph: 2
+61
+76
+At: 12 Number of nodes per subgraph: 1
+80
+Number of subgraphs: 13
+Number of nodes: 100
+Test case 9: success
+At: 0 Number of nodes per subgraph: 373
+0
+2
+3
+4
+6
+14
+17
+18
+20
+21
+30
+33
+35
+38
+39
+43
+47
+50
+51
+53
+54
+55
+59
+62
+63
+66
+67
+70
+79
+95
+102
+103
+106
+107
+109
+111
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+127
+128
+130
+132
+133
+134
+142
+145
+146
+151
+154
+159
+166
+167
+171
+174
+178
+179
+182
+183
+187
+191
+195
+197
+198
+202
+203
+206
+207
+214
+222
+225
+226
+227
+229
+230
+231
+234
+235
+239
+243
+246
+251
+255
+259
+262
+263
+267
+271
+273
+274
+279
+282
+283
+286
+290
+291
+298
+299
+302
+303
+306
+308
+309
+310
+311
+312
+313
+314
+316
+319
+320
+321
+322
+323
+324
+325
+326
+327
+329
+330
+331
+333
+334
+337
+338
+339
+341
+342
+350
+353
+367
+383
+385
+386
+387
+390
+395
+398
+399
+402
+403
+405
+408
+409
+412
+414
+415
+417
+419
+420
+422
+430
+434
+435
+439
+442
+443
+447
+449
+451
+455
+458
+459
+462
+463
+466
+470
+471
+474
+475
+476
+477
+479
+486
+494
+497
+498
+499
+502
+503
+506
+513
+514
+515
+518
+519
+526
+531
+534
+535
+536
+540
+541
+542
+543
+544
+545
+546
+548
+549
+550
+558
+561
+563
+566
+567
+570
+571
+574
+575
+582
+590
+593
+595
+598
+599
+602
+603
+606
+607
+610
+611
+614
+615
+618
+619
+622
+623
+630
+639
+642
+645
+650
+654
+655
+658
+659
+662
+663
+666
+667
+670
+672
+673
+674
+675
+676
+677
+686
+689
+690
+694
+698
+703
+710
+721
+722
+726
+727
+730
+731
+735
+737
+738
+739
+742
+743
+746
+747
+750
+751
+754
+759
+771
+774
+778
+779
+783
+787
+790
+791
+799
+802
+803
+806
+814
+819
+822
+823
+826
+829
+830
+831
+832
+833
+835
+836
+837
+838
+846
+850
+851
+854
+855
+858
+859
+862
+870
+872
+873
+875
+876
+877
+878
+881
+883
+887
+890
+891
+894
+895
+897
+898
+899
+900
+911
+913
+914
+915
+917
+922
+923
+926
+927
+931
+934
+935
+939
+946
+950
+951
+954
+955
+957
+958
+959
+962
+964
+966
+967
+968
+969
+970
+971
+972
+973
+974
+975
+976
+978
+980
+981
+990
+995
+998
+At: 1 Number of nodes per subgraph: 3
+1
+332
+775
+At: 2 Number of nodes per subgraph: 6
+5
+131
+318
+537
+695
+782
+At: 3 Number of nodes per subgraph: 4
+19
+114
+242
+511
+At: 4 Number of nodes per subgraph: 2
+22
+828
+At: 5 Number of nodes per subgraph: 3
+34
+416
+965
+At: 6 Number of nodes per subgraph: 6
+42
+150
+199
+247
+646
+678
+At: 7 Number of nodes per subgraph: 5
+49
+194
+527
+834
+947
+At: 8 Number of nodes per subgraph: 6
+58
+101
+438
+525
+886
+993
+At: 9 Number of nodes per subgraph: 4
+86
+394
+977
+994
+At: 10 Number of nodes per subgraph: 2
+98
+769
+At: 11 Number of nodes per subgraph: 5
+99
+315
+411
+413
+919
+At: 12 Number of nodes per subgraph: 3
+110
+175
+406
+At: 13 Number of nodes per subgraph: 4
+126
+421
+530
+979
+At: 14 Number of nodes per subgraph: 1
+129
+At: 15 Number of nodes per subgraph: 4
+147
+293
+317
+699
+At: 16 Number of nodes per subgraph: 4
+155
+328
+410
+863
+At: 17 Number of nodes per subgraph: 1
+162
+At: 18 Number of nodes per subgraph: 4
+163
+250
+391
+454
+At: 19 Number of nodes per subgraph: 3
+170
+453
+651
+At: 20 Number of nodes per subgraph: 9
+186
+295
+307
+355
+523
+767
+827
+918
+930
+At: 21 Number of nodes per subgraph: 2
+193
+301
+At: 22 Number of nodes per subgraph: 1
+233
+At: 23 Number of nodes per subgraph: 1
+254
+At: 24 Number of nodes per subgraph: 3
+258
+723
+882
+At: 25 Number of nodes per subgraph: 1
+266
+At: 26 Number of nodes per subgraph: 2
+275
+547
+At: 27 Number of nodes per subgraph: 3
+278
+287
+562
+At: 28 Number of nodes per subgraph: 1
+294
+At: 29 Number of nodes per subgraph: 1
+335
+At: 30 Number of nodes per subgraph: 1
+336
+At: 31 Number of nodes per subgraph: 1
+340
+At: 32 Number of nodes per subgraph: 1
+354
+At: 33 Number of nodes per subgraph: 5
+358
+407
+450
+594
+643
+At: 34 Number of nodes per subgraph: 1
+374
+At: 35 Number of nodes per subgraph: 1
+418
+At: 36 Number of nodes per subgraph: 2
+433
+758
+At: 37 Number of nodes per subgraph: 2
+457
+647
+At: 38 Number of nodes per subgraph: 1
+467
+At: 39 Number of nodes per subgraph: 1
+507
+At: 40 Number of nodes per subgraph: 1
+522
+At: 41 Number of nodes per subgraph: 4
+538
+718
+901
+982
+At: 42 Number of nodes per subgraph: 2
+539
+963
+At: 43 Number of nodes per subgraph: 1
+613
+At: 44 Number of nodes per subgraph: 1
+671
+At: 45 Number of nodes per subgraph: 2
+691
+943
+At: 46 Number of nodes per subgraph: 1
+755
+At: 47 Number of nodes per subgraph: 1
+770
+At: 48 Number of nodes per subgraph: 1
+786
+At: 49 Number of nodes per subgraph: 1
+807
+At: 50 Number of nodes per subgraph: 1
+810
+At: 51 Number of nodes per subgraph: 1
+811
+At: 52 Number of nodes per subgraph: 1
+815
+At: 53 Number of nodes per subgraph: 1
+818
+At: 54 Number of nodes per subgraph: 1
+849
+At: 55 Number of nodes per subgraph: 1
+874
+At: 56 Number of nodes per subgraph: 1
+896
+At: 57 Number of nodes per subgraph: 1
+902
+At: 58 Number of nodes per subgraph: 1
+938
+At: 59 Number of nodes per subgraph: 1
+999
+Number of subgraphs: 60
+Number of nodes: 1000
+Test case 10: success
+At: 0 Number of nodes per subgraph: 39
+0
+1
+2
+3
+4
+5
+6
+14
+17
+18
+19
+22
+23
+26
+27
+30
+31
+34
+35
+38
+39
+42
+43
+46
+47
+54
+63
+64
+70
+71
+72
+78
+79
+86
+87
+90
+94
+95
+98
+Number of subgraphs: 1
+Number of nodes: 100
+Test case 11: success
+At: 0 Number of nodes per subgraph: 1
+0
+At: 1 Number of nodes per subgraph: 1
+1
+At: 2 Number of nodes per subgraph: 1
+2
+At: 3 Number of nodes per subgraph: 1
+3
+At: 4 Number of nodes per subgraph: 1
+4
+At: 5 Number of nodes per subgraph: 1
+5
+At: 6 Number of nodes per subgraph: 1
+6
+At: 7 Number of nodes per subgraph: 1
+14
+At: 8 Number of nodes per subgraph: 1
+17
+At: 9 Number of nodes per subgraph: 1
+18
+At: 10 Number of nodes per subgraph: 1
+19
+At: 11 Number of nodes per subgraph: 1
+21
+At: 12 Number of nodes per subgraph: 1
+22
+At: 13 Number of nodes per subgraph: 1
+23
+At: 14 Number of nodes per subgraph: 1
+26
+At: 15 Number of nodes per subgraph: 1
+27
+At: 16 Number of nodes per subgraph: 1
+29
+At: 17 Number of nodes per subgraph: 1
+30
+At: 18 Number of nodes per subgraph: 1
+31
+At: 19 Number of nodes per subgraph: 1
+34
+At: 20 Number of nodes per subgraph: 1
+35
+At: 21 Number of nodes per subgraph: 1
+37
+At: 22 Number of nodes per subgraph: 1
+38
+At: 23 Number of nodes per subgraph: 1
+39
+At: 24 Number of nodes per subgraph: 1
+41
+At: 25 Number of nodes per subgraph: 1
+42
+At: 26 Number of nodes per subgraph: 1
+43
+At: 27 Number of nodes per subgraph: 1
+46
+At: 28 Number of nodes per subgraph: 1
+47
+At: 29 Number of nodes per subgraph: 1
+49
+At: 30 Number of nodes per subgraph: 1
+50
+At: 31 Number of nodes per subgraph: 1
+51
+At: 32 Number of nodes per subgraph: 1
+54
+At: 33 Number of nodes per subgraph: 1
+55
+At: 34 Number of nodes per subgraph: 1
+58
+At: 35 Number of nodes per subgraph: 1
+59
+At: 36 Number of nodes per subgraph: 1
+61
+At: 37 Number of nodes per subgraph: 1
+62
+At: 38 Number of nodes per subgraph: 1
+63
+At: 39 Number of nodes per subgraph: 1
+65
+At: 40 Number of nodes per subgraph: 1
+66
+At: 41 Number of nodes per subgraph: 1
+67
+At: 42 Number of nodes per subgraph: 1
+70
+At: 43 Number of nodes per subgraph: 1
+71
+At: 44 Number of nodes per subgraph: 1
+74
+At: 45 Number of nodes per subgraph: 1
+75
+At: 46 Number of nodes per subgraph: 1
+77
+At: 47 Number of nodes per subgraph: 1
+78
+At: 48 Number of nodes per subgraph: 1
+79
+At: 49 Number of nodes per subgraph: 1
+81
+At: 50 Number of nodes per subgraph: 1
+82
+At: 51 Number of nodes per subgraph: 1
+83
+At: 52 Number of nodes per subgraph: 1
+85
+At: 53 Number of nodes per subgraph: 1
+86
+At: 54 Number of nodes per subgraph: 1
+87
+At: 55 Number of nodes per subgraph: 1
+89
+At: 56 Number of nodes per subgraph: 1
+90
+At: 57 Number of nodes per subgraph: 1
+91
+At: 58 Number of nodes per subgraph: 1
+93
+At: 59 Number of nodes per subgraph: 1
+94
+At: 60 Number of nodes per subgraph: 1
+95
+At: 61 Number of nodes per subgraph: 1
+98
+At: 62 Number of nodes per subgraph: 1
+99
+At: 63 Number of nodes per subgraph: 1
+101
+At: 64 Number of nodes per subgraph: 1
+102
+At: 65 Number of nodes per subgraph: 1
+103
+At: 66 Number of nodes per subgraph: 1
+106
+At: 67 Number of nodes per subgraph: 1
+107
+At: 68 Number of nodes per subgraph: 1
+110
+At: 69 Number of nodes per subgraph: 1
+111
+At: 70 Number of nodes per subgraph: 1
+114
+At: 71 Number of nodes per subgraph: 1
+115
+At: 72 Number of nodes per subgraph: 1
+118
+At: 73 Number of nodes per subgraph: 1
+119
+At: 74 Number of nodes per subgraph: 1
+121
+At: 75 Number of nodes per subgraph: 1
+122
+At: 76 Number of nodes per subgraph: 1
+123
+At: 77 Number of nodes per subgraph: 1
+126
+At: 78 Number of nodes per subgraph: 1
+127
+At: 79 Number of nodes per subgraph: 1
+130
+At: 80 Number of nodes per subgraph: 1
+131
+At: 81 Number of nodes per subgraph: 1
+133
+At: 82 Number of nodes per subgraph: 1
+134
+At: 83 Number of nodes per subgraph: 1
+135
+At: 84 Number of nodes per subgraph: 1
+138
+At: 85 Number of nodes per subgraph: 1
+139
+At: 86 Number of nodes per subgraph: 1
+141
+At: 87 Number of nodes per subgraph: 1
+142
+At: 88 Number of nodes per subgraph: 1
+143
+At: 89 Number of nodes per subgraph: 1
+145
+At: 90 Number of nodes per subgraph: 1
+146
+At: 91 Number of nodes per subgraph: 1
+147
+At: 92 Number of nodes per subgraph: 1
+149
+At: 93 Number of nodes per subgraph: 1
+150
+At: 94 Number of nodes per subgraph: 1
+151
+At: 95 Number of nodes per subgraph: 1
+153
+At: 96 Number of nodes per subgraph: 1
+154
+At: 97 Number of nodes per subgraph: 1
+155
+At: 98 Number of nodes per subgraph: 1
+158
+At: 99 Number of nodes per subgraph: 1
+159
+At: 100 Number of nodes per subgraph: 1
+162
+At: 101 Number of nodes per subgraph: 1
+163
+At: 102 Number of nodes per subgraph: 1
+166
+At: 103 Number of nodes per subgraph: 1
+167
+At: 104 Number of nodes per subgraph: 1
+170
+At: 105 Number of nodes per subgraph: 1
+171
+At: 106 Number of nodes per subgraph: 1
+174
+At: 107 Number of nodes per subgraph: 1
+175
+At: 108 Number of nodes per subgraph: 1
+177
+At: 109 Number of nodes per subgraph: 1
+178
+At: 110 Number of nodes per subgraph: 1
+179
+At: 111 Number of nodes per subgraph: 1
+181
+At: 112 Number of nodes per subgraph: 1
+182
+At: 113 Number of nodes per subgraph: 1
+183
+At: 114 Number of nodes per subgraph: 1
+185
+At: 115 Number of nodes per subgraph: 1
+186
+At: 116 Number of nodes per subgraph: 1
+187
+At: 117 Number of nodes per subgraph: 1
+189
+At: 118 Number of nodes per subgraph: 1
+190
+At: 119 Number of nodes per subgraph: 1
+191
+At: 120 Number of nodes per subgraph: 1
+194
+At: 121 Number of nodes per subgraph: 1
+195
+At: 122 Number of nodes per subgraph: 1
+198
+At: 123 Number of nodes per subgraph: 1
+199
+At: 124 Number of nodes per subgraph: 1
+201
+At: 125 Number of nodes per subgraph: 1
+202
+At: 126 Number of nodes per subgraph: 1
+203
+At: 127 Number of nodes per subgraph: 1
+206
+At: 128 Number of nodes per subgraph: 1
+207
+At: 129 Number of nodes per subgraph: 1
+209
+At: 130 Number of nodes per subgraph: 1
+210
+At: 131 Number of nodes per subgraph: 1
+211
+At: 132 Number of nodes per subgraph: 1
+214
+At: 133 Number of nodes per subgraph: 1
+215
+At: 134 Number of nodes per subgraph: 1
+217
+At: 135 Number of nodes per subgraph: 1
+218
+At: 136 Number of nodes per subgraph: 1
+219
+At: 137 Number of nodes per subgraph: 1
+222
+At: 138 Number of nodes per subgraph: 1
+223
+At: 139 Number of nodes per subgraph: 1
+225
+At: 140 Number of nodes per subgraph: 1
+226
+At: 141 Number of nodes per subgraph: 1
+227
+At: 142 Number of nodes per subgraph: 1
+230
+At: 143 Number of nodes per subgraph: 1
+231
+At: 144 Number of nodes per subgraph: 1
+234
+At: 145 Number of nodes per subgraph: 1
+235
+At: 146 Number of nodes per subgraph: 1
+237
+At: 147 Number of nodes per subgraph: 1
+238
+At: 148 Number of nodes per subgraph: 1
+239
+At: 149 Number of nodes per subgraph: 1
+242
+At: 150 Number of nodes per subgraph: 1
+243
+At: 151 Number of nodes per subgraph: 1
+245
+At: 152 Number of nodes per subgraph: 1
+246
+At: 153 Number of nodes per subgraph: 1
+247
+At: 154 Number of nodes per subgraph: 1
+250
+At: 155 Number of nodes per subgraph: 1
+251
+At: 156 Number of nodes per subgraph: 1
+253
+At: 157 Number of nodes per subgraph: 1
+254
+At: 158 Number of nodes per subgraph: 1
+255
+At: 159 Number of nodes per subgraph: 1
+258
+At: 160 Number of nodes per subgraph: 1
+259
+At: 161 Number of nodes per subgraph: 1
+261
+At: 162 Number of nodes per subgraph: 1
+262
+At: 163 Number of nodes per subgraph: 1
+263
+At: 164 Number of nodes per subgraph: 1
+265
+At: 165 Number of nodes per subgraph: 1
+266
+At: 166 Number of nodes per subgraph: 1
+267
+At: 167 Number of nodes per subgraph: 1
+269
+At: 168 Number of nodes per subgraph: 1
+270
+At: 169 Number of nodes per subgraph: 1
+271
+At: 170 Number of nodes per subgraph: 1
+274
+At: 171 Number of nodes per subgraph: 1
+275
+At: 172 Number of nodes per subgraph: 1
+277
+At: 173 Number of nodes per subgraph: 1
+278
+At: 174 Number of nodes per subgraph: 1
+279
+At: 175 Number of nodes per subgraph: 1
+282
+At: 176 Number of nodes per subgraph: 1
+283
+At: 177 Number of nodes per subgraph: 1
+286
+At: 178 Number of nodes per subgraph: 1
+287
+At: 179 Number of nodes per subgraph: 1
+290
+At: 180 Number of nodes per subgraph: 1
+291
+At: 181 Number of nodes per subgraph: 1
+294
+At: 182 Number of nodes per subgraph: 1
+295
+At: 183 Number of nodes per subgraph: 1
+298
+At: 184 Number of nodes per subgraph: 1
+299
+At: 185 Number of nodes per subgraph: 1
+301
+At: 186 Number of nodes per subgraph: 1
+302
+At: 187 Number of nodes per subgraph: 1
+303
+At: 188 Number of nodes per subgraph: 1
+306
+At: 189 Number of nodes per subgraph: 1
+307
+At: 190 Number of nodes per subgraph: 1
+309
+At: 191 Number of nodes per subgraph: 1
+310
+At: 192 Number of nodes per subgraph: 1
+311
+At: 193 Number of nodes per subgraph: 1
+313
+At: 194 Number of nodes per subgraph: 1
+314
+At: 195 Number of nodes per subgraph: 1
+315
+At: 196 Number of nodes per subgraph: 1
+318
+At: 197 Number of nodes per subgraph: 1
+319
+At: 198 Number of nodes per subgraph: 1
+321
+At: 199 Number of nodes per subgraph: 1
+322
+At: 200 Number of nodes per subgraph: 1
+323
+At: 201 Number of nodes per subgraph: 1
+325
+At: 202 Number of nodes per subgraph: 1
+326
+At: 203 Number of nodes per subgraph: 1
+327
+At: 204 Number of nodes per subgraph: 1
+330
+At: 205 Number of nodes per subgraph: 1
+331
+At: 206 Number of nodes per subgraph: 1
+334
+At: 207 Number of nodes per subgraph: 1
+335
+At: 208 Number of nodes per subgraph: 1
+338
+At: 209 Number of nodes per subgraph: 1
+339
+At: 210 Number of nodes per subgraph: 1
+341
+At: 211 Number of nodes per subgraph: 1
+342
+At: 212 Number of nodes per subgraph: 1
+343
+At: 213 Number of nodes per subgraph: 1
+346
+At: 214 Number of nodes per subgraph: 1
+347
+At: 215 Number of nodes per subgraph: 1
+350
+At: 216 Number of nodes per subgraph: 1
+351
+At: 217 Number of nodes per subgraph: 1
+353
+At: 218 Number of nodes per subgraph: 1
+354
+At: 219 Number of nodes per subgraph: 1
+355
+At: 220 Number of nodes per subgraph: 1
+358
+At: 221 Number of nodes per subgraph: 1
+359
+At: 222 Number of nodes per subgraph: 1
+361
+At: 223 Number of nodes per subgraph: 1
+362
+At: 224 Number of nodes per subgraph: 1
+363
+At: 225 Number of nodes per subgraph: 1
+366
+At: 226 Number of nodes per subgraph: 1
+367
+At: 227 Number of nodes per subgraph: 1
+369
+At: 228 Number of nodes per subgraph: 1
+370
+At: 229 Number of nodes per subgraph: 1
+371
+At: 230 Number of nodes per subgraph: 1
+373
+At: 231 Number of nodes per subgraph: 1
+374
+At: 232 Number of nodes per subgraph: 1
+375
+At: 233 Number of nodes per subgraph: 1
+378
+At: 234 Number of nodes per subgraph: 1
+379
+At: 235 Number of nodes per subgraph: 1
+381
+At: 236 Number of nodes per subgraph: 1
+382
+At: 237 Number of nodes per subgraph: 1
+383
+At: 238 Number of nodes per subgraph: 1
+386
+At: 239 Number of nodes per subgraph: 1
+387
+At: 240 Number of nodes per subgraph: 1
+390
+At: 241 Number of nodes per subgraph: 1
+391
+At: 242 Number of nodes per subgraph: 1
+393
+At: 243 Number of nodes per subgraph: 1
+394
+At: 244 Number of nodes per subgraph: 1
+395
+At: 245 Number of nodes per subgraph: 1
+397
+At: 246 Number of nodes per subgraph: 1
+398
+At: 247 Number of nodes per subgraph: 1
+399
+At: 248 Number of nodes per subgraph: 1
+401
+At: 249 Number of nodes per subgraph: 1
+402
+At: 250 Number of nodes per subgraph: 1
+403
+At: 251 Number of nodes per subgraph: 1
+405
+At: 252 Number of nodes per subgraph: 1
+406
+At: 253 Number of nodes per subgraph: 1
+407
+At: 254 Number of nodes per subgraph: 1
+410
+At: 255 Number of nodes per subgraph: 1
+411
+At: 256 Number of nodes per subgraph: 1
+414
+At: 257 Number of nodes per subgraph: 1
+415
+At: 258 Number of nodes per subgraph: 1
+418
+At: 259 Number of nodes per subgraph: 1
+419
+At: 260 Number of nodes per subgraph: 1
+422
+At: 261 Number of nodes per subgraph: 1
+423
+At: 262 Number of nodes per subgraph: 1
+426
+At: 263 Number of nodes per subgraph: 1
+427
+At: 264 Number of nodes per subgraph: 1
+430
+At: 265 Number of nodes per subgraph: 1
+431
+At: 266 Number of nodes per subgraph: 1
+434
+At: 267 Number of nodes per subgraph: 1
+435
+At: 268 Number of nodes per subgraph: 1
+438
+At: 269 Number of nodes per subgraph: 1
+439
+At: 270 Number of nodes per subgraph: 1
+442
+At: 271 Number of nodes per subgraph: 1
+443
+At: 272 Number of nodes per subgraph: 1
+446
+At: 273 Number of nodes per subgraph: 1
+447
+At: 274 Number of nodes per subgraph: 1
+449
+At: 275 Number of nodes per subgraph: 1
+450
+At: 276 Number of nodes per subgraph: 1
+451
+At: 277 Number of nodes per subgraph: 1
+453
+At: 278 Number of nodes per subgraph: 1
+454
+At: 279 Number of nodes per subgraph: 1
+455
+At: 280 Number of nodes per subgraph: 1
+458
+At: 281 Number of nodes per subgraph: 1
+459
+At: 282 Number of nodes per subgraph: 1
+461
+At: 283 Number of nodes per subgraph: 1
+462
+At: 284 Number of nodes per subgraph: 1
+463
+At: 285 Number of nodes per subgraph: 1
+466
+At: 286 Number of nodes per subgraph: 1
+467
+At: 287 Number of nodes per subgraph: 1
+470
+At: 288 Number of nodes per subgraph: 1
+471
+At: 289 Number of nodes per subgraph: 1
+473
+At: 290 Number of nodes per subgraph: 1
+474
+At: 291 Number of nodes per subgraph: 1
+475
+At: 292 Number of nodes per subgraph: 1
+478
+At: 293 Number of nodes per subgraph: 1
+479
+At: 294 Number of nodes per subgraph: 1
+481
+At: 295 Number of nodes per subgraph: 1
+482
+At: 296 Number of nodes per subgraph: 1
+483
+At: 297 Number of nodes per subgraph: 1
+486
+At: 298 Number of nodes per subgraph: 1
+487
+At: 299 Number of nodes per subgraph: 1
+488
+At: 300 Number of nodes per subgraph: 1
+494
+At: 301 Number of nodes per subgraph: 1
+495
+At: 302 Number of nodes per subgraph: 1
+496
+Number of subgraphs: 303
+Number of nodes: 500
+Test case 12: success
+At: 0 Number of nodes per subgraph: 3
+1996
+1997
+1998
+At: 1 Number of nodes per subgraph: 1
+1999
+Number of subgraphs: 2
+Number of nodes: 2000
+Test case 13: success
+At: 0 Number of nodes per subgraph: 249
+0
+1
+2
+4
+6
+14
+33
+34
+36
+38
+47
+50
+55
+58
+59
+62
+78
+83
+86
+102
+105
+106
+107
+110
+111
+114
+115
+119
+123
+129
+131
+134
+142
+143
+146
+147
+150
+151
+155
+158
+159
+162
+163
+166
+167
+171
+174
+182
+191
+199
+206
+209
+210
+222
+226
+231
+234
+238
+239
+255
+262
+266
+270
+271
+287
+290
+294
+299
+310
+311
+314
+315
+319
+320
+321
+322
+323
+325
+326
+334
+338
+339
+340
+341
+342
+351
+358
+366
+374
+375
+386
+387
+391
+394
+406
+417
+418
+422
+426
+427
+447
+450
+455
+462
+466
+467
+470
+471
+480
+484
+486
+494
+495
+498
+499
+502
+503
+515
+518
+522
+523
+526
+542
+550
+551
+555
+558
+559
+563
+566
+567
+570
+571
+579
+583
+586
+590
+594
+595
+598
+599
+603
+606
+609
+611
+612
+613
+614
+627
+630
+633
+635
+639
+641
+643
+646
+647
+651
+655
+670
+673
+674
+677
+678
+679
+682
+686
+690
+691
+694
+695
+698
+699
+703
+705
+719
+722
+723
+724
+738
+739
+746
+747
+754
+759
+764
+768
+769
+771
+772
+773
+774
+791
+794
+795
+798
+806
+814
+830
+833
+834
+835
+839
+842
+847
+851
+859
+865
+866
+870
+879
+883
+886
+890
+891
+895
+897
+898
+899
+901
+902
+903
+906
+907
+909
+918
+919
+922
+923
+934
+943
+946
+947
+951
+958
+961
+965
+966
+969
+971
+973
+974
+977
+979
+980
+990
+991
+994
+995
+At: 1 Number of nodes per subgraph: 4
+3
+687
+707
+735
+At: 2 Number of nodes per subgraph: 1
+5
+At: 3 Number of nodes per subgraph: 1
+15
+At: 4 Number of nodes per subgraph: 3
+18
+54
+459
+At: 5 Number of nodes per subgraph: 3
+19
+51
+725
+At: 6 Number of nodes per subgraph: 1
+32
+At: 7 Number of nodes per subgraph: 2
+35
+306
+At: 8 Number of nodes per subgraph: 1
+37
+At: 9 Number of nodes per subgraph: 2
+46
+608
+At: 10 Number of nodes per subgraph: 4
+63
+578
+783
+858
+At: 11 Number of nodes per subgraph: 1
+70
+At: 12 Number of nodes per subgraph: 1
+81
+At: 13 Number of nodes per subgraph: 2
+82
+415
+At: 14 Number of nodes per subgraph: 1
+95
+At: 15 Number of nodes per subgraph: 7
+98
+113
+214
+227
+259
+482
+976
+At: 16 Number of nodes per subgraph: 3
+99
+175
+335
+At: 17 Number of nodes per subgraph: 1
+103
+At: 18 Number of nodes per subgraph: 3
+118
+483
+878
+At: 19 Number of nodes per subgraph: 4
+122
+546
+978
+982
+At: 20 Number of nodes per subgraph: 1
+128
+At: 21 Number of nodes per subgraph: 1
+130
+At: 22 Number of nodes per subgraph: 2
+132
+786
+At: 23 Number of nodes per subgraph: 6
+133
+198
+267
+359
+451
+458
+At: 24 Number of nodes per subgraph: 1
+154
+At: 25 Number of nodes per subgraph: 1
+170
+At: 26 Number of nodes per subgraph: 2
+194
+527
+At: 27 Number of nodes per subgraph: 1
+195
+At: 28 Number of nodes per subgraph: 3
+208
+385
+751
+At: 29 Number of nodes per subgraph: 2
+211
+975
+At: 30 Number of nodes per subgraph: 6
+212
+431
+581
+626
+675
+915
+At: 31 Number of nodes per subgraph: 7
+213
+295
+438
+481
+591
+706
+762
+At: 32 Number of nodes per subgraph: 4
+223
+506
+743
+838
+At: 33 Number of nodes per subgraph: 2
+230
+981
+At: 34 Number of nodes per subgraph: 1
+235
+At: 35 Number of nodes per subgraph: 1
+246
+At: 36 Number of nodes per subgraph: 3
+247
+582
+867
+At: 37 Number of nodes per subgraph: 2
+254
+419
+At: 38 Number of nodes per subgraph: 1
+257
+At: 39 Number of nodes per subgraph: 4
+258
+562
+817
+927
+At: 40 Number of nodes per subgraph: 2
+263
+850
+At: 41 Number of nodes per subgraph: 2
+278
+787
+At: 42 Number of nodes per subgraph: 1
+291
+At: 43 Number of nodes per subgraph: 3
+298
+398
+869
+At: 44 Number of nodes per subgraph: 1
+302
+At: 45 Number of nodes per subgraph: 3
+303
+519
+911
+At: 46 Number of nodes per subgraph: 1
+307
+At: 47 Number of nodes per subgraph: 2
+318
+650
+At: 48 Number of nodes per subgraph: 1
+324
+At: 49 Number of nodes per subgraph: 2
+354
+959
+At: 50 Number of nodes per subgraph: 1
+355
+At: 51 Number of nodes per subgraph: 1
+362
+At: 52 Number of nodes per subgraph: 2
+363
+634
+At: 53 Number of nodes per subgraph: 1
+382
+At: 54 Number of nodes per subgraph: 1
+390
+At: 55 Number of nodes per subgraph: 1
+395
+At: 56 Number of nodes per subgraph: 1
+399
+At: 57 Number of nodes per subgraph: 1
+423
+At: 58 Number of nodes per subgraph: 1
+430
+At: 59 Number of nodes per subgraph: 1
+454
+At: 60 Number of nodes per subgraph: 3
+463
+514
+799
+At: 61 Number of nodes per subgraph: 1
+485
+At: 62 Number of nodes per subgraph: 1
+507
+At: 63 Number of nodes per subgraph: 1
+511
+At: 64 Number of nodes per subgraph: 1
+534
+At: 65 Number of nodes per subgraph: 1
+545
+At: 66 Number of nodes per subgraph: 1
+547
+At: 67 Number of nodes per subgraph: 1
+554
+At: 68 Number of nodes per subgraph: 1
+575
+At: 69 Number of nodes per subgraph: 1
+587
+At: 70 Number of nodes per subgraph: 1
+602
+At: 71 Number of nodes per subgraph: 2
+607
+954
+At: 72 Number of nodes per subgraph: 1
+610
+At: 73 Number of nodes per subgraph: 1
+622
+At: 74 Number of nodes per subgraph: 2
+623
+710
+At: 75 Number of nodes per subgraph: 1
+631
+At: 76 Number of nodes per subgraph: 1
+642
+At: 77 Number of nodes per subgraph: 1
+649
+At: 78 Number of nodes per subgraph: 1
+654
+At: 79 Number of nodes per subgraph: 1
+662
+At: 80 Number of nodes per subgraph: 1
+683
+At: 81 Number of nodes per subgraph: 1
+711
+At: 82 Number of nodes per subgraph: 1
+726
+At: 83 Number of nodes per subgraph: 4
+742
+750
+905
+950
+At: 84 Number of nodes per subgraph: 2
+745
+887
+At: 85 Number of nodes per subgraph: 1
+755
+At: 86 Number of nodes per subgraph: 2
+758
+914
+At: 87 Number of nodes per subgraph: 1
+761
+At: 88 Number of nodes per subgraph: 1
+763
+At: 89 Number of nodes per subgraph: 1
+765
+At: 90 Number of nodes per subgraph: 3
+766
+822
+855
+At: 91 Number of nodes per subgraph: 1
+770
+At: 92 Number of nodes per subgraph: 1
+782
+At: 93 Number of nodes per subgraph: 1
+790
+At: 94 Number of nodes per subgraph: 1
+843
+At: 95 Number of nodes per subgraph: 1
+854
+At: 96 Number of nodes per subgraph: 1
+862
+At: 97 Number of nodes per subgraph: 1
+864
+At: 98 Number of nodes per subgraph: 1
+868
+At: 99 Number of nodes per subgraph: 1
+882
+At: 100 Number of nodes per subgraph: 1
+910
+At: 101 Number of nodes per subgraph: 1
+955
+At: 102 Number of nodes per subgraph: 1
+962
+At: 103 Number of nodes per subgraph: 2
+963
+967
+At: 104 Number of nodes per subgraph: 1
+970
+At: 105 Number of nodes per subgraph: 1
+998
+At: 106 Number of nodes per subgraph: 1
+999
+Number of subgraphs: 107
+Number of nodes: 1000
+Test case 14: success
+At: 0 Number of nodes per subgraph: 191
+0
+1
+2
+3
+4
+5
+6
+8
+9
+10
+11
+12
+13
+14
+18
+19
+22
+23
+26
+27
+30
+31
+34
+35
+37
+38
+39
+41
+42
+43
+45
+46
+47
+49
+50
+51
+53
+54
+55
+57
+58
+59
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+72
+73
+74
+75
+76
+77
+78
+82
+83
+86
+87
+90
+91
+94
+95
+96
+97
+98
+99
+100
+101
+102
+104
+105
+106
+107
+108
+109
+110
+113
+114
+115
+118
+119
+122
+123
+126
+127
+130
+131
+134
+135
+138
+139
+142
+143
+146
+147
+150
+151
+154
+155
+159
+161
+162
+163
+165
+166
+167
+170
+171
+174
+175
+178
+179
+182
+183
+186
+187
+190
+191
+194
+195
+198
+199
+202
+203
+206
+207
+210
+211
+214
+215
+218
+219
+222
+223
+224
+225
+226
+227
+228
+229
+230
+232
+233
+234
+235
+236
+237
+238
+242
+243
+246
+247
+250
+251
+255
+257
+258
+259
+261
+262
+263
+266
+267
+270
+271
+274
+275
+278
+279
+280
+281
+282
+283
+284
+285
+286
+288
+289
+290
+291
+292
+293
+294
+296
+297
+298
+At: 1 Number of nodes per subgraph: 1
+299
+Number of subgraphs: 2
+Number of nodes: 300
+Test case 15: success
+At: 0 Number of nodes per subgraph: 177
+0
+1
+2
+3
+4
+5
+14
+18
+22
+26
+31
+33
+34
+37
+38
+41
+43
+46
+47
+50
+51
+52
+53
+54
+56
+58
+59
+60
+63
+65
+66
+67
+69
+71
+73
+74
+75
+83
+86
+90
+94
+98
+99
+102
+106
+107
+110
+111
+118
+119
+122
+127
+128
+129
+131
+132
+134
+142
+147
+149
+150
+158
+160
+161
+163
+164
+165
+166
+178
+179
+183
+187
+190
+194
+195
+196
+197
+198
+206
+209
+210
+211
+212
+213
+214
+224
+229
+243
+246
+254
+255
+258
+259
+262
+263
+266
+267
+271
+272
+273
+274
+275
+276
+277
+280
+283
+284
+285
+287
+289
+290
+295
+297
+299
+301
+303
+306
+307
+310
+311
+314
+315
+319
+322
+323
+326
+334
+339
+345
+346
+347
+348
+353
+354
+355
+356
+357
+358
+370
+371
+374
+375
+379
+383
+386
+387
+390
+395
+397
+398
+399
+406
+407
+417
+418
+419
+421
+422
+425
+427
+431
+434
+438
+439
+447
+448
+449
+451
+452
+453
+462
+466
+470
+471
+474
+475
+479
+At: 1 Number of nodes per subgraph: 2
+6
+130
+At: 2 Number of nodes per subgraph: 6
+19
+162
+223
+226
+450
+478
+At: 3 Number of nodes per subgraph: 4
+23
+39
+42
+123
+At: 4 Number of nodes per subgraph: 1
+27
+At: 5 Number of nodes per subgraph: 7
+35
+70
+126
+133
+242
+344
+494
+At: 6 Number of nodes per subgraph: 7
+57
+146
+281
+340
+352
+373
+377
+At: 7 Number of nodes per subgraph: 4
+61
+309
+486
+497
+At: 8 Number of nodes per subgraph: 7
+78
+159
+174
+191
+278
+338
+498
+At: 9 Number of nodes per subgraph: 6
+79
+87
+208
+251
+294
+391
+At: 10 Number of nodes per subgraph: 4
+82
+270
+291
+394
+At: 11 Number of nodes per subgraph: 2
+91
+250
+At: 12 Number of nodes per subgraph: 5
+95
+238
+298
+342
+366
+At: 13 Number of nodes per subgraph: 4
+103
+293
+415
+423
+At: 14 Number of nodes per subgraph: 1
+114
+At: 15 Number of nodes per subgraph: 4
+115
+186
+302
+349
+At: 16 Number of nodes per subgraph: 2
+148
+225
+At: 17 Number of nodes per subgraph: 3
+182
+247
+378
+At: 18 Number of nodes per subgraph: 1
+227
+At: 19 Number of nodes per subgraph: 2
+228
+426
+At: 20 Number of nodes per subgraph: 1
+230
+At: 21 Number of nodes per subgraph: 1
+282
+At: 22 Number of nodes per subgraph: 1
+305
+At: 23 Number of nodes per subgraph: 4
+318
+341
+430
+454
+At: 24 Number of nodes per subgraph: 1
+337
+At: 25 Number of nodes per subgraph: 1
+351
+At: 26 Number of nodes per subgraph: 1
+381
+At: 27 Number of nodes per subgraph: 1
+382
+At: 28 Number of nodes per subgraph: 1
+435
+At: 29 Number of nodes per subgraph: 2
+467
+499
+Number of subgraphs: 30
+Number of nodes: 500
+Test case 16: success
+At: 0 Number of nodes per subgraph: 1
+0
+At: 1 Number of nodes per subgraph: 1
+1
+At: 2 Number of nodes per subgraph: 1
+2
+At: 3 Number of nodes per subgraph: 1
+3
+At: 4 Number of nodes per subgraph: 2
+4
+499
+At: 5 Number of nodes per subgraph: 1
+5
+At: 6 Number of nodes per subgraph: 1
+6
+At: 7 Number of nodes per subgraph: 1
+8
+At: 8 Number of nodes per subgraph: 1
+9
+At: 9 Number of nodes per subgraph: 1
+10
+At: 10 Number of nodes per subgraph: 1
+11
+At: 11 Number of nodes per subgraph: 1
+12
+At: 12 Number of nodes per subgraph: 1
+13
+At: 13 Number of nodes per subgraph: 1
+14
+At: 14 Number of nodes per subgraph: 1
+18
+At: 15 Number of nodes per subgraph: 1
+19
+At: 16 Number of nodes per subgraph: 1
+21
+At: 17 Number of nodes per subgraph: 1
+22
+At: 18 Number of nodes per subgraph: 1
+23
+At: 19 Number of nodes per subgraph: 1
+25
+At: 20 Number of nodes per subgraph: 1
+26
+At: 21 Number of nodes per subgraph: 1
+27
+At: 22 Number of nodes per subgraph: 1
+29
+At: 23 Number of nodes per subgraph: 1
+30
+At: 24 Number of nodes per subgraph: 1
+31
+At: 25 Number of nodes per subgraph: 1
+33
+At: 26 Number of nodes per subgraph: 1
+34
+At: 27 Number of nodes per subgraph: 1
+35
+At: 28 Number of nodes per subgraph: 1
+37
+At: 29 Number of nodes per subgraph: 1
+38
+At: 30 Number of nodes per subgraph: 1
+39
+At: 31 Number of nodes per subgraph: 1
+41
+At: 32 Number of nodes per subgraph: 1
+42
+At: 33 Number of nodes per subgraph: 1
+43
+At: 34 Number of nodes per subgraph: 1
+45
+At: 35 Number of nodes per subgraph: 1
+46
+At: 36 Number of nodes per subgraph: 1
+47
+At: 37 Number of nodes per subgraph: 1
+49
+At: 38 Number of nodes per subgraph: 1
+50
+At: 39 Number of nodes per subgraph: 1
+51
+At: 40 Number of nodes per subgraph: 1
+53
+At: 41 Number of nodes per subgraph: 1
+54
+At: 42 Number of nodes per subgraph: 1
+55
+At: 43 Number of nodes per subgraph: 1
+57
+At: 44 Number of nodes per subgraph: 1
+58
+At: 45 Number of nodes per subgraph: 1
+59
+At: 46 Number of nodes per subgraph: 1
+61
+At: 47 Number of nodes per subgraph: 1
+62
+At: 48 Number of nodes per subgraph: 1
+63
+At: 49 Number of nodes per subgraph: 1
+65
+At: 50 Number of nodes per subgraph: 1
+66
+At: 51 Number of nodes per subgraph: 1
+67
+At: 52 Number of nodes per subgraph: 1
+69
+At: 53 Number of nodes per subgraph: 1
+70
+At: 54 Number of nodes per subgraph: 1
+71
+At: 55 Number of nodes per subgraph: 1
+73
+At: 56 Number of nodes per subgraph: 1
+74
+At: 57 Number of nodes per subgraph: 1
+75
+At: 58 Number of nodes per subgraph: 1
+77
+At: 59 Number of nodes per subgraph: 1
+78
+At: 60 Number of nodes per subgraph: 1
+79
+At: 61 Number of nodes per subgraph: 1
+81
+At: 62 Number of nodes per subgraph: 1
+82
+At: 63 Number of nodes per subgraph: 1
+83
+At: 64 Number of nodes per subgraph: 1
+85
+At: 65 Number of nodes per subgraph: 1
+86
+At: 66 Number of nodes per subgraph: 1
+87
+At: 67 Number of nodes per subgraph: 1
+89
+At: 68 Number of nodes per subgraph: 1
+90
+At: 69 Number of nodes per subgraph: 1
+91
+At: 70 Number of nodes per subgraph: 1
+93
+At: 71 Number of nodes per subgraph: 1
+94
+At: 72 Number of nodes per subgraph: 1
+95
+At: 73 Number of nodes per subgraph: 1
+97
+At: 74 Number of nodes per subgraph: 1
+98
+At: 75 Number of nodes per subgraph: 1
+99
+At: 76 Number of nodes per subgraph: 1
+101
+At: 77 Number of nodes per subgraph: 1
+102
+At: 78 Number of nodes per subgraph: 1
+103
+At: 79 Number of nodes per subgraph: 1
+105
+At: 80 Number of nodes per subgraph: 1
+106
+At: 81 Number of nodes per subgraph: 1
+107
+At: 82 Number of nodes per subgraph: 1
+109
+At: 83 Number of nodes per subgraph: 1
+110
+At: 84 Number of nodes per subgraph: 1
+111
+At: 85 Number of nodes per subgraph: 1
+113
+At: 86 Number of nodes per subgraph: 1
+114
+At: 87 Number of nodes per subgraph: 1
+115
+At: 88 Number of nodes per subgraph: 1
+117
+At: 89 Number of nodes per subgraph: 1
+118
+At: 90 Number of nodes per subgraph: 1
+119
+At: 91 Number of nodes per subgraph: 1
+121
+At: 92 Number of nodes per subgraph: 1
+122
+At: 93 Number of nodes per subgraph: 1
+123
+At: 94 Number of nodes per subgraph: 1
+125
+At: 95 Number of nodes per subgraph: 1
+126
+At: 96 Number of nodes per subgraph: 1
+127
+At: 97 Number of nodes per subgraph: 1
+129
+At: 98 Number of nodes per subgraph: 1
+130
+At: 99 Number of nodes per subgraph: 1
+131
+At: 100 Number of nodes per subgraph: 1
+133
+At: 101 Number of nodes per subgraph: 1
+134
+At: 102 Number of nodes per subgraph: 1
+135
+At: 103 Number of nodes per subgraph: 1
+137
+At: 104 Number of nodes per subgraph: 1
+138
+At: 105 Number of nodes per subgraph: 1
+139
+At: 106 Number of nodes per subgraph: 1
+141
+At: 107 Number of nodes per subgraph: 1
+142
+At: 108 Number of nodes per subgraph: 1
+143
+At: 109 Number of nodes per subgraph: 1
+145
+At: 110 Number of nodes per subgraph: 1
+146
+At: 111 Number of nodes per subgraph: 1
+147
+At: 112 Number of nodes per subgraph: 1
+149
+At: 113 Number of nodes per subgraph: 1
+150
+At: 114 Number of nodes per subgraph: 1
+151
+At: 115 Number of nodes per subgraph: 1
+153
+At: 116 Number of nodes per subgraph: 1
+154
+At: 117 Number of nodes per subgraph: 1
+155
+At: 118 Number of nodes per subgraph: 1
+157
+At: 119 Number of nodes per subgraph: 1
+158
+At: 120 Number of nodes per subgraph: 1
+159
+At: 121 Number of nodes per subgraph: 1
+161
+At: 122 Number of nodes per subgraph: 1
+162
+At: 123 Number of nodes per subgraph: 1
+163
+At: 124 Number of nodes per subgraph: 1
+165
+At: 125 Number of nodes per subgraph: 1
+166
+At: 126 Number of nodes per subgraph: 1
+167
+At: 127 Number of nodes per subgraph: 1
+169
+At: 128 Number of nodes per subgraph: 1
+170
+At: 129 Number of nodes per subgraph: 1
+171
+At: 130 Number of nodes per subgraph: 1
+173
+At: 131 Number of nodes per subgraph: 1
+174
+At: 132 Number of nodes per subgraph: 1
+175
+At: 133 Number of nodes per subgraph: 1
+178
+At: 134 Number of nodes per subgraph: 1
+179
+At: 135 Number of nodes per subgraph: 1
+182
+At: 136 Number of nodes per subgraph: 1
+183
+At: 137 Number of nodes per subgraph: 1
+186
+At: 138 Number of nodes per subgraph: 1
+187
+At: 139 Number of nodes per subgraph: 1
+190
+At: 140 Number of nodes per subgraph: 1
+191
+At: 141 Number of nodes per subgraph: 1
+194
+At: 142 Number of nodes per subgraph: 1
+195
+At: 143 Number of nodes per subgraph: 1
+198
+At: 144 Number of nodes per subgraph: 1
+199
+At: 145 Number of nodes per subgraph: 1
+202
+At: 146 Number of nodes per subgraph: 1
+203
+At: 147 Number of nodes per subgraph: 1
+206
+At: 148 Number of nodes per subgraph: 1
+207
+At: 149 Number of nodes per subgraph: 1
+210
+At: 150 Number of nodes per subgraph: 1
+211
+At: 151 Number of nodes per subgraph: 1
+214
+At: 152 Number of nodes per subgraph: 1
+215
+At: 153 Number of nodes per subgraph: 1
+218
+At: 154 Number of nodes per subgraph: 1
+219
+At: 155 Number of nodes per subgraph: 1
+222
+At: 156 Number of nodes per subgraph: 1
+223
+At: 157 Number of nodes per subgraph: 1
+226
+At: 158 Number of nodes per subgraph: 1
+227
+At: 159 Number of nodes per subgraph: 1
+230
+At: 160 Number of nodes per subgraph: 1
+231
+At: 161 Number of nodes per subgraph: 1
+234
+At: 162 Number of nodes per subgraph: 1
+235
+At: 163 Number of nodes per subgraph: 1
+238
+At: 164 Number of nodes per subgraph: 1
+239
+At: 165 Number of nodes per subgraph: 1
+242
+At: 166 Number of nodes per subgraph: 1
+243
+At: 167 Number of nodes per subgraph: 1
+246
+At: 168 Number of nodes per subgraph: 1
+247
+At: 169 Number of nodes per subgraph: 1
+250
+At: 170 Number of nodes per subgraph: 1
+251
+At: 171 Number of nodes per subgraph: 1
+254
+At: 172 Number of nodes per subgraph: 1
+255
+At: 173 Number of nodes per subgraph: 1
+258
+At: 174 Number of nodes per subgraph: 1
+259
+At: 175 Number of nodes per subgraph: 1
+262
+At: 176 Number of nodes per subgraph: 1
+263
+At: 177 Number of nodes per subgraph: 1
+266
+At: 178 Number of nodes per subgraph: 1
+267
+At: 179 Number of nodes per subgraph: 1
+270
+At: 180 Number of nodes per subgraph: 1
+271
+At: 181 Number of nodes per subgraph: 1
+274
+At: 182 Number of nodes per subgraph: 1
+275
+At: 183 Number of nodes per subgraph: 1
+278
+At: 184 Number of nodes per subgraph: 1
+279
+At: 185 Number of nodes per subgraph: 1
+282
+At: 186 Number of nodes per subgraph: 1
+283
+At: 187 Number of nodes per subgraph: 1
+286
+At: 188 Number of nodes per subgraph: 1
+287
+At: 189 Number of nodes per subgraph: 1
+290
+At: 190 Number of nodes per subgraph: 1
+291
+At: 191 Number of nodes per subgraph: 1
+294
+At: 192 Number of nodes per subgraph: 1
+295
+At: 193 Number of nodes per subgraph: 1
+298
+At: 194 Number of nodes per subgraph: 1
+299
+At: 195 Number of nodes per subgraph: 1
+302
+At: 196 Number of nodes per subgraph: 1
+303
+At: 197 Number of nodes per subgraph: 1
+306
+At: 198 Number of nodes per subgraph: 1
+307
+At: 199 Number of nodes per subgraph: 1
+310
+At: 200 Number of nodes per subgraph: 1
+311
+At: 201 Number of nodes per subgraph: 1
+314
+At: 202 Number of nodes per subgraph: 1
+315
+At: 203 Number of nodes per subgraph: 1
+318
+At: 204 Number of nodes per subgraph: 1
+319
+At: 205 Number of nodes per subgraph: 1
+322
+At: 206 Number of nodes per subgraph: 1
+323
+At: 207 Number of nodes per subgraph: 1
+326
+At: 208 Number of nodes per subgraph: 1
+327
+At: 209 Number of nodes per subgraph: 1
+330
+At: 210 Number of nodes per subgraph: 1
+331
+At: 211 Number of nodes per subgraph: 1
+334
+At: 212 Number of nodes per subgraph: 1
+335
+At: 213 Number of nodes per subgraph: 1
+338
+At: 214 Number of nodes per subgraph: 1
+339
+At: 215 Number of nodes per subgraph: 1
+340
+At: 216 Number of nodes per subgraph: 1
+341
+At: 217 Number of nodes per subgraph: 1
+342
+At: 218 Number of nodes per subgraph: 1
+344
+At: 219 Number of nodes per subgraph: 1
+345
+At: 220 Number of nodes per subgraph: 1
+346
+At: 221 Number of nodes per subgraph: 1
+347
+At: 222 Number of nodes per subgraph: 1
+348
+At: 223 Number of nodes per subgraph: 1
+349
+At: 224 Number of nodes per subgraph: 1
+350
+At: 225 Number of nodes per subgraph: 1
+354
+At: 226 Number of nodes per subgraph: 1
+355
+At: 227 Number of nodes per subgraph: 1
+356
+At: 228 Number of nodes per subgraph: 1
+357
+At: 229 Number of nodes per subgraph: 1
+358
+At: 230 Number of nodes per subgraph: 1
+360
+At: 231 Number of nodes per subgraph: 1
+361
+At: 232 Number of nodes per subgraph: 1
+362
+At: 233 Number of nodes per subgraph: 1
+363
+At: 234 Number of nodes per subgraph: 1
+364
+At: 235 Number of nodes per subgraph: 1
+365
+At: 236 Number of nodes per subgraph: 1
+366
+At: 237 Number of nodes per subgraph: 1
+370
+At: 238 Number of nodes per subgraph: 1
+371
+At: 239 Number of nodes per subgraph: 1
+372
+At: 240 Number of nodes per subgraph: 1
+373
+At: 241 Number of nodes per subgraph: 1
+374
+At: 242 Number of nodes per subgraph: 1
+376
+At: 243 Number of nodes per subgraph: 1
+377
+At: 244 Number of nodes per subgraph: 1
+378
+At: 245 Number of nodes per subgraph: 1
+379
+At: 246 Number of nodes per subgraph: 1
+380
+At: 247 Number of nodes per subgraph: 1
+381
+At: 248 Number of nodes per subgraph: 1
+382
+At: 249 Number of nodes per subgraph: 1
+386
+At: 250 Number of nodes per subgraph: 1
+387
+At: 251 Number of nodes per subgraph: 1
+388
+At: 252 Number of nodes per subgraph: 1
+389
+At: 253 Number of nodes per subgraph: 1
+390
+At: 254 Number of nodes per subgraph: 1
+392
+At: 255 Number of nodes per subgraph: 1
+393
+At: 256 Number of nodes per subgraph: 1
+394
+At: 257 Number of nodes per subgraph: 1
+395
+At: 258 Number of nodes per subgraph: 1
+396
+At: 259 Number of nodes per subgraph: 1
+397
+At: 260 Number of nodes per subgraph: 1
+398
+At: 261 Number of nodes per subgraph: 1
+402
+At: 262 Number of nodes per subgraph: 1
+403
+At: 263 Number of nodes per subgraph: 1
+404
+At: 264 Number of nodes per subgraph: 1
+405
+At: 265 Number of nodes per subgraph: 1
+406
+At: 266 Number of nodes per subgraph: 1
+408
+At: 267 Number of nodes per subgraph: 1
+409
+At: 268 Number of nodes per subgraph: 1
+410
+At: 269 Number of nodes per subgraph: 1
+411
+At: 270 Number of nodes per subgraph: 1
+412
+At: 271 Number of nodes per subgraph: 1
+413
+At: 272 Number of nodes per subgraph: 1
+414
+At: 273 Number of nodes per subgraph: 1
+418
+At: 274 Number of nodes per subgraph: 1
+419
+At: 275 Number of nodes per subgraph: 1
+420
+At: 276 Number of nodes per subgraph: 1
+421
+At: 277 Number of nodes per subgraph: 1
+422
+At: 278 Number of nodes per subgraph: 1
+424
+At: 279 Number of nodes per subgraph: 1
+425
+At: 280 Number of nodes per subgraph: 1
+426
+At: 281 Number of nodes per subgraph: 1
+427
+At: 282 Number of nodes per subgraph: 1
+428
+At: 283 Number of nodes per subgraph: 1
+429
+At: 284 Number of nodes per subgraph: 1
+430
+At: 285 Number of nodes per subgraph: 1
+434
+At: 286 Number of nodes per subgraph: 1
+435
+At: 287 Number of nodes per subgraph: 1
+436
+At: 288 Number of nodes per subgraph: 1
+437
+At: 289 Number of nodes per subgraph: 1
+438
+At: 290 Number of nodes per subgraph: 1
+440
+At: 291 Number of nodes per subgraph: 1
+441
+At: 292 Number of nodes per subgraph: 1
+442
+At: 293 Number of nodes per subgraph: 1
+443
+At: 294 Number of nodes per subgraph: 1
+444
+At: 295 Number of nodes per subgraph: 1
+445
+At: 296 Number of nodes per subgraph: 1
+446
+At: 297 Number of nodes per subgraph: 1
+450
+At: 298 Number of nodes per subgraph: 1
+451
+At: 299 Number of nodes per subgraph: 1
+452
+At: 300 Number of nodes per subgraph: 1
+453
+At: 301 Number of nodes per subgraph: 1
+454
+At: 302 Number of nodes per subgraph: 1
+456
+At: 303 Number of nodes per subgraph: 1
+457
+At: 304 Number of nodes per subgraph: 1
+458
+At: 305 Number of nodes per subgraph: 1
+459
+At: 306 Number of nodes per subgraph: 1
+460
+At: 307 Number of nodes per subgraph: 1
+461
+At: 308 Number of nodes per subgraph: 1
+462
+At: 309 Number of nodes per subgraph: 1
+466
+At: 310 Number of nodes per subgraph: 1
+467
+At: 311 Number of nodes per subgraph: 1
+468
+At: 312 Number of nodes per subgraph: 1
+469
+At: 313 Number of nodes per subgraph: 1
+470
+At: 314 Number of nodes per subgraph: 1
+472
+At: 315 Number of nodes per subgraph: 1
+473
+At: 316 Number of nodes per subgraph: 1
+474
+At: 317 Number of nodes per subgraph: 1
+475
+At: 318 Number of nodes per subgraph: 1
+476
+At: 319 Number of nodes per subgraph: 1
+477
+At: 320 Number of nodes per subgraph: 1
+478
+At: 321 Number of nodes per subgraph: 1
+482
+At: 322 Number of nodes per subgraph: 1
+483
+At: 323 Number of nodes per subgraph: 1
+484
+At: 324 Number of nodes per subgraph: 1
+485
+At: 325 Number of nodes per subgraph: 1
+486
+At: 326 Number of nodes per subgraph: 1
+488
+At: 327 Number of nodes per subgraph: 1
+489
+At: 328 Number of nodes per subgraph: 1
+490
+At: 329 Number of nodes per subgraph: 1
+491
+At: 330 Number of nodes per subgraph: 1
+492
+At: 331 Number of nodes per subgraph: 1
+493
+At: 332 Number of nodes per subgraph: 1
+494
+At: 333 Number of nodes per subgraph: 1
+498
+Number of subgraphs: 334
+Number of nodes: 500
+Test case 17: success
+At: 0 Number of nodes per subgraph: 334
+0
+2
+4
+5
+14
+18
+19
+22
+23
+26
+30
+34
+37
+41
+43
+44
+48
+51
+52
+54
+56
+57
+58
+60
+61
+64
+65
+66
+68
+69
+83
+87
+98
+99
+101
+102
+104
+105
+106
+107
+108
+109
+110
+114
+116
+117
+118
+120
+124
+125
+126
+129
+130
+131
+134
+142
+146
+150
+151
+158
+159
+166
+167
+170
+171
+173
+174
+179
+180
+181
+184
+186
+188
+191
+194
+198
+199
+200
+202
+203
+204
+205
+206
+208
+209
+210
+211
+212
+213
+230
+242
+247
+251
+255
+258
+266
+267
+270
+275
+278
+282
+284
+285
+286
+288
+292
+294
+302
+307
+308
+310
+313
+315
+322
+326
+327
+330
+331
+343
+345
+348
+350
+369
+370
+376
+377
+378
+379
+380
+382
+390
+399
+401
+403
+407
+419
+422
+423
+427
+430
+431
+434
+435
+436
+437
+440
+441
+442
+443
+444
+446
+448
+450
+466
+470
+475
+478
+479
+480
+481
+482
+484
+485
+486
+494
+502
+511
+513
+517
+522
+526
+527
+536
+537
+538
+540
+541
+544
+545
+546
+548
+549
+550
+558
+562
+566
+567
+568
+569
+570
+571
+572
+573
+577
+578
+579
+583
+587
+590
+594
+595
+598
+601
+603
+607
+610
+611
+618
+625
+626
+627
+629
+630
+642
+643
+647
+650
+651
+654
+658
+659
+660
+661
+662
+671
+674
+675
+678
+682
+683
+690
+691
+694
+698
+699
+701
+706
+708
+709
+718
+723
+727
+730
+733
+737
+739
+742
+743
+746
+750
+751
+754
+755
+759
+763
+767
+769
+770
+771
+775
+777
+778
+779
+781
+782
+785
+788
+790
+798
+806
+823
+826
+827
+831
+833
+838
+839
+843
+846
+847
+851
+854
+855
+859
+870
+881
+882
+883
+886
+891
+895
+897
+898
+899
+902
+903
+906
+910
+911
+914
+922
+926
+927
+932
+933
+934
+937
+938
+939
+940
+941
+942
+947
+948
+950
+952
+956
+957
+960
+961
+962
+963
+964
+965
+979
+980
+982
+985
+986
+987
+988
+992
+995
+996
+At: 1 Number of nodes per subgraph: 1
+1
+At: 2 Number of nodes per subgraph: 1
+3
+At: 3 Number of nodes per subgraph: 3
+6
+722
+993
+At: 4 Number of nodes per subgraph: 1
+27
+At: 5 Number of nodes per subgraph: 7
+31
+91
+306
+471
+602
+614
+818
+At: 6 Number of nodes per subgraph: 1
+35
+At: 7 Number of nodes per subgraph: 5
+36
+449
+454
+539
+955
+At: 8 Number of nodes per subgraph: 2
+38
+776
+At: 9 Number of nodes per subgraph: 2
+40
+582
+At: 10 Number of nodes per subgraph: 1
+42
+At: 11 Number of nodes per subgraph: 1
+45
+At: 12 Number of nodes per subgraph: 5
+46
+49
+155
+163
+241
+At: 13 Number of nodes per subgraph: 2
+50
+498
+At: 14 Number of nodes per subgraph: 1
+53
+At: 15 Number of nodes per subgraph: 1
+59
+At: 16 Number of nodes per subgraph: 1
+62
+At: 17 Number of nodes per subgraph: 1
+67
+At: 18 Number of nodes per subgraph: 2
+70
+462
+At: 19 Number of nodes per subgraph: 6
+78
+133
+417
+519
+638
+834
+At: 20 Number of nodes per subgraph: 1
+82
+At: 21 Number of nodes per subgraph: 6
+86
+201
+366
+705
+774
+915
+At: 22 Number of nodes per subgraph: 5
+90
+172
+246
+726
+966
+At: 23 Number of nodes per subgraph: 3
+94
+411
+452
+At: 24 Number of nodes per subgraph: 6
+95
+195
+283
+503
+686
+687
+At: 25 Number of nodes per subgraph: 1
+100
+At: 26 Number of nodes per subgraph: 1
+115
+At: 27 Number of nodes per subgraph: 1
+121
+At: 28 Number of nodes per subgraph: 2
+122
+575
+At: 29 Number of nodes per subgraph: 4
+123
+506
+863
+936
+At: 30 Number of nodes per subgraph: 1
+128
+At: 31 Number of nodes per subgraph: 1
+132
+At: 32 Number of nodes per subgraph: 2
+147
+997
+At: 33 Number of nodes per subgraph: 5
+149
+410
+438
+862
+989
+At: 34 Number of nodes per subgraph: 1
+154
+At: 35 Number of nodes per subgraph: 7
+162
+335
+499
+710
+731
+762
+919
+At: 36 Number of nodes per subgraph: 6
+178
+281
+814
+822
+850
+953
+At: 37 Number of nodes per subgraph: 3
+182
+259
+954
+At: 38 Number of nodes per subgraph: 4
+185
+187
+189
+542
+At: 39 Number of nodes per subgraph: 1
+214
+At: 40 Number of nodes per subgraph: 3
+222
+309
+656
+At: 41 Number of nodes per subgraph: 1
+238
+At: 42 Number of nodes per subgraph: 3
+243
+317
+372
+At: 43 Number of nodes per subgraph: 3
+250
+347
+628
+At: 44 Number of nodes per subgraph: 2
+262
+338
+At: 45 Number of nodes per subgraph: 4
+263
+339
+673
+858
+At: 46 Number of nodes per subgraph: 1
+271
+At: 47 Number of nodes per subgraph: 4
+274
+290
+314
+605
+At: 48 Number of nodes per subgraph: 1
+279
+At: 49 Number of nodes per subgraph: 5
+280
+624
+700
+819
+923
+At: 50 Number of nodes per subgraph: 2
+289
+599
+At: 51 Number of nodes per subgraph: 1
+291
+At: 52 Number of nodes per subgraph: 1
+293
+At: 53 Number of nodes per subgraph: 5
+312
+402
+453
+732
+978
+At: 54 Number of nodes per subgraph: 1
+316
+At: 55 Number of nodes per subgraph: 4
+319
+467
+738
+747
+At: 56 Number of nodes per subgraph: 2
+321
+547
+At: 57 Number of nodes per subgraph: 1
+323
+At: 58 Number of nodes per subgraph: 1
+334
+At: 59 Number of nodes per subgraph: 3
+342
+615
+998
+At: 60 Number of nodes per subgraph: 1
+344
+At: 61 Number of nodes per subgraph: 1
+346
+At: 62 Number of nodes per subgraph: 1
+349
+At: 63 Number of nodes per subgraph: 1
+358
+At: 64 Number of nodes per subgraph: 1
+371
+At: 65 Number of nodes per subgraph: 1
+374
+At: 66 Number of nodes per subgraph: 3
+375
+622
+949
+At: 67 Number of nodes per subgraph: 1
+381
+At: 68 Number of nodes per subgraph: 1
+406
+At: 69 Number of nodes per subgraph: 1
+415
+At: 70 Number of nodes per subgraph: 2
+418
+735
+At: 71 Number of nodes per subgraph: 5
+426
+534
+695
+787
+946
+At: 72 Number of nodes per subgraph: 2
+445
+652
+At: 73 Number of nodes per subgraph: 1
+451
+At: 74 Number of nodes per subgraph: 1
+474
+At: 75 Number of nodes per subgraph: 4
+483
+604
+653
+981
+At: 76 Number of nodes per subgraph: 1
+507
+At: 77 Number of nodes per subgraph: 1
+514
+At: 78 Number of nodes per subgraph: 3
+515
+586
+657
+At: 79 Number of nodes per subgraph: 1
+518
+At: 80 Number of nodes per subgraph: 2
+523
+646
+At: 81 Number of nodes per subgraph: 4
+530
+619
+780
+890
+At: 82 Number of nodes per subgraph: 3
+531
+786
+907
+At: 83 Number of nodes per subgraph: 1
+535
+At: 84 Number of nodes per subgraph: 1
+563
+At: 85 Number of nodes per subgraph: 1
+591
+At: 86 Number of nodes per subgraph: 2
+600
+758
+At: 87 Number of nodes per subgraph: 1
+623
+At: 88 Number of nodes per subgraph: 1
+679
+At: 89 Number of nodes per subgraph: 1
+702
+At: 90 Number of nodes per subgraph: 1
+704
+At: 91 Number of nodes per subgraph: 1
+707
+At: 92 Number of nodes per subgraph: 1
+784
+At: 93 Number of nodes per subgraph: 1
+789
+At: 94 Number of nodes per subgraph: 1
+817
+At: 95 Number of nodes per subgraph: 1
+835
+At: 96 Number of nodes per subgraph: 1
+837
+At: 97 Number of nodes per subgraph: 1
+842
+At: 98 Number of nodes per subgraph: 1
+878
+At: 99 Number of nodes per subgraph: 1
+887
+At: 100 Number of nodes per subgraph: 1
+901
+At: 101 Number of nodes per subgraph: 1
+918
+At: 102 Number of nodes per subgraph: 1
+930
+At: 103 Number of nodes per subgraph: 1
+931
+At: 104 Number of nodes per subgraph: 1
+958
+At: 105 Number of nodes per subgraph: 1
+974
+At: 106 Number of nodes per subgraph: 1
+984
+At: 107 Number of nodes per subgraph: 1
+990
+At: 108 Number of nodes per subgraph: 1
+994
+Number of subgraphs: 109
+Number of nodes: 1000
+Test case 18: success
+At: 0 Number of nodes per subgraph: 43
+0
+2
+3
+4
+5
+6
+9
+13
+14
+18
+26
+33
+34
+35
+38
+39
+41
+42
+45
+47
+51
+54
+55
+57
+59
+65
+66
+69
+70
+73
+74
+77
+78
+79
+82
+83
+85
+87
+89
+90
+93
+94
+95
+At: 1 Number of nodes per subgraph: 1
+1
+At: 2 Number of nodes per subgraph: 9
+8
+21
+43
+49
+50
+53
+63
+75
+86
+At: 3 Number of nodes per subgraph: 6
+10
+29
+37
+46
+58
+67
+At: 4 Number of nodes per subgraph: 3
+11
+23
+61
+At: 5 Number of nodes per subgraph: 1
+12
+At: 6 Number of nodes per subgraph: 1
+17
+At: 7 Number of nodes per subgraph: 3
+19
+71
+81
+At: 8 Number of nodes per subgraph: 1
+22
+At: 9 Number of nodes per subgraph: 2
+25
+91
+At: 10 Number of nodes per subgraph: 1
+27
+At: 11 Number of nodes per subgraph: 1
+31
+Number of subgraphs: 12
+Number of nodes: 100
+Test case 19: success
+19/19 correct
