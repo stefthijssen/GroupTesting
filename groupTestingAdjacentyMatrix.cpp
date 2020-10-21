@@ -12,7 +12,7 @@ typedef pair<int, int> ii;
 typedef vector<ii> vii;
 typedef int64_t ll;
 
-double treshold = 1;
+double treshold = 0.25;
 
 struct Point
 {
@@ -46,6 +46,7 @@ private:
     }
 
 public:
+    AdjacencyMatrix(){}
     AdjacencyMatrix(int n)
     {
         this->n = n;
@@ -93,7 +94,6 @@ public:
         }
         if (visited[currentIndex])
         {
-            cerr << "curr index: " << currentIndex << endl;
             int next = currentIndex + 1;
             return findDenseSubGraph(next, pairs);
         }
@@ -264,11 +264,13 @@ int main()
          << flush << endl;
     int numCorrect = 0;
     // loop over all testcases
+    AdjacencyMatrix adjMatrix;
     for (int testcase = 1; testcase <= numCase; testcase++)
     {
         Input input = parseInput();
+        (&adjMatrix)->~AdjacencyMatrix();
+        new (&adjMatrix) AdjacencyMatrix(input.nNodes);
 
-        AdjacencyMatrix adjMatrix(input.nNodes);
         for (size_t i = 0; i < input.edges.size(); i++)
         {
             int a, b;
@@ -291,19 +293,19 @@ int main()
         {
             /* code */
             counter++;
-            cerr << " Number of nodes per subgraph: " << pairs.at(i).size() << endl
-                 << flush;
-            for (size_t j = 0; j < pairs.at(i).size(); j++)
-            {
-                cerr << "At: " << pairs.at(i).at(j) << endl
-                     << flush;
-            }
+            // cerr << " Number of nodes per subgraph: " << pairs.at(i).size() << endl
+            //      << flush;
+            // for (size_t j = 0; j < pairs.at(i).size(); j++)
+            // {
+            //     cerr << "At: " << pairs.at(i).at(j) << endl
+            //          << flush;
+            // }
             cout << "test " << pairs.at(i).at(0) << endl
                  << flush << endl;
             // cerr << pairs.at(i).at(0) << endl << flush << endl;
         }
 
-        cerr << "Number of subgraphs: " << counter << endl
+        cerr << "Number of subgraphs also number of tests: " << counter << endl
              << flush << endl;
         cerr << "Number of nodes: " << input.nNodes << endl
              << flush << endl;
