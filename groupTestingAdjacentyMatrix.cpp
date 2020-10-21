@@ -12,7 +12,7 @@ typedef pair<int, int> ii;
 typedef vector<ii> vii;
 typedef int64_t ll;
 
-double treshold = 0.25;
+double treshold = 1;
 
 struct Point
 {
@@ -102,19 +102,17 @@ public:
             density.push_back(diff);
         }
         float mean = accumulate(density.begin(), density.end(), 0.0) / n;
+        vector<int> accepted;
+
         // cerr << "mean: " << mean << endl;
         float acceptable = mean;
-        if (1 > mean + (mean * treshold))
-        {
-            acceptable = mean + (mean * treshold);
-        }
+
+        acceptable = mean + (mean * treshold);
+
         // cerr << "acceptable: " << acceptable << endl;
-        vector<int> accepted;
         accepted.push_back(currentIndex);
         for (size_t i = 0; i < n; i++)
         {
-            if (i == currentIndex)
-                continue;
             if (density[i] >= acceptable && visited[i] == false)
             {
                 visited[i] = true;
@@ -174,7 +172,8 @@ public:
             {
                 cerr << adj[i][j] << " ";
             }
-            cerr << endl;
+            cerr << endl
+                 << flush << endl;
         }
     }
 };
@@ -249,7 +248,8 @@ int main()
     int numCase;
     cin >> numCase;
     // using cerr prints it to console instead of to the server
-    cerr << "number of test cases: " << numCase << endl;
+    cerr << "number of test cases: " << numCase << endl
+         << flush << endl;
     int numCorrect = 0;
     // loop over all testcases
     for (int testcase = 1; testcase <= numCase; testcase++)
@@ -270,38 +270,33 @@ int main()
 
         pairs = adjMatrix.findDenseSubGraph(0, pairs);
         // adjMatrix.display();
+
+        // test everyone individually (basic solution, gets you no points)
+        vector<bool> infected(input.nNodes, false);
         int counter = 0;
 
         for (size_t i = 0; i < pairs.size(); i++)
         {
             /* code */
             counter++;
-
-            cerr << "At: " << i << " Number of nodes per subgraph: " << pairs.at(i).size() << endl
+            cerr << " Number of nodes per subgraph: " << pairs.at(i).size() << endl
                  << flush;
             for (size_t j = 0; j < pairs.at(i).size(); j++)
             {
-                cerr << pairs.at(i).at(j) << endl
+                cerr << "At: " << pairs.at(i).at(j) << endl
                      << flush;
             }
-        }
-
-        cerr << "Number of subgraphs: " << counter << endl;
-        cerr << "Number of nodes: " << input.nNodes << endl;
-
-        // test everyone individually (basic solution, gets you no points)
-        vector<bool> infected(input.nNodes, false);
-        for (int i = 0; i < input.nNodes; i++)
-        {
-            // always flush after endline, otherwise it might not send it
-            // immediately to the server but keep it in buffer.
-            cout << "test " << i << endl
+            cout << "test " << pairs.at(i).at(0) << endl
                  << flush << endl;
+            // cerr << pairs.at(i).at(0) << endl << flush << endl;
         }
-        // read in results of those tests
-        // note: separating sending/receiving means we don't have to wait
-        // each test for the packet to travel to the server and back.
-        for (int i = 0; i < input.nNodes; i++)
+
+        cerr << "Number of subgraphs: " << counter << endl
+             << flush << endl;
+        cerr << "Number of nodes: " << input.nNodes << endl
+             << flush << endl;
+
+        for (size_t i = 0; i < pairs.size(); i++)
         {
             string result;
             cin >> result;
@@ -311,7 +306,6 @@ int main()
             }
         }
 
-        // hand in the answer
         cout << "answer ";
         bool first = true;
         for (int i = 0; i < input.nNodes; i++)
@@ -328,6 +322,44 @@ int main()
         }
         cout << endl
              << flush;
+
+        // for (int i = 0; i < input.nNodes; i++)
+        // {
+        //     // always flush after endline, otherwise it might not send it
+        //     // immediately to the server but keep it in buffer.
+        //     cout << "test " << i << endl
+        //          << flush << endl;
+        // }
+        // read in results of those tests
+        // note: separating sending/receiving means we don't have to wait
+        // each test for the packet to travel to the server and back.
+        // for (int i = 0; i < input.nNodes; i++)
+        // {
+        //     string result;
+        //     cin >> result;
+        //     if (result == "true")
+        //     {
+        //         infected[i] = true;
+        //     }
+        // }
+
+        // hand in the answer
+        // cout << "answer ";
+        // bool first = true;
+        // for (int i = 0; i < input.nNodes; i++)
+        // {
+        //     if (infected[i])
+        //     {
+        //         if (not first)
+        //         {
+        //             cout << " ";
+        //         }
+        //         cout << i;
+        //         first = false;
+        //     }
+        // }
+        // cout << endl
+        //      << flush;
 
         // read in the result and show it to the user
         string result;
