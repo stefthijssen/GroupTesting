@@ -83,27 +83,28 @@ public:
     }
     vector<vector<int>> findDenseSubGraph(int currentIndex, vector<vector<int>> pairs)
     {
- 
 
         if (currentIndex >= n)
         {
-                  
+            vector<int> accepted;
+            accepted.push_back(currentIndex);
+            pairs.push_back(accepted);
             return pairs;
         }
         if (visited[currentIndex])
         {
-             cerr << "curr index: " << currentIndex << endl;
-            int next = currentIndex +1;
+            cerr << "curr index: " << currentIndex << endl;
+            int next = currentIndex + 1;
             return findDenseSubGraph(next, pairs);
         }
         visited[currentIndex] = true;
 
         vector<float> difference;
 
-
         for (size_t i = 0; i < n; i++)
         {
-            if (i == currentIndex){
+            if (i == currentIndex)
+            {
                 continue;
             }
             float diff = calcDifference(adj[currentIndex], adj[i]);
