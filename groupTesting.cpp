@@ -10,7 +10,6 @@ typedef vector<ii> vii;
 typedef int64_t ll;
 
 int main() {
-	// read credentials from a file named "credential"
 	fstream credFile("credentials");
 	string username, password;
 	credFile >>username >> password;
