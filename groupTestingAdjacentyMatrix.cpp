@@ -12,7 +12,7 @@ typedef pair<int, int> ii;
 typedef vector<ii> vii;
 typedef int64_t ll;
 
-double treshold = 0.0;
+double treshold = 0.25;
 
 struct Point
 {
@@ -96,6 +96,7 @@ public:
                 continue;
             if (density[i] >= acceptable)
             {
+                visited[i] = true;
                 accepted.push_back(i);
             }
         }
@@ -266,7 +267,7 @@ int main()
             /* code */
             counter++;
 
-            cerr << "Number of nodes per subgraph: " <<pairs.at(i).size() << endl;
+            cerr << "At: "<< i << " Number of nodes per subgraph: " <<pairs.at(i).size() << endl;
         }
 
         cerr << "Number of subgraphs: " << counter << endl;
