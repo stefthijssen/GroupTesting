@@ -9,8 +9,66 @@ typedef pair<int,int> ii;
 typedef vector<ii> vii;
 typedef int64_t ll;
 
+struct Input {
+	int nNodes;
+	int nEdges;
+	int nInfected;
+	long double infectionChance;
+	int minInfected;
+	int maxInfected;
+	vvi graph;
+	vii edges;
+};
+
+// Creates a graph adjecency list and a edge pairing list
+pair<vvi, vii> parseGraphAndEdges(int nEdges) {
+	vvi graph(nEdges);
+	vii edges(nEdges);
+	for (int i = 0; i < nEdges; i++) {
+		int a, b;
+		cin >> a >> b;
+		graph[a].push_back(b);
+		graph[b].push_back(a);
+		ii edge1 = { a, b };
+		ii edge2 = { b, a };
+		edges.push_back(edge1);
+		edges.push_back(edge2);
+	}
+
+	pair<vvi, vii> graphAndEdges = { graph, edges };
+
+	return graphAndEdges;
+}
+
+// Parses the cin into the Input struct
+Input parseInput() {
+	int nNodes, nEdges, nInfected;
+	cin >> nNodes >> nEdges >> nInfected;
+	long double infectionChance;
+	cin >> infectionChance;
+	int minInfected, maxInfected;
+	cin >> minInfected >> maxInfected;
+	
+	pair<vvi, vii> graphAndEdges = parseGraphAndEdges(nEdges);
+	vvi graph = graphAndEdges.first;
+	vii edges = graphAndEdges.second;
+
+	Input input = {
+		nNodes,
+		nEdges,
+		nInfected,
+		infectionChance,
+		minInfected,
+		maxInfected,
+		graph,
+		edges
+	};
+
+	return input;
+}
+
 int main() {
-	fstream credFile("credentials");
+	fstream credFile("../credentials");
 	string username, password;
 	credFile >>username >> password;
 	// and send them to the server
@@ -25,24 +83,11 @@ int main() {
 	int numCorrect = 0;
 	// loop over all testcases
 	for (int testcase = 1; testcase <= numCase; testcase++) {
-		// read in testcase
-		int numNode, numEdge, numInitInfected;
-		cin >> numNode >> numEdge >> numInitInfected;
-		long double infectionRate;
-		cin >> infectionRate;
-		int minInfected, maxInfected;
-		cin >> minInfected >> maxInfected;
-		vvi adjList(numNode);
-		for (int edge = 0; edge < numEdge; edge++) {
-			int from, to;
-			cin >> from >> to;
-			adjList[from].push_back(to);
-			adjList[to].push_back(from);
-		}
+		Input input = parseInput();
 
 		// test everyone individually (basic solution, gets you no points)
-		vector<bool> infected(numNode,false);
-		for (int i = 0; i < numNode; i++) {
+		vector<bool> infected(input.nNodes,false);
+		for (int i = 0; i < input.nNodes; i++) {
 			// always flush after endline, otherwise it might not send it
 			// immediately to the server but keep it in buffer.
 			cout << "test " << i << endl << flush << endl;
@@ -50,7 +95,7 @@ int main() {
 		// read in results of those tests
 		// note: separating sending/receiving means we don't have to wait
 		// each test for the packet to travel to the server and back.
-		for (int i = 0; i < numNode; i++) {
+		for (int i = 0; i < input.nNodes; i++) {
 			string result;
 			cin >> result;
 			if (result == "true") {
@@ -61,7 +106,7 @@ int main() {
 		// hand in the answer
 		cout << "answer ";
 		bool first = true;
-		for (int i = 0; i < numNode; i++) {
+		for (int i = 0; i < input.nNodes; i++) {
 			if (infected[i]) {
 				if (not first) {
 					cout << " ";
