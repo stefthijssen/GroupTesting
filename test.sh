@@ -1,1 +1,1 @@
-ncat -c build/GroupTesting group-testing.maarse.xyz 6525
+cd build && ncat -c ./GroupTesting group-testing.maarse.xyz 6525
