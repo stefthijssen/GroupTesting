@@ -83,10 +83,13 @@ public:
     vector<vector<int>> findDenseSubGraph(int currentIndex, vector<vector<int>> pairs)
     {
         vector<float> density;
-
+        if(currentIndex >= n){
+            return pairs;
+        }
         if (visited[currentIndex])
         {
-            return pairs;
+            currentIndex = currentIndex +1;
+            return findDenseSubGraph(currentIndex,pairs);
         }
         visited[currentIndex] = true;
         for (size_t i = 0; i < n; i++)

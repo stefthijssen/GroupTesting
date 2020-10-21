@@ -1,0 +1,3 @@
+[ 50%] Built target GroupTestingAdjacentyMatrix
+[100%] Built target GroupTesting
+number of test cases: 19
