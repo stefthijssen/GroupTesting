@@ -101,18 +101,20 @@ public:
             float diff = calcDifference(adj[currentIndex], adj[i]);
             density.push_back(diff);
         }
-        float mean = accumulate(density.begin(), density.end(), 0.0) / n;
+        float average = accumulate(density.begin(), density.end(), 0.0) / n;
         vector<int> accepted;
 
-        // cerr << "mean: " << mean << endl;
-        float acceptable = mean;
+        // cerr << "average: " << average << endl;
+        float acceptable = average;
 
-        acceptable = mean + (mean * treshold);
+        acceptable = average + (average * treshold);
 
         // cerr << "acceptable: " << acceptable << endl;
         accepted.push_back(currentIndex);
         for (size_t i = 0; i < n; i++)
         {
+            if (i == currentIndex)
+                continue;
             if (density[i] >= acceptable && visited[i] == false)
             {
                 visited[i] = true;
