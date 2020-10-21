@@ -9,6 +9,15 @@ typedef pair<int,int> ii;
 typedef vector<ii> vii;
 typedef int64_t ll;
 
+typedef struct Node {
+	int index;
+	vi adjecentNodes;
+	vi visitedNodes;
+	vi toVisitNodes;
+	struct Node* prev = NULL;
+	bool visited = false;
+} Node;
+
 struct Input {
 	int nNodes;
 	int nEdges;
@@ -16,6 +25,7 @@ struct Input {
 	long double infectionChance;
 	int minInfected;
 	int maxInfected;
+	vector<Node> nodeGraph;
 	vvi graph;
 	vii edges;
 };
@@ -40,6 +50,19 @@ pair<vvi, vii> parseGraphAndEdges(int nEdges) {
 	return graphAndEdges;
 }
 
+vector<Node> createNodeGraph(int nNodes, vvi graph) {
+	vector<Node> nodeGraph(nNodes);
+
+	for (int i = 0; i < (int) graph.size(); i++) {
+		Node node = {
+			i,
+			graph[i]
+		};
+	}
+
+	return nodeGraph;
+}
+
 // Parses the cin into the Input struct
 Input parseInput() {
 	int nNodes, nEdges, nInfected;
@@ -52,6 +75,7 @@ Input parseInput() {
 	pair<vvi, vii> graphAndEdges = parseGraphAndEdges(nEdges);
 	vvi graph = graphAndEdges.first;
 	vii edges = graphAndEdges.second;
+	vector<Node> nodeGraph = createNodeGraph(nNodes, graph);
 
 	Input input = {
 		nNodes,
@@ -60,6 +84,7 @@ Input parseInput() {
 		infectionChance,
 		minInfected,
 		maxInfected,
+		nodeGraph,
 		graph,
 		edges
 	};
