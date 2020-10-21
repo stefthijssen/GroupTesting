@@ -39,6 +39,11 @@ private:
         int arrSize = *(&arr + 1) - arr;
         return arrSize;
     }
+    int arraySize(float arr[])
+    {
+        int arrSize = *(&arr + 1) - arr;
+        return arrSize;
+    }
 
 public:
     AdjacencyMatrix(int n)
@@ -77,24 +82,34 @@ public:
     }
     vector<vector<int>> findDenseSubGraph(int currentIndex, vector<vector<int>> pairs)
     {
+        vector<float> density;
+
         if (visited[currentIndex])
+        {
             return pairs;
+        }
         visited[currentIndex] = true;
-        float density[n];
         for (size_t i = 0; i < n; i++)
         {
             if (i == currentIndex)
                 continue;
-            density[i] = calcDifference(adj[currentIndex], adj[i]);
+            float diff = calcDifference(adj[currentIndex], adj[i]);
+            density.push_back(diff);
         }
-        float mean = calcMean(density);
-        float acceptable = mean + (mean * treshold);
+        float mean = accumulate(density.begin(), density.end(), 0.0) / n;
+        // cerr << "mean: " << mean << endl;
+        float acceptable = mean;
+        if (1 > mean + (mean * treshold))
+        {
+            acceptable = mean + (mean * treshold);
+        }
+        // cerr << "acceptable: " << acceptable << endl;
         vector<int> accepted;
         for (size_t i = 0; i < n; i++)
         {
             if (i == currentIndex)
                 continue;
-            if (density[i] >= acceptable)
+            if (density[i] >= acceptable && visited[i] == false)
             {
                 visited[i] = true;
                 accepted.push_back(i);
@@ -104,17 +119,7 @@ public:
         currentIndex = currentIndex + 1;
         return findDenseSubGraph(currentIndex, pairs);
     }
-    float calcMean(float *arr)
-    {
-        float total = 0;
-        for (size_t i = 0; i < n; i++)
-        {
-            total += arr[i];
-        }
-        total /= n;
-        return total;
-    }
-    float calcDifference(int *arr1, int *arr2)
+    float calcDifference(int arr1[], int arr2[])
     {
         float diff = (float)n;
         for (size_t i = 0; i < n; i++)
@@ -124,7 +129,6 @@ public:
                 diff--;
             }
         }
-
         return diff / n;
     }
     void bfs(int src)
@@ -267,11 +271,17 @@ int main()
             /* code */
             counter++;
 
-            cerr << "At: "<< i << " Number of nodes per subgraph: " <<pairs.at(i).size() << endl;
+            cerr << "At: " << i << " Number of nodes per subgraph: " << pairs.at(i).size() << endl
+                 << flush;
+            for (size_t j = 0; j < pairs.at(i).size(); j++)
+            {
+                cerr << pairs.at(i).at(j) << endl
+                     << flush;
+            }
         }
 
         cerr << "Number of subgraphs: " << counter << endl;
-        cerr << "Number of nodes: " <<input.nNodes << endl;
+        cerr << "Number of nodes: " << input.nNodes << endl;
 
         // test everyone individually (basic solution, gets you no points)
         vector<bool> infected(input.nNodes, false);
