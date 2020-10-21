@@ -12,7 +12,7 @@ typedef pair<int, int> ii;
 typedef vector<ii> vii;
 typedef int64_t ll;
 
-double treshold = 0.25;
+double treshold = 0.0;
 
 struct Point
 {
@@ -87,9 +87,6 @@ public:
 
         if (currentIndex >= n)
         {
-            vector<int> accepted;
-            accepted.push_back(currentIndex);
-            pairs.push_back(accepted);
             return pairs;
         }
         if (visited[currentIndex])
@@ -293,13 +290,13 @@ int main()
         {
             /* code */
             counter++;
-            // cerr << " Number of nodes per subgraph: " << pairs.at(i).size() << endl
-            //      << flush;
-            // for (size_t j = 0; j < pairs.at(i).size(); j++)
-            // {
-            //     cerr << "At: " << pairs.at(i).at(j) << endl
-            //          << flush;
-            // }
+            cerr << " Number of nodes per subgraph: " << pairs.at(i).size() << endl
+                 << flush;
+            for (size_t j = 0; j < pairs.at(i).size(); j++)
+            {
+                cerr << "At: " << pairs.at(i).at(j) << endl
+                     << flush;
+            }
             cout << "test " << pairs.at(i).at(0) << endl
                  << flush << endl;
             // cerr << pairs.at(i).at(0) << endl << flush << endl;
