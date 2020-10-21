@@ -59,6 +59,7 @@ public:
                 adj[i][j] = 0;
             }
         }
+        resetVisited();
     }
     int size()
     {
@@ -82,27 +83,34 @@ public:
     }
     vector<vector<int>> findDenseSubGraph(int currentIndex, vector<vector<int>> pairs)
     {
+ 
+
         if (currentIndex >= n)
         {
+                  
             return pairs;
         }
-        vector<float> density;
-
         if (visited[currentIndex])
         {
-            currentIndex = currentIndex + 1;
-            return findDenseSubGraph(currentIndex, pairs);
+             cerr << "curr index: " << currentIndex << endl;
+            int next = currentIndex +1;
+            return findDenseSubGraph(next, pairs);
         }
         visited[currentIndex] = true;
+
+        vector<float> difference;
+
+
         for (size_t i = 0; i < n; i++)
         {
-            if (i == currentIndex)
+            if (i == currentIndex){
                 continue;
+            }
             float diff = calcDifference(adj[currentIndex], adj[i]);
-            density.push_back(diff);
+            difference.push_back(diff);
         }
-        float average = accumulate(density.begin(), density.end(), 0.0) / n;
-        vector<int> accepted;
+
+        float average = accumulate(difference.begin(), difference.end(), 0.0) / n;
 
         // cerr << "average: " << average << endl;
         float acceptable = average;
@@ -110,20 +118,21 @@ public:
         acceptable = average + (average * treshold);
 
         // cerr << "acceptable: " << acceptable << endl;
+        vector<int> accepted;
         accepted.push_back(currentIndex);
         for (size_t i = 0; i < n; i++)
         {
             if (i == currentIndex)
                 continue;
-            if (density[i] >= acceptable && visited[i] == false)
+            if (difference[i] >= acceptable && visited[i] == false)
             {
                 visited[i] = true;
                 accepted.push_back(i);
             }
         }
         pairs.push_back(accepted);
-        currentIndex = currentIndex + 1;
-        return findDenseSubGraph(currentIndex, pairs);
+        int next = currentIndex + 1;
+        return findDenseSubGraph(next, pairs);
     }
     float calcDifference(int arr1[], int arr2[])
     {
