@@ -1,0 +1,5 @@
+Scanning dependencies of target GroupTestingAdjacentyMatrix
+[ 25%] Building CXX object CMakeFiles/GroupTestingAdjacentyMatrix.dir/groupTestingAdjacentyMatrix.cpp.o
+[ 50%] Linking CXX executable GroupTestingAdjacentyMatrix
+[ 50%] Built target GroupTestingAdjacentyMatrix
+[100%] Built target GroupTesting

@@ -12,7 +12,7 @@ typedef pair<int, int> ii;
 typedef vector<ii> vii;
 typedef int64_t ll;
 
-double treshold = 0.0;
+float treshold = 0.8;
 
 struct Point
 {
@@ -115,7 +115,7 @@ public:
         // float average = accumulate(difference.begin(), difference.end(), 0.0) / n;
 
         // float acceptable = average;
-        float acceptable = 0.75;
+        float acceptable = treshold;
 
         // acceptable = average + (average * treshold);
 
@@ -142,7 +142,7 @@ public:
         float diff = (float)n;
         for (size_t i = 0; i < n; i++)
         {
-            if (arr1[i] == arr2[i])
+            if (arr1[i] != arr2[i])
             {
                 diff--;
             }
