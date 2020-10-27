@@ -46,7 +46,7 @@ private:
     }
 
 public:
-    AdjacencyMatrix(){}
+    AdjacencyMatrix() {}
     AdjacencyMatrix(int n)
     {
         this->n = n;
@@ -58,6 +58,10 @@ public:
             for (size_t j = 0; j < n; j++)
             {
                 adj[i][j] = 0;
+                if (i == j)
+                {
+                    adj[i][j] = 1;
+                }
             }
         }
         resetVisited();
@@ -96,7 +100,7 @@ public:
         }
         visited[currentIndex] = true;
 
-        vector<float> difference;
+        float difference[n];
 
         for (size_t i = 0; i < n; i++)
         {
@@ -105,21 +109,22 @@ public:
                 continue;
             }
             float diff = calcDifference(adj[currentIndex], adj[i]);
-            difference.push_back(diff);
+            difference[i] = diff;
         }
 
-        float average = accumulate(difference.begin(), difference.end(), 0.0) / n;
+        // float average = accumulate(difference.begin(), difference.end(), 0.0) / n;
 
-        // cerr << "average: " << average << endl;
-        float acceptable = average;
+        // float acceptable = average;
+        float acceptable = 0.75;
 
-        acceptable = average + (average * treshold);
+        // acceptable = average + (average * treshold);
 
-        // cerr << "acceptable: " << acceptable << endl;
         vector<int> accepted;
         accepted.push_back(currentIndex);
         for (size_t i = 0; i < n; i++)
         {
+            // cerr << "At: " << i << "Difference: " << difference[i] << endl;
+
             if (i == currentIndex)
                 continue;
             if (difference[i] >= acceptable && visited[i] == false)
@@ -137,7 +142,7 @@ public:
         float diff = (float)n;
         for (size_t i = 0; i < n; i++)
         {
-            if (arr1[i] != arr2[i])
+            if (arr1[i] == arr2[i])
             {
                 diff--;
             }
@@ -202,6 +207,7 @@ struct Input
 // Parses the cin into the Input struct
 Input parseInput()
 {
+
     int nNodes, nEdges, nInfected;
     cin >> nNodes >> nEdges >> nInfected;
     long double infectionChance;
@@ -278,10 +284,9 @@ int main()
         // adjMatrix.dfs(0);
         // adjMatrix.bfs(0);
         vector<vector<int>> pairs;
+        vector<vector<float>> diffs;
 
         pairs = adjMatrix.findDenseSubGraph(0, pairs);
-        // adjMatrix.display();
-
         // test everyone individually (basic solution, gets you no points)
         vector<bool> infected(input.nNodes, false);
         int counter = 0;
@@ -301,7 +306,7 @@ int main()
                  << flush << endl;
             // cerr << pairs.at(i).at(0) << endl << flush << endl;
         }
-
+        // adjMatrix.display();
         cerr << "Number of subgraphs also number of tests: " << counter << endl
              << flush << endl;
         cerr << "Number of nodes: " << input.nNodes << endl
