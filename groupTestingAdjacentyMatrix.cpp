@@ -12,7 +12,7 @@ typedef pair<int, int> ii;
 typedef vector<ii> vii;
 typedef int64_t ll;
 
-float treshold = 0.8;
+float treshold = 0.6;
 
 struct Point
 {
@@ -115,7 +115,7 @@ public:
         // float average = accumulate(difference.begin(), difference.end(), 0.0) / n;
 
         // float acceptable = average;
-        float acceptable = treshold;
+        float acceptable = 0.8;
 
         // acceptable = average + (average * treshold);
 
@@ -139,15 +139,25 @@ public:
     }
     float calcDifference(int arr1[], int arr2[])
     {
-        float diff = (float)n;
+        float counter = 0;
         for (size_t i = 0; i < n; i++)
         {
-            if (arr1[i] != arr2[i])
+            if (arr1[i] == 1)
+            {
+                counter++;
+            }
+        }
+
+        float diff = counter;
+        for (size_t i = 0; i < n; i++)
+        {
+            if (arr1[i] && arr2[i])
             {
                 diff--;
             }
         }
-        return diff / n;
+        // cerr << diff << endl;
+        return (counter - (counter * diff)) / counter;
     }
     void bfs(int src)
     {
@@ -295,14 +305,17 @@ int main()
         {
             /* code */
             counter++;
-            cerr << " Number of nodes per subgraph: " << pairs.at(i).size() << endl
-                 << flush;
+            // cerr << " Number of nodes per subgraph: " << pairs.at(i).size() << endl
+            //      << flush;
+            cout << "test ";
             for (size_t j = 0; j < pairs.at(i).size(); j++)
             {
-                cerr << "At: " << pairs.at(i).at(j) << endl
-                     << flush;
+                // cerr << "At: " << pairs.at(i).at(j) << endl
+                //      << flush;
+                cout << pairs.at(i).at(j);
+                cout << " ";
             }
-            cout << "test " << pairs.at(i).at(0) << endl
+            cout << endl
                  << flush << endl;
             // cerr << pairs.at(i).at(0) << endl << flush << endl;
         }
@@ -318,6 +331,7 @@ int main()
             cin >> result;
             if (result == "true")
             {
+                cerr << i << endl;
                 infected[i] = true;
             }
         }
