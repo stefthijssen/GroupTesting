@@ -89,6 +89,9 @@ public:
             }
         }
     }
+    void setVisited(int n, bool value) {
+        visited[n] = value;
+    }
     vector<vector<int>> findDenseSubGraph(int currentIndex, vector<vector<int>> pairs)
     {
 
@@ -145,7 +148,7 @@ public:
         }
         float answer = diff/(averageGraphDensity*2);
         return answer;
-    }
+    } 
     void bfs(int src)
     {
         resetVisited();
@@ -204,7 +207,6 @@ struct Input
 // Parses the cin into the Input struct
 Input parseInput()
 {
-
     int nNodes, nEdges, nInfected;
     cin >> nNodes >> nEdges >> nInfected;
     long double infectionChance;
@@ -248,7 +250,7 @@ Input parseInput()
 void testGraph(vi pair) {
 
     /* DEBUG */
-    // cerr << " Number of nodes per subgraph: " << pair.size() << endl << flush;
+    cerr << " Number of nodes per subgraph: " << pair.size() << endl << flush;
     /* DEBUG */
 
     cout << "test";
@@ -269,7 +271,7 @@ void testGraph(vi pair) {
     /* DEBUG */
 }
 
-void updateInfected(vi subgraph, vector<bool> infected, vvi toTest) {
+void updateInfected(vi subgraph, vector<bool> &infected, vvi &toTest) {
     string result;
     cin >> result;
     bool boolResult;
@@ -293,21 +295,61 @@ void updateInfected(vi subgraph, vector<bool> infected, vvi toTest) {
     }
 }
 
-void manualTest(vvi toTest, vector<bool> infected) {
-    vvi result;
-
+void manualTest(vvi toTest, vector<bool> &infected) {
     for (size_t i = 0; i < toTest.size(); i++) {
-        testGraph(toTest.at(i));
-        updateInfected(toTest.at(i), infected, result);
+        for (size_t j = 0; j < toTest.at(i).size(); j++) {
+            cout << "test " << toTest.at(i).at(j) << endl << flush << endl;
+        }
     }
 
-    if (result.size() != 0) {
-        // TODO: remove later
-        cerr << "ERROR THIS SHOULDN'T HAPPEN" << endl;
+    for (size_t i = 0; i < toTest.size(); i++) {
+        for (size_t j = 0; j < toTest.at(i).size(); j++) {
+            string result;
+            cin >> result;
+            bool boolResult;
+            if (result == "true")
+            {
+                boolResult = true;
+            } else {
+                boolResult = false;
+            }
+
+            infected[toTest.at(i).at(j)] = boolResult;
+        }
     }
 }
 
-void runTestCase(AdjacencyMatrix adjMatrix, vector<bool> infected) {
+void unvisitPairsInMatrix(vvi pairs, AdjacencyMatrix &adjMatrix) {
+    for (size_t i = 0; i < pairs.size(); i++) {
+        for (size_t j = 0; j < pairs.at(i).size(); j++) {
+            adjMatrix.setVisited(pairs.at(i).at(j), false);
+        }
+    }
+}
+
+void recursiveTest(AdjacencyMatrix &adjMatrix, vvi inputPairs, vector<bool> &infected, int c) {
+    if (c >= 5) {
+        manualTest(inputPairs, infected);
+    }
+    unvisitPairsInMatrix(inputPairs, adjMatrix);
+    vector<vector<int>> pairs;
+    pairs = adjMatrix.findDenseSubGraph(0, pairs);
+    vvi toTest;
+
+    for (size_t i = 0; i < pairs.size(); i++)
+    {
+        testGraph(pairs.at(i));
+        updateInfected(pairs.at(i), infected, toTest);
+    }
+
+    if (toTest.size() == 0) {
+        return;
+    }
+
+    recursiveTest(adjMatrix, toTest, infected, c++);
+}
+
+void runTestCase(AdjacencyMatrix &adjMatrix, vector<bool> &infected) {
     vector<vector<int>> pairs;
 
     pairs = adjMatrix.findDenseSubGraph(0, pairs);
@@ -323,10 +365,11 @@ void runTestCase(AdjacencyMatrix adjMatrix, vector<bool> infected) {
     // This can be replaced by recursion later on.
     manualTest(toTest, infected);
 
+    // Test the rest manually
+    manualTest(toTest, infected);
 }
 
-void answerTestCase(vector<bool> infected, int nNodes) {
-    cout << "answer ";
+void answerTestCase(vector<bool> &infected, int nNodes) {
     bool first = true;
     for (int i = 0; i < nNodes; i++)
     {
@@ -368,7 +411,7 @@ void handleCredentials() {
     cout << password << endl << flush;
 }
 
-void runTestCases(int numCase, int numCorrect) {
+void runTestCases(int numCase, int &numCorrect) {
     for (int testcase = 1; testcase <= numCase; testcase++)
     {
         Input input = parseInput();
