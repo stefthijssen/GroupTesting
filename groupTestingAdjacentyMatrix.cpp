@@ -103,13 +103,6 @@ public:
         }
         visited[currentIndex] = true;
 
-        float *difference = new float[n];
-
-        for (size_t i = 0; i < n; i++)
-        {
-            float diff = calcDifference(adj[currentIndex], adj[i]);
-            difference[i] = diff;
-        }
 
         // float average = accumulate(difference.begin(), difference.end(), 0.0) / n;
 
@@ -122,11 +115,14 @@ public:
         accepted.push_back(currentIndex);
         for (size_t i = 0; i < n; i++)
         {
-            cerr << "At: " << i << "Difference: " << difference[i] << endl;
 
             if (i == currentIndex)
                 continue;
-            if (difference[i] <= acceptable && visited[i] == false)
+
+            float diff = calcDifference(adj[currentIndex], adj[i]);
+            cerr << "At: " << i << "Difference: " << diff << endl;
+
+            if (diff <= acceptable && visited[i] == false)
             {
                 visited[i] = true;
                 accepted.push_back(i);
@@ -134,7 +130,6 @@ public:
         }
         pairs.push_back(accepted);
         int next = currentIndex + 1;
-        delete [] difference;
         return findDenseSubGraph(next, pairs);
     }
     float calcDifference(int arr1[], int arr2[])
