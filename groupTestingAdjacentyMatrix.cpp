@@ -13,21 +13,25 @@ typedef pair<int, int> ii;
 typedef vector<ii> vii;
 typedef int64_t ll;
 
-float treshold = 0.25;
-
-struct Point
+float treshold = -0.1;
+int minGroups = 2;
+struct Input
 {
-    float diff;
-    int source;
-    int dest;
-    bool visited = false;
+    int nNodes;
+    int nEdges;
+    int nInfected;
+    float infectionChance;
+    int minInfected;
+    int maxInfected;
+    vvi graph;
+    vii edges;
 };
 
 class AdjacencyMatrix
 {
 private:
     int n;
-    int nEdges;
+    Input input;
     int **adj;
     bool *visited;
 
@@ -49,10 +53,10 @@ private:
 
 public:
     AdjacencyMatrix() {}
-    AdjacencyMatrix(int n, int nEdges)
+    AdjacencyMatrix(int n, Input input)
     {
         this->n = n;
-        this->nEdges = nEdges;
+        this->input = input;
         visited = new bool[n];
         adj = new int *[n];
         for (size_t i = 0; i < n; i++)
@@ -103,41 +107,65 @@ public:
         }
         visited[currentIndex] = true;
 
-  
-
-      
-
         // float average = accumulate(difference.begin(), difference.end(), 0.0) / n;
 
         // float acceptable = average;
-        float acceptable = treshold;
+        cerr << "min infected: " << input.minInfected << endl;
+        cerr << "max infected: " << input.maxInfected << endl;
+        cerr << "N infected: " << input.nInfected << endl;
+        cerr << "chance infected: " << input.infectionChance << endl;
+        cerr << "nodes : " << input.nNodes << endl;
 
+        float acceptable = 1 - input.infectionChance + treshold;
+
+        // cerr << " Acceptable rate: " << acceptable << endl;
         // acceptable = average + (average * treshold);
 
         vector<int> accepted;
         accepted.push_back(currentIndex);
-        for (size_t i = 0; i < n; i++)
+        int next;
+        if (input.nEdges < n || input.infectionChance < 0.1)
         {
-            float diff = calcDifference(adj[currentIndex], adj[i]);
-            // cerr << "At: " << i << "Difference: " << diff << endl;
-
-            if (i == currentIndex)
-                continue;
-            if (diff<= acceptable && visited[i] == false)
+            minGroups = n % input.maxInfected;
+            for (size_t i = currentIndex; i < currentIndex + (n / minGroups); i++)
             {
-                visited[i] = true;
+                if (i == currentIndex)
+                    continue;
                 accepted.push_back(i);
+                visited[i] = true;
             }
+            next = currentIndex + (n / minGroups);
+        }
+        else
+        {
+            for (size_t i = 0; i < n; i++)
+            {
+                float diff = calcDifference(adj[currentIndex], adj[i]);
+                // cerr << "At: " << i << "Difference: " << diff << endl;
+
+                if (i == currentIndex)
+                    continue;
+                // cerr << diff << endl;
+                if (diff <= acceptable && visited[i] == false)
+                {
+                    visited[i] = true;
+                    accepted.push_back(i);
+                }
+            }
+
+            next = currentIndex + 1;
         }
         pairs.push_back(accepted);
-        int next = currentIndex + 1;
-
         return findDenseSubGraph(next, pairs);
     }
     float calcDifference(int arr1[], int arr2[])
     {
-        float averageGraphDensity = ceil(nEdges/n);
-        float diff = averageGraphDensity*2;
+        if (input.nEdges < 1)
+        {
+            return 1;
+        }
+        float averageGraphDensity = ceil(input.nEdges / n);
+        float diff = averageGraphDensity * 2;
         for (size_t i = 0; i < n; i++)
         {
             if (arr1[i] == arr2[i] && arr1[i] == 1)
@@ -145,7 +173,8 @@ public:
                 diff--;
             }
         }
-        float answer = diff/(averageGraphDensity*2);
+        // cerr << averageGraphDensity << diff << endl;
+        float answer = diff / (averageGraphDensity * 2);
         return answer;
     }
     void bfs(int src)
@@ -191,25 +220,13 @@ public:
     }
 };
 
-struct Input
-{
-    int nNodes;
-    int nEdges;
-    int nInfected;
-    long double infectionChance;
-    int minInfected;
-    int maxInfected;
-    vvi graph;
-    vii edges;
-};
-
 // Parses the cin into the Input struct
 Input parseInput()
 {
 
     int nNodes, nEdges, nInfected;
     cin >> nNodes >> nEdges >> nInfected;
-    long double infectionChance;
+    float infectionChance;
     cin >> infectionChance;
     int minInfected, maxInfected;
     cin >> minInfected >> maxInfected;
@@ -246,9 +263,11 @@ Input parseInput()
 
     return input;
 }
-void testGraph(vi pair) {
+void testGraph(vi pair)
+{
     /* DEBUG */
-    cerr << " Number of nodes per subgraph: " << pair.size() << endl << flush;
+    cerr << " Number of nodes per subgraph: " << pair.size() << endl
+         << flush;
     /* DEBUG */
 
     cout << "test";
@@ -262,14 +281,16 @@ void testGraph(vi pair) {
         cout << pair.at(j);
     }
 
-    cout << endl << flush << endl;
-    
+    cout << endl
+         << flush << endl;
+
     /* DEBUG */
     // cerr << pair.at(0) << endl << flush << endl;
     /* DEBUG */
 }
 
-void updateInfected(vi subgraph, vector<bool> &infected, vvi &toTest) {
+void updateInfected(vi subgraph, vector<bool> &infected, vvi &toTest)
+{
     string result;
     cin >> result;
     bool boolResult;
@@ -279,36 +300,48 @@ void updateInfected(vi subgraph, vector<bool> &infected, vvi &toTest) {
         // cerr << index << endl;
         /* DEBUG */
 
-        if (subgraph.size() > 1) {
+        if (subgraph.size() > 1)
+        {
             toTest.push_back(subgraph);
         }
 
         boolResult = true;
-    } else {
+    }
+    else
+    {
         boolResult = false;
     }
 
-    for (int j = 0; j < subgraph.size(); j++) {
+    for (int j = 0; j < subgraph.size(); j++)
+    {
         infected[subgraph.at(j)] = boolResult;
     }
 }
 
-void manualTest(vvi toTest, vector<bool> &infected) {
-    for (size_t i = 0; i < toTest.size(); i++) {
-        for (size_t j = 0; j < toTest.at(i).size(); j++) {
-            cout << "test " << toTest.at(i).at(j) << endl << flush << endl;
+void manualTest(vvi toTest, vector<bool> &infected)
+{
+    for (size_t i = 0; i < toTest.size(); i++)
+    {
+        for (size_t j = 0; j < toTest.at(i).size(); j++)
+        {
+            cout << "test " << toTest.at(i).at(j) << endl
+                 << flush << endl;
         }
     }
 
-    for (size_t i = 0; i < toTest.size(); i++) {
-        for (size_t j = 0; j < toTest.at(i).size(); j++) {
+    for (size_t i = 0; i < toTest.size(); i++)
+    {
+        for (size_t j = 0; j < toTest.at(i).size(); j++)
+        {
             string result;
             cin >> result;
             bool boolResult;
             if (result == "true")
             {
                 boolResult = true;
-            } else {
+            }
+            else
+            {
                 boolResult = false;
             }
 
@@ -347,7 +380,8 @@ void manualTest(vvi toTest, vector<bool> &infected) {
 //     recursiveTest(adjMatrix, toTest, infected, c++);
 // }
 
-void runTestCase(AdjacencyMatrix &adjMatrix, vector<bool> &infected) {
+void runTestCase(AdjacencyMatrix &adjMatrix, vector<bool> &infected)
+{
     vector<vector<int>> pairs;
 
     pairs = adjMatrix.findDenseSubGraph(0, pairs);
@@ -368,7 +402,8 @@ void runTestCase(AdjacencyMatrix &adjMatrix, vector<bool> &infected) {
     manualTest(toTest, infected);
 }
 
-void answerTestCase(vector<bool> &infected, int nNodes) {
+void answerTestCase(vector<bool> &infected, int nNodes)
+{
     cout << "answer ";
     bool first = true;
     for (int i = 0; i < nNodes; i++)
@@ -383,13 +418,15 @@ void answerTestCase(vector<bool> &infected, int nNodes) {
             first = false;
         }
     }
-    cout << endl << flush;
+    cout << endl
+         << flush;
 }
 
-AdjacencyMatrix createAdjacencyMatrix(Input input) {
+AdjacencyMatrix createAdjacencyMatrix(Input input)
+{
     AdjacencyMatrix adjMatrix;
     (&adjMatrix)->~AdjacencyMatrix();
-    new (&adjMatrix) AdjacencyMatrix(input.nNodes,input.nEdges);
+    new (&adjMatrix) AdjacencyMatrix(input.nNodes, input);
 
     for (size_t i = 0; i < input.edges.size(); i++)
     {
@@ -402,16 +439,20 @@ AdjacencyMatrix createAdjacencyMatrix(Input input) {
     return adjMatrix;
 }
 
-void handleCredentials() {
+void handleCredentials()
+{
     fstream credFile("../credentials");
     string username, password;
     credFile >> username >> password;
     // and send them to the server
-    cout << username << endl << flush;
-    cout << password << endl << flush;
+    cout << username << endl
+         << flush;
+    cout << password << endl
+         << flush;
 }
 
-void runTestCases(int numCase, int &numCorrect) {
+void runTestCases(int numCase, int &numCorrect)
+{
     for (int testcase = 1; testcase <= numCase; testcase++)
     {
         Input input = parseInput();
@@ -441,7 +482,8 @@ int main()
     int numCase;
     cin >> numCase;
     // using cerr prints it to console instead of to the server
-    cerr << "number of test cases: " << numCase << endl << flush << endl;
+    cerr << "number of test cases: " << numCase << endl
+         << flush << endl;
     int numCorrect = 0;
 
     runTestCases(numCase, numCorrect);
