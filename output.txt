@@ -1,3 +1,19427 @@
-[ 50%] Built target GroupTestingAdjacentyMatrix
+Scanning dependencies of target GroupTestingAdjacentyMatrix
+[ 16%] Building CXX object CMakeFiles/GroupTestingAdjacentyMatrix.dir/groupTestingAdjacentyMatrix.cpp.o
+[ 33%] Linking CXX executable GroupTestingAdjacentyMatrix
+[ 33%] Built target GroupTestingAdjacentyMatrix
+[ 66%] Built target GroupTestingGraph
 [100%] Built target GroupTesting
-Ncat: TIMEOUT.
+number of test cases: 19
+
+ Number of nodes per subgraph: 1
+At: 0
+0
+
+ Number of nodes per subgraph: 1
+At: 1
+1
+
+ Number of nodes per subgraph: 1
+At: 2
+2
+
+ Number of nodes per subgraph: 1
+At: 3
+3
+
+ Number of nodes per subgraph: 1
+At: 4
+4
+
+ Number of nodes per subgraph: 1
+At: 5
+5
+
+ Number of nodes per subgraph: 1
+At: 6
+6
+
+ Number of nodes per subgraph: 1
+At: 7
+7
+
+ Number of nodes per subgraph: 1
+At: 8
+8
+
+ Number of nodes per subgraph: 1
+At: 9
+9
+
+ Number of nodes per subgraph: 1
+At: 10
+10
+
+ Number of nodes per subgraph: 1
+At: 11
+11
+
+ Number of nodes per subgraph: 1
+At: 12
+12
+
+ Number of nodes per subgraph: 1
+At: 13
+13
+
+ Number of nodes per subgraph: 1
+At: 14
+14
+
+ Number of nodes per subgraph: 1
+At: 15
+15
+
+ Number of nodes per subgraph: 1
+At: 16
+16
+
+ Number of nodes per subgraph: 1
+At: 17
+17
+
+ Number of nodes per subgraph: 1
+At: 18
+18
+
+ Number of nodes per subgraph: 1
+At: 19
+19
+
+ Number of nodes per subgraph: 1
+At: 20
+20
+
+ Number of nodes per subgraph: 1
+At: 21
+21
+
+ Number of nodes per subgraph: 1
+At: 22
+22
+
+ Number of nodes per subgraph: 1
+At: 23
+23
+
+ Number of nodes per subgraph: 1
+At: 24
+24
+
+ Number of nodes per subgraph: 1
+At: 25
+25
+
+ Number of nodes per subgraph: 1
+At: 26
+26
+
+ Number of nodes per subgraph: 1
+At: 27
+27
+
+ Number of nodes per subgraph: 1
+At: 28
+28
+
+ Number of nodes per subgraph: 1
+At: 29
+29
+
+ Number of nodes per subgraph: 1
+At: 30
+30
+
+ Number of nodes per subgraph: 1
+At: 31
+31
+
+ Number of nodes per subgraph: 1
+At: 32
+32
+
+ Number of nodes per subgraph: 1
+At: 33
+33
+
+ Number of nodes per subgraph: 1
+At: 34
+34
+
+ Number of nodes per subgraph: 1
+At: 35
+35
+
+ Number of nodes per subgraph: 1
+At: 36
+36
+
+ Number of nodes per subgraph: 1
+At: 37
+37
+
+ Number of nodes per subgraph: 1
+At: 38
+38
+
+ Number of nodes per subgraph: 1
+At: 39
+39
+
+ Number of nodes per subgraph: 1
+At: 40
+40
+
+ Number of nodes per subgraph: 1
+At: 41
+41
+
+ Number of nodes per subgraph: 1
+At: 42
+42
+
+ Number of nodes per subgraph: 1
+At: 43
+43
+
+ Number of nodes per subgraph: 1
+At: 44
+44
+
+ Number of nodes per subgraph: 1
+At: 45
+45
+
+ Number of nodes per subgraph: 1
+At: 46
+46
+
+ Number of nodes per subgraph: 1
+At: 47
+47
+
+ Number of nodes per subgraph: 1
+At: 48
+48
+
+ Number of nodes per subgraph: 1
+At: 49
+49
+
+ Number of nodes per subgraph: 1
+At: 50
+50
+
+ Number of nodes per subgraph: 1
+At: 51
+51
+
+ Number of nodes per subgraph: 1
+At: 52
+52
+
+ Number of nodes per subgraph: 1
+At: 53
+53
+
+ Number of nodes per subgraph: 1
+At: 54
+54
+
+ Number of nodes per subgraph: 1
+At: 55
+55
+
+ Number of nodes per subgraph: 1
+At: 56
+56
+
+ Number of nodes per subgraph: 1
+At: 57
+57
+
+ Number of nodes per subgraph: 1
+At: 58
+58
+
+ Number of nodes per subgraph: 1
+At: 59
+59
+
+ Number of nodes per subgraph: 1
+At: 60
+60
+
+ Number of nodes per subgraph: 1
+At: 61
+61
+
+ Number of nodes per subgraph: 1
+At: 62
+62
+
+ Number of nodes per subgraph: 1
+At: 63
+63
+
+ Number of nodes per subgraph: 1
+At: 64
+64
+
+ Number of nodes per subgraph: 1
+At: 65
+65
+
+ Number of nodes per subgraph: 1
+At: 66
+66
+
+ Number of nodes per subgraph: 1
+At: 67
+67
+
+ Number of nodes per subgraph: 1
+At: 68
+68
+
+ Number of nodes per subgraph: 1
+At: 69
+69
+
+ Number of nodes per subgraph: 1
+At: 70
+70
+
+ Number of nodes per subgraph: 1
+At: 71
+71
+
+ Number of nodes per subgraph: 1
+At: 72
+72
+
+ Number of nodes per subgraph: 1
+At: 73
+73
+
+ Number of nodes per subgraph: 1
+At: 74
+74
+
+ Number of nodes per subgraph: 1
+At: 75
+75
+
+ Number of nodes per subgraph: 1
+At: 76
+76
+
+ Number of nodes per subgraph: 1
+At: 77
+77
+
+ Number of nodes per subgraph: 1
+At: 78
+78
+
+ Number of nodes per subgraph: 1
+At: 79
+79
+
+ Number of nodes per subgraph: 1
+At: 80
+80
+
+ Number of nodes per subgraph: 1
+At: 81
+81
+
+ Number of nodes per subgraph: 1
+At: 82
+82
+
+ Number of nodes per subgraph: 1
+At: 83
+83
+
+ Number of nodes per subgraph: 1
+At: 84
+84
+
+ Number of nodes per subgraph: 1
+At: 85
+85
+
+ Number of nodes per subgraph: 1
+At: 86
+86
+
+ Number of nodes per subgraph: 1
+At: 87
+87
+
+ Number of nodes per subgraph: 1
+At: 88
+88
+
+ Number of nodes per subgraph: 1
+At: 89
+89
+
+ Number of nodes per subgraph: 1
+At: 90
+90
+
+ Number of nodes per subgraph: 1
+At: 91
+91
+
+ Number of nodes per subgraph: 1
+At: 92
+92
+
+ Number of nodes per subgraph: 1
+At: 93
+93
+
+ Number of nodes per subgraph: 1
+At: 94
+94
+
+ Number of nodes per subgraph: 1
+At: 95
+95
+
+ Number of nodes per subgraph: 1
+At: 96
+96
+
+ Number of nodes per subgraph: 1
+At: 97
+97
+
+ Number of nodes per subgraph: 1
+At: 98
+98
+
+ Number of nodes per subgraph: 1
+At: 99
+99
+
+18
+0
+Test case 1: failure
+ Number of nodes per subgraph: 9
+At: 0
+At: 66
+At: 85
+At: 241
+At: 270
+At: 330
+At: 365
+At: 369
+At: 477
+0
+
+ Number of nodes per subgraph: 9
+At: 1
+At: 55
+At: 178
+At: 219
+At: 295
+At: 351
+At: 355
+At: 391
+At: 393
+1
+
+ Number of nodes per subgraph: 20
+At: 2
+At: 31
+At: 46
+At: 101
+At: 155
+At: 191
+At: 192
+At: 193
+At: 217
+At: 230
+At: 252
+At: 263
+At: 278
+At: 303
+At: 307
+At: 322
+At: 423
+At: 427
+At: 469
+At: 476
+2
+
+ Number of nodes per subgraph: 8
+At: 3
+At: 108
+At: 250
+At: 341
+At: 419
+At: 425
+At: 428
+At: 450
+3
+
+ Number of nodes per subgraph: 7
+At: 4
+At: 104
+At: 189
+At: 203
+At: 286
+At: 396
+At: 402
+4
+
+ Number of nodes per subgraph: 14
+At: 5
+At: 13
+At: 100
+At: 110
+At: 132
+At: 150
+At: 173
+At: 216
+At: 238
+At: 256
+At: 338
+At: 343
+At: 359
+At: 449
+5
+
+ Number of nodes per subgraph: 4
+At: 6
+At: 99
+At: 177
+At: 269
+6
+
+ Number of nodes per subgraph: 1
+At: 7
+7
+
+ Number of nodes per subgraph: 11
+At: 8
+At: 17
+At: 45
+At: 64
+At: 70
+At: 79
+At: 109
+At: 222
+At: 253
+At: 312
+At: 381
+8
+
+ Number of nodes per subgraph: 4
+At: 9
+At: 128
+At: 225
+At: 397
+9
+
+ Number of nodes per subgraph: 9
+At: 10
+At: 30
+At: 137
+At: 143
+At: 152
+At: 198
+At: 213
+At: 257
+At: 491
+10
+
+ Number of nodes per subgraph: 7
+At: 11
+At: 24
+At: 133
+At: 210
+At: 292
+At: 360
+At: 377
+11
+
+ Number of nodes per subgraph: 9
+At: 12
+At: 44
+At: 106
+At: 149
+At: 183
+At: 323
+At: 342
+At: 422
+At: 443
+12
+
+ Number of nodes per subgraph: 8
+At: 14
+At: 37
+At: 118
+At: 298
+At: 413
+At: 415
+At: 429
+At: 431
+14
+
+ Number of nodes per subgraph: 10
+At: 15
+At: 32
+At: 103
+At: 199
+At: 204
+At: 268
+At: 282
+At: 289
+At: 409
+At: 440
+15
+
+ Number of nodes per subgraph: 11
+At: 16
+At: 25
+At: 88
+At: 144
+At: 171
+At: 306
+At: 332
+At: 412
+At: 441
+At: 455
+At: 480
+16
+
+ Number of nodes per subgraph: 17
+At: 18
+At: 36
+At: 50
+At: 56
+At: 61
+At: 63
+At: 65
+At: 148
+At: 180
+At: 243
+At: 299
+At: 333
+At: 335
+At: 354
+At: 362
+At: 400
+At: 490
+18
+
+ Number of nodes per subgraph: 10
+At: 19
+At: 35
+At: 121
+At: 186
+At: 260
+At: 273
+At: 348
+At: 407
+At: 426
+At: 451
+19
+
+ Number of nodes per subgraph: 13
+At: 20
+At: 49
+At: 71
+At: 98
+At: 261
+At: 334
+At: 347
+At: 363
+At: 384
+At: 386
+At: 408
+At: 463
+At: 484
+20
+
+ Number of nodes per subgraph: 7
+At: 21
+At: 62
+At: 120
+At: 142
+At: 172
+At: 196
+At: 364
+21
+
+ Number of nodes per subgraph: 10
+At: 22
+At: 28
+At: 90
+At: 102
+At: 223
+At: 327
+At: 382
+At: 410
+At: 471
+At: 499
+22
+
+ Number of nodes per subgraph: 3
+At: 23
+At: 185
+At: 366
+23
+
+ Number of nodes per subgraph: 9
+At: 26
+At: 127
+At: 156
+At: 215
+At: 247
+At: 279
+At: 345
+At: 373
+At: 411
+26
+
+ Number of nodes per subgraph: 5
+At: 27
+At: 116
+At: 182
+At: 302
+At: 492
+27
+
+ Number of nodes per subgraph: 3
+At: 29
+At: 119
+At: 195
+29
+
+ Number of nodes per subgraph: 11
+At: 33
+At: 113
+At: 114
+At: 166
+At: 274
+At: 293
+At: 308
+At: 316
+At: 367
+At: 456
+At: 458
+33
+
+ Number of nodes per subgraph: 9
+At: 34
+At: 59
+At: 92
+At: 147
+At: 229
+At: 304
+At: 350
+At: 493
+At: 498
+34
+
+ Number of nodes per subgraph: 9
+At: 38
+At: 67
+At: 86
+At: 139
+At: 227
+At: 280
+At: 320
+At: 392
+At: 474
+38
+
+ Number of nodes per subgraph: 8
+At: 39
+At: 43
+At: 96
+At: 125
+At: 201
+At: 281
+At: 403
+At: 433
+39
+
+ Number of nodes per subgraph: 2
+At: 40
+At: 117
+40
+
+ Number of nodes per subgraph: 11
+At: 41
+At: 47
+At: 60
+At: 72
+At: 75
+At: 197
+At: 207
+At: 239
+At: 401
+At: 405
+At: 439
+41
+
+ Number of nodes per subgraph: 1
+At: 42
+42
+
+ Number of nodes per subgraph: 4
+At: 48
+At: 141
+At: 200
+At: 224
+48
+
+ Number of nodes per subgraph: 6
+At: 51
+At: 179
+At: 297
+At: 357
+At: 361
+At: 472
+51
+
+ Number of nodes per subgraph: 4
+At: 52
+At: 84
+At: 151
+At: 296
+52
+
+ Number of nodes per subgraph: 10
+At: 53
+At: 122
+At: 159
+At: 163
+At: 231
+At: 300
+At: 328
+At: 340
+At: 461
+At: 483
+53
+
+ Number of nodes per subgraph: 4
+At: 54
+At: 353
+At: 421
+At: 448
+54
+
+ Number of nodes per subgraph: 8
+At: 57
+At: 87
+At: 169
+At: 246
+At: 248
+At: 339
+At: 375
+At: 376
+57
+
+ Number of nodes per subgraph: 16
+At: 58
+At: 78
+At: 136
+At: 162
+At: 184
+At: 233
+At: 242
+At: 245
+At: 264
+At: 271
+At: 290
+At: 318
+At: 325
+At: 349
+At: 374
+At: 437
+58
+
+ Number of nodes per subgraph: 8
+At: 68
+At: 112
+At: 188
+At: 301
+At: 313
+At: 380
+At: 442
+At: 447
+68
+
+ Number of nodes per subgraph: 8
+At: 69
+At: 91
+At: 94
+At: 146
+At: 277
+At: 287
+At: 372
+At: 438
+69
+
+ Number of nodes per subgraph: 8
+At: 73
+At: 167
+At: 208
+At: 244
+At: 346
+At: 387
+At: 453
+At: 467
+73
+
+ Number of nodes per subgraph: 6
+At: 74
+At: 226
+At: 266
+At: 272
+At: 356
+At: 470
+74
+
+ Number of nodes per subgraph: 4
+At: 76
+At: 153
+At: 331
+At: 430
+76
+
+ Number of nodes per subgraph: 6
+At: 77
+At: 161
+At: 187
+At: 368
+At: 383
+At: 398
+77
+
+ Number of nodes per subgraph: 1
+At: 80
+80
+
+ Number of nodes per subgraph: 7
+At: 81
+At: 123
+At: 157
+At: 275
+At: 321
+At: 452
+At: 479
+81
+
+ Number of nodes per subgraph: 6
+At: 82
+At: 165
+At: 436
+At: 457
+At: 465
+At: 475
+82
+
+ Number of nodes per subgraph: 9
+At: 83
+At: 95
+At: 138
+At: 145
+At: 154
+At: 205
+At: 236
+At: 370
+At: 478
+83
+
+ Number of nodes per subgraph: 2
+At: 89
+At: 378
+89
+
+ Number of nodes per subgraph: 7
+At: 93
+At: 107
+At: 240
+At: 255
+At: 265
+At: 315
+At: 489
+93
+
+ Number of nodes per subgraph: 5
+At: 97
+At: 160
+At: 209
+At: 249
+At: 424
+97
+
+ Number of nodes per subgraph: 1
+At: 105
+105
+
+ Number of nodes per subgraph: 4
+At: 111
+At: 285
+At: 399
+At: 416
+111
+
+ Number of nodes per subgraph: 5
+At: 115
+At: 317
+At: 385
+At: 460
+At: 482
+115
+
+ Number of nodes per subgraph: 3
+At: 124
+At: 129
+At: 276
+124
+
+ Number of nodes per subgraph: 7
+At: 126
+At: 175
+At: 214
+At: 309
+At: 311
+At: 417
+At: 464
+126
+
+ Number of nodes per subgraph: 3
+At: 130
+At: 135
+At: 218
+130
+
+ Number of nodes per subgraph: 2
+At: 131
+At: 221
+131
+
+ Number of nodes per subgraph: 9
+At: 134
+At: 174
+At: 254
+At: 294
+At: 418
+At: 432
+At: 446
+At: 473
+At: 486
+134
+
+ Number of nodes per subgraph: 5
+At: 140
+At: 176
+At: 206
+At: 262
+At: 394
+140
+
+ Number of nodes per subgraph: 1
+At: 158
+158
+
+ Number of nodes per subgraph: 5
+At: 164
+At: 406
+At: 414
+At: 444
+At: 497
+164
+
+ Number of nodes per subgraph: 7
+At: 168
+At: 220
+At: 232
+At: 283
+At: 379
+At: 389
+At: 466
+168
+
+ Number of nodes per subgraph: 4
+At: 170
+At: 258
+At: 314
+At: 324
+170
+
+ Number of nodes per subgraph: 6
+At: 181
+At: 212
+At: 267
+At: 291
+At: 305
+At: 494
+181
+
+ Number of nodes per subgraph: 2
+At: 190
+At: 194
+190
+
+ Number of nodes per subgraph: 1
+At: 202
+202
+
+ Number of nodes per subgraph: 4
+At: 211
+At: 235
+At: 459
+At: 496
+211
+
+ Number of nodes per subgraph: 4
+At: 228
+At: 284
+At: 395
+At: 454
+228
+
+ Number of nodes per subgraph: 4
+At: 234
+At: 310
+At: 371
+At: 390
+234
+
+ Number of nodes per subgraph: 5
+At: 237
+At: 259
+At: 336
+At: 485
+At: 488
+237
+
+ Number of nodes per subgraph: 5
+At: 251
+At: 288
+At: 435
+At: 445
+At: 495
+251
+
+ Number of nodes per subgraph: 3
+At: 319
+At: 468
+At: 481
+319
+
+ Number of nodes per subgraph: 2
+At: 326
+At: 434
+326
+
+ Number of nodes per subgraph: 3
+At: 329
+At: 344
+At: 388
+329
+
+ Number of nodes per subgraph: 4
+At: 337
+At: 358
+At: 462
+At: 487
+337
+
+ Number of nodes per subgraph: 2
+At: 352
+At: 420
+352
+
+ Number of nodes per subgraph: 1
+At: 404
+404
+
+0
+1
+2
+5
+8
+10
+12
+13
+14
+15
+17
+18
+19
+20
+22
+23
+25
+28
+30
+38
+43
+48
+51
+62
+74
+76
+26
+ Number of nodes per subgraph: 9
+At: 0
+At: 66
+At: 85
+At: 241
+At: 270
+At: 330
+At: 365
+At: 369
+At: 477
+0
+
+ Number of nodes per subgraph: 9
+At: 1
+At: 55
+At: 178
+At: 219
+At: 295
+At: 351
+At: 355
+At: 391
+At: 393
+1
+
+ Number of nodes per subgraph: 20
+At: 2
+At: 31
+At: 46
+At: 101
+At: 155
+At: 191
+At: 192
+At: 193
+At: 217
+At: 230
+At: 252
+At: 263
+At: 278
+At: 303
+At: 307
+At: 322
+At: 423
+At: 427
+At: 469
+At: 476
+2
+
+ Number of nodes per subgraph: 14
+At: 5
+At: 13
+At: 100
+At: 110
+At: 132
+At: 150
+At: 173
+At: 216
+At: 238
+At: 256
+At: 338
+At: 343
+At: 359
+At: 449
+5
+
+ Number of nodes per subgraph: 11
+At: 8
+At: 17
+At: 45
+At: 64
+At: 70
+At: 79
+At: 109
+At: 222
+At: 253
+At: 312
+At: 381
+8
+
+ Number of nodes per subgraph: 9
+At: 10
+At: 30
+At: 137
+At: 143
+At: 152
+At: 198
+At: 213
+At: 257
+At: 491
+10
+
+ Number of nodes per subgraph: 9
+At: 12
+At: 44
+At: 106
+At: 149
+At: 183
+At: 323
+At: 342
+At: 422
+At: 443
+12
+
+ Number of nodes per subgraph: 8
+At: 14
+At: 37
+At: 118
+At: 298
+At: 413
+At: 415
+At: 429
+At: 431
+14
+
+ Number of nodes per subgraph: 10
+At: 15
+At: 32
+At: 103
+At: 199
+At: 204
+At: 268
+At: 282
+At: 289
+At: 409
+At: 440
+15
+
+ Number of nodes per subgraph: 11
+At: 16
+At: 25
+At: 88
+At: 144
+At: 171
+At: 306
+At: 332
+At: 412
+At: 441
+At: 455
+At: 480
+16
+
+ Number of nodes per subgraph: 10
+At: 19
+At: 35
+At: 121
+At: 186
+At: 260
+At: 273
+At: 348
+At: 407
+At: 426
+At: 451
+19
+
+ Number of nodes per subgraph: 13
+At: 20
+At: 49
+At: 71
+At: 98
+At: 261
+At: 334
+At: 347
+At: 363
+At: 384
+At: 386
+At: 408
+At: 463
+At: 484
+20
+
+ Number of nodes per subgraph: 7
+At: 21
+At: 62
+At: 120
+At: 142
+At: 172
+At: 196
+At: 364
+21
+
+ Number of nodes per subgraph: 10
+At: 22
+At: 28
+At: 90
+At: 102
+At: 223
+At: 327
+At: 382
+At: 410
+At: 471
+At: 499
+22
+
+ Number of nodes per subgraph: 9
+At: 26
+At: 127
+At: 156
+At: 215
+At: 247
+At: 279
+At: 345
+At: 373
+At: 411
+26
+
+ Number of nodes per subgraph: 5
+At: 27
+At: 116
+At: 182
+At: 302
+At: 492
+27
+
+ Number of nodes per subgraph: 11
+At: 33
+At: 113
+At: 114
+At: 166
+At: 274
+At: 293
+At: 308
+At: 316
+At: 367
+At: 456
+At: 458
+33
+
+ Number of nodes per subgraph: 8
+At: 39
+At: 43
+At: 96
+At: 125
+At: 201
+At: 281
+At: 403
+At: 433
+39
+
+ Number of nodes per subgraph: 11
+At: 41
+At: 47
+At: 60
+At: 72
+At: 75
+At: 197
+At: 207
+At: 239
+At: 401
+At: 405
+At: 439
+41
+
+ Number of nodes per subgraph: 16
+At: 58
+At: 78
+At: 136
+At: 162
+At: 184
+At: 233
+At: 242
+At: 245
+At: 264
+At: 271
+At: 290
+At: 318
+At: 325
+At: 349
+At: 374
+At: 437
+58
+
+ Number of nodes per subgraph: 4
+At: 76
+At: 153
+At: 331
+At: 430
+76
+
+ Number of nodes per subgraph: 9
+At: 83
+At: 95
+At: 138
+At: 145
+At: 154
+At: 205
+At: 236
+At: 370
+At: 478
+83
+
+ Number of nodes per subgraph: 5
+At: 97
+At: 160
+At: 209
+At: 249
+At: 424
+97
+
+ Number of nodes per subgraph: 5
+At: 164
+At: 406
+At: 414
+At: 444
+At: 497
+164
+
+ Number of nodes per subgraph: 2
+At: 326
+At: 434
+326
+
+ Number of nodes per subgraph: 4
+At: 337
+At: 358
+At: 462
+At: 487
+337
+
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+ERROR THIS SHOULDN'T HAPPEN
+Test case 2: failure
+ Number of nodes per subgraph: 8
+At: 0
+At: 21
+At: 60
+At: 173
+At: 529
+At: 566
+At: 656
+At: 883
+0
+
+ Number of nodes per subgraph: 10
+At: 1
+At: 30
+At: 148
+At: 172
+At: 209
+At: 271
+At: 278
+At: 500
+At: 742
+At: 948
+1
+
+ Number of nodes per subgraph: 4
+At: 2
+At: 454
+At: 641
+At: 829
+2
+
+ Number of nodes per subgraph: 12
+At: 3
+At: 31
+At: 32
+At: 65
+At: 79
+At: 152
+At: 183
+At: 326
+At: 546
+At: 788
+At: 834
+At: 933
+3
+
+ Number of nodes per subgraph: 7
+At: 4
+At: 122
+At: 203
+At: 506
+At: 805
+At: 841
+At: 947
+4
+
+ Number of nodes per subgraph: 8
+At: 5
+At: 179
+At: 230
+At: 287
+At: 467
+At: 508
+At: 924
+At: 977
+5
+
+ Number of nodes per subgraph: 8
+At: 6
+At: 138
+At: 360
+At: 401
+At: 409
+At: 418
+At: 515
+At: 521
+6
+
+ Number of nodes per subgraph: 18
+At: 7
+At: 38
+At: 73
+At: 125
+At: 170
+At: 229
+At: 378
+At: 391
+At: 481
+At: 631
+At: 654
+At: 751
+At: 786
+At: 816
+At: 860
+At: 881
+At: 953
+At: 988
+7
+
+ Number of nodes per subgraph: 7
+At: 8
+At: 20
+At: 189
+At: 275
+At: 314
+At: 627
+At: 630
+8
+
+ Number of nodes per subgraph: 11
+At: 9
+At: 87
+At: 175
+At: 258
+At: 453
+At: 534
+At: 542
+At: 695
+At: 698
+At: 721
+At: 752
+9
+
+ Number of nodes per subgraph: 8
+At: 10
+At: 291
+At: 330
+At: 375
+At: 392
+At: 497
+At: 651
+At: 980
+10
+
+ Number of nodes per subgraph: 13
+At: 11
+At: 112
+At: 177
+At: 207
+At: 219
+At: 237
+At: 253
+At: 279
+At: 464
+At: 601
+At: 632
+At: 810
+At: 914
+11
+
+ Number of nodes per subgraph: 6
+At: 12
+At: 427
+At: 488
+At: 510
+At: 760
+At: 967
+12
+
+ Number of nodes per subgraph: 3
+At: 13
+At: 410
+At: 676
+13
+
+ Number of nodes per subgraph: 5
+At: 14
+At: 101
+At: 774
+At: 917
+At: 944
+14
+
+ Number of nodes per subgraph: 8
+At: 15
+At: 167
+At: 345
+At: 672
+At: 796
+At: 840
+At: 846
+At: 905
+15
+
+ Number of nodes per subgraph: 6
+At: 16
+At: 149
+At: 550
+At: 692
+At: 825
+At: 930
+16
+
+ Number of nodes per subgraph: 7
+At: 17
+At: 49
+At: 277
+At: 379
+At: 791
+At: 822
+At: 857
+17
+
+ Number of nodes per subgraph: 7
+At: 18
+At: 119
+At: 280
+At: 432
+At: 607
+At: 623
+At: 678
+18
+
+ Number of nodes per subgraph: 7
+At: 19
+At: 44
+At: 78
+At: 318
+At: 458
+At: 674
+At: 701
+19
+
+ Number of nodes per subgraph: 9
+At: 22
+At: 46
+At: 120
+At: 147
+At: 733
+At: 767
+At: 799
+At: 850
+At: 912
+22
+
+ Number of nodes per subgraph: 12
+At: 23
+At: 70
+At: 160
+At: 238
+At: 538
+At: 539
+At: 604
+At: 661
+At: 832
+At: 852
+At: 913
+At: 999
+23
+
+ Number of nodes per subgraph: 10
+At: 24
+At: 77
+At: 560
+At: 586
+At: 613
+At: 718
+At: 870
+At: 873
+At: 887
+At: 995
+24
+
+ Number of nodes per subgraph: 6
+At: 25
+At: 40
+At: 213
+At: 670
+At: 831
+At: 910
+25
+
+ Number of nodes per subgraph: 10
+At: 26
+At: 57
+At: 123
+At: 190
+At: 218
+At: 395
+At: 457
+At: 512
+At: 734
+At: 901
+26
+
+ Number of nodes per subgraph: 5
+At: 27
+At: 156
+At: 342
+At: 408
+At: 544
+27
+
+ Number of nodes per subgraph: 12
+At: 28
+At: 82
+At: 226
+At: 269
+At: 281
+At: 436
+At: 442
+At: 543
+At: 553
+At: 668
+At: 711
+At: 762
+28
+
+ Number of nodes per subgraph: 1
+At: 29
+29
+
+ Number of nodes per subgraph: 9
+At: 33
+At: 130
+At: 196
+At: 495
+At: 558
+At: 740
+At: 806
+At: 853
+At: 957
+33
+
+ Number of nodes per subgraph: 14
+At: 34
+At: 224
+At: 321
+At: 402
+At: 407
+At: 483
+At: 509
+At: 514
+At: 547
+At: 605
+At: 645
+At: 900
+At: 927
+At: 989
+34
+
+ Number of nodes per subgraph: 7
+At: 35
+At: 131
+At: 354
+At: 578
+At: 611
+At: 647
+At: 907
+35
+
+ Number of nodes per subgraph: 9
+At: 36
+At: 126
+At: 129
+At: 158
+At: 594
+At: 621
+At: 659
+At: 909
+At: 981
+36
+
+ Number of nodes per subgraph: 10
+At: 37
+At: 154
+At: 181
+At: 274
+At: 282
+At: 290
+At: 484
+At: 683
+At: 804
+At: 974
+37
+
+ Number of nodes per subgraph: 3
+At: 39
+At: 384
+At: 576
+39
+
+ Number of nodes per subgraph: 7
+At: 41
+At: 310
+At: 475
+At: 487
+At: 677
+At: 684
+At: 915
+41
+
+ Number of nodes per subgraph: 7
+At: 42
+At: 242
+At: 333
+At: 339
+At: 359
+At: 879
+At: 968
+42
+
+ Number of nodes per subgraph: 5
+At: 43
+At: 88
+At: 132
+At: 143
+At: 404
+43
+
+ Number of nodes per subgraph: 14
+At: 45
+At: 52
+At: 236
+At: 249
+At: 400
+At: 425
+At: 447
+At: 473
+At: 504
+At: 603
+At: 771
+At: 884
+At: 889
+At: 928
+45
+
+ Number of nodes per subgraph: 8
+At: 47
+At: 83
+At: 437
+At: 669
+At: 715
+At: 894
+At: 918
+At: 994
+47
+
+ Number of nodes per subgraph: 7
+At: 48
+At: 194
+At: 220
+At: 241
+At: 673
+At: 936
+At: 962
+48
+
+ Number of nodes per subgraph: 12
+At: 50
+At: 98
+At: 246
+At: 325
+At: 336
+At: 362
+At: 440
+At: 474
+At: 520
+At: 528
+At: 869
+At: 897
+50
+
+ Number of nodes per subgraph: 9
+At: 51
+At: 124
+At: 571
+At: 708
+At: 757
+At: 818
+At: 886
+At: 922
+At: 990
+51
+
+ Number of nodes per subgraph: 8
+At: 53
+At: 169
+At: 244
+At: 609
+At: 707
+At: 735
+At: 878
+At: 965
+53
+
+ Number of nodes per subgraph: 10
+At: 54
+At: 164
+At: 340
+At: 341
+At: 386
+At: 388
+At: 660
+At: 803
+At: 826
+At: 858
+54
+
+ Number of nodes per subgraph: 11
+At: 55
+At: 270
+At: 361
+At: 462
+At: 592
+At: 595
+At: 634
+At: 649
+At: 730
+At: 848
+At: 863
+55
+
+ Number of nodes per subgraph: 6
+At: 56
+At: 347
+At: 445
+At: 602
+At: 620
+At: 680
+56
+
+ Number of nodes per subgraph: 13
+At: 58
+At: 72
+At: 100
+At: 192
+At: 211
+At: 311
+At: 444
+At: 564
+At: 663
+At: 743
+At: 827
+At: 833
+At: 945
+58
+
+ Number of nodes per subgraph: 10
+At: 59
+At: 174
+At: 257
+At: 293
+At: 296
+At: 308
+At: 413
+At: 838
+At: 871
+At: 880
+59
+
+ Number of nodes per subgraph: 5
+At: 61
+At: 182
+At: 328
+At: 420
+At: 744
+61
+
+ Number of nodes per subgraph: 6
+At: 62
+At: 691
+At: 728
+At: 787
+At: 828
+At: 920
+62
+
+ Number of nodes per subgraph: 9
+At: 63
+At: 233
+At: 317
+At: 519
+At: 565
+At: 768
+At: 792
+At: 952
+At: 982
+63
+
+ Number of nodes per subgraph: 10
+At: 64
+At: 71
+At: 234
+At: 295
+At: 346
+At: 367
+At: 470
+At: 589
+At: 638
+At: 992
+64
+
+ Number of nodes per subgraph: 5
+At: 66
+At: 96
+At: 524
+At: 644
+At: 890
+66
+
+ Number of nodes per subgraph: 7
+At: 67
+At: 201
+At: 232
+At: 262
+At: 312
+At: 588
+At: 775
+67
+
+ Number of nodes per subgraph: 9
+At: 68
+At: 117
+At: 197
+At: 516
+At: 610
+At: 781
+At: 896
+At: 984
+At: 991
+68
+
+ Number of nodes per subgraph: 5
+At: 69
+At: 364
+At: 747
+At: 817
+At: 960
+69
+
+ Number of nodes per subgraph: 10
+At: 74
+At: 225
+At: 243
+At: 675
+At: 694
+At: 815
+At: 847
+At: 854
+At: 940
+At: 985
+74
+
+ Number of nodes per subgraph: 7
+At: 75
+At: 306
+At: 365
+At: 450
+At: 466
+At: 523
+At: 593
+75
+
+ Number of nodes per subgraph: 4
+At: 76
+At: 363
+At: 552
+At: 849
+76
+
+ Number of nodes per subgraph: 12
+At: 80
+At: 235
+At: 267
+At: 324
+At: 327
+At: 426
+At: 540
+At: 629
+At: 798
+At: 898
+At: 964
+At: 987
+80
+
+ Number of nodes per subgraph: 5
+At: 81
+At: 251
+At: 372
+At: 719
+At: 959
+81
+
+ Number of nodes per subgraph: 7
+At: 84
+At: 133
+At: 507
+At: 662
+At: 724
+At: 866
+At: 966
+84
+
+ Number of nodes per subgraph: 9
+At: 85
+At: 195
+At: 369
+At: 469
+At: 517
+At: 554
+At: 590
+At: 790
+At: 942
+85
+
+ Number of nodes per subgraph: 8
+At: 86
+At: 193
+At: 223
+At: 741
+At: 773
+At: 821
+At: 865
+At: 868
+86
+
+ Number of nodes per subgraph: 5
+At: 89
+At: 217
+At: 284
+At: 729
+At: 770
+89
+
+ Number of nodes per subgraph: 7
+At: 90
+At: 151
+At: 358
+At: 532
+At: 596
+At: 625
+At: 702
+90
+
+ Number of nodes per subgraph: 1
+At: 91
+91
+
+ Number of nodes per subgraph: 5
+At: 92
+At: 102
+At: 373
+At: 785
+At: 795
+92
+
+ Number of nodes per subgraph: 6
+At: 93
+At: 231
+At: 446
+At: 465
+At: 557
+At: 697
+93
+
+ Number of nodes per subgraph: 7
+At: 94
+At: 205
+At: 518
+At: 531
+At: 580
+At: 855
+At: 911
+94
+
+ Number of nodes per subgraph: 4
+At: 95
+At: 208
+At: 383
+At: 772
+95
+
+ Number of nodes per subgraph: 4
+At: 97
+At: 485
+At: 820
+At: 935
+97
+
+ Number of nodes per subgraph: 13
+At: 99
+At: 285
+At: 411
+At: 433
+At: 493
+At: 525
+At: 537
+At: 624
+At: 650
+At: 679
+At: 726
+At: 784
+At: 921
+99
+
+ Number of nodes per subgraph: 8
+At: 103
+At: 171
+At: 180
+At: 288
+At: 332
+At: 381
+At: 648
+At: 970
+103
+
+ Number of nodes per subgraph: 7
+At: 104
+At: 377
+At: 570
+At: 598
+At: 714
+At: 778
+At: 978
+104
+
+ Number of nodes per subgraph: 1
+At: 105
+105
+
+ Number of nodes per subgraph: 10
+At: 106
+At: 210
+At: 212
+At: 252
+At: 289
+At: 489
+At: 591
+At: 746
+At: 844
+At: 923
+106
+
+ Number of nodes per subgraph: 6
+At: 107
+At: 214
+At: 265
+At: 522
+At: 732
+At: 972
+107
+
+ Number of nodes per subgraph: 8
+At: 108
+At: 247
+At: 478
+At: 569
+At: 681
+At: 780
+At: 797
+At: 908
+108
+
+ Number of nodes per subgraph: 9
+At: 109
+At: 116
+At: 221
+At: 227
+At: 329
+At: 556
+At: 587
+At: 671
+At: 727
+109
+
+ Number of nodes per subgraph: 9
+At: 110
+At: 191
+At: 309
+At: 331
+At: 370
+At: 555
+At: 722
+At: 753
+At: 875
+110
+
+ Number of nodes per subgraph: 5
+At: 111
+At: 505
+At: 813
+At: 859
+At: 932
+111
+
+ Number of nodes per subgraph: 9
+At: 113
+At: 286
+At: 298
+At: 316
+At: 385
+At: 657
+At: 693
+At: 811
+At: 824
+113
+
+ Number of nodes per subgraph: 9
+At: 114
+At: 422
+At: 430
+At: 713
+At: 789
+At: 812
+At: 830
+At: 955
+At: 976
+114
+
+ Number of nodes per subgraph: 9
+At: 115
+At: 184
+At: 357
+At: 499
+At: 548
+At: 551
+At: 584
+At: 600
+At: 616
+115
+
+ Number of nodes per subgraph: 7
+At: 118
+At: 216
+At: 297
+At: 502
+At: 575
+At: 709
+At: 998
+118
+
+ Number of nodes per subgraph: 5
+At: 121
+At: 259
+At: 583
+At: 842
+At: 954
+121
+
+ Number of nodes per subgraph: 7
+At: 127
+At: 228
+At: 239
+At: 423
+At: 637
+At: 643
+At: 782
+127
+
+ Number of nodes per subgraph: 4
+At: 128
+At: 322
+At: 371
+At: 434
+128
+
+ Number of nodes per subgraph: 5
+At: 134
+At: 178
+At: 305
+At: 455
+At: 906
+134
+
+ Number of nodes per subgraph: 9
+At: 135
+At: 335
+At: 526
+At: 582
+At: 622
+At: 756
+At: 809
+At: 943
+At: 996
+135
+
+ Number of nodes per subgraph: 6
+At: 136
+At: 159
+At: 438
+At: 769
+At: 801
+At: 993
+136
+
+ Number of nodes per subgraph: 9
+At: 137
+At: 352
+At: 368
+At: 406
+At: 501
+At: 597
+At: 665
+At: 717
+At: 720
+137
+
+ Number of nodes per subgraph: 5
+At: 139
+At: 431
+At: 472
+At: 479
+At: 687
+139
+
+ Number of nodes per subgraph: 3
+At: 140
+At: 412
+At: 579
+140
+
+ Number of nodes per subgraph: 8
+At: 141
+At: 198
+At: 405
+At: 424
+At: 443
+At: 452
+At: 861
+At: 997
+141
+
+ Number of nodes per subgraph: 8
+At: 142
+At: 254
+At: 313
+At: 374
+At: 387
+At: 463
+At: 839
+At: 864
+142
+
+ Number of nodes per subgraph: 10
+At: 144
+At: 166
+At: 266
+At: 301
+At: 394
+At: 396
+At: 480
+At: 614
+At: 642
+At: 802
+144
+
+ Number of nodes per subgraph: 6
+At: 145
+At: 250
+At: 283
+At: 561
+At: 652
+At: 764
+145
+
+ Number of nodes per subgraph: 3
+At: 146
+At: 186
+At: 956
+146
+
+ Number of nodes per subgraph: 6
+At: 150
+At: 294
+At: 486
+At: 639
+At: 712
+At: 808
+150
+
+ Number of nodes per subgraph: 8
+At: 153
+At: 261
+At: 448
+At: 545
+At: 696
+At: 703
+At: 777
+At: 946
+153
+
+ Number of nodes per subgraph: 8
+At: 155
+At: 161
+At: 176
+At: 393
+At: 439
+At: 490
+At: 895
+At: 971
+155
+
+ Number of nodes per subgraph: 6
+At: 157
+At: 255
+At: 356
+At: 685
+At: 763
+At: 939
+157
+
+ Number of nodes per subgraph: 8
+At: 162
+At: 461
+At: 563
+At: 567
+At: 705
+At: 738
+At: 750
+At: 938
+162
+
+ Number of nodes per subgraph: 9
+At: 163
+At: 187
+At: 348
+At: 577
+At: 626
+At: 745
+At: 837
+At: 891
+At: 893
+163
+
+ Number of nodes per subgraph: 12
+At: 165
+At: 204
+At: 215
+At: 248
+At: 344
+At: 530
+At: 536
+At: 618
+At: 814
+At: 867
+At: 902
+At: 904
+165
+
+ Number of nodes per subgraph: 6
+At: 168
+At: 416
+At: 435
+At: 646
+At: 807
+At: 969
+168
+
+ Number of nodes per subgraph: 5
+At: 185
+At: 272
+At: 300
+At: 929
+At: 934
+185
+
+ Number of nodes per subgraph: 6
+At: 188
+At: 263
+At: 376
+At: 612
+At: 635
+At: 872
+188
+
+ Number of nodes per subgraph: 4
+At: 199
+At: 319
+At: 449
+At: 755
+199
+
+ Number of nodes per subgraph: 5
+At: 200
+At: 353
+At: 366
+At: 606
+At: 686
+200
+
+ Number of nodes per subgraph: 4
+At: 202
+At: 337
+At: 343
+At: 655
+202
+
+ Number of nodes per subgraph: 5
+At: 206
+At: 245
+At: 276
+At: 511
+At: 667
+206
+
+ Number of nodes per subgraph: 4
+At: 222
+At: 299
+At: 397
+At: 549
+222
+
+ Number of nodes per subgraph: 7
+At: 240
+At: 304
+At: 351
+At: 419
+At: 428
+At: 482
+At: 903
+240
+
+ Number of nodes per subgraph: 2
+At: 256
+At: 421
+256
+
+ Number of nodes per subgraph: 2
+At: 260
+At: 892
+260
+
+ Number of nodes per subgraph: 3
+At: 264
+At: 599
+At: 951
+264
+
+ Number of nodes per subgraph: 2
+At: 268
+At: 403
+268
+
+ Number of nodes per subgraph: 7
+At: 273
+At: 429
+At: 664
+At: 736
+At: 800
+At: 925
+At: 926
+273
+
+ Number of nodes per subgraph: 6
+At: 292
+At: 382
+At: 390
+At: 451
+At: 688
+At: 986
+292
+
+ Number of nodes per subgraph: 7
+At: 302
+At: 320
+At: 350
+At: 494
+At: 615
+At: 765
+At: 856
+302
+
+ Number of nodes per subgraph: 5
+At: 303
+At: 456
+At: 585
+At: 949
+At: 958
+303
+
+ Number of nodes per subgraph: 4
+At: 307
+At: 349
+At: 608
+At: 941
+307
+
+ Number of nodes per subgraph: 4
+At: 315
+At: 503
+At: 653
+At: 823
+315
+
+ Number of nodes per subgraph: 4
+At: 323
+At: 355
+At: 689
+At: 882
+323
+
+ Number of nodes per subgraph: 9
+At: 334
+At: 492
+At: 527
+At: 633
+At: 640
+At: 779
+At: 793
+At: 919
+At: 937
+334
+
+ Number of nodes per subgraph: 5
+At: 338
+At: 723
+At: 737
+At: 888
+At: 975
+338
+
+ Number of nodes per subgraph: 3
+At: 380
+At: 628
+At: 963
+380
+
+ Number of nodes per subgraph: 2
+At: 389
+At: 716
+389
+
+ Number of nodes per subgraph: 6
+At: 398
+At: 460
+At: 562
+At: 851
+At: 916
+At: 950
+398
+
+ Number of nodes per subgraph: 13
+At: 399
+At: 533
+At: 541
+At: 574
+At: 619
+At: 636
+At: 690
+At: 710
+At: 759
+At: 783
+At: 835
+At: 843
+At: 862
+399
+
+ Number of nodes per subgraph: 4
+At: 414
+At: 459
+At: 761
+At: 836
+414
+
+ Number of nodes per subgraph: 1
+At: 415
+415
+
+ Number of nodes per subgraph: 4
+At: 417
+At: 794
+At: 877
+At: 899
+417
+
+ Number of nodes per subgraph: 3
+At: 441
+At: 754
+At: 845
+441
+
+ Number of nodes per subgraph: 3
+At: 468
+At: 776
+At: 885
+468
+
+ Number of nodes per subgraph: 7
+At: 471
+At: 535
+At: 573
+At: 699
+At: 749
+At: 874
+At: 876
+471
+
+ Number of nodes per subgraph: 5
+At: 476
+At: 581
+At: 758
+At: 931
+At: 961
+476
+
+ Number of nodes per subgraph: 2
+At: 477
+At: 979
+477
+
+ Number of nodes per subgraph: 1
+At: 491
+491
+
+ Number of nodes per subgraph: 1
+At: 496
+496
+
+ Number of nodes per subgraph: 1
+At: 498
+498
+
+ Number of nodes per subgraph: 3
+At: 513
+At: 731
+At: 739
+513
+
+ Number of nodes per subgraph: 1
+At: 559
+559
+
+ Number of nodes per subgraph: 1
+At: 568
+568
+
+ Number of nodes per subgraph: 1
+At: 572
+572
+
+ Number of nodes per subgraph: 3
+At: 617
+At: 819
+At: 983
+617
+
+ Number of nodes per subgraph: 1
+At: 658
+658
+
+ Number of nodes per subgraph: 2
+At: 666
+At: 725
+666
+
+ Number of nodes per subgraph: 2
+At: 682
+At: 766
+682
+
+ Number of nodes per subgraph: 2
+At: 700
+At: 704
+700
+
+ Number of nodes per subgraph: 2
+At: 706
+At: 748
+706
+
+ Number of nodes per subgraph: 1
+At: 973
+973
+
+9
+24
+37
+38
+50
+56
+84
+104
+135
+9
+ Number of nodes per subgraph: 11
+At: 9
+At: 87
+At: 175
+At: 258
+At: 453
+At: 534
+At: 542
+At: 695
+At: 698
+At: 721
+At: 752
+9
+
+ Number of nodes per subgraph: 10
+At: 26
+At: 57
+At: 123
+At: 190
+At: 218
+At: 395
+At: 457
+At: 512
+At: 734
+At: 901
+26
+
+ Number of nodes per subgraph: 14
+At: 45
+At: 52
+At: 236
+At: 249
+At: 400
+At: 425
+At: 447
+At: 473
+At: 504
+At: 603
+At: 771
+At: 884
+At: 889
+At: 928
+45
+
+ Number of nodes per subgraph: 8
+At: 47
+At: 83
+At: 437
+At: 669
+At: 715
+At: 894
+At: 918
+At: 994
+47
+
+ Number of nodes per subgraph: 9
+At: 63
+At: 233
+At: 317
+At: 519
+At: 565
+At: 768
+At: 792
+At: 952
+At: 982
+63
+
+ Number of nodes per subgraph: 10
+At: 74
+At: 225
+At: 243
+At: 675
+At: 694
+At: 815
+At: 847
+At: 854
+At: 940
+At: 985
+74
+
+ Number of nodes per subgraph: 9
+At: 115
+At: 184
+At: 357
+At: 499
+At: 548
+At: 551
+At: 584
+At: 600
+At: 616
+115
+
+ Number of nodes per subgraph: 8
+At: 162
+At: 461
+At: 563
+At: 567
+At: 705
+At: 738
+At: 750
+At: 938
+162
+
+ Number of nodes per subgraph: 4
+At: 417
+At: 794
+At: 877
+At: 899
+417
+
+0
+1
+2
+3
+4
+5
+6
+7
+8
+ERROR THIS SHOULDN'T HAPPEN
+Test case 3: failure
+ Number of nodes per subgraph: 9
+At: 0
+At: 13
+At: 16
+At: 18
+At: 34
+At: 38
+At: 41
+At: 58
+At: 97
+0
+
+ Number of nodes per subgraph: 6
+At: 1
+At: 4
+At: 7
+At: 10
+At: 17
+At: 95
+1
+
+ Number of nodes per subgraph: 9
+At: 2
+At: 22
+At: 32
+At: 50
+At: 51
+At: 53
+At: 56
+At: 72
+At: 88
+2
+
+ Number of nodes per subgraph: 4
+At: 3
+At: 65
+At: 84
+At: 91
+3
+
+ Number of nodes per subgraph: 7
+At: 5
+At: 14
+At: 48
+At: 60
+At: 64
+At: 79
+At: 81
+5
+
+ Number of nodes per subgraph: 9
+At: 6
+At: 15
+At: 26
+At: 31
+At: 40
+At: 49
+At: 61
+At: 73
+At: 94
+6
+
+ Number of nodes per subgraph: 4
+At: 8
+At: 21
+At: 71
+At: 77
+8
+
+ Number of nodes per subgraph: 3
+At: 9
+At: 59
+At: 86
+9
+
+ Number of nodes per subgraph: 2
+At: 11
+At: 47
+11
+
+ Number of nodes per subgraph: 1
+At: 12
+12
+
+ Number of nodes per subgraph: 8
+At: 19
+At: 25
+At: 29
+At: 37
+At: 44
+At: 45
+At: 46
+At: 66
+19
+
+ Number of nodes per subgraph: 7
+At: 20
+At: 35
+At: 36
+At: 42
+At: 67
+At: 89
+At: 96
+20
+
+ Number of nodes per subgraph: 8
+At: 23
+At: 24
+At: 28
+At: 33
+At: 62
+At: 68
+At: 80
+At: 82
+23
+
+ Number of nodes per subgraph: 1
+At: 27
+27
+
+ Number of nodes per subgraph: 8
+At: 30
+At: 55
+At: 70
+At: 74
+At: 76
+At: 83
+At: 85
+At: 92
+30
+
+ Number of nodes per subgraph: 3
+At: 39
+At: 69
+At: 78
+39
+
+ Number of nodes per subgraph: 2
+At: 43
+At: 98
+43
+
+ Number of nodes per subgraph: 1
+At: 52
+52
+
+ Number of nodes per subgraph: 1
+At: 54
+54
+
+ Number of nodes per subgraph: 1
+At: 57
+57
+
+ Number of nodes per subgraph: 4
+At: 63
+At: 75
+At: 87
+At: 99
+63
+
+ Number of nodes per subgraph: 1
+At: 90
+90
+
+ Number of nodes per subgraph: 1
+At: 93
+93
+
+0
+1
+2
+3
+4
+6
+7
+8
+10
+12
+13
+14
+15
+17
+20
+22
+13
+ Number of nodes per subgraph: 9
+At: 0
+At: 13
+At: 16
+At: 18
+At: 34
+At: 38
+At: 41
+At: 58
+At: 97
+0
+
+ Number of nodes per subgraph: 6
+At: 1
+At: 4
+At: 7
+At: 10
+At: 17
+At: 95
+1
+
+ Number of nodes per subgraph: 9
+At: 2
+At: 22
+At: 32
+At: 50
+At: 51
+At: 53
+At: 56
+At: 72
+At: 88
+2
+
+ Number of nodes per subgraph: 4
+At: 3
+At: 65
+At: 84
+At: 91
+3
+
+ Number of nodes per subgraph: 7
+At: 5
+At: 14
+At: 48
+At: 60
+At: 64
+At: 79
+At: 81
+5
+
+ Number of nodes per subgraph: 4
+At: 8
+At: 21
+At: 71
+At: 77
+8
+
+ Number of nodes per subgraph: 3
+At: 9
+At: 59
+At: 86
+9
+
+ Number of nodes per subgraph: 2
+At: 11
+At: 47
+11
+
+ Number of nodes per subgraph: 8
+At: 19
+At: 25
+At: 29
+At: 37
+At: 44
+At: 45
+At: 46
+At: 66
+19
+
+ Number of nodes per subgraph: 8
+At: 23
+At: 24
+At: 28
+At: 33
+At: 62
+At: 68
+At: 80
+At: 82
+23
+
+ Number of nodes per subgraph: 8
+At: 30
+At: 55
+At: 70
+At: 74
+At: 76
+At: 83
+At: 85
+At: 92
+30
+
+ Number of nodes per subgraph: 3
+At: 39
+At: 69
+At: 78
+39
+
+ Number of nodes per subgraph: 4
+At: 63
+At: 75
+At: 87
+At: 99
+63
+
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+ERROR THIS SHOULDN'T HAPPEN
+Test case 4: failure
+ Number of nodes per subgraph: 39
+At: 0
+At: 5
+At: 20
+At: 50
+At: 104
+At: 126
+At: 157
+At: 160
+At: 179
+At: 243
+At: 248
+At: 281
+At: 308
+At: 313
+At: 350
+At: 356
+At: 359
+At: 366
+At: 370
+At: 389
+At: 421
+At: 469
+At: 484
+At: 515
+At: 544
+At: 581
+At: 600
+At: 608
+At: 665
+At: 711
+At: 769
+At: 785
+At: 852
+At: 896
+At: 932
+At: 967
+At: 977
+At: 990
+At: 992
+0
+
+ Number of nodes per subgraph: 19
+At: 1
+At: 23
+At: 59
+At: 167
+At: 186
+At: 237
+At: 239
+At: 242
+At: 504
+At: 514
+At: 532
+At: 753
+At: 756
+At: 783
+At: 807
+At: 808
+At: 846
+At: 934
+At: 949
+1
+
+ Number of nodes per subgraph: 26
+At: 2
+At: 31
+At: 36
+At: 38
+At: 76
+At: 82
+At: 128
+At: 153
+At: 162
+At: 257
+At: 277
+At: 357
+At: 358
+At: 371
+At: 406
+At: 423
+At: 509
+At: 573
+At: 655
+At: 747
+At: 759
+At: 819
+At: 861
+At: 929
+At: 957
+At: 991
+2
+
+ Number of nodes per subgraph: 179
+At: 3
+At: 9
+At: 13
+At: 14
+At: 18
+At: 22
+At: 26
+At: 34
+At: 42
+At: 43
+At: 57
+At: 62
+At: 67
+At: 73
+At: 79
+At: 84
+At: 95
+At: 98
+At: 101
+At: 107
+At: 117
+At: 118
+At: 123
+At: 136
+At: 143
+At: 150
+At: 158
+At: 163
+At: 165
+At: 171
+At: 172
+At: 174
+At: 176
+At: 188
+At: 190
+At: 197
+At: 198
+At: 201
+At: 203
+At: 208
+At: 224
+At: 227
+At: 229
+At: 236
+At: 241
+At: 244
+At: 249
+At: 254
+At: 264
+At: 270
+At: 271
+At: 278
+At: 284
+At: 287
+At: 301
+At: 304
+At: 314
+At: 327
+At: 328
+At: 340
+At: 346
+At: 361
+At: 363
+At: 364
+At: 372
+At: 373
+At: 380
+At: 388
+At: 392
+At: 393
+At: 422
+At: 424
+At: 425
+At: 429
+At: 434
+At: 435
+At: 436
+At: 448
+At: 451
+At: 459
+At: 461
+At: 462
+At: 463
+At: 466
+At: 472
+At: 477
+At: 487
+At: 488
+At: 496
+At: 498
+At: 499
+At: 502
+At: 506
+At: 513
+At: 518
+At: 526
+At: 527
+At: 538
+At: 540
+At: 546
+At: 552
+At: 553
+At: 570
+At: 586
+At: 588
+At: 589
+At: 591
+At: 593
+At: 596
+At: 607
+At: 609
+At: 611
+At: 622
+At: 624
+At: 625
+At: 627
+At: 640
+At: 647
+At: 650
+At: 651
+At: 653
+At: 667
+At: 672
+At: 674
+At: 675
+At: 680
+At: 689
+At: 690
+At: 695
+At: 706
+At: 710
+At: 712
+At: 713
+At: 717
+At: 720
+At: 722
+At: 729
+At: 738
+At: 761
+At: 766
+At: 771
+At: 775
+At: 782
+At: 787
+At: 796
+At: 797
+At: 798
+At: 801
+At: 804
+At: 813
+At: 816
+At: 817
+At: 825
+At: 828
+At: 830
+At: 833
+At: 835
+At: 837
+At: 856
+At: 859
+At: 863
+At: 875
+At: 880
+At: 883
+At: 886
+At: 889
+At: 895
+At: 904
+At: 906
+At: 909
+At: 914
+At: 933
+At: 939
+At: 953
+At: 961
+At: 970
+At: 980
+At: 994
+At: 999
+3
+
+ Number of nodes per subgraph: 17
+At: 4
+At: 94
+At: 108
+At: 146
+At: 173
+At: 205
+At: 269
+At: 317
+At: 416
+At: 474
+At: 489
+At: 545
+At: 605
+At: 745
+At: 778
+At: 873
+At: 943
+4
+
+ Number of nodes per subgraph: 17
+At: 6
+At: 16
+At: 17
+At: 28
+At: 112
+At: 119
+At: 124
+At: 183
+At: 318
+At: 395
+At: 577
+At: 641
+At: 698
+At: 724
+At: 843
+At: 884
+At: 920
+6
+
+ Number of nodes per subgraph: 27
+At: 7
+At: 44
+At: 58
+At: 89
+At: 103
+At: 110
+At: 168
+At: 207
+At: 246
+At: 279
+At: 343
+At: 376
+At: 512
+At: 529
+At: 541
+At: 547
+At: 583
+At: 584
+At: 603
+At: 741
+At: 751
+At: 755
+At: 858
+At: 899
+At: 941
+At: 954
+At: 993
+7
+
+ Number of nodes per subgraph: 14
+At: 8
+At: 24
+At: 69
+At: 166
+At: 187
+At: 266
+At: 290
+At: 412
+At: 497
+At: 557
+At: 610
+At: 634
+At: 704
+At: 965
+8
+
+ Number of nodes per subgraph: 31
+At: 10
+At: 68
+At: 96
+At: 106
+At: 181
+At: 221
+At: 299
+At: 300
+At: 305
+At: 367
+At: 379
+At: 387
+At: 450
+At: 454
+At: 523
+At: 525
+At: 537
+At: 621
+At: 642
+At: 660
+At: 661
+At: 671
+At: 678
+At: 739
+At: 779
+At: 812
+At: 818
+At: 916
+At: 930
+At: 987
+At: 996
+10
+
+ Number of nodes per subgraph: 23
+At: 11
+At: 53
+At: 75
+At: 83
+At: 105
+At: 154
+At: 185
+At: 209
+At: 240
+At: 276
+At: 324
+At: 408
+At: 464
+At: 531
+At: 587
+At: 623
+At: 685
+At: 707
+At: 731
+At: 792
+At: 871
+At: 960
+At: 963
+11
+
+ Number of nodes per subgraph: 44
+At: 12
+At: 32
+At: 66
+At: 70
+At: 97
+At: 182
+At: 184
+At: 212
+At: 219
+At: 226
+At: 258
+At: 260
+At: 263
+At: 273
+At: 311
+At: 323
+At: 349
+At: 375
+At: 382
+At: 401
+At: 446
+At: 471
+At: 485
+At: 536
+At: 566
+At: 568
+At: 569
+At: 572
+At: 578
+At: 597
+At: 616
+At: 669
+At: 681
+At: 702
+At: 703
+At: 705
+At: 714
+At: 773
+At: 794
+At: 870
+At: 902
+At: 936
+At: 950
+At: 985
+12
+
+ Number of nodes per subgraph: 11
+At: 15
+At: 320
+At: 427
+At: 490
+At: 562
+At: 564
+At: 567
+At: 735
+At: 786
+At: 790
+At: 844
+15
+
+ Number of nodes per subgraph: 35
+At: 19
+At: 72
+At: 78
+At: 99
+At: 120
+At: 133
+At: 155
+At: 211
+At: 214
+At: 230
+At: 265
+At: 355
+At: 415
+At: 439
+At: 440
+At: 458
+At: 467
+At: 476
+At: 510
+At: 565
+At: 590
+At: 602
+At: 638
+At: 643
+At: 682
+At: 694
+At: 770
+At: 781
+At: 803
+At: 831
+At: 890
+At: 898
+At: 910
+At: 915
+At: 984
+19
+
+ Number of nodes per subgraph: 11
+At: 21
+At: 139
+At: 149
+At: 194
+At: 321
+At: 399
+At: 491
+At: 508
+At: 663
+At: 716
+At: 913
+21
+
+ Number of nodes per subgraph: 10
+At: 25
+At: 253
+At: 394
+At: 480
+At: 598
+At: 635
+At: 687
+At: 701
+At: 962
+At: 971
+25
+
+ Number of nodes per subgraph: 20
+At: 27
+At: 152
+At: 193
+At: 220
+At: 232
+At: 274
+At: 347
+At: 503
+At: 507
+At: 594
+At: 718
+At: 776
+At: 780
+At: 845
+At: 851
+At: 879
+At: 897
+At: 947
+At: 952
+At: 976
+27
+
+ Number of nodes per subgraph: 8
+At: 29
+At: 46
+At: 135
+At: 354
+At: 452
+At: 815
+At: 945
+At: 972
+29
+
+ Number of nodes per subgraph: 23
+At: 30
+At: 61
+At: 81
+At: 114
+At: 159
+At: 195
+At: 319
+At: 325
+At: 333
+At: 369
+At: 403
+At: 441
+At: 500
+At: 505
+At: 558
+At: 691
+At: 709
+At: 742
+At: 746
+At: 789
+At: 802
+At: 847
+At: 876
+30
+
+ Number of nodes per subgraph: 9
+At: 33
+At: 35
+At: 142
+At: 543
+At: 629
+At: 688
+At: 958
+At: 968
+At: 983
+33
+
+ Number of nodes per subgraph: 19
+At: 37
+At: 180
+At: 283
+At: 293
+At: 310
+At: 312
+At: 326
+At: 360
+At: 595
+At: 630
+At: 677
+At: 699
+At: 728
+At: 754
+At: 760
+At: 765
+At: 820
+At: 877
+At: 978
+37
+
+ Number of nodes per subgraph: 17
+At: 39
+At: 144
+At: 147
+At: 238
+At: 286
+At: 316
+At: 337
+At: 468
+At: 479
+At: 631
+At: 793
+At: 925
+At: 931
+At: 937
+At: 969
+At: 974
+At: 989
+39
+
+ Number of nodes per subgraph: 12
+At: 40
+At: 127
+At: 267
+At: 302
+At: 420
+At: 470
+At: 481
+At: 521
+At: 683
+At: 744
+At: 749
+At: 919
+40
+
+ Number of nodes per subgraph: 16
+At: 41
+At: 102
+At: 250
+At: 285
+At: 331
+At: 336
+At: 378
+At: 555
+At: 809
+At: 857
+At: 865
+At: 868
+At: 887
+At: 922
+At: 928
+At: 982
+41
+
+ Number of nodes per subgraph: 12
+At: 45
+At: 115
+At: 151
+At: 178
+At: 191
+At: 215
+At: 397
+At: 407
+At: 550
+At: 617
+At: 734
+At: 821
+45
+
+ Number of nodes per subgraph: 26
+At: 47
+At: 48
+At: 49
+At: 55
+At: 74
+At: 121
+At: 134
+At: 140
+At: 307
+At: 330
+At: 344
+At: 348
+At: 396
+At: 405
+At: 574
+At: 599
+At: 626
+At: 662
+At: 673
+At: 725
+At: 726
+At: 740
+At: 836
+At: 938
+At: 964
+At: 966
+47
+
+ Number of nodes per subgraph: 6
+At: 51
+At: 251
+At: 345
+At: 528
+At: 748
+At: 810
+51
+
+ Number of nodes per subgraph: 11
+At: 52
+At: 56
+At: 86
+At: 92
+At: 138
+At: 329
+At: 428
+At: 563
+At: 615
+At: 885
+At: 986
+52
+
+ Number of nodes per subgraph: 7
+At: 54
+At: 486
+At: 853
+At: 907
+At: 908
+At: 923
+At: 927
+54
+
+ Number of nodes per subgraph: 10
+At: 60
+At: 169
+At: 231
+At: 289
+At: 438
+At: 501
+At: 700
+At: 750
+At: 772
+At: 788
+60
+
+ Number of nodes per subgraph: 10
+At: 63
+At: 417
+At: 465
+At: 535
+At: 548
+At: 585
+At: 601
+At: 838
+At: 940
+At: 951
+63
+
+ Number of nodes per subgraph: 18
+At: 64
+At: 148
+At: 210
+At: 235
+At: 255
+At: 272
+At: 383
+At: 411
+At: 456
+At: 478
+At: 522
+At: 530
+At: 644
+At: 757
+At: 805
+At: 827
+At: 872
+At: 882
+64
+
+ Number of nodes per subgraph: 15
+At: 65
+At: 204
+At: 291
+At: 292
+At: 338
+At: 449
+At: 483
+At: 618
+At: 676
+At: 777
+At: 862
+At: 888
+At: 891
+At: 893
+At: 973
+65
+
+ Number of nodes per subgraph: 1
+At: 71
+71
+
+ Number of nodes per subgraph: 7
+At: 77
+At: 87
+At: 189
+At: 256
+At: 752
+At: 758
+At: 806
+77
+
+ Number of nodes per subgraph: 16
+At: 80
+At: 130
+At: 223
+At: 233
+At: 315
+At: 437
+At: 516
+At: 520
+At: 549
+At: 575
+At: 576
+At: 613
+At: 652
+At: 826
+At: 997
+At: 998
+80
+
+ Number of nodes per subgraph: 17
+At: 85
+At: 200
+At: 261
+At: 268
+At: 296
+At: 433
+At: 542
+At: 551
+At: 571
+At: 592
+At: 612
+At: 657
+At: 822
+At: 829
+At: 850
+At: 866
+At: 988
+85
+
+ Number of nodes per subgraph: 9
+At: 88
+At: 409
+At: 460
+At: 524
+At: 645
+At: 686
+At: 800
+At: 918
+At: 959
+88
+
+ Number of nodes per subgraph: 16
+At: 90
+At: 125
+At: 196
+At: 217
+At: 275
+At: 368
+At: 430
+At: 453
+At: 580
+At: 658
+At: 666
+At: 732
+At: 784
+At: 842
+At: 926
+At: 981
+90
+
+ Number of nodes per subgraph: 8
+At: 91
+At: 288
+At: 298
+At: 365
+At: 559
+At: 832
+At: 855
+At: 946
+91
+
+ Number of nodes per subgraph: 10
+At: 93
+At: 129
+At: 218
+At: 620
+At: 648
+At: 774
+At: 848
+At: 867
+At: 892
+At: 901
+93
+
+ Number of nodes per subgraph: 7
+At: 100
+At: 156
+At: 482
+At: 493
+At: 494
+At: 582
+At: 900
+100
+
+ Number of nodes per subgraph: 11
+At: 109
+At: 137
+At: 410
+At: 413
+At: 431
+At: 455
+At: 533
+At: 721
+At: 762
+At: 768
+At: 878
+109
+
+ Number of nodes per subgraph: 9
+At: 111
+At: 116
+At: 122
+At: 213
+At: 335
+At: 414
+At: 664
+At: 708
+At: 727
+111
+
+ Number of nodes per subgraph: 4
+At: 113
+At: 668
+At: 715
+At: 719
+113
+
+ Number of nodes per subgraph: 7
+At: 131
+At: 177
+At: 294
+At: 419
+At: 447
+At: 539
+At: 956
+131
+
+ Number of nodes per subgraph: 3
+At: 132
+At: 385
+At: 854
+132
+
+ Number of nodes per subgraph: 6
+At: 141
+At: 495
+At: 604
+At: 637
+At: 670
+At: 799
+141
+
+ Number of nodes per subgraph: 11
+At: 145
+At: 164
+At: 282
+At: 398
+At: 400
+At: 561
+At: 579
+At: 628
+At: 733
+At: 737
+At: 924
+145
+
+ Number of nodes per subgraph: 9
+At: 161
+At: 247
+At: 334
+At: 390
+At: 391
+At: 445
+At: 696
+At: 869
+At: 948
+161
+
+ Number of nodes per subgraph: 6
+At: 170
+At: 332
+At: 339
+At: 646
+At: 659
+At: 979
+170
+
+ Number of nodes per subgraph: 5
+At: 175
+At: 222
+At: 352
+At: 942
+At: 955
+175
+
+ Number of nodes per subgraph: 6
+At: 192
+At: 245
+At: 295
+At: 362
+At: 386
+At: 614
+192
+
+ Number of nodes per subgraph: 3
+At: 199
+At: 443
+At: 619
+199
+
+ Number of nodes per subgraph: 6
+At: 202
+At: 225
+At: 377
+At: 636
+At: 743
+At: 917
+202
+
+ Number of nodes per subgraph: 2
+At: 206
+At: 554
+206
+
+ Number of nodes per subgraph: 1
+At: 216
+216
+
+ Number of nodes per subgraph: 2
+At: 228
+At: 697
+228
+
+ Number of nodes per subgraph: 2
+At: 234
+At: 342
+234
+
+ Number of nodes per subgraph: 5
+At: 252
+At: 341
+At: 457
+At: 692
+At: 905
+252
+
+ Number of nodes per subgraph: 8
+At: 259
+At: 353
+At: 374
+At: 384
+At: 556
+At: 606
+At: 763
+At: 834
+259
+
+ Number of nodes per subgraph: 1
+At: 262
+262
+
+ Number of nodes per subgraph: 4
+At: 280
+At: 764
+At: 823
+At: 935
+280
+
+ Number of nodes per subgraph: 8
+At: 297
+At: 475
+At: 511
+At: 730
+At: 736
+At: 767
+At: 903
+At: 912
+297
+
+ Number of nodes per subgraph: 5
+At: 303
+At: 306
+At: 381
+At: 519
+At: 881
+303
+
+ Number of nodes per subgraph: 6
+At: 309
+At: 418
+At: 534
+At: 693
+At: 839
+At: 975
+309
+
+ Number of nodes per subgraph: 6
+At: 322
+At: 442
+At: 560
+At: 639
+At: 811
+At: 814
+322
+
+ Number of nodes per subgraph: 2
+At: 351
+At: 840
+351
+
+ Number of nodes per subgraph: 3
+At: 402
+At: 404
+At: 864
+402
+
+ Number of nodes per subgraph: 2
+At: 426
+At: 492
+426
+
+ Number of nodes per subgraph: 1
+At: 432
+432
+
+ Number of nodes per subgraph: 1
+At: 444
+444
+
+ Number of nodes per subgraph: 3
+At: 473
+At: 679
+At: 824
+473
+
+ Number of nodes per subgraph: 2
+At: 517
+At: 633
+517
+
+ Number of nodes per subgraph: 2
+At: 632
+At: 684
+632
+
+ Number of nodes per subgraph: 2
+At: 649
+At: 654
+649
+
+ Number of nodes per subgraph: 5
+At: 656
+At: 795
+At: 894
+At: 921
+At: 995
+656
+
+ Number of nodes per subgraph: 2
+At: 723
+At: 849
+723
+
+ Number of nodes per subgraph: 1
+At: 791
+791
+
+ Number of nodes per subgraph: 1
+At: 841
+841
+
+ Number of nodes per subgraph: 1
+At: 860
+860
+
+ Number of nodes per subgraph: 1
+At: 874
+874
+
+ Number of nodes per subgraph: 1
+At: 911
+911
+
+ Number of nodes per subgraph: 1
+At: 944
+944
+
+0
+1
+2
+3
+10
+12
+13
+18
+20
+24
+25
+26
+29
+30
+35
+46
+48
+59
+65
+82
+19
+ Number of nodes per subgraph: 39
+At: 0
+At: 5
+At: 20
+At: 50
+At: 104
+At: 126
+At: 157
+At: 160
+At: 179
+At: 243
+At: 248
+At: 281
+At: 308
+At: 313
+At: 350
+At: 356
+At: 359
+At: 366
+At: 370
+At: 389
+At: 421
+At: 469
+At: 484
+At: 515
+At: 544
+At: 581
+At: 600
+At: 608
+At: 665
+At: 711
+At: 769
+At: 785
+At: 852
+At: 896
+At: 932
+At: 967
+At: 977
+At: 990
+At: 992
+0
+
+ Number of nodes per subgraph: 19
+At: 1
+At: 23
+At: 59
+At: 167
+At: 186
+At: 237
+At: 239
+At: 242
+At: 504
+At: 514
+At: 532
+At: 753
+At: 756
+At: 783
+At: 807
+At: 808
+At: 846
+At: 934
+At: 949
+1
+
+ Number of nodes per subgraph: 26
+At: 2
+At: 31
+At: 36
+At: 38
+At: 76
+At: 82
+At: 128
+At: 153
+At: 162
+At: 257
+At: 277
+At: 357
+At: 358
+At: 371
+At: 406
+At: 423
+At: 509
+At: 573
+At: 655
+At: 747
+At: 759
+At: 819
+At: 861
+At: 929
+At: 957
+At: 991
+2
+
+ Number of nodes per subgraph: 179
+At: 3
+At: 9
+At: 13
+At: 14
+At: 18
+At: 22
+At: 26
+At: 34
+At: 42
+At: 43
+At: 57
+At: 62
+At: 67
+At: 73
+At: 79
+At: 84
+At: 95
+At: 98
+At: 101
+At: 107
+At: 117
+At: 118
+At: 123
+At: 136
+At: 143
+At: 150
+At: 158
+At: 163
+At: 165
+At: 171
+At: 172
+At: 174
+At: 176
+At: 188
+At: 190
+At: 197
+At: 198
+At: 201
+At: 203
+At: 208
+At: 224
+At: 227
+At: 229
+At: 236
+At: 241
+At: 244
+At: 249
+At: 254
+At: 264
+At: 270
+At: 271
+At: 278
+At: 284
+At: 287
+At: 301
+At: 304
+At: 314
+At: 327
+At: 328
+At: 340
+At: 346
+At: 361
+At: 363
+At: 364
+At: 372
+At: 373
+At: 380
+At: 388
+At: 392
+At: 393
+At: 422
+At: 424
+At: 425
+At: 429
+At: 434
+At: 435
+At: 436
+At: 448
+At: 451
+At: 459
+At: 461
+At: 462
+At: 463
+At: 466
+At: 472
+At: 477
+At: 487
+At: 488
+At: 496
+At: 498
+At: 499
+At: 502
+At: 506
+At: 513
+At: 518
+At: 526
+At: 527
+At: 538
+At: 540
+At: 546
+At: 552
+At: 553
+At: 570
+At: 586
+At: 588
+At: 589
+At: 591
+At: 593
+At: 596
+At: 607
+At: 609
+At: 611
+At: 622
+At: 624
+At: 625
+At: 627
+At: 640
+At: 647
+At: 650
+At: 651
+At: 653
+At: 667
+At: 672
+At: 674
+At: 675
+At: 680
+At: 689
+At: 690
+At: 695
+At: 706
+At: 710
+At: 712
+At: 713
+At: 717
+At: 720
+At: 722
+At: 729
+At: 738
+At: 761
+At: 766
+At: 771
+At: 775
+At: 782
+At: 787
+At: 796
+At: 797
+At: 798
+At: 801
+At: 804
+At: 813
+At: 816
+At: 817
+At: 825
+At: 828
+At: 830
+At: 833
+At: 835
+At: 837
+At: 856
+At: 859
+At: 863
+At: 875
+At: 880
+At: 883
+At: 886
+At: 889
+At: 895
+At: 904
+At: 906
+At: 909
+At: 914
+At: 933
+At: 939
+At: 953
+At: 961
+At: 970
+At: 980
+At: 994
+At: 999
+3
+
+ Number of nodes per subgraph: 44
+At: 12
+At: 32
+At: 66
+At: 70
+At: 97
+At: 182
+At: 184
+At: 212
+At: 219
+At: 226
+At: 258
+At: 260
+At: 263
+At: 273
+At: 311
+At: 323
+At: 349
+At: 375
+At: 382
+At: 401
+At: 446
+At: 471
+At: 485
+At: 536
+At: 566
+At: 568
+At: 569
+At: 572
+At: 578
+At: 597
+At: 616
+At: 669
+At: 681
+At: 702
+At: 703
+At: 705
+At: 714
+At: 773
+At: 794
+At: 870
+At: 902
+At: 936
+At: 950
+At: 985
+12
+
+ Number of nodes per subgraph: 35
+At: 19
+At: 72
+At: 78
+At: 99
+At: 120
+At: 133
+At: 155
+At: 211
+At: 214
+At: 230
+At: 265
+At: 355
+At: 415
+At: 439
+At: 440
+At: 458
+At: 467
+At: 476
+At: 510
+At: 565
+At: 590
+At: 602
+At: 638
+At: 643
+At: 682
+At: 694
+At: 770
+At: 781
+At: 803
+At: 831
+At: 890
+At: 898
+At: 910
+At: 915
+At: 984
+19
+
+ Number of nodes per subgraph: 11
+At: 21
+At: 139
+At: 149
+At: 194
+At: 321
+At: 399
+At: 491
+At: 508
+At: 663
+At: 716
+At: 913
+21
+
+ Number of nodes per subgraph: 9
+At: 33
+At: 35
+At: 142
+At: 543
+At: 629
+At: 688
+At: 958
+At: 968
+At: 983
+33
+
+ Number of nodes per subgraph: 17
+At: 39
+At: 144
+At: 147
+At: 238
+At: 286
+At: 316
+At: 337
+At: 468
+At: 479
+At: 631
+At: 793
+At: 925
+At: 931
+At: 937
+At: 969
+At: 974
+At: 989
+39
+
+ Number of nodes per subgraph: 26
+At: 47
+At: 48
+At: 49
+At: 55
+At: 74
+At: 121
+At: 134
+At: 140
+At: 307
+At: 330
+At: 344
+At: 348
+At: 396
+At: 405
+At: 574
+At: 599
+At: 626
+At: 662
+At: 673
+At: 725
+At: 726
+At: 740
+At: 836
+At: 938
+At: 964
+At: 966
+47
+
+ Number of nodes per subgraph: 6
+At: 51
+At: 251
+At: 345
+At: 528
+At: 748
+At: 810
+51
+
+ Number of nodes per subgraph: 11
+At: 52
+At: 56
+At: 86
+At: 92
+At: 138
+At: 329
+At: 428
+At: 563
+At: 615
+At: 885
+At: 986
+52
+
+ Number of nodes per subgraph: 10
+At: 63
+At: 417
+At: 465
+At: 535
+At: 548
+At: 585
+At: 601
+At: 838
+At: 940
+At: 951
+63
+
+ Number of nodes per subgraph: 18
+At: 64
+At: 148
+At: 210
+At: 235
+At: 255
+At: 272
+At: 383
+At: 411
+At: 456
+At: 478
+At: 522
+At: 530
+At: 644
+At: 757
+At: 805
+At: 827
+At: 872
+At: 882
+64
+
+ Number of nodes per subgraph: 17
+At: 85
+At: 200
+At: 261
+At: 268
+At: 296
+At: 433
+At: 542
+At: 551
+At: 571
+At: 592
+At: 612
+At: 657
+At: 822
+At: 829
+At: 850
+At: 866
+At: 988
+85
+
+ Number of nodes per subgraph: 6
+At: 141
+At: 495
+At: 604
+At: 637
+At: 670
+At: 799
+141
+
+ Number of nodes per subgraph: 9
+At: 161
+At: 247
+At: 334
+At: 390
+At: 391
+At: 445
+At: 696
+At: 869
+At: 948
+161
+
+ Number of nodes per subgraph: 8
+At: 259
+At: 353
+At: 374
+At: 384
+At: 556
+At: 606
+At: 763
+At: 834
+259
+
+ Number of nodes per subgraph: 6
+At: 322
+At: 442
+At: 560
+At: 639
+At: 811
+At: 814
+322
+
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+ERROR THIS SHOULDN'T HAPPEN
+Test case 5: failure
+ Number of nodes per subgraph: 98
+At: 0
+At: 3
+At: 11
+At: 25
+At: 28
+At: 30
+At: 35
+At: 37
+At: 45
+At: 46
+At: 50
+At: 65
+At: 66
+At: 67
+At: 69
+At: 80
+At: 83
+At: 91
+At: 95
+At: 96
+At: 101
+At: 104
+At: 107
+At: 110
+At: 117
+At: 121
+At: 128
+At: 147
+At: 150
+At: 151
+At: 153
+At: 157
+At: 158
+At: 171
+At: 174
+At: 180
+At: 190
+At: 191
+At: 196
+At: 199
+At: 208
+At: 209
+At: 210
+At: 211
+At: 213
+At: 218
+At: 223
+At: 226
+At: 239
+At: 246
+At: 252
+At: 254
+At: 269
+At: 296
+At: 306
+At: 308
+At: 309
+At: 310
+At: 317
+At: 324
+At: 328
+At: 330
+At: 334
+At: 338
+At: 343
+At: 355
+At: 356
+At: 357
+At: 358
+At: 365
+At: 366
+At: 369
+At: 370
+At: 375
+At: 385
+At: 388
+At: 394
+At: 406
+At: 407
+At: 416
+At: 419
+At: 420
+At: 421
+At: 425
+At: 431
+At: 433
+At: 441
+At: 442
+At: 449
+At: 457
+At: 469
+At: 472
+At: 481
+At: 482
+At: 483
+At: 487
+At: 489
+At: 498
+0
+
+ Number of nodes per subgraph: 34
+At: 1
+At: 4
+At: 24
+At: 31
+At: 48
+At: 52
+At: 59
+At: 60
+At: 64
+At: 73
+At: 86
+At: 109
+At: 116
+At: 119
+At: 126
+At: 133
+At: 164
+At: 201
+At: 212
+At: 231
+At: 241
+At: 256
+At: 266
+At: 284
+At: 320
+At: 322
+At: 380
+At: 392
+At: 397
+At: 402
+At: 405
+At: 435
+At: 492
+At: 493
+1
+
+ Number of nodes per subgraph: 23
+At: 2
+At: 22
+At: 27
+At: 38
+At: 97
+At: 132
+At: 144
+At: 167
+At: 277
+At: 290
+At: 299
+At: 305
+At: 327
+At: 351
+At: 374
+At: 390
+At: 395
+At: 396
+At: 459
+At: 480
+At: 484
+At: 490
+At: 491
+2
+
+ Number of nodes per subgraph: 29
+At: 5
+At: 9
+At: 12
+At: 20
+At: 62
+At: 88
+At: 152
+At: 166
+At: 186
+At: 192
+At: 197
+At: 219
+At: 220
+At: 251
+At: 275
+At: 293
+At: 352
+At: 361
+At: 363
+At: 368
+At: 400
+At: 410
+At: 426
+At: 436
+At: 437
+At: 453
+At: 455
+At: 477
+At: 497
+5
+
+ Number of nodes per subgraph: 51
+At: 6
+At: 68
+At: 71
+At: 74
+At: 87
+At: 93
+At: 98
+At: 102
+At: 106
+At: 111
+At: 127
+At: 130
+At: 137
+At: 155
+At: 165
+At: 189
+At: 207
+At: 216
+At: 248
+At: 250
+At: 259
+At: 270
+At: 271
+At: 286
+At: 288
+At: 289
+At: 304
+At: 311
+At: 316
+At: 319
+At: 323
+At: 332
+At: 335
+At: 336
+At: 339
+At: 340
+At: 344
+At: 377
+At: 379
+At: 389
+At: 391
+At: 414
+At: 422
+At: 423
+At: 424
+At: 464
+At: 467
+At: 476
+At: 479
+At: 486
+At: 488
+6
+
+ Number of nodes per subgraph: 17
+At: 7
+At: 57
+At: 61
+At: 76
+At: 100
+At: 113
+At: 124
+At: 160
+At: 175
+At: 181
+At: 221
+At: 237
+At: 349
+At: 360
+At: 393
+At: 408
+At: 448
+7
+
+ Number of nodes per subgraph: 25
+At: 8
+At: 13
+At: 29
+At: 58
+At: 78
+At: 149
+At: 161
+At: 183
+At: 193
+At: 198
+At: 215
+At: 228
+At: 230
+At: 272
+At: 313
+At: 329
+At: 333
+At: 348
+At: 399
+At: 417
+At: 428
+At: 430
+At: 439
+At: 450
+At: 456
+8
+
+ Number of nodes per subgraph: 25
+At: 10
+At: 18
+At: 90
+At: 114
+At: 118
+At: 135
+At: 148
+At: 177
+At: 184
+At: 194
+At: 200
+At: 214
+At: 232
+At: 238
+At: 249
+At: 273
+At: 282
+At: 301
+At: 346
+At: 362
+At: 373
+At: 382
+At: 401
+At: 432
+At: 485
+10
+
+ Number of nodes per subgraph: 9
+At: 14
+At: 16
+At: 39
+At: 54
+At: 268
+At: 383
+At: 387
+At: 418
+At: 494
+14
+
+ Number of nodes per subgraph: 24
+At: 15
+At: 26
+At: 33
+At: 36
+At: 56
+At: 82
+At: 131
+At: 168
+At: 176
+At: 235
+At: 245
+At: 253
+At: 264
+At: 298
+At: 307
+At: 331
+At: 337
+At: 376
+At: 381
+At: 412
+At: 413
+At: 444
+At: 458
+At: 473
+15
+
+ Number of nodes per subgraph: 12
+At: 17
+At: 79
+At: 89
+At: 163
+At: 182
+At: 202
+At: 225
+At: 244
+At: 409
+At: 440
+At: 445
+At: 461
+17
+
+ Number of nodes per subgraph: 18
+At: 19
+At: 53
+At: 77
+At: 81
+At: 108
+At: 142
+At: 156
+At: 159
+At: 205
+At: 227
+At: 359
+At: 367
+At: 415
+At: 443
+At: 462
+At: 466
+At: 474
+At: 495
+19
+
+ Number of nodes per subgraph: 18
+At: 21
+At: 49
+At: 123
+At: 139
+At: 143
+At: 203
+At: 234
+At: 267
+At: 297
+At: 345
+At: 354
+At: 371
+At: 372
+At: 447
+At: 451
+At: 454
+At: 460
+At: 478
+21
+
+ Number of nodes per subgraph: 9
+At: 23
+At: 112
+At: 140
+At: 141
+At: 178
+At: 276
+At: 314
+At: 315
+At: 434
+23
+
+ Number of nodes per subgraph: 4
+At: 32
+At: 72
+At: 179
+At: 302
+32
+
+ Number of nodes per subgraph: 8
+At: 34
+At: 41
+At: 55
+At: 145
+At: 173
+At: 291
+At: 303
+At: 475
+34
+
+ Number of nodes per subgraph: 5
+At: 40
+At: 154
+At: 262
+At: 283
+At: 312
+40
+
+ Number of nodes per subgraph: 9
+At: 42
+At: 136
+At: 138
+At: 169
+At: 261
+At: 278
+At: 280
+At: 300
+At: 398
+42
+
+ Number of nodes per subgraph: 11
+At: 43
+At: 63
+At: 103
+At: 115
+At: 222
+At: 257
+At: 279
+At: 292
+At: 325
+At: 350
+At: 496
+43
+
+ Number of nodes per subgraph: 11
+At: 44
+At: 99
+At: 120
+At: 129
+At: 224
+At: 236
+At: 247
+At: 255
+At: 318
+At: 427
+At: 471
+44
+
+ Number of nodes per subgraph: 4
+At: 47
+At: 206
+At: 240
+At: 285
+47
+
+ Number of nodes per subgraph: 3
+At: 51
+At: 265
+At: 499
+51
+
+ Number of nodes per subgraph: 3
+At: 70
+At: 429
+At: 446
+70
+
+ Number of nodes per subgraph: 8
+At: 75
+At: 84
+At: 243
+At: 281
+At: 294
+At: 378
+At: 411
+At: 452
+75
+
+ Number of nodes per subgraph: 8
+At: 85
+At: 188
+At: 326
+At: 341
+At: 353
+At: 384
+At: 465
+At: 470
+85
+
+ Number of nodes per subgraph: 8
+At: 92
+At: 94
+At: 122
+At: 125
+At: 172
+At: 263
+At: 287
+At: 295
+92
+
+ Number of nodes per subgraph: 3
+At: 105
+At: 162
+At: 258
+105
+
+ Number of nodes per subgraph: 1
+At: 134
+134
+
+ Number of nodes per subgraph: 7
+At: 146
+At: 185
+At: 187
+At: 195
+At: 229
+At: 233
+At: 242
+146
+
+ Number of nodes per subgraph: 2
+At: 170
+At: 204
+170
+
+ Number of nodes per subgraph: 3
+At: 217
+At: 347
+At: 403
+217
+
+ Number of nodes per subgraph: 1
+At: 260
+260
+
+ Number of nodes per subgraph: 2
+At: 274
+At: 438
+274
+
+ Number of nodes per subgraph: 3
+At: 321
+At: 342
+At: 364
+321
+
+ Number of nodes per subgraph: 2
+At: 386
+At: 404
+386
+
+ Number of nodes per subgraph: 1
+At: 463
+463
+
+ Number of nodes per subgraph: 1
+At: 468
+468
+
+0
+1
+2
+3
+4
+5
+6
+7
+9
+11
+13
+14
+22
+28
+29
+15
+ Number of nodes per subgraph: 98
+At: 0
+At: 3
+At: 11
+At: 25
+At: 28
+At: 30
+At: 35
+At: 37
+At: 45
+At: 46
+At: 50
+At: 65
+At: 66
+At: 67
+At: 69
+At: 80
+At: 83
+At: 91
+At: 95
+At: 96
+At: 101
+At: 104
+At: 107
+At: 110
+At: 117
+At: 121
+At: 128
+At: 147
+At: 150
+At: 151
+At: 153
+At: 157
+At: 158
+At: 171
+At: 174
+At: 180
+At: 190
+At: 191
+At: 196
+At: 199
+At: 208
+At: 209
+At: 210
+At: 211
+At: 213
+At: 218
+At: 223
+At: 226
+At: 239
+At: 246
+At: 252
+At: 254
+At: 269
+At: 296
+At: 306
+At: 308
+At: 309
+At: 310
+At: 317
+At: 324
+At: 328
+At: 330
+At: 334
+At: 338
+At: 343
+At: 355
+At: 356
+At: 357
+At: 358
+At: 365
+At: 366
+At: 369
+At: 370
+At: 375
+At: 385
+At: 388
+At: 394
+At: 406
+At: 407
+At: 416
+At: 419
+At: 420
+At: 421
+At: 425
+At: 431
+At: 433
+At: 441
+At: 442
+At: 449
+At: 457
+At: 469
+At: 472
+At: 481
+At: 482
+At: 483
+At: 487
+At: 489
+At: 498
+0
+
+ Number of nodes per subgraph: 34
+At: 1
+At: 4
+At: 24
+At: 31
+At: 48
+At: 52
+At: 59
+At: 60
+At: 64
+At: 73
+At: 86
+At: 109
+At: 116
+At: 119
+At: 126
+At: 133
+At: 164
+At: 201
+At: 212
+At: 231
+At: 241
+At: 256
+At: 266
+At: 284
+At: 320
+At: 322
+At: 380
+At: 392
+At: 397
+At: 402
+At: 405
+At: 435
+At: 492
+At: 493
+1
+
+ Number of nodes per subgraph: 23
+At: 2
+At: 22
+At: 27
+At: 38
+At: 97
+At: 132
+At: 144
+At: 167
+At: 277
+At: 290
+At: 299
+At: 305
+At: 327
+At: 351
+At: 374
+At: 390
+At: 395
+At: 396
+At: 459
+At: 480
+At: 484
+At: 490
+At: 491
+2
+
+ Number of nodes per subgraph: 29
+At: 5
+At: 9
+At: 12
+At: 20
+At: 62
+At: 88
+At: 152
+At: 166
+At: 186
+At: 192
+At: 197
+At: 219
+At: 220
+At: 251
+At: 275
+At: 293
+At: 352
+At: 361
+At: 363
+At: 368
+At: 400
+At: 410
+At: 426
+At: 436
+At: 437
+At: 453
+At: 455
+At: 477
+At: 497
+5
+
+ Number of nodes per subgraph: 51
+At: 6
+At: 68
+At: 71
+At: 74
+At: 87
+At: 93
+At: 98
+At: 102
+At: 106
+At: 111
+At: 127
+At: 130
+At: 137
+At: 155
+At: 165
+At: 189
+At: 207
+At: 216
+At: 248
+At: 250
+At: 259
+At: 270
+At: 271
+At: 286
+At: 288
+At: 289
+At: 304
+At: 311
+At: 316
+At: 319
+At: 323
+At: 332
+At: 335
+At: 336
+At: 339
+At: 340
+At: 344
+At: 377
+At: 379
+At: 389
+At: 391
+At: 414
+At: 422
+At: 423
+At: 424
+At: 464
+At: 467
+At: 476
+At: 479
+At: 486
+At: 488
+6
+
+ Number of nodes per subgraph: 17
+At: 7
+At: 57
+At: 61
+At: 76
+At: 100
+At: 113
+At: 124
+At: 160
+At: 175
+At: 181
+At: 221
+At: 237
+At: 349
+At: 360
+At: 393
+At: 408
+At: 448
+7
+
+ Number of nodes per subgraph: 25
+At: 8
+At: 13
+At: 29
+At: 58
+At: 78
+At: 149
+At: 161
+At: 183
+At: 193
+At: 198
+At: 215
+At: 228
+At: 230
+At: 272
+At: 313
+At: 329
+At: 333
+At: 348
+At: 399
+At: 417
+At: 428
+At: 430
+At: 439
+At: 450
+At: 456
+8
+
+ Number of nodes per subgraph: 25
+At: 10
+At: 18
+At: 90
+At: 114
+At: 118
+At: 135
+At: 148
+At: 177
+At: 184
+At: 194
+At: 200
+At: 214
+At: 232
+At: 238
+At: 249
+At: 273
+At: 282
+At: 301
+At: 346
+At: 362
+At: 373
+At: 382
+At: 401
+At: 432
+At: 485
+10
+
+ Number of nodes per subgraph: 24
+At: 15
+At: 26
+At: 33
+At: 36
+At: 56
+At: 82
+At: 131
+At: 168
+At: 176
+At: 235
+At: 245
+At: 253
+At: 264
+At: 298
+At: 307
+At: 331
+At: 337
+At: 376
+At: 381
+At: 412
+At: 413
+At: 444
+At: 458
+At: 473
+15
+
+ Number of nodes per subgraph: 18
+At: 19
+At: 53
+At: 77
+At: 81
+At: 108
+At: 142
+At: 156
+At: 159
+At: 205
+At: 227
+At: 359
+At: 367
+At: 415
+At: 443
+At: 462
+At: 466
+At: 474
+At: 495
+19
+
+ Number of nodes per subgraph: 9
+At: 23
+At: 112
+At: 140
+At: 141
+At: 178
+At: 276
+At: 314
+At: 315
+At: 434
+23
+
+ Number of nodes per subgraph: 4
+At: 32
+At: 72
+At: 179
+At: 302
+32
+
+ Number of nodes per subgraph: 3
+At: 70
+At: 429
+At: 446
+70
+
+ Number of nodes per subgraph: 7
+At: 146
+At: 185
+At: 187
+At: 195
+At: 229
+At: 233
+At: 242
+146
+
+ Number of nodes per subgraph: 2
+At: 170
+At: 204
+170
+
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+ERROR THIS SHOULDN'T HAPPEN
+Test case 6: failure
+ Number of nodes per subgraph: 497
+At: 0
+At: 1
+At: 2
+At: 3
+At: 4
+At: 5
+At: 6
+At: 7
+At: 8
+At: 9
+At: 10
+At: 11
+At: 12
+At: 13
+At: 14
+At: 15
+At: 16
+At: 17
+At: 18
+At: 19
+At: 20
+At: 21
+At: 22
+At: 23
+At: 24
+At: 25
+At: 26
+At: 27
+At: 28
+At: 29
+At: 30
+At: 31
+At: 32
+At: 33
+At: 34
+At: 35
+At: 36
+At: 37
+At: 38
+At: 39
+At: 40
+At: 41
+At: 42
+At: 43
+At: 44
+At: 45
+At: 46
+At: 47
+At: 48
+At: 49
+At: 50
+At: 51
+At: 52
+At: 53
+At: 54
+At: 55
+At: 56
+At: 57
+At: 58
+At: 59
+At: 60
+At: 61
+At: 62
+At: 63
+At: 64
+At: 65
+At: 66
+At: 67
+At: 68
+At: 69
+At: 70
+At: 71
+At: 72
+At: 73
+At: 74
+At: 75
+At: 76
+At: 77
+At: 78
+At: 79
+At: 80
+At: 81
+At: 82
+At: 83
+At: 84
+At: 85
+At: 86
+At: 87
+At: 88
+At: 89
+At: 90
+At: 91
+At: 92
+At: 93
+At: 94
+At: 95
+At: 96
+At: 97
+At: 98
+At: 99
+At: 100
+At: 101
+At: 102
+At: 103
+At: 104
+At: 105
+At: 106
+At: 107
+At: 108
+At: 109
+At: 110
+At: 111
+At: 112
+At: 113
+At: 114
+At: 115
+At: 116
+At: 117
+At: 118
+At: 119
+At: 120
+At: 121
+At: 122
+At: 123
+At: 124
+At: 125
+At: 126
+At: 127
+At: 128
+At: 129
+At: 130
+At: 131
+At: 132
+At: 133
+At: 134
+At: 135
+At: 136
+At: 137
+At: 138
+At: 139
+At: 140
+At: 141
+At: 142
+At: 143
+At: 144
+At: 145
+At: 146
+At: 147
+At: 148
+At: 149
+At: 150
+At: 151
+At: 152
+At: 153
+At: 154
+At: 155
+At: 156
+At: 157
+At: 158
+At: 159
+At: 160
+At: 161
+At: 162
+At: 163
+At: 164
+At: 165
+At: 166
+At: 167
+At: 168
+At: 169
+At: 170
+At: 171
+At: 172
+At: 173
+At: 174
+At: 175
+At: 176
+At: 177
+At: 178
+At: 179
+At: 180
+At: 181
+At: 182
+At: 183
+At: 184
+At: 185
+At: 186
+At: 187
+At: 188
+At: 189
+At: 190
+At: 191
+At: 192
+At: 193
+At: 194
+At: 195
+At: 196
+At: 197
+At: 198
+At: 199
+At: 200
+At: 201
+At: 202
+At: 203
+At: 204
+At: 205
+At: 206
+At: 207
+At: 208
+At: 209
+At: 210
+At: 211
+At: 212
+At: 213
+At: 215
+At: 216
+At: 217
+At: 218
+At: 219
+At: 220
+At: 221
+At: 222
+At: 223
+At: 224
+At: 225
+At: 226
+At: 227
+At: 228
+At: 229
+At: 230
+At: 231
+At: 232
+At: 233
+At: 234
+At: 235
+At: 236
+At: 237
+At: 238
+At: 239
+At: 240
+At: 241
+At: 242
+At: 243
+At: 244
+At: 245
+At: 246
+At: 247
+At: 248
+At: 249
+At: 250
+At: 251
+At: 252
+At: 253
+At: 254
+At: 255
+At: 256
+At: 257
+At: 258
+At: 259
+At: 260
+At: 261
+At: 262
+At: 263
+At: 264
+At: 265
+At: 266
+At: 267
+At: 268
+At: 269
+At: 270
+At: 271
+At: 272
+At: 273
+At: 274
+At: 275
+At: 277
+At: 278
+At: 279
+At: 280
+At: 281
+At: 282
+At: 283
+At: 284
+At: 285
+At: 286
+At: 287
+At: 288
+At: 289
+At: 290
+At: 291
+At: 292
+At: 293
+At: 294
+At: 295
+At: 296
+At: 297
+At: 298
+At: 299
+At: 300
+At: 301
+At: 302
+At: 303
+At: 304
+At: 305
+At: 306
+At: 307
+At: 308
+At: 309
+At: 310
+At: 311
+At: 312
+At: 313
+At: 314
+At: 315
+At: 316
+At: 317
+At: 318
+At: 319
+At: 320
+At: 321
+At: 322
+At: 323
+At: 324
+At: 325
+At: 326
+At: 327
+At: 328
+At: 329
+At: 330
+At: 331
+At: 332
+At: 333
+At: 334
+At: 335
+At: 336
+At: 337
+At: 338
+At: 339
+At: 340
+At: 341
+At: 342
+At: 343
+At: 344
+At: 345
+At: 346
+At: 347
+At: 348
+At: 349
+At: 350
+At: 351
+At: 352
+At: 353
+At: 354
+At: 355
+At: 356
+At: 357
+At: 358
+At: 359
+At: 360
+At: 362
+At: 363
+At: 364
+At: 365
+At: 366
+At: 367
+At: 368
+At: 369
+At: 370
+At: 371
+At: 372
+At: 373
+At: 374
+At: 375
+At: 376
+At: 377
+At: 378
+At: 379
+At: 380
+At: 381
+At: 382
+At: 383
+At: 384
+At: 385
+At: 386
+At: 387
+At: 388
+At: 389
+At: 390
+At: 391
+At: 392
+At: 393
+At: 394
+At: 395
+At: 396
+At: 397
+At: 398
+At: 399
+At: 400
+At: 401
+At: 402
+At: 403
+At: 404
+At: 405
+At: 406
+At: 407
+At: 408
+At: 409
+At: 410
+At: 411
+At: 412
+At: 413
+At: 414
+At: 415
+At: 416
+At: 417
+At: 418
+At: 419
+At: 420
+At: 421
+At: 422
+At: 423
+At: 424
+At: 425
+At: 426
+At: 427
+At: 428
+At: 429
+At: 430
+At: 431
+At: 432
+At: 433
+At: 434
+At: 435
+At: 436
+At: 437
+At: 438
+At: 439
+At: 440
+At: 441
+At: 442
+At: 443
+At: 444
+At: 445
+At: 446
+At: 447
+At: 448
+At: 449
+At: 450
+At: 451
+At: 452
+At: 453
+At: 454
+At: 455
+At: 456
+At: 457
+At: 458
+At: 459
+At: 460
+At: 461
+At: 462
+At: 463
+At: 464
+At: 465
+At: 466
+At: 467
+At: 468
+At: 469
+At: 470
+At: 471
+At: 472
+At: 473
+At: 474
+At: 475
+At: 476
+At: 477
+At: 478
+At: 479
+At: 480
+At: 481
+At: 482
+At: 483
+At: 484
+At: 485
+At: 486
+At: 487
+At: 488
+At: 489
+At: 490
+At: 491
+At: 492
+At: 493
+At: 494
+At: 495
+At: 496
+At: 497
+At: 498
+At: 499
+0
+
+ Number of nodes per subgraph: 3
+At: 214
+At: 276
+At: 361
+214
+
+0
+1
+2
+ Number of nodes per subgraph: 497
+At: 0
+At: 1
+At: 2
+At: 3
+At: 4
+At: 5
+At: 6
+At: 7
+At: 8
+At: 9
+At: 10
+At: 11
+At: 12
+At: 13
+At: 14
+At: 15
+At: 16
+At: 17
+At: 18
+At: 19
+At: 20
+At: 21
+At: 22
+At: 23
+At: 24
+At: 25
+At: 26
+At: 27
+At: 28
+At: 29
+At: 30
+At: 31
+At: 32
+At: 33
+At: 34
+At: 35
+At: 36
+At: 37
+At: 38
+At: 39
+At: 40
+At: 41
+At: 42
+At: 43
+At: 44
+At: 45
+At: 46
+At: 47
+At: 48
+At: 49
+At: 50
+At: 51
+At: 52
+At: 53
+At: 54
+At: 55
+At: 56
+At: 57
+At: 58
+At: 59
+At: 60
+At: 61
+At: 62
+At: 63
+At: 64
+At: 65
+At: 66
+At: 67
+At: 68
+At: 69
+At: 70
+At: 71
+At: 72
+At: 73
+At: 74
+At: 75
+At: 76
+At: 77
+At: 78
+At: 79
+At: 80
+At: 81
+At: 82
+At: 83
+At: 84
+At: 85
+At: 86
+At: 87
+At: 88
+At: 89
+At: 90
+At: 91
+At: 92
+At: 93
+At: 94
+At: 95
+At: 96
+At: 97
+At: 98
+At: 99
+At: 100
+At: 101
+At: 102
+At: 103
+At: 104
+At: 105
+At: 106
+At: 107
+At: 108
+At: 109
+At: 110
+At: 111
+At: 112
+At: 113
+At: 114
+At: 115
+At: 116
+At: 117
+At: 118
+At: 119
+At: 120
+At: 121
+At: 122
+At: 123
+At: 124
+At: 125
+At: 126
+At: 127
+At: 128
+At: 129
+At: 130
+At: 131
+At: 132
+At: 133
+At: 134
+At: 135
+At: 136
+At: 137
+At: 138
+At: 139
+At: 140
+At: 141
+At: 142
+At: 143
+At: 144
+At: 145
+At: 146
+At: 147
+At: 148
+At: 149
+At: 150
+At: 151
+At: 152
+At: 153
+At: 154
+At: 155
+At: 156
+At: 157
+At: 158
+At: 159
+At: 160
+At: 161
+At: 162
+At: 163
+At: 164
+At: 165
+At: 166
+At: 167
+At: 168
+At: 169
+At: 170
+At: 171
+At: 172
+At: 173
+At: 174
+At: 175
+At: 176
+At: 177
+At: 178
+At: 179
+At: 180
+At: 181
+At: 182
+At: 183
+At: 184
+At: 185
+At: 186
+At: 187
+At: 188
+At: 189
+At: 190
+At: 191
+At: 192
+At: 193
+At: 194
+At: 195
+At: 196
+At: 197
+At: 198
+At: 199
+At: 200
+At: 201
+At: 202
+At: 203
+At: 204
+At: 205
+At: 206
+At: 207
+At: 208
+At: 209
+At: 210
+At: 211
+At: 212
+At: 213
+At: 215
+At: 216
+At: 217
+At: 218
+At: 219
+At: 220
+At: 221
+At: 222
+At: 223
+At: 224
+At: 225
+At: 226
+At: 227
+At: 228
+At: 229
+At: 230
+At: 231
+At: 232
+At: 233
+At: 234
+At: 235
+At: 236
+At: 237
+At: 238
+At: 239
+At: 240
+At: 241
+At: 242
+At: 243
+At: 244
+At: 245
+At: 246
+At: 247
+At: 248
+At: 249
+At: 250
+At: 251
+At: 252
+At: 253
+At: 254
+At: 255
+At: 256
+At: 257
+At: 258
+At: 259
+At: 260
+At: 261
+At: 262
+At: 263
+At: 264
+At: 265
+At: 266
+At: 267
+At: 268
+At: 269
+At: 270
+At: 271
+At: 272
+At: 273
+At: 274
+At: 275
+At: 277
+At: 278
+At: 279
+At: 280
+At: 281
+At: 282
+At: 283
+At: 284
+At: 285
+At: 286
+At: 287
+At: 288
+At: 289
+At: 290
+At: 291
+At: 292
+At: 293
+At: 294
+At: 295
+At: 296
+At: 297
+At: 298
+At: 299
+At: 300
+At: 301
+At: 302
+At: 303
+At: 304
+At: 305
+At: 306
+At: 307
+At: 308
+At: 309
+At: 310
+At: 311
+At: 312
+At: 313
+At: 314
+At: 315
+At: 316
+At: 317
+At: 318
+At: 319
+At: 320
+At: 321
+At: 322
+At: 323
+At: 324
+At: 325
+At: 326
+At: 327
+At: 328
+At: 329
+At: 330
+At: 331
+At: 332
+At: 333
+At: 334
+At: 335
+At: 336
+At: 337
+At: 338
+At: 339
+At: 340
+At: 341
+At: 342
+At: 343
+At: 344
+At: 345
+At: 346
+At: 347
+At: 348
+At: 349
+At: 350
+At: 351
+At: 352
+At: 353
+At: 354
+At: 355
+At: 356
+At: 357
+At: 358
+At: 359
+At: 360
+At: 362
+At: 363
+At: 364
+At: 365
+At: 366
+At: 367
+At: 368
+At: 369
+At: 370
+At: 371
+At: 372
+At: 373
+At: 374
+At: 375
+At: 376
+At: 377
+At: 378
+At: 379
+At: 380
+At: 381
+At: 382
+At: 383
+At: 384
+At: 385
+At: 386
+At: 387
+At: 388
+At: 389
+At: 390
+At: 391
+At: 392
+At: 393
+At: 394
+At: 395
+At: 396
+At: 397
+At: 398
+At: 399
+At: 400
+At: 401
+At: 402
+At: 403
+At: 404
+At: 405
+At: 406
+At: 407
+At: 408
+At: 409
+At: 410
+At: 411
+At: 412
+At: 413
+At: 414
+At: 415
+At: 416
+At: 417
+At: 418
+At: 419
+At: 420
+At: 421
+At: 422
+At: 423
+At: 424
+At: 425
+At: 426
+At: 427
+At: 428
+At: 429
+At: 430
+At: 431
+At: 432
+At: 433
+At: 434
+At: 435
+At: 436
+At: 437
+At: 438
+At: 439
+At: 440
+At: 441
+At: 442
+At: 443
+At: 444
+At: 445
+At: 446
+At: 447
+At: 448
+At: 449
+At: 450
+At: 451
+At: 452
+At: 453
+At: 454
+At: 455
+At: 456
+At: 457
+At: 458
+At: 459
+At: 460
+At: 461
+At: 462
+At: 463
+At: 464
+At: 465
+At: 466
+At: 467
+At: 468
+At: 469
+At: 470
+At: 471
+At: 472
+At: 473
+At: 474
+At: 475
+At: 476
+At: 477
+At: 478
+At: 479
+At: 480
+At: 481
+At: 482
+At: 483
+At: 484
+At: 485
+At: 486
+At: 487
+At: 488
+At: 489
+At: 490
+At: 491
+At: 492
+At: 493
+At: 494
+At: 495
+At: 496
+At: 497
+At: 498
+At: 499
+0
+
+ Number of nodes per subgraph: 3
+At: 214
+At: 276
+At: 361
+214
+
+0
+1
+ERROR THIS SHOULDN'T HAPPEN
+Test case 7: failure
+ Number of nodes per subgraph: 498
+At: 0
+At: 1
+At: 2
+At: 3
+At: 4
+At: 5
+At: 6
+At: 7
+At: 8
+At: 9
+At: 10
+At: 11
+At: 12
+At: 13
+At: 14
+At: 15
+At: 16
+At: 17
+At: 18
+At: 19
+At: 20
+At: 21
+At: 22
+At: 23
+At: 24
+At: 25
+At: 26
+At: 27
+At: 28
+At: 29
+At: 30
+At: 31
+At: 32
+At: 33
+At: 34
+At: 35
+At: 36
+At: 37
+At: 38
+At: 39
+At: 40
+At: 41
+At: 42
+At: 43
+At: 44
+At: 45
+At: 46
+At: 47
+At: 48
+At: 49
+At: 50
+At: 51
+At: 52
+At: 53
+At: 54
+At: 55
+At: 56
+At: 57
+At: 58
+At: 59
+At: 60
+At: 61
+At: 62
+At: 63
+At: 64
+At: 65
+At: 66
+At: 67
+At: 68
+At: 69
+At: 70
+At: 71
+At: 72
+At: 73
+At: 74
+At: 75
+At: 76
+At: 77
+At: 78
+At: 79
+At: 80
+At: 81
+At: 82
+At: 83
+At: 84
+At: 85
+At: 86
+At: 87
+At: 88
+At: 89
+At: 90
+At: 91
+At: 92
+At: 93
+At: 94
+At: 95
+At: 96
+At: 97
+At: 98
+At: 99
+At: 100
+At: 101
+At: 102
+At: 103
+At: 104
+At: 105
+At: 106
+At: 107
+At: 108
+At: 109
+At: 110
+At: 111
+At: 112
+At: 113
+At: 114
+At: 115
+At: 116
+At: 117
+At: 118
+At: 119
+At: 120
+At: 121
+At: 122
+At: 123
+At: 124
+At: 125
+At: 126
+At: 127
+At: 128
+At: 129
+At: 130
+At: 131
+At: 132
+At: 133
+At: 134
+At: 135
+At: 136
+At: 137
+At: 138
+At: 139
+At: 140
+At: 141
+At: 142
+At: 143
+At: 144
+At: 145
+At: 146
+At: 147
+At: 148
+At: 149
+At: 150
+At: 151
+At: 152
+At: 153
+At: 154
+At: 155
+At: 156
+At: 157
+At: 158
+At: 159
+At: 160
+At: 161
+At: 162
+At: 163
+At: 164
+At: 165
+At: 166
+At: 167
+At: 168
+At: 169
+At: 170
+At: 171
+At: 172
+At: 173
+At: 174
+At: 175
+At: 176
+At: 177
+At: 178
+At: 179
+At: 180
+At: 181
+At: 182
+At: 183
+At: 184
+At: 185
+At: 186
+At: 187
+At: 188
+At: 189
+At: 190
+At: 191
+At: 192
+At: 193
+At: 194
+At: 195
+At: 196
+At: 197
+At: 198
+At: 199
+At: 200
+At: 201
+At: 202
+At: 203
+At: 204
+At: 205
+At: 206
+At: 207
+At: 208
+At: 209
+At: 210
+At: 211
+At: 212
+At: 213
+At: 214
+At: 215
+At: 216
+At: 217
+At: 218
+At: 219
+At: 220
+At: 221
+At: 222
+At: 223
+At: 224
+At: 225
+At: 226
+At: 227
+At: 228
+At: 229
+At: 230
+At: 231
+At: 232
+At: 233
+At: 234
+At: 235
+At: 236
+At: 237
+At: 238
+At: 239
+At: 240
+At: 241
+At: 242
+At: 243
+At: 244
+At: 245
+At: 246
+At: 247
+At: 248
+At: 249
+At: 250
+At: 251
+At: 252
+At: 253
+At: 254
+At: 255
+At: 256
+At: 257
+At: 258
+At: 259
+At: 260
+At: 261
+At: 262
+At: 263
+At: 264
+At: 265
+At: 266
+At: 267
+At: 268
+At: 269
+At: 270
+At: 271
+At: 272
+At: 273
+At: 275
+At: 276
+At: 277
+At: 278
+At: 279
+At: 280
+At: 281
+At: 283
+At: 284
+At: 285
+At: 286
+At: 287
+At: 288
+At: 289
+At: 290
+At: 291
+At: 292
+At: 293
+At: 294
+At: 295
+At: 296
+At: 297
+At: 298
+At: 299
+At: 300
+At: 301
+At: 302
+At: 303
+At: 304
+At: 305
+At: 306
+At: 307
+At: 308
+At: 309
+At: 310
+At: 311
+At: 312
+At: 313
+At: 314
+At: 315
+At: 316
+At: 317
+At: 318
+At: 319
+At: 320
+At: 321
+At: 322
+At: 323
+At: 324
+At: 325
+At: 326
+At: 327
+At: 328
+At: 329
+At: 330
+At: 331
+At: 332
+At: 333
+At: 334
+At: 335
+At: 336
+At: 337
+At: 338
+At: 339
+At: 340
+At: 341
+At: 342
+At: 343
+At: 344
+At: 345
+At: 346
+At: 347
+At: 348
+At: 349
+At: 350
+At: 351
+At: 352
+At: 353
+At: 354
+At: 355
+At: 356
+At: 357
+At: 358
+At: 359
+At: 360
+At: 361
+At: 362
+At: 363
+At: 364
+At: 365
+At: 366
+At: 367
+At: 368
+At: 369
+At: 370
+At: 371
+At: 372
+At: 373
+At: 374
+At: 375
+At: 376
+At: 377
+At: 378
+At: 379
+At: 380
+At: 381
+At: 382
+At: 383
+At: 384
+At: 385
+At: 386
+At: 387
+At: 388
+At: 389
+At: 390
+At: 391
+At: 392
+At: 393
+At: 394
+At: 395
+At: 396
+At: 397
+At: 398
+At: 399
+At: 400
+At: 401
+At: 402
+At: 403
+At: 404
+At: 405
+At: 406
+At: 407
+At: 408
+At: 409
+At: 410
+At: 411
+At: 412
+At: 413
+At: 414
+At: 415
+At: 416
+At: 417
+At: 418
+At: 419
+At: 420
+At: 421
+At: 422
+At: 423
+At: 424
+At: 425
+At: 426
+At: 427
+At: 428
+At: 429
+At: 430
+At: 431
+At: 432
+At: 433
+At: 434
+At: 435
+At: 436
+At: 437
+At: 438
+At: 439
+At: 440
+At: 441
+At: 442
+At: 443
+At: 444
+At: 445
+At: 446
+At: 447
+At: 448
+At: 449
+At: 450
+At: 451
+At: 452
+At: 453
+At: 454
+At: 455
+At: 456
+At: 457
+At: 458
+At: 459
+At: 460
+At: 461
+At: 462
+At: 463
+At: 464
+At: 465
+At: 466
+At: 467
+At: 468
+At: 469
+At: 470
+At: 471
+At: 472
+At: 473
+At: 474
+At: 475
+At: 476
+At: 477
+At: 478
+At: 479
+At: 480
+At: 481
+At: 482
+At: 483
+At: 484
+At: 485
+At: 486
+At: 487
+At: 488
+At: 489
+At: 490
+At: 491
+At: 492
+At: 493
+At: 494
+At: 495
+At: 496
+At: 497
+At: 498
+At: 499
+0
+
+ Number of nodes per subgraph: 2
+At: 274
+At: 282
+274
+
+0
+1
+2
+ Number of nodes per subgraph: 498
+At: 0
+At: 1
+At: 2
+At: 3
+At: 4
+At: 5
+At: 6
+At: 7
+At: 8
+At: 9
+At: 10
+At: 11
+At: 12
+At: 13
+At: 14
+At: 15
+At: 16
+At: 17
+At: 18
+At: 19
+At: 20
+At: 21
+At: 22
+At: 23
+At: 24
+At: 25
+At: 26
+At: 27
+At: 28
+At: 29
+At: 30
+At: 31
+At: 32
+At: 33
+At: 34
+At: 35
+At: 36
+At: 37
+At: 38
+At: 39
+At: 40
+At: 41
+At: 42
+At: 43
+At: 44
+At: 45
+At: 46
+At: 47
+At: 48
+At: 49
+At: 50
+At: 51
+At: 52
+At: 53
+At: 54
+At: 55
+At: 56
+At: 57
+At: 58
+At: 59
+At: 60
+At: 61
+At: 62
+At: 63
+At: 64
+At: 65
+At: 66
+At: 67
+At: 68
+At: 69
+At: 70
+At: 71
+At: 72
+At: 73
+At: 74
+At: 75
+At: 76
+At: 77
+At: 78
+At: 79
+At: 80
+At: 81
+At: 82
+At: 83
+At: 84
+At: 85
+At: 86
+At: 87
+At: 88
+At: 89
+At: 90
+At: 91
+At: 92
+At: 93
+At: 94
+At: 95
+At: 96
+At: 97
+At: 98
+At: 99
+At: 100
+At: 101
+At: 102
+At: 103
+At: 104
+At: 105
+At: 106
+At: 107
+At: 108
+At: 109
+At: 110
+At: 111
+At: 112
+At: 113
+At: 114
+At: 115
+At: 116
+At: 117
+At: 118
+At: 119
+At: 120
+At: 121
+At: 122
+At: 123
+At: 124
+At: 125
+At: 126
+At: 127
+At: 128
+At: 129
+At: 130
+At: 131
+At: 132
+At: 133
+At: 134
+At: 135
+At: 136
+At: 137
+At: 138
+At: 139
+At: 140
+At: 141
+At: 142
+At: 143
+At: 144
+At: 145
+At: 146
+At: 147
+At: 148
+At: 149
+At: 150
+At: 151
+At: 152
+At: 153
+At: 154
+At: 155
+At: 156
+At: 157
+At: 158
+At: 159
+At: 160
+At: 161
+At: 162
+At: 163
+At: 164
+At: 165
+At: 166
+At: 167
+At: 168
+At: 169
+At: 170
+At: 171
+At: 172
+At: 173
+At: 174
+At: 175
+At: 176
+At: 177
+At: 178
+At: 179
+At: 180
+At: 181
+At: 182
+At: 183
+At: 184
+At: 185
+At: 186
+At: 187
+At: 188
+At: 189
+At: 190
+At: 191
+At: 192
+At: 193
+At: 194
+At: 195
+At: 196
+At: 197
+At: 198
+At: 199
+At: 200
+At: 201
+At: 202
+At: 203
+At: 204
+At: 205
+At: 206
+At: 207
+At: 208
+At: 209
+At: 210
+At: 211
+At: 212
+At: 213
+At: 214
+At: 215
+At: 216
+At: 217
+At: 218
+At: 219
+At: 220
+At: 221
+At: 222
+At: 223
+At: 224
+At: 225
+At: 226
+At: 227
+At: 228
+At: 229
+At: 230
+At: 231
+At: 232
+At: 233
+At: 234
+At: 235
+At: 236
+At: 237
+At: 238
+At: 239
+At: 240
+At: 241
+At: 242
+At: 243
+At: 244
+At: 245
+At: 246
+At: 247
+At: 248
+At: 249
+At: 250
+At: 251
+At: 252
+At: 253
+At: 254
+At: 255
+At: 256
+At: 257
+At: 258
+At: 259
+At: 260
+At: 261
+At: 262
+At: 263
+At: 264
+At: 265
+At: 266
+At: 267
+At: 268
+At: 269
+At: 270
+At: 271
+At: 272
+At: 273
+At: 275
+At: 276
+At: 277
+At: 278
+At: 279
+At: 280
+At: 281
+At: 283
+At: 284
+At: 285
+At: 286
+At: 287
+At: 288
+At: 289
+At: 290
+At: 291
+At: 292
+At: 293
+At: 294
+At: 295
+At: 296
+At: 297
+At: 298
+At: 299
+At: 300
+At: 301
+At: 302
+At: 303
+At: 304
+At: 305
+At: 306
+At: 307
+At: 308
+At: 309
+At: 310
+At: 311
+At: 312
+At: 313
+At: 314
+At: 315
+At: 316
+At: 317
+At: 318
+At: 319
+At: 320
+At: 321
+At: 322
+At: 323
+At: 324
+At: 325
+At: 326
+At: 327
+At: 328
+At: 329
+At: 330
+At: 331
+At: 332
+At: 333
+At: 334
+At: 335
+At: 336
+At: 337
+At: 338
+At: 339
+At: 340
+At: 341
+At: 342
+At: 343
+At: 344
+At: 345
+At: 346
+At: 347
+At: 348
+At: 349
+At: 350
+At: 351
+At: 352
+At: 353
+At: 354
+At: 355
+At: 356
+At: 357
+At: 358
+At: 359
+At: 360
+At: 361
+At: 362
+At: 363
+At: 364
+At: 365
+At: 366
+At: 367
+At: 368
+At: 369
+At: 370
+At: 371
+At: 372
+At: 373
+At: 374
+At: 375
+At: 376
+At: 377
+At: 378
+At: 379
+At: 380
+At: 381
+At: 382
+At: 383
+At: 384
+At: 385
+At: 386
+At: 387
+At: 388
+At: 389
+At: 390
+At: 391
+At: 392
+At: 393
+At: 394
+At: 395
+At: 396
+At: 397
+At: 398
+At: 399
+At: 400
+At: 401
+At: 402
+At: 403
+At: 404
+At: 405
+At: 406
+At: 407
+At: 408
+At: 409
+At: 410
+At: 411
+At: 412
+At: 413
+At: 414
+At: 415
+At: 416
+At: 417
+At: 418
+At: 419
+At: 420
+At: 421
+At: 422
+At: 423
+At: 424
+At: 425
+At: 426
+At: 427
+At: 428
+At: 429
+At: 430
+At: 431
+At: 432
+At: 433
+At: 434
+At: 435
+At: 436
+At: 437
+At: 438
+At: 439
+At: 440
+At: 441
+At: 442
+At: 443
+At: 444
+At: 445
+At: 446
+At: 447
+At: 448
+At: 449
+At: 450
+At: 451
+At: 452
+At: 453
+At: 454
+At: 455
+At: 456
+At: 457
+At: 458
+At: 459
+At: 460
+At: 461
+At: 462
+At: 463
+At: 464
+At: 465
+At: 466
+At: 467
+At: 468
+At: 469
+At: 470
+At: 471
+At: 472
+At: 473
+At: 474
+At: 475
+At: 476
+At: 477
+At: 478
+At: 479
+At: 480
+At: 481
+At: 482
+At: 483
+At: 484
+At: 485
+At: 486
+At: 487
+At: 488
+At: 489
+At: 490
+At: 491
+At: 492
+At: 493
+At: 494
+At: 495
+At: 496
+At: 497
+At: 498
+At: 499
+0
+
+ Number of nodes per subgraph: 2
+At: 274
+At: 282
+274
+
+0
+1
+ERROR THIS SHOULDN'T HAPPEN
+Test case 8: failure
+ Number of nodes per subgraph: 72
+At: 0
+At: 1
+At: 2
+At: 4
+At: 5
+At: 6
+At: 7
+At: 8
+At: 9
+At: 10
+At: 11
+At: 13
+At: 14
+At: 15
+At: 16
+At: 17
+At: 18
+At: 19
+At: 20
+At: 21
+At: 22
+At: 24
+At: 25
+At: 26
+At: 27
+At: 28
+At: 29
+At: 30
+At: 32
+At: 34
+At: 35
+At: 36
+At: 37
+At: 38
+At: 39
+At: 40
+At: 41
+At: 42
+At: 46
+At: 51
+At: 52
+At: 56
+At: 57
+At: 58
+At: 59
+At: 61
+At: 64
+At: 66
+At: 67
+At: 69
+At: 71
+At: 76
+At: 77
+At: 78
+At: 79
+At: 80
+At: 81
+At: 82
+At: 84
+At: 85
+At: 86
+At: 87
+At: 88
+At: 89
+At: 90
+At: 92
+At: 93
+At: 94
+At: 95
+At: 96
+At: 97
+At: 98
+0
+
+ Number of nodes per subgraph: 15
+At: 3
+At: 23
+At: 31
+At: 33
+At: 44
+At: 45
+At: 49
+At: 60
+At: 65
+At: 68
+At: 70
+At: 72
+At: 73
+At: 74
+At: 75
+3
+
+ Number of nodes per subgraph: 10
+At: 12
+At: 48
+At: 50
+At: 53
+At: 54
+At: 55
+At: 62
+At: 83
+At: 91
+At: 99
+12
+
+ Number of nodes per subgraph: 1
+At: 43
+43
+
+ Number of nodes per subgraph: 2
+At: 47
+At: 63
+47
+
+0
+1
+2
+3
+ Number of nodes per subgraph: 72
+At: 0
+At: 1
+At: 2
+At: 4
+At: 5
+At: 6
+At: 7
+At: 8
+At: 9
+At: 10
+At: 11
+At: 13
+At: 14
+At: 15
+At: 16
+At: 17
+At: 18
+At: 19
+At: 20
+At: 21
+At: 22
+At: 24
+At: 25
+At: 26
+At: 27
+At: 28
+At: 29
+At: 30
+At: 32
+At: 34
+At: 35
+At: 36
+At: 37
+At: 38
+At: 39
+At: 40
+At: 41
+At: 42
+At: 46
+At: 51
+At: 52
+At: 56
+At: 57
+At: 58
+At: 59
+At: 61
+At: 64
+At: 66
+At: 67
+At: 69
+At: 71
+At: 76
+At: 77
+At: 78
+At: 79
+At: 80
+At: 81
+At: 82
+At: 84
+At: 85
+At: 86
+At: 87
+At: 88
+At: 89
+At: 90
+At: 92
+At: 93
+At: 94
+At: 95
+At: 96
+At: 97
+At: 98
+0
+
+ Number of nodes per subgraph: 15
+At: 3
+At: 23
+At: 31
+At: 33
+At: 44
+At: 45
+At: 49
+At: 60
+At: 65
+At: 68
+At: 70
+At: 72
+At: 73
+At: 74
+At: 75
+3
+
+ Number of nodes per subgraph: 10
+At: 12
+At: 48
+At: 50
+At: 53
+At: 54
+At: 55
+At: 62
+At: 83
+At: 91
+At: 99
+12
+
+0
+1
+2
+ERROR THIS SHOULDN'T HAPPEN
+Test case 9: failure
+ Number of nodes per subgraph: 8
+At: 0
+At: 10
+At: 14
+At: 19
+At: 34
+At: 37
+At: 48
+At: 97
+0
+
+ Number of nodes per subgraph: 2
+At: 1
+At: 81
+1
+
+ Number of nodes per subgraph: 8
+At: 2
+At: 3
+At: 28
+At: 40
+At: 44
+At: 77
+At: 78
+At: 98
+2
+
+ Number of nodes per subgraph: 6
+At: 4
+At: 17
+At: 26
+At: 53
+At: 57
+At: 66
+4
+
+ Number of nodes per subgraph: 16
+At: 5
+At: 6
+At: 13
+At: 21
+At: 24
+At: 36
+At: 58
+At: 60
+At: 62
+At: 63
+At: 64
+At: 71
+At: 79
+At: 82
+At: 83
+At: 95
+5
+
+ Number of nodes per subgraph: 9
+At: 7
+At: 16
+At: 29
+At: 43
+At: 46
+At: 67
+At: 72
+At: 86
+At: 87
+7
+
+ Number of nodes per subgraph: 8
+At: 8
+At: 12
+At: 18
+At: 47
+At: 54
+At: 74
+At: 85
+At: 99
+8
+
+ Number of nodes per subgraph: 4
+At: 9
+At: 33
+At: 41
+At: 75
+9
+
+ Number of nodes per subgraph: 3
+At: 11
+At: 73
+At: 91
+11
+
+ Number of nodes per subgraph: 5
+At: 15
+At: 23
+At: 35
+At: 38
+At: 96
+15
+
+ Number of nodes per subgraph: 4
+At: 20
+At: 49
+At: 80
+At: 92
+20
+
+ Number of nodes per subgraph: 4
+At: 22
+At: 51
+At: 76
+At: 89
+22
+
+ Number of nodes per subgraph: 7
+At: 25
+At: 32
+At: 50
+At: 55
+At: 56
+At: 68
+At: 93
+25
+
+ Number of nodes per subgraph: 5
+At: 27
+At: 45
+At: 52
+At: 61
+At: 70
+27
+
+ Number of nodes per subgraph: 5
+At: 30
+At: 31
+At: 84
+At: 90
+At: 94
+30
+
+ Number of nodes per subgraph: 3
+At: 39
+At: 42
+At: 88
+39
+
+ Number of nodes per subgraph: 2
+At: 59
+At: 65
+59
+
+ Number of nodes per subgraph: 1
+At: 69
+69
+
+0
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+16
+ Number of nodes per subgraph: 8
+At: 0
+At: 10
+At: 14
+At: 19
+At: 34
+At: 37
+At: 48
+At: 97
+0
+
+ Number of nodes per subgraph: 8
+At: 2
+At: 3
+At: 28
+At: 40
+At: 44
+At: 77
+At: 78
+At: 98
+2
+
+ Number of nodes per subgraph: 6
+At: 4
+At: 17
+At: 26
+At: 53
+At: 57
+At: 66
+4
+
+ Number of nodes per subgraph: 16
+At: 5
+At: 6
+At: 13
+At: 21
+At: 24
+At: 36
+At: 58
+At: 60
+At: 62
+At: 63
+At: 64
+At: 71
+At: 79
+At: 82
+At: 83
+At: 95
+5
+
+ Number of nodes per subgraph: 9
+At: 7
+At: 16
+At: 29
+At: 43
+At: 46
+At: 67
+At: 72
+At: 86
+At: 87
+7
+
+ Number of nodes per subgraph: 8
+At: 8
+At: 12
+At: 18
+At: 47
+At: 54
+At: 74
+At: 85
+At: 99
+8
+
+ Number of nodes per subgraph: 4
+At: 9
+At: 33
+At: 41
+At: 75
+9
+
+ Number of nodes per subgraph: 3
+At: 11
+At: 73
+At: 91
+11
+
+ Number of nodes per subgraph: 5
+At: 15
+At: 23
+At: 35
+At: 38
+At: 96
+15
+
+ Number of nodes per subgraph: 4
+At: 20
+At: 49
+At: 80
+At: 92
+20
+
+ Number of nodes per subgraph: 4
+At: 22
+At: 51
+At: 76
+At: 89
+22
+
+ Number of nodes per subgraph: 7
+At: 25
+At: 32
+At: 50
+At: 55
+At: 56
+At: 68
+At: 93
+25
+
+ Number of nodes per subgraph: 5
+At: 27
+At: 45
+At: 52
+At: 61
+At: 70
+27
+
+ Number of nodes per subgraph: 5
+At: 30
+At: 31
+At: 84
+At: 90
+At: 94
+30
+
+ Number of nodes per subgraph: 3
+At: 39
+At: 42
+At: 88
+39
+
+ Number of nodes per subgraph: 2
+At: 59
+At: 65
+59
+
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+ERROR THIS SHOULDN'T HAPPEN
+Test case 10: failure
+ Number of nodes per subgraph: 5
+At: 0
+At: 33
+At: 60
+At: 81
+At: 82
+0
+
+ Number of nodes per subgraph: 7
+At: 1
+At: 12
+At: 32
+At: 38
+At: 65
+At: 67
+At: 84
+1
+
+ Number of nodes per subgraph: 4
+At: 2
+At: 6
+At: 15
+At: 20
+2
+
+ Number of nodes per subgraph: 6
+At: 3
+At: 10
+At: 19
+At: 55
+At: 74
+At: 78
+3
+
+ Number of nodes per subgraph: 7
+At: 4
+At: 8
+At: 11
+At: 14
+At: 17
+At: 28
+At: 34
+4
+
+ Number of nodes per subgraph: 4
+At: 5
+At: 56
+At: 75
+At: 79
+5
+
+ Number of nodes per subgraph: 5
+At: 7
+At: 26
+At: 29
+At: 40
+At: 54
+7
+
+ Number of nodes per subgraph: 7
+At: 9
+At: 25
+At: 41
+At: 51
+At: 62
+At: 89
+At: 90
+9
+
+ Number of nodes per subgraph: 9
+At: 13
+At: 23
+At: 37
+At: 45
+At: 63
+At: 64
+At: 70
+At: 76
+At: 97
+13
+
+ Number of nodes per subgraph: 7
+At: 16
+At: 57
+At: 59
+At: 61
+At: 66
+At: 73
+At: 95
+16
+
+ Number of nodes per subgraph: 5
+At: 18
+At: 50
+At: 86
+At: 87
+At: 96
+18
+
+ Number of nodes per subgraph: 4
+At: 21
+At: 30
+At: 44
+At: 91
+21
+
+ Number of nodes per subgraph: 2
+At: 22
+At: 93
+22
+
+ Number of nodes per subgraph: 5
+At: 24
+At: 53
+At: 80
+At: 85
+At: 99
+24
+
+ Number of nodes per subgraph: 2
+At: 27
+At: 69
+27
+
+ Number of nodes per subgraph: 5
+At: 31
+At: 42
+At: 46
+At: 71
+At: 94
+31
+
+ Number of nodes per subgraph: 1
+At: 35
+35
+
+ Number of nodes per subgraph: 3
+At: 36
+At: 49
+At: 52
+36
+
+ Number of nodes per subgraph: 6
+At: 39
+At: 47
+At: 58
+At: 77
+At: 88
+At: 92
+39
+
+ Number of nodes per subgraph: 4
+At: 43
+At: 48
+At: 68
+At: 72
+43
+
+ Number of nodes per subgraph: 2
+At: 83
+At: 98
+83
+
+0
+1
+2
+4
+5
+7
+8
+9
+11
+13
+18
+19
+20
+13
+ Number of nodes per subgraph: 5
+At: 0
+At: 33
+At: 60
+At: 81
+At: 82
+0
+
+ Number of nodes per subgraph: 7
+At: 1
+At: 12
+At: 32
+At: 38
+At: 65
+At: 67
+At: 84
+1
+
+ Number of nodes per subgraph: 4
+At: 2
+At: 6
+At: 15
+At: 20
+2
+
+ Number of nodes per subgraph: 7
+At: 4
+At: 8
+At: 11
+At: 14
+At: 17
+At: 28
+At: 34
+4
+
+ Number of nodes per subgraph: 4
+At: 5
+At: 56
+At: 75
+At: 79
+5
+
+ Number of nodes per subgraph: 7
+At: 9
+At: 25
+At: 41
+At: 51
+At: 62
+At: 89
+At: 90
+9
+
+ Number of nodes per subgraph: 9
+At: 13
+At: 23
+At: 37
+At: 45
+At: 63
+At: 64
+At: 70
+At: 76
+At: 97
+13
+
+ Number of nodes per subgraph: 7
+At: 16
+At: 57
+At: 59
+At: 61
+At: 66
+At: 73
+At: 95
+16
+
+ Number of nodes per subgraph: 4
+At: 21
+At: 30
+At: 44
+At: 91
+21
+
+ Number of nodes per subgraph: 5
+At: 24
+At: 53
+At: 80
+At: 85
+At: 99
+24
+
+ Number of nodes per subgraph: 6
+At: 39
+At: 47
+At: 58
+At: 77
+At: 88
+At: 92
+39
+
+ Number of nodes per subgraph: 4
+At: 43
+At: 48
+At: 68
+At: 72
+43
+
+ Number of nodes per subgraph: 2
+At: 83
+At: 98
+83
+
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+ERROR THIS SHOULDN'T HAPPEN
+Test case 11: failure
+ Number of nodes per subgraph: 69
+At: 0
+At: 2
+At: 4
+At: 5
+At: 8
+At: 10
+At: 11
+At: 12
+At: 14
+At: 15
+At: 16
+At: 17
+At: 18
+At: 19
+At: 20
+At: 21
+At: 23
+At: 24
+At: 25
+At: 26
+At: 28
+At: 29
+At: 30
+At: 33
+At: 35
+At: 36
+At: 37
+At: 38
+At: 39
+At: 40
+At: 41
+At: 42
+At: 43
+At: 44
+At: 45
+At: 46
+At: 48
+At: 50
+At: 53
+At: 55
+At: 56
+At: 57
+At: 60
+At: 61
+At: 62
+At: 63
+At: 64
+At: 65
+At: 66
+At: 67
+At: 68
+At: 70
+At: 71
+At: 73
+At: 74
+At: 79
+At: 82
+At: 84
+At: 85
+At: 86
+At: 88
+At: 89
+At: 90
+At: 92
+At: 94
+At: 95
+At: 96
+At: 97
+At: 98
+0
+
+ Number of nodes per subgraph: 15
+At: 1
+At: 6
+At: 31
+At: 34
+At: 47
+At: 49
+At: 52
+At: 72
+At: 75
+At: 76
+At: 77
+At: 78
+At: 87
+At: 93
+At: 99
+1
+
+ Number of nodes per subgraph: 11
+At: 3
+At: 13
+At: 22
+At: 27
+At: 32
+At: 54
+At: 59
+At: 69
+At: 80
+At: 81
+At: 83
+3
+
+ Number of nodes per subgraph: 3
+At: 7
+At: 9
+At: 51
+7
+
+ Number of nodes per subgraph: 2
+At: 58
+At: 91
+58
+
+0
+1
+2
+3
+4
+ Number of nodes per subgraph: 69
+At: 0
+At: 2
+At: 4
+At: 5
+At: 8
+At: 10
+At: 11
+At: 12
+At: 14
+At: 15
+At: 16
+At: 17
+At: 18
+At: 19
+At: 20
+At: 21
+At: 23
+At: 24
+At: 25
+At: 26
+At: 28
+At: 29
+At: 30
+At: 33
+At: 35
+At: 36
+At: 37
+At: 38
+At: 39
+At: 40
+At: 41
+At: 42
+At: 43
+At: 44
+At: 45
+At: 46
+At: 48
+At: 50
+At: 53
+At: 55
+At: 56
+At: 57
+At: 60
+At: 61
+At: 62
+At: 63
+At: 64
+At: 65
+At: 66
+At: 67
+At: 68
+At: 70
+At: 71
+At: 73
+At: 74
+At: 79
+At: 82
+At: 84
+At: 85
+At: 86
+At: 88
+At: 89
+At: 90
+At: 92
+At: 94
+At: 95
+At: 96
+At: 97
+At: 98
+0
+
+ Number of nodes per subgraph: 15
+At: 1
+At: 6
+At: 31
+At: 34
+At: 47
+At: 49
+At: 52
+At: 72
+At: 75
+At: 76
+At: 77
+At: 78
+At: 87
+At: 93
+At: 99
+1
+
+ Number of nodes per subgraph: 11
+At: 3
+At: 13
+At: 22
+At: 27
+At: 32
+At: 54
+At: 59
+At: 69
+At: 80
+At: 81
+At: 83
+3
+
+ Number of nodes per subgraph: 3
+At: 7
+At: 9
+At: 51
+7
+
+0
+1
+2
+3
+ERROR THIS SHOULDN'T HAPPEN
+Test case 12: failure
+ Number of nodes per subgraph: 1
+At: 0
+0
+
+ Number of nodes per subgraph: 1
+At: 1
+1
+
+ Number of nodes per subgraph: 1
+At: 2
+2
+
+ Number of nodes per subgraph: 1
+At: 3
+3
+
+ Number of nodes per subgraph: 1
+At: 4
+4
+
+ Number of nodes per subgraph: 1
+At: 5
+5
+
+ Number of nodes per subgraph: 1
+At: 6
+6
+
+ Number of nodes per subgraph: 1
+At: 7
+7
+
+ Number of nodes per subgraph: 1
+At: 8
+8
+
+ Number of nodes per subgraph: 1
+At: 9
+9
+
+ Number of nodes per subgraph: 1
+At: 10
+10
+
+ Number of nodes per subgraph: 1
+At: 11
+11
+
+ Number of nodes per subgraph: 1
+At: 12
+12
+
+ Number of nodes per subgraph: 1
+At: 13
+13
+
+ Number of nodes per subgraph: 1
+At: 14
+14
+
+ Number of nodes per subgraph: 1
+At: 15
+15
+
+ Number of nodes per subgraph: 1
+At: 16
+16
+
+ Number of nodes per subgraph: 1
+At: 17
+17
+
+ Number of nodes per subgraph: 1
+At: 18
+18
+
+ Number of nodes per subgraph: 1
+At: 19
+19
+
+ Number of nodes per subgraph: 1
+At: 20
+20
+
+ Number of nodes per subgraph: 1
+At: 21
+21
+
+ Number of nodes per subgraph: 1
+At: 22
+22
+
+ Number of nodes per subgraph: 1
+At: 23
+23
+
+ Number of nodes per subgraph: 1
+At: 24
+24
+
+ Number of nodes per subgraph: 1
+At: 25
+25
+
+ Number of nodes per subgraph: 1
+At: 26
+26
+
+ Number of nodes per subgraph: 1
+At: 27
+27
+
+ Number of nodes per subgraph: 1
+At: 28
+28
+
+ Number of nodes per subgraph: 1
+At: 29
+29
+
+ Number of nodes per subgraph: 1
+At: 30
+30
+
+ Number of nodes per subgraph: 1
+At: 31
+31
+
+ Number of nodes per subgraph: 1
+At: 32
+32
+
+ Number of nodes per subgraph: 1
+At: 33
+33
+
+ Number of nodes per subgraph: 1
+At: 34
+34
+
+ Number of nodes per subgraph: 1
+At: 35
+35
+
+ Number of nodes per subgraph: 1
+At: 36
+36
+
+ Number of nodes per subgraph: 1
+At: 37
+37
+
+ Number of nodes per subgraph: 1
+At: 38
+38
+
+ Number of nodes per subgraph: 1
+At: 39
+39
+
+ Number of nodes per subgraph: 1
+At: 40
+40
+
+ Number of nodes per subgraph: 1
+At: 41
+41
+
+ Number of nodes per subgraph: 1
+At: 42
+42
+
+ Number of nodes per subgraph: 1
+At: 43
+43
+
+ Number of nodes per subgraph: 1
+At: 44
+44
+
+ Number of nodes per subgraph: 1
+At: 45
+45
+
+ Number of nodes per subgraph: 1
+At: 46
+46
+
+ Number of nodes per subgraph: 1
+At: 47
+47
+
+ Number of nodes per subgraph: 1
+At: 48
+48
+
+ Number of nodes per subgraph: 1
+At: 49
+49
+
+ Number of nodes per subgraph: 1
+At: 50
+50
+
+ Number of nodes per subgraph: 1
+At: 51
+51
+
+ Number of nodes per subgraph: 1
+At: 52
+52
+
+ Number of nodes per subgraph: 1
+At: 53
+53
+
+ Number of nodes per subgraph: 1
+At: 54
+54
+
+ Number of nodes per subgraph: 1
+At: 55
+55
+
+ Number of nodes per subgraph: 1
+At: 56
+56
+
+ Number of nodes per subgraph: 1
+At: 57
+57
+
+ Number of nodes per subgraph: 1
+At: 58
+58
+
+ Number of nodes per subgraph: 1
+At: 59
+59
+
+ Number of nodes per subgraph: 1
+At: 60
+60
+
+ Number of nodes per subgraph: 1
+At: 61
+61
+
+ Number of nodes per subgraph: 1
+At: 62
+62
+
+ Number of nodes per subgraph: 1
+At: 63
+63
+
+ Number of nodes per subgraph: 1
+At: 64
+64
+
+ Number of nodes per subgraph: 1
+At: 65
+65
+
+ Number of nodes per subgraph: 1
+At: 66
+66
+
+ Number of nodes per subgraph: 1
+At: 67
+67
+
+ Number of nodes per subgraph: 1
+At: 68
+68
+
+ Number of nodes per subgraph: 1
+At: 69
+69
+
+ Number of nodes per subgraph: 1
+At: 70
+70
+
+ Number of nodes per subgraph: 1
+At: 71
+71
+
+ Number of nodes per subgraph: 1
+At: 72
+72
+
+ Number of nodes per subgraph: 1
+At: 73
+73
+
+ Number of nodes per subgraph: 1
+At: 74
+74
+
+ Number of nodes per subgraph: 1
+At: 75
+75
+
+ Number of nodes per subgraph: 1
+At: 76
+76
+
+ Number of nodes per subgraph: 1
+At: 77
+77
+
+ Number of nodes per subgraph: 1
+At: 78
+78
+
+ Number of nodes per subgraph: 1
+At: 79
+79
+
+ Number of nodes per subgraph: 1
+At: 80
+80
+
+ Number of nodes per subgraph: 1
+At: 81
+81
+
+ Number of nodes per subgraph: 1
+At: 82
+82
+
+ Number of nodes per subgraph: 1
+At: 83
+83
+
+ Number of nodes per subgraph: 1
+At: 84
+84
+
+ Number of nodes per subgraph: 1
+At: 85
+85
+
+ Number of nodes per subgraph: 1
+At: 86
+86
+
+ Number of nodes per subgraph: 1
+At: 87
+87
+
+ Number of nodes per subgraph: 1
+At: 88
+88
+
+ Number of nodes per subgraph: 1
+At: 89
+89
+
+ Number of nodes per subgraph: 1
+At: 90
+90
+
+ Number of nodes per subgraph: 1
+At: 91
+91
+
+ Number of nodes per subgraph: 1
+At: 92
+92
+
+ Number of nodes per subgraph: 1
+At: 93
+93
+
+ Number of nodes per subgraph: 1
+At: 94
+94
+
+ Number of nodes per subgraph: 1
+At: 95
+95
+
+ Number of nodes per subgraph: 1
+At: 96
+96
+
+ Number of nodes per subgraph: 1
+At: 97
+97
+
+ Number of nodes per subgraph: 1
+At: 98
+98
+
+ Number of nodes per subgraph: 1
+At: 99
+99
+
+2
+5
+40
+43
+48
+57
+71
+72
+76
+89
+0
+Test case 13: failure
+ Number of nodes per subgraph: 17
+At: 0
+At: 181
+At: 287
+At: 315
+At: 316
+At: 357
+At: 440
+At: 483
+At: 555
+At: 581
+At: 777
+At: 791
+At: 811
+At: 832
+At: 917
+At: 921
+At: 942
+0
+
+ Number of nodes per subgraph: 11
+At: 1
+At: 8
+At: 253
+At: 303
+At: 507
+At: 516
+At: 551
+At: 599
+At: 611
+At: 679
+At: 983
+1
+
+ Number of nodes per subgraph: 15
+At: 2
+At: 50
+At: 165
+At: 177
+At: 326
+At: 335
+At: 347
+At: 371
+At: 428
+At: 463
+At: 540
+At: 651
+At: 663
+At: 847
+At: 941
+2
+
+ Number of nodes per subgraph: 13
+At: 3
+At: 80
+At: 210
+At: 332
+At: 389
+At: 523
+At: 584
+At: 616
+At: 782
+At: 848
+At: 864
+At: 907
+At: 912
+3
+
+ Number of nodes per subgraph: 8
+At: 4
+At: 73
+At: 145
+At: 164
+At: 751
+At: 789
+At: 858
+At: 874
+4
+
+ Number of nodes per subgraph: 26
+At: 5
+At: 6
+At: 130
+At: 191
+At: 294
+At: 319
+At: 331
+At: 380
+At: 387
+At: 399
+At: 411
+At: 443
+At: 496
+At: 497
+At: 558
+At: 620
+At: 647
+At: 695
+At: 770
+At: 819
+At: 842
+At: 860
+At: 899
+At: 914
+At: 991
+At: 999
+5
+
+ Number of nodes per subgraph: 13
+At: 7
+At: 16
+At: 55
+At: 71
+At: 212
+At: 214
+At: 217
+At: 299
+At: 354
+At: 564
+At: 655
+At: 753
+At: 876
+7
+
+ Number of nodes per subgraph: 11
+At: 9
+At: 74
+At: 96
+At: 102
+At: 137
+At: 150
+At: 836
+At: 882
+At: 909
+At: 916
+At: 952
+9
+
+ Number of nodes per subgraph: 9
+At: 10
+At: 77
+At: 154
+At: 239
+At: 247
+At: 441
+At: 482
+At: 668
+At: 757
+10
+
+ Number of nodes per subgraph: 10
+At: 11
+At: 170
+At: 223
+At: 240
+At: 297
+At: 301
+At: 376
+At: 889
+At: 992
+At: 998
+11
+
+ Number of nodes per subgraph: 15
+At: 12
+At: 238
+At: 276
+At: 288
+At: 338
+At: 341
+At: 343
+At: 369
+At: 764
+At: 829
+At: 853
+At: 861
+At: 896
+At: 944
+At: 969
+12
+
+ Number of nodes per subgraph: 14
+At: 13
+At: 123
+At: 144
+At: 187
+At: 293
+At: 430
+At: 479
+At: 481
+At: 656
+At: 673
+At: 702
+At: 756
+At: 772
+At: 972
+13
+
+ Number of nodes per subgraph: 7
+At: 14
+At: 56
+At: 138
+At: 155
+At: 360
+At: 720
+At: 801
+14
+
+ Number of nodes per subgraph: 9
+At: 15
+At: 82
+At: 88
+At: 281
+At: 325
+At: 427
+At: 845
+At: 857
+At: 940
+15
+
+ Number of nodes per subgraph: 8
+At: 17
+At: 407
+At: 446
+At: 610
+At: 658
+At: 669
+At: 725
+At: 971
+17
+
+ Number of nodes per subgraph: 10
+At: 18
+At: 78
+At: 244
+At: 386
+At: 414
+At: 455
+At: 504
+At: 813
+At: 871
+At: 931
+18
+
+ Number of nodes per subgraph: 5
+At: 19
+At: 351
+At: 726
+At: 794
+At: 816
+19
+
+ Number of nodes per subgraph: 13
+At: 20
+At: 236
+At: 265
+At: 400
+At: 423
+At: 478
+At: 531
+At: 623
+At: 664
+At: 797
+At: 818
+At: 915
+At: 977
+20
+
+ Number of nodes per subgraph: 15
+At: 21
+At: 99
+At: 203
+At: 218
+At: 261
+At: 304
+At: 310
+At: 318
+At: 473
+At: 545
+At: 776
+At: 838
+At: 867
+At: 965
+At: 975
+21
+
+ Number of nodes per subgraph: 10
+At: 22
+At: 120
+At: 426
+At: 486
+At: 518
+At: 641
+At: 742
+At: 748
+At: 826
+At: 987
+22
+
+ Number of nodes per subgraph: 10
+At: 23
+At: 85
+At: 118
+At: 207
+At: 245
+At: 250
+At: 438
+At: 572
+At: 629
+At: 763
+23
+
+ Number of nodes per subgraph: 14
+At: 24
+At: 148
+At: 174
+At: 192
+At: 298
+At: 495
+At: 508
+At: 537
+At: 549
+At: 574
+At: 706
+At: 835
+At: 957
+At: 979
+24
+
+ Number of nodes per subgraph: 9
+At: 25
+At: 37
+At: 324
+At: 602
+At: 684
+At: 728
+At: 795
+At: 840
+At: 989
+25
+
+ Number of nodes per subgraph: 18
+At: 26
+At: 42
+At: 72
+At: 115
+At: 131
+At: 206
+At: 243
+At: 308
+At: 395
+At: 412
+At: 433
+At: 449
+At: 467
+At: 513
+At: 707
+At: 708
+At: 884
+At: 891
+26
+
+ Number of nodes per subgraph: 5
+At: 27
+At: 327
+At: 490
+At: 646
+At: 779
+27
+
+ Number of nodes per subgraph: 7
+At: 28
+At: 172
+At: 241
+At: 323
+At: 471
+At: 614
+At: 626
+28
+
+ Number of nodes per subgraph: 18
+At: 29
+At: 114
+At: 352
+At: 370
+At: 372
+At: 402
+At: 424
+At: 562
+At: 622
+At: 674
+At: 699
+At: 758
+At: 778
+At: 824
+At: 855
+At: 869
+At: 902
+At: 995
+29
+
+ Number of nodes per subgraph: 7
+At: 30
+At: 108
+At: 451
+At: 500
+At: 583
+At: 597
+At: 660
+30
+
+ Number of nodes per subgraph: 7
+At: 31
+At: 573
+At: 582
+At: 709
+At: 771
+At: 951
+At: 953
+31
+
+ Number of nodes per subgraph: 11
+At: 32
+At: 52
+At: 157
+At: 235
+At: 353
+At: 393
+At: 457
+At: 681
+At: 822
+At: 893
+At: 946
+32
+
+ Number of nodes per subgraph: 10
+At: 33
+At: 69
+At: 70
+At: 405
+At: 448
+At: 494
+At: 563
+At: 604
+At: 659
+At: 837
+33
+
+ Number of nodes per subgraph: 11
+At: 34
+At: 117
+At: 199
+At: 286
+At: 290
+At: 311
+At: 363
+At: 472
+At: 577
+At: 643
+At: 767
+34
+
+ Number of nodes per subgraph: 17
+At: 35
+At: 116
+At: 178
+At: 184
+At: 197
+At: 314
+At: 368
+At: 390
+At: 398
+At: 459
+At: 484
+At: 550
+At: 676
+At: 724
+At: 800
+At: 938
+At: 982
+35
+
+ Number of nodes per subgraph: 18
+At: 36
+At: 76
+At: 126
+At: 153
+At: 168
+At: 228
+At: 279
+At: 403
+At: 416
+At: 470
+At: 487
+At: 515
+At: 538
+At: 560
+At: 631
+At: 727
+At: 796
+At: 925
+36
+
+ Number of nodes per subgraph: 16
+At: 38
+At: 142
+At: 149
+At: 162
+At: 175
+At: 186
+At: 230
+At: 312
+At: 434
+At: 476
+At: 543
+At: 589
+At: 654
+At: 717
+At: 750
+At: 862
+38
+
+ Number of nodes per subgraph: 7
+At: 39
+At: 75
+At: 485
+At: 491
+At: 528
+At: 872
+At: 935
+39
+
+ Number of nodes per subgraph: 1
+At: 40
+40
+
+ Number of nodes per subgraph: 5
+At: 41
+At: 342
+At: 638
+At: 747
+At: 947
+41
+
+ Number of nodes per subgraph: 5
+At: 43
+At: 180
+At: 296
+At: 570
+At: 922
+43
+
+ Number of nodes per subgraph: 12
+At: 44
+At: 62
+At: 113
+At: 141
+At: 171
+At: 340
+At: 385
+At: 409
+At: 413
+At: 512
+At: 980
+At: 996
+44
+
+ Number of nodes per subgraph: 14
+At: 45
+At: 87
+At: 95
+At: 101
+At: 274
+At: 309
+At: 328
+At: 661
+At: 696
+At: 698
+At: 715
+At: 817
+At: 873
+At: 949
+45
+
+ Number of nodes per subgraph: 3
+At: 46
+At: 401
+At: 769
+46
+
+ Number of nodes per subgraph: 8
+At: 47
+At: 384
+At: 553
+At: 689
+At: 711
+At: 930
+At: 939
+At: 963
+47
+
+ Number of nodes per subgraph: 16
+At: 48
+At: 83
+At: 112
+At: 208
+At: 233
+At: 246
+At: 264
+At: 365
+At: 450
+At: 464
+At: 505
+At: 569
+At: 722
+At: 734
+At: 761
+At: 898
+48
+
+ Number of nodes per subgraph: 7
+At: 49
+At: 350
+At: 601
+At: 608
+At: 619
+At: 744
+At: 881
+49
+
+ Number of nodes per subgraph: 2
+At: 51
+At: 606
+51
+
+ Number of nodes per subgraph: 9
+At: 53
+At: 97
+At: 124
+At: 270
+At: 355
+At: 595
+At: 642
+At: 649
+At: 959
+53
+
+ Number of nodes per subgraph: 13
+At: 54
+At: 57
+At: 329
+At: 375
+At: 452
+At: 499
+At: 502
+At: 703
+At: 743
+At: 788
+At: 807
+At: 854
+At: 961
+54
+
+ Number of nodes per subgraph: 11
+At: 58
+At: 234
+At: 277
+At: 458
+At: 510
+At: 534
+At: 657
+At: 754
+At: 762
+At: 863
+At: 888
+58
+
+ Number of nodes per subgraph: 11
+At: 59
+At: 158
+At: 378
+At: 388
+At: 460
+At: 493
+At: 521
+At: 578
+At: 640
+At: 685
+At: 755
+59
+
+ Number of nodes per subgraph: 8
+At: 60
+At: 89
+At: 121
+At: 132
+At: 251
+At: 586
+At: 841
+At: 984
+60
+
+ Number of nodes per subgraph: 5
+At: 61
+At: 344
+At: 435
+At: 501
+At: 556
+61
+
+ Number of nodes per subgraph: 8
+At: 63
+At: 249
+At: 256
+At: 417
+At: 425
+At: 489
+At: 652
+At: 895
+63
+
+ Number of nodes per subgraph: 7
+At: 64
+At: 100
+At: 160
+At: 670
+At: 692
+At: 908
+At: 913
+64
+
+ Number of nodes per subgraph: 10
+At: 65
+At: 90
+At: 421
+At: 437
+At: 527
+At: 705
+At: 823
+At: 950
+At: 970
+At: 994
+65
+
+ Number of nodes per subgraph: 9
+At: 66
+At: 86
+At: 224
+At: 300
+At: 364
+At: 367
+At: 404
+At: 804
+At: 866
+66
+
+ Number of nodes per subgraph: 16
+At: 67
+At: 188
+At: 205
+At: 237
+At: 346
+At: 358
+At: 439
+At: 488
+At: 506
+At: 575
+At: 587
+At: 752
+At: 812
+At: 927
+At: 932
+At: 993
+67
+
+ Number of nodes per subgraph: 10
+At: 68
+At: 143
+At: 231
+At: 282
+At: 408
+At: 618
+At: 671
+At: 849
+At: 879
+At: 958
+68
+
+ Number of nodes per subgraph: 6
+At: 79
+At: 444
+At: 565
+At: 633
+At: 635
+At: 920
+79
+
+ Number of nodes per subgraph: 4
+At: 81
+At: 91
+At: 542
+At: 739
+81
+
+ Number of nodes per subgraph: 7
+At: 84
+At: 226
+At: 227
+At: 680
+At: 736
+At: 956
+At: 981
+84
+
+ Number of nodes per subgraph: 7
+At: 92
+At: 103
+At: 580
+At: 690
+At: 723
+At: 774
+At: 828
+92
+
+ Number of nodes per subgraph: 8
+At: 93
+At: 105
+At: 128
+At: 533
+At: 691
+At: 716
+At: 827
+At: 897
+93
+
+ Number of nodes per subgraph: 8
+At: 94
+At: 202
+At: 221
+At: 349
+At: 592
+At: 886
+At: 903
+At: 919
+94
+
+ Number of nodes per subgraph: 9
+At: 98
+At: 475
+At: 591
+At: 596
+At: 603
+At: 630
+At: 710
+At: 839
+At: 856
+98
+
+ Number of nodes per subgraph: 8
+At: 104
+At: 258
+At: 359
+At: 453
+At: 546
+At: 628
+At: 870
+At: 926
+104
+
+ Number of nodes per subgraph: 10
+At: 106
+At: 272
+At: 382
+At: 517
+At: 687
+At: 731
+At: 787
+At: 790
+At: 825
+At: 846
+106
+
+ Number of nodes per subgraph: 6
+At: 107
+At: 129
+At: 193
+At: 306
+At: 474
+At: 934
+107
+
+ Number of nodes per subgraph: 8
+At: 109
+At: 156
+At: 195
+At: 431
+At: 511
+At: 741
+At: 766
+At: 901
+109
+
+ Number of nodes per subgraph: 4
+At: 110
+At: 257
+At: 280
+At: 456
+110
+
+ Number of nodes per subgraph: 5
+At: 111
+At: 254
+At: 729
+At: 831
+At: 929
+111
+
+ Number of nodes per subgraph: 10
+At: 119
+At: 173
+At: 219
+At: 432
+At: 600
+At: 625
+At: 672
+At: 760
+At: 792
+At: 968
+119
+
+ Number of nodes per subgraph: 7
+At: 122
+At: 442
+At: 529
+At: 557
+At: 749
+At: 905
+At: 943
+122
+
+ Number of nodes per subgraph: 1
+At: 125
+125
+
+ Number of nodes per subgraph: 3
+At: 127
+At: 627
+At: 644
+127
+
+ Number of nodes per subgraph: 7
+At: 133
+At: 263
+At: 322
+At: 615
+At: 697
+At: 808
+At: 918
+133
+
+ Number of nodes per subgraph: 6
+At: 134
+At: 547
+At: 645
+At: 786
+At: 923
+At: 990
+134
+
+ Number of nodes per subgraph: 4
+At: 135
+At: 356
+At: 373
+At: 883
+135
+
+ Number of nodes per subgraph: 34
+At: 136
+At: 194
+At: 211
+At: 215
+At: 222
+At: 269
+At: 283
+At: 317
+At: 334
+At: 339
+At: 345
+At: 362
+At: 374
+At: 381
+At: 445
+At: 514
+At: 520
+At: 532
+At: 559
+At: 561
+At: 567
+At: 653
+At: 677
+At: 732
+At: 738
+At: 740
+At: 775
+At: 805
+At: 814
+At: 830
+At: 904
+At: 937
+At: 964
+At: 974
+136
+
+ Number of nodes per subgraph: 11
+At: 139
+At: 159
+At: 292
+At: 429
+At: 509
+At: 544
+At: 548
+At: 609
+At: 678
+At: 781
+At: 910
+139
+
+ Number of nodes per subgraph: 15
+At: 140
+At: 147
+At: 161
+At: 255
+At: 348
+At: 377
+At: 394
+At: 454
+At: 650
+At: 686
+At: 700
+At: 887
+At: 924
+At: 954
+At: 986
+140
+
+ Number of nodes per subgraph: 8
+At: 146
+At: 260
+At: 379
+At: 465
+At: 469
+At: 566
+At: 637
+At: 714
+146
+
+ Number of nodes per subgraph: 16
+At: 151
+At: 152
+At: 267
+At: 275
+At: 333
+At: 336
+At: 392
+At: 418
+At: 552
+At: 784
+At: 833
+At: 844
+At: 878
+At: 880
+At: 945
+At: 962
+151
+
+ Number of nodes per subgraph: 1
+At: 163
+163
+
+ Number of nodes per subgraph: 5
+At: 166
+At: 519
+At: 588
+At: 675
+At: 978
+166
+
+ Number of nodes per subgraph: 7
+At: 167
+At: 225
+At: 397
+At: 541
+At: 634
+At: 798
+At: 802
+167
+
+ Number of nodes per subgraph: 8
+At: 169
+At: 200
+At: 229
+At: 477
+At: 594
+At: 605
+At: 713
+At: 911
+169
+
+ Number of nodes per subgraph: 5
+At: 176
+At: 196
+At: 232
+At: 268
+At: 361
+176
+
+ Number of nodes per subgraph: 5
+At: 179
+At: 415
+At: 498
+At: 522
+At: 571
+179
+
+ Number of nodes per subgraph: 1
+At: 182
+182
+
+ Number of nodes per subgraph: 4
+At: 183
+At: 198
+At: 248
+At: 284
+183
+
+ Number of nodes per subgraph: 2
+At: 185
+At: 320
+185
+
+ Number of nodes per subgraph: 3
+At: 189
+At: 636
+At: 976
+189
+
+ Number of nodes per subgraph: 2
+At: 190
+At: 820
+190
+
+ Number of nodes per subgraph: 7
+At: 201
+At: 271
+At: 289
+At: 462
+At: 632
+At: 859
+At: 875
+201
+
+ Number of nodes per subgraph: 8
+At: 204
+At: 468
+At: 480
+At: 759
+At: 773
+At: 815
+At: 868
+At: 877
+204
+
+ Number of nodes per subgraph: 5
+At: 209
+At: 406
+At: 524
+At: 607
+At: 821
+209
+
+ Number of nodes per subgraph: 4
+At: 213
+At: 262
+At: 693
+At: 997
+213
+
+ Number of nodes per subgraph: 8
+At: 216
+At: 525
+At: 526
+At: 535
+At: 666
+At: 799
+At: 885
+At: 933
+216
+
+ Number of nodes per subgraph: 5
+At: 220
+At: 366
+At: 576
+At: 624
+At: 851
+220
+
+ Number of nodes per subgraph: 6
+At: 242
+At: 307
+At: 617
+At: 667
+At: 850
+At: 948
+242
+
+ Number of nodes per subgraph: 6
+At: 252
+At: 466
+At: 590
+At: 683
+At: 890
+At: 966
+252
+
+ Number of nodes per subgraph: 5
+At: 259
+At: 694
+At: 704
+At: 719
+At: 735
+259
+
+ Number of nodes per subgraph: 8
+At: 266
+At: 419
+At: 568
+At: 621
+At: 682
+At: 733
+At: 810
+At: 985
+266
+
+ Number of nodes per subgraph: 3
+At: 273
+At: 447
+At: 585
+273
+
+ Number of nodes per subgraph: 9
+At: 278
+At: 662
+At: 730
+At: 765
+At: 793
+At: 803
+At: 843
+At: 865
+At: 906
+278
+
+ Number of nodes per subgraph: 7
+At: 285
+At: 321
+At: 337
+At: 436
+At: 530
+At: 593
+At: 928
+285
+
+ Number of nodes per subgraph: 11
+At: 291
+At: 313
+At: 330
+At: 422
+At: 613
+At: 639
+At: 688
+At: 783
+At: 955
+At: 967
+At: 988
+291
+
+ Number of nodes per subgraph: 1
+At: 295
+295
+
+ Number of nodes per subgraph: 4
+At: 302
+At: 383
+At: 391
+At: 936
+302
+
+ Number of nodes per subgraph: 5
+At: 305
+At: 410
+At: 461
+At: 648
+At: 785
+305
+
+ Number of nodes per subgraph: 3
+At: 396
+At: 579
+At: 973
+396
+
+ Number of nodes per subgraph: 4
+At: 420
+At: 780
+At: 809
+At: 900
+420
+
+ Number of nodes per subgraph: 1
+At: 492
+492
+
+ Number of nodes per subgraph: 2
+At: 503
+At: 894
+503
+
+ Number of nodes per subgraph: 3
+At: 536
+At: 554
+At: 721
+536
+
+ Number of nodes per subgraph: 2
+At: 539
+At: 712
+539
+
+ Number of nodes per subgraph: 1
+At: 598
+598
+
+ Number of nodes per subgraph: 1
+At: 612
+612
+
+ Number of nodes per subgraph: 3
+At: 665
+At: 737
+At: 892
+665
+
+ Number of nodes per subgraph: 1
+At: 701
+701
+
+ Number of nodes per subgraph: 2
+At: 718
+At: 745
+718
+
+ Number of nodes per subgraph: 1
+At: 746
+746
+
+ Number of nodes per subgraph: 1
+At: 768
+768
+
+ Number of nodes per subgraph: 1
+At: 806
+806
+
+ Number of nodes per subgraph: 1
+At: 834
+834
+
+ Number of nodes per subgraph: 1
+At: 852
+852
+
+ Number of nodes per subgraph: 1
+At: 960
+960
+
+1
+8
+14
+17
+19
+21
+22
+32
+39
+47
+56
+60
+78
+84
+88
+94
+98
+104
+18
+ Number of nodes per subgraph: 11
+At: 1
+At: 8
+At: 253
+At: 303
+At: 507
+At: 516
+At: 551
+At: 599
+At: 611
+At: 679
+At: 983
+1
+
+ Number of nodes per subgraph: 9
+At: 10
+At: 77
+At: 154
+At: 239
+At: 247
+At: 441
+At: 482
+At: 668
+At: 757
+10
+
+ Number of nodes per subgraph: 8
+At: 17
+At: 407
+At: 446
+At: 610
+At: 658
+At: 669
+At: 725
+At: 971
+17
+
+ Number of nodes per subgraph: 13
+At: 20
+At: 236
+At: 265
+At: 400
+At: 423
+At: 478
+At: 531
+At: 623
+At: 664
+At: 797
+At: 818
+At: 915
+At: 977
+20
+
+ Number of nodes per subgraph: 10
+At: 22
+At: 120
+At: 426
+At: 486
+At: 518
+At: 641
+At: 742
+At: 748
+At: 826
+At: 987
+22
+
+ Number of nodes per subgraph: 14
+At: 24
+At: 148
+At: 174
+At: 192
+At: 298
+At: 495
+At: 508
+At: 537
+At: 549
+At: 574
+At: 706
+At: 835
+At: 957
+At: 979
+24
+
+ Number of nodes per subgraph: 9
+At: 25
+At: 37
+At: 324
+At: 602
+At: 684
+At: 728
+At: 795
+At: 840
+At: 989
+25
+
+ Number of nodes per subgraph: 17
+At: 35
+At: 116
+At: 178
+At: 184
+At: 197
+At: 314
+At: 368
+At: 390
+At: 398
+At: 459
+At: 484
+At: 550
+At: 676
+At: 724
+At: 800
+At: 938
+At: 982
+35
+
+ Number of nodes per subgraph: 12
+At: 44
+At: 62
+At: 113
+At: 141
+At: 171
+At: 340
+At: 385
+At: 409
+At: 413
+At: 512
+At: 980
+At: 996
+44
+
+ Number of nodes per subgraph: 13
+At: 54
+At: 57
+At: 329
+At: 375
+At: 452
+At: 499
+At: 502
+At: 703
+At: 743
+At: 788
+At: 807
+At: 854
+At: 961
+54
+
+ Number of nodes per subgraph: 16
+At: 67
+At: 188
+At: 205
+At: 237
+At: 346
+At: 358
+At: 439
+At: 488
+At: 506
+At: 575
+At: 587
+At: 752
+At: 812
+At: 927
+At: 932
+At: 993
+67
+
+ Number of nodes per subgraph: 7
+At: 84
+At: 226
+At: 227
+At: 680
+At: 736
+At: 956
+At: 981
+84
+
+ Number of nodes per subgraph: 34
+At: 136
+At: 194
+At: 211
+At: 215
+At: 222
+At: 269
+At: 283
+At: 317
+At: 334
+At: 339
+At: 345
+At: 362
+At: 374
+At: 381
+At: 445
+At: 514
+At: 520
+At: 532
+At: 559
+At: 561
+At: 567
+At: 653
+At: 677
+At: 732
+At: 738
+At: 740
+At: 775
+At: 805
+At: 814
+At: 830
+At: 904
+At: 937
+At: 964
+At: 974
+136
+
+ Number of nodes per subgraph: 5
+At: 166
+At: 519
+At: 588
+At: 675
+At: 978
+166
+
+ Number of nodes per subgraph: 5
+At: 179
+At: 415
+At: 498
+At: 522
+At: 571
+179
+
+ Number of nodes per subgraph: 7
+At: 201
+At: 271
+At: 289
+At: 462
+At: 632
+At: 859
+At: 875
+201
+
+ Number of nodes per subgraph: 8
+At: 216
+At: 525
+At: 526
+At: 535
+At: 666
+At: 799
+At: 885
+At: 933
+216
+
+ Number of nodes per subgraph: 3
+At: 273
+At: 447
+At: 585
+273
+
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+ERROR THIS SHOULDN'T HAPPEN
+Test case 14: failure
+ Number of nodes per subgraph: 1
+At: 0
+0
+
+ Number of nodes per subgraph: 1
+At: 1
+1
+
+ Number of nodes per subgraph: 1
+At: 2
+2
+
+ Number of nodes per subgraph: 1
+At: 3
+3
+
+ Number of nodes per subgraph: 1
+At: 4
+4
+
+ Number of nodes per subgraph: 1
+At: 5
+5
+
+ Number of nodes per subgraph: 1
+At: 6
+6
+
+ Number of nodes per subgraph: 1
+At: 7
+7
+
+ Number of nodes per subgraph: 1
+At: 8
+8
+
+ Number of nodes per subgraph: 1
+At: 9
+9
+
+ Number of nodes per subgraph: 1
+At: 10
+10
+
+ Number of nodes per subgraph: 1
+At: 11
+11
+
+ Number of nodes per subgraph: 1
+At: 12
+12
+
+ Number of nodes per subgraph: 1
+At: 13
+13
+
+ Number of nodes per subgraph: 1
+At: 14
+14
+
+ Number of nodes per subgraph: 1
+At: 15
+15
+
+ Number of nodes per subgraph: 1
+At: 16
+16
+
+ Number of nodes per subgraph: 1
+At: 17
+17
+
+ Number of nodes per subgraph: 1
+At: 18
+18
+
+ Number of nodes per subgraph: 1
+At: 19
+19
+
+ Number of nodes per subgraph: 1
+At: 20
+20
+
+ Number of nodes per subgraph: 1
+At: 21
+21
+
+ Number of nodes per subgraph: 1
+At: 22
+22
+
+ Number of nodes per subgraph: 1
+At: 23
+23
+
+ Number of nodes per subgraph: 1
+At: 24
+24
+
+ Number of nodes per subgraph: 1
+At: 25
+25
+
+ Number of nodes per subgraph: 1
+At: 26
+26
+
+ Number of nodes per subgraph: 1
+At: 27
+27
+
+ Number of nodes per subgraph: 1
+At: 28
+28
+
+ Number of nodes per subgraph: 1
+At: 29
+29
+
+ Number of nodes per subgraph: 1
+At: 30
+30
+
+ Number of nodes per subgraph: 1
+At: 31
+31
+
+ Number of nodes per subgraph: 1
+At: 32
+32
+
+ Number of nodes per subgraph: 1
+At: 33
+33
+
+ Number of nodes per subgraph: 1
+At: 34
+34
+
+ Number of nodes per subgraph: 1
+At: 35
+35
+
+ Number of nodes per subgraph: 1
+At: 36
+36
+
+ Number of nodes per subgraph: 1
+At: 37
+37
+
+ Number of nodes per subgraph: 1
+At: 38
+38
+
+ Number of nodes per subgraph: 1
+At: 39
+39
+
+ Number of nodes per subgraph: 1
+At: 40
+40
+
+ Number of nodes per subgraph: 1
+At: 41
+41
+
+ Number of nodes per subgraph: 1
+At: 42
+42
+
+ Number of nodes per subgraph: 1
+At: 43
+43
+
+ Number of nodes per subgraph: 1
+At: 44
+44
+
+ Number of nodes per subgraph: 1
+At: 45
+45
+
+ Number of nodes per subgraph: 1
+At: 46
+46
+
+ Number of nodes per subgraph: 1
+At: 47
+47
+
+ Number of nodes per subgraph: 1
+At: 48
+48
+
+ Number of nodes per subgraph: 1
+At: 49
+49
+
+ Number of nodes per subgraph: 1
+At: 50
+50
+
+ Number of nodes per subgraph: 1
+At: 51
+51
+
+ Number of nodes per subgraph: 1
+At: 52
+52
+
+ Number of nodes per subgraph: 1
+At: 53
+53
+
+ Number of nodes per subgraph: 1
+At: 54
+54
+
+ Number of nodes per subgraph: 1
+At: 55
+55
+
+ Number of nodes per subgraph: 1
+At: 56
+56
+
+ Number of nodes per subgraph: 1
+At: 57
+57
+
+ Number of nodes per subgraph: 1
+At: 58
+58
+
+ Number of nodes per subgraph: 1
+At: 59
+59
+
+ Number of nodes per subgraph: 1
+At: 60
+60
+
+ Number of nodes per subgraph: 1
+At: 61
+61
+
+ Number of nodes per subgraph: 1
+At: 62
+62
+
+ Number of nodes per subgraph: 1
+At: 63
+63
+
+ Number of nodes per subgraph: 1
+At: 64
+64
+
+ Number of nodes per subgraph: 1
+At: 65
+65
+
+ Number of nodes per subgraph: 1
+At: 66
+66
+
+ Number of nodes per subgraph: 1
+At: 67
+67
+
+ Number of nodes per subgraph: 1
+At: 68
+68
+
+ Number of nodes per subgraph: 1
+At: 69
+69
+
+ Number of nodes per subgraph: 1
+At: 70
+70
+
+ Number of nodes per subgraph: 1
+At: 71
+71
+
+ Number of nodes per subgraph: 1
+At: 72
+72
+
+ Number of nodes per subgraph: 1
+At: 73
+73
+
+ Number of nodes per subgraph: 1
+At: 74
+74
+
+ Number of nodes per subgraph: 1
+At: 75
+75
+
+ Number of nodes per subgraph: 1
+At: 76
+76
+
+ Number of nodes per subgraph: 1
+At: 77
+77
+
+ Number of nodes per subgraph: 1
+At: 78
+78
+
+ Number of nodes per subgraph: 1
+At: 79
+79
+
+ Number of nodes per subgraph: 1
+At: 80
+80
+
+ Number of nodes per subgraph: 1
+At: 81
+81
+
+ Number of nodes per subgraph: 1
+At: 82
+82
+
+ Number of nodes per subgraph: 1
+At: 83
+83
+
+ Number of nodes per subgraph: 1
+At: 84
+84
+
+ Number of nodes per subgraph: 1
+At: 85
+85
+
+ Number of nodes per subgraph: 1
+At: 86
+86
+
+ Number of nodes per subgraph: 1
+At: 87
+87
+
+ Number of nodes per subgraph: 1
+At: 88
+88
+
+ Number of nodes per subgraph: 1
+At: 89
+89
+
+ Number of nodes per subgraph: 1
+At: 90
+90
+
+ Number of nodes per subgraph: 1
+At: 91
+91
+
+ Number of nodes per subgraph: 1
+At: 92
+92
+
+ Number of nodes per subgraph: 1
+At: 93
+93
+
+ Number of nodes per subgraph: 1
+At: 94
+94
+
+ Number of nodes per subgraph: 1
+At: 95
+95
+
+ Number of nodes per subgraph: 1
+At: 96
+96
+
+ Number of nodes per subgraph: 1
+At: 97
+97
+
+ Number of nodes per subgraph: 1
+At: 98
+98
+
+ Number of nodes per subgraph: 1
+At: 99
+99
+
+ Number of nodes per subgraph: 1
+At: 100
+100
+
+ Number of nodes per subgraph: 1
+At: 101
+101
+
+ Number of nodes per subgraph: 1
+At: 102
+102
+
+ Number of nodes per subgraph: 1
+At: 103
+103
+
+ Number of nodes per subgraph: 1
+At: 104
+104
+
+ Number of nodes per subgraph: 1
+At: 105
+105
+
+ Number of nodes per subgraph: 1
+At: 106
+106
+
+ Number of nodes per subgraph: 1
+At: 107
+107
+
+ Number of nodes per subgraph: 1
+At: 108
+108
+
+ Number of nodes per subgraph: 1
+At: 109
+109
+
+ Number of nodes per subgraph: 1
+At: 110
+110
+
+ Number of nodes per subgraph: 1
+At: 111
+111
+
+ Number of nodes per subgraph: 1
+At: 112
+112
+
+ Number of nodes per subgraph: 1
+At: 113
+113
+
+ Number of nodes per subgraph: 1
+At: 114
+114
+
+ Number of nodes per subgraph: 1
+At: 115
+115
+
+ Number of nodes per subgraph: 1
+At: 116
+116
+
+ Number of nodes per subgraph: 1
+At: 117
+117
+
+ Number of nodes per subgraph: 1
+At: 118
+118
+
+ Number of nodes per subgraph: 1
+At: 119
+119
+
+ Number of nodes per subgraph: 1
+At: 120
+120
+
+ Number of nodes per subgraph: 1
+At: 121
+121
+
+ Number of nodes per subgraph: 1
+At: 122
+122
+
+ Number of nodes per subgraph: 1
+At: 123
+123
+
+ Number of nodes per subgraph: 1
+At: 124
+124
+
+ Number of nodes per subgraph: 1
+At: 125
+125
+
+ Number of nodes per subgraph: 1
+At: 126
+126
+
+ Number of nodes per subgraph: 1
+At: 127
+127
+
+ Number of nodes per subgraph: 1
+At: 128
+128
+
+ Number of nodes per subgraph: 1
+At: 129
+129
+
+ Number of nodes per subgraph: 1
+At: 130
+130
+
+ Number of nodes per subgraph: 1
+At: 131
+131
+
+ Number of nodes per subgraph: 1
+At: 132
+132
+
+ Number of nodes per subgraph: 1
+At: 133
+133
+
+ Number of nodes per subgraph: 1
+At: 134
+134
+
+ Number of nodes per subgraph: 1
+At: 135
+135
+
+ Number of nodes per subgraph: 1
+At: 136
+136
+
+ Number of nodes per subgraph: 1
+At: 137
+137
+
+ Number of nodes per subgraph: 1
+At: 138
+138
+
+ Number of nodes per subgraph: 1
+At: 139
+139
+
+ Number of nodes per subgraph: 1
+At: 140
+140
+
+ Number of nodes per subgraph: 1
+At: 141
+141
+
+ Number of nodes per subgraph: 1
+At: 142
+142
+
+ Number of nodes per subgraph: 1
+At: 143
+143
+
+ Number of nodes per subgraph: 1
+At: 144
+144
+
+ Number of nodes per subgraph: 1
+At: 145
+145
+
+ Number of nodes per subgraph: 1
+At: 146
+146
+
+ Number of nodes per subgraph: 1
+At: 147
+147
+
+ Number of nodes per subgraph: 1
+At: 148
+148
+
+ Number of nodes per subgraph: 1
+At: 149
+149
+
+ Number of nodes per subgraph: 1
+At: 150
+150
+
+ Number of nodes per subgraph: 1
+At: 151
+151
+
+ Number of nodes per subgraph: 1
+At: 152
+152
+
+ Number of nodes per subgraph: 1
+At: 153
+153
+
+ Number of nodes per subgraph: 1
+At: 154
+154
+
+ Number of nodes per subgraph: 1
+At: 155
+155
+
+ Number of nodes per subgraph: 1
+At: 156
+156
+
+ Number of nodes per subgraph: 1
+At: 157
+157
+
+ Number of nodes per subgraph: 1
+At: 158
+158
+
+ Number of nodes per subgraph: 1
+At: 159
+159
+
+ Number of nodes per subgraph: 1
+At: 160
+160
+
+ Number of nodes per subgraph: 1
+At: 161
+161
+
+ Number of nodes per subgraph: 1
+At: 162
+162
+
+ Number of nodes per subgraph: 1
+At: 163
+163
+
+ Number of nodes per subgraph: 1
+At: 164
+164
+
+ Number of nodes per subgraph: 1
+At: 165
+165
+
+ Number of nodes per subgraph: 1
+At: 166
+166
+
+ Number of nodes per subgraph: 1
+At: 167
+167
+
+ Number of nodes per subgraph: 1
+At: 168
+168
+
+ Number of nodes per subgraph: 1
+At: 169
+169
+
+ Number of nodes per subgraph: 1
+At: 170
+170
+
+ Number of nodes per subgraph: 1
+At: 171
+171
+
+ Number of nodes per subgraph: 1
+At: 172
+172
+
+ Number of nodes per subgraph: 1
+At: 173
+173
+
+ Number of nodes per subgraph: 1
+At: 174
+174
+
+ Number of nodes per subgraph: 1
+At: 175
+175
+
+ Number of nodes per subgraph: 1
+At: 176
+176
+
+ Number of nodes per subgraph: 1
+At: 177
+177
+
+ Number of nodes per subgraph: 1
+At: 178
+178
+
+ Number of nodes per subgraph: 1
+At: 179
+179
+
+ Number of nodes per subgraph: 1
+At: 180
+180
+
+ Number of nodes per subgraph: 1
+At: 181
+181
+
+ Number of nodes per subgraph: 1
+At: 182
+182
+
+ Number of nodes per subgraph: 1
+At: 183
+183
+
+ Number of nodes per subgraph: 1
+At: 184
+184
+
+ Number of nodes per subgraph: 1
+At: 185
+185
+
+ Number of nodes per subgraph: 1
+At: 186
+186
+
+ Number of nodes per subgraph: 1
+At: 187
+187
+
+ Number of nodes per subgraph: 1
+At: 188
+188
+
+ Number of nodes per subgraph: 1
+At: 189
+189
+
+ Number of nodes per subgraph: 1
+At: 190
+190
+
+ Number of nodes per subgraph: 1
+At: 191
+191
+
+ Number of nodes per subgraph: 1
+At: 192
+192
+
+ Number of nodes per subgraph: 1
+At: 193
+193
+
+ Number of nodes per subgraph: 1
+At: 194
+194
+
+ Number of nodes per subgraph: 1
+At: 195
+195
+
+ Number of nodes per subgraph: 1
+At: 196
+196
+
+ Number of nodes per subgraph: 1
+At: 197
+197
+
+ Number of nodes per subgraph: 1
+At: 198
+198
+
+ Number of nodes per subgraph: 1
+At: 199
+199
+
+ Number of nodes per subgraph: 1
+At: 200
+200
+
+ Number of nodes per subgraph: 1
+At: 201
+201
+
+ Number of nodes per subgraph: 1
+At: 202
+202
+
+ Number of nodes per subgraph: 1
+At: 203
+203
+
+ Number of nodes per subgraph: 1
+At: 204
+204
+
+ Number of nodes per subgraph: 1
+At: 205
+205
+
+ Number of nodes per subgraph: 1
+At: 206
+206
+
+ Number of nodes per subgraph: 1
+At: 207
+207
+
+ Number of nodes per subgraph: 1
+At: 208
+208
+
+ Number of nodes per subgraph: 1
+At: 209
+209
+
+ Number of nodes per subgraph: 1
+At: 210
+210
+
+ Number of nodes per subgraph: 1
+At: 211
+211
+
+ Number of nodes per subgraph: 1
+At: 212
+212
+
+ Number of nodes per subgraph: 1
+At: 213
+213
+
+ Number of nodes per subgraph: 1
+At: 214
+214
+
+ Number of nodes per subgraph: 1
+At: 215
+215
+
+ Number of nodes per subgraph: 1
+At: 216
+216
+
+ Number of nodes per subgraph: 1
+At: 217
+217
+
+ Number of nodes per subgraph: 1
+At: 218
+218
+
+ Number of nodes per subgraph: 1
+At: 219
+219
+
+ Number of nodes per subgraph: 1
+At: 220
+220
+
+ Number of nodes per subgraph: 1
+At: 221
+221
+
+ Number of nodes per subgraph: 1
+At: 222
+222
+
+ Number of nodes per subgraph: 1
+At: 223
+223
+
+ Number of nodes per subgraph: 1
+At: 224
+224
+
+ Number of nodes per subgraph: 1
+At: 225
+225
+
+ Number of nodes per subgraph: 1
+At: 226
+226
+
+ Number of nodes per subgraph: 1
+At: 227
+227
+
+ Number of nodes per subgraph: 1
+At: 228
+228
+
+ Number of nodes per subgraph: 1
+At: 229
+229
+
+ Number of nodes per subgraph: 1
+At: 230
+230
+
+ Number of nodes per subgraph: 1
+At: 231
+231
+
+ Number of nodes per subgraph: 1
+At: 232
+232
+
+ Number of nodes per subgraph: 1
+At: 233
+233
+
+ Number of nodes per subgraph: 1
+At: 234
+234
+
+ Number of nodes per subgraph: 1
+At: 235
+235
+
+ Number of nodes per subgraph: 1
+At: 236
+236
+
+ Number of nodes per subgraph: 1
+At: 237
+237
+
+ Number of nodes per subgraph: 1
+At: 238
+238
+
+ Number of nodes per subgraph: 1
+At: 239
+239
+
+ Number of nodes per subgraph: 1
+At: 240
+240
+
+ Number of nodes per subgraph: 1
+At: 241
+241
+
+ Number of nodes per subgraph: 1
+At: 242
+242
+
+ Number of nodes per subgraph: 1
+At: 243
+243
+
+ Number of nodes per subgraph: 1
+At: 244
+244
+
+ Number of nodes per subgraph: 1
+At: 245
+245
+
+ Number of nodes per subgraph: 1
+At: 246
+246
+
+ Number of nodes per subgraph: 1
+At: 247
+247
+
+ Number of nodes per subgraph: 1
+At: 248
+248
+
+ Number of nodes per subgraph: 1
+At: 249
+249
+
+ Number of nodes per subgraph: 1
+At: 250
+250
+
+ Number of nodes per subgraph: 1
+At: 251
+251
+
+ Number of nodes per subgraph: 1
+At: 252
+252
+
+ Number of nodes per subgraph: 1
+At: 253
+253
+
+ Number of nodes per subgraph: 1
+At: 254
+254
+
+ Number of nodes per subgraph: 1
+At: 255
+255
+
+ Number of nodes per subgraph: 1
+At: 256
+256
+
+ Number of nodes per subgraph: 1
+At: 257
+257
+
+ Number of nodes per subgraph: 1
+At: 258
+258
+
+ Number of nodes per subgraph: 1
+At: 259
+259
+
+ Number of nodes per subgraph: 1
+At: 260
+260
+
+ Number of nodes per subgraph: 1
+At: 261
+261
+
+ Number of nodes per subgraph: 1
+At: 262
+262
+
+ Number of nodes per subgraph: 1
+At: 263
+263
+
+ Number of nodes per subgraph: 1
+At: 264
+264
+
+ Number of nodes per subgraph: 1
+At: 265
+265
+
+ Number of nodes per subgraph: 1
+At: 266
+266
+
+ Number of nodes per subgraph: 1
+At: 267
+267
+
+ Number of nodes per subgraph: 1
+At: 268
+268
+
+ Number of nodes per subgraph: 1
+At: 269
+269
+
+ Number of nodes per subgraph: 1
+At: 270
+270
+
+ Number of nodes per subgraph: 1
+At: 271
+271
+
+ Number of nodes per subgraph: 1
+At: 272
+272
+
+ Number of nodes per subgraph: 1
+At: 273
+273
+
+ Number of nodes per subgraph: 1
+At: 274
+274
+
+ Number of nodes per subgraph: 1
+At: 275
+275
+
+ Number of nodes per subgraph: 1
+At: 276
+276
+
+ Number of nodes per subgraph: 1
+At: 277
+277
+
+ Number of nodes per subgraph: 1
+At: 278
+278
+
+ Number of nodes per subgraph: 1
+At: 279
+279
+
+ Number of nodes per subgraph: 1
+At: 280
+280
+
+ Number of nodes per subgraph: 1
+At: 281
+281
+
+ Number of nodes per subgraph: 1
+At: 282
+282
+
+ Number of nodes per subgraph: 1
+At: 283
+283
+
+ Number of nodes per subgraph: 1
+At: 284
+284
+
+ Number of nodes per subgraph: 1
+At: 285
+285
+
+ Number of nodes per subgraph: 1
+At: 286
+286
+
+ Number of nodes per subgraph: 1
+At: 287
+287
+
+ Number of nodes per subgraph: 1
+At: 288
+288
+
+ Number of nodes per subgraph: 1
+At: 289
+289
+
+ Number of nodes per subgraph: 1
+At: 290
+290
+
+ Number of nodes per subgraph: 1
+At: 291
+291
+
+ Number of nodes per subgraph: 1
+At: 292
+292
+
+ Number of nodes per subgraph: 1
+At: 293
+293
+
+ Number of nodes per subgraph: 1
+At: 294
+294
+
+ Number of nodes per subgraph: 1
+At: 295
+295
+
+ Number of nodes per subgraph: 1
+At: 296
+296
+
+ Number of nodes per subgraph: 1
+At: 297
+297
+
+ Number of nodes per subgraph: 1
+At: 298
+298
+
+ Number of nodes per subgraph: 1
+At: 299
+299
+
+0
+34
+44
+92
+147
+152
+174
+220
+223
+256
+0
+Test case 15: failure
+ Number of nodes per subgraph: 46
+At: 0
+At: 27
+At: 28
+At: 71
+At: 95
+At: 117
+At: 122
+At: 127
+At: 154
+At: 169
+At: 174
+At: 191
+At: 225
+At: 235
+At: 240
+At: 303
+At: 324
+At: 325
+At: 390
+At: 401
+At: 432
+At: 436
+At: 444
+At: 453
+At: 455
+At: 465
+At: 513
+At: 519
+At: 551
+At: 589
+At: 597
+At: 604
+At: 619
+At: 620
+At: 666
+At: 690
+At: 691
+At: 772
+At: 791
+At: 829
+At: 865
+At: 892
+At: 899
+At: 931
+At: 939
+At: 969
+0
+
+ Number of nodes per subgraph: 52
+At: 1
+At: 14
+At: 22
+At: 83
+At: 86
+At: 90
+At: 91
+At: 136
+At: 152
+At: 193
+At: 195
+At: 198
+At: 203
+At: 218
+At: 228
+At: 259
+At: 269
+At: 301
+At: 308
+At: 337
+At: 392
+At: 394
+At: 429
+At: 491
+At: 556
+At: 563
+At: 572
+At: 584
+At: 594
+At: 613
+At: 626
+At: 645
+At: 651
+At: 692
+At: 709
+At: 728
+At: 740
+At: 741
+At: 754
+At: 777
+At: 784
+At: 809
+At: 838
+At: 845
+At: 853
+At: 862
+At: 864
+At: 875
+At: 889
+At: 903
+At: 946
+At: 998
+1
+
+ Number of nodes per subgraph: 18
+At: 2
+At: 10
+At: 238
+At: 273
+At: 292
+At: 396
+At: 397
+At: 540
+At: 560
+At: 582
+At: 590
+At: 603
+At: 652
+At: 717
+At: 743
+At: 831
+At: 926
+At: 995
+2
+
+ Number of nodes per subgraph: 70
+At: 3
+At: 16
+At: 19
+At: 29
+At: 35
+At: 40
+At: 45
+At: 51
+At: 57
+At: 65
+At: 66
+At: 69
+At: 97
+At: 132
+At: 148
+At: 165
+At: 179
+At: 220
+At: 248
+At: 265
+At: 291
+At: 300
+At: 302
+At: 329
+At: 333
+At: 344
+At: 350
+At: 352
+At: 362
+At: 389
+At: 423
+At: 460
+At: 478
+At: 487
+At: 489
+At: 494
+At: 507
+At: 512
+At: 518
+At: 528
+At: 542
+At: 545
+At: 547
+At: 558
+At: 614
+At: 618
+At: 640
+At: 647
+At: 697
+At: 704
+At: 714
+At: 736
+At: 744
+At: 751
+At: 757
+At: 767
+At: 792
+At: 807
+At: 811
+At: 815
+At: 850
+At: 866
+At: 880
+At: 883
+At: 895
+At: 925
+At: 938
+At: 940
+At: 951
+At: 985
+3
+
+ Number of nodes per subgraph: 26
+At: 4
+At: 21
+At: 47
+At: 58
+At: 94
+At: 157
+At: 194
+At: 234
+At: 254
+At: 309
+At: 331
+At: 381
+At: 475
+At: 533
+At: 552
+At: 588
+At: 624
+At: 672
+At: 711
+At: 776
+At: 790
+At: 879
+At: 935
+At: 936
+At: 949
+At: 989
+4
+
+ Number of nodes per subgraph: 42
+At: 5
+At: 30
+At: 49
+At: 56
+At: 114
+At: 159
+At: 160
+At: 167
+At: 207
+At: 217
+At: 223
+At: 268
+At: 284
+At: 334
+At: 347
+At: 356
+At: 357
+At: 367
+At: 428
+At: 486
+At: 501
+At: 534
+At: 536
+At: 569
+At: 581
+At: 593
+At: 608
+At: 634
+At: 639
+At: 655
+At: 701
+At: 727
+At: 785
+At: 798
+At: 842
+At: 847
+At: 860
+At: 870
+At: 888
+At: 907
+At: 914
+At: 977
+5
+
+ Number of nodes per subgraph: 38
+At: 6
+At: 39
+At: 84
+At: 98
+At: 116
+At: 131
+At: 162
+At: 188
+At: 221
+At: 245
+At: 339
+At: 406
+At: 421
+At: 434
+At: 452
+At: 469
+At: 472
+At: 479
+At: 538
+At: 541
+At: 557
+At: 574
+At: 575
+At: 579
+At: 596
+At: 598
+At: 629
+At: 667
+At: 675
+At: 684
+At: 696
+At: 814
+At: 818
+At: 867
+At: 950
+At: 957
+At: 970
+At: 994
+6
+
+ Number of nodes per subgraph: 45
+At: 7
+At: 31
+At: 37
+At: 63
+At: 73
+At: 77
+At: 102
+At: 106
+At: 118
+At: 121
+At: 210
+At: 229
+At: 294
+At: 304
+At: 335
+At: 346
+At: 387
+At: 388
+At: 416
+At: 445
+At: 457
+At: 498
+At: 523
+At: 531
+At: 546
+At: 565
+At: 573
+At: 610
+At: 637
+At: 650
+At: 658
+At: 661
+At: 682
+At: 688
+At: 722
+At: 753
+At: 816
+At: 825
+At: 827
+At: 855
+At: 872
+At: 891
+At: 941
+At: 967
+At: 991
+7
+
+ Number of nodes per subgraph: 25
+At: 8
+At: 24
+At: 326
+At: 340
+At: 358
+At: 377
+At: 468
+At: 505
+At: 550
+At: 561
+At: 599
+At: 641
+At: 698
+At: 726
+At: 748
+At: 774
+At: 794
+At: 808
+At: 857
+At: 871
+At: 873
+At: 904
+At: 927
+At: 979
+At: 992
+8
+
+ Number of nodes per subgraph: 21
+At: 9
+At: 72
+At: 110
+At: 125
+At: 196
+At: 370
+At: 399
+At: 471
+At: 623
+At: 678
+At: 699
+At: 702
+At: 715
+At: 719
+At: 768
+At: 854
+At: 952
+At: 953
+At: 984
+At: 987
+At: 990
+9
+
+ Number of nodes per subgraph: 15
+At: 11
+At: 126
+At: 130
+At: 276
+At: 328
+At: 353
+At: 400
+At: 414
+At: 420
+At: 464
+At: 508
+At: 521
+At: 616
+At: 764
+At: 972
+11
+
+ Number of nodes per subgraph: 14
+At: 12
+At: 109
+At: 142
+At: 144
+At: 280
+At: 553
+At: 625
+At: 734
+At: 745
+At: 773
+At: 804
+At: 869
+At: 878
+At: 942
+12
+
+ Number of nodes per subgraph: 11
+At: 13
+At: 120
+At: 143
+At: 187
+At: 260
+At: 343
+At: 580
+At: 654
+At: 708
+At: 922
+At: 943
+13
+
+ Number of nodes per subgraph: 29
+At: 15
+At: 88
+At: 103
+At: 107
+At: 192
+At: 227
+At: 253
+At: 266
+At: 282
+At: 290
+At: 307
+At: 395
+At: 402
+At: 437
+At: 451
+At: 470
+At: 477
+At: 555
+At: 605
+At: 607
+At: 627
+At: 673
+At: 742
+At: 796
+At: 823
+At: 890
+At: 912
+At: 937
+At: 955
+15
+
+ Number of nodes per subgraph: 24
+At: 17
+At: 48
+At: 129
+At: 211
+At: 222
+At: 230
+At: 255
+At: 262
+At: 275
+At: 317
+At: 320
+At: 327
+At: 374
+At: 443
+At: 466
+At: 483
+At: 500
+At: 515
+At: 600
+At: 615
+At: 677
+At: 755
+At: 887
+At: 919
+17
+
+ Number of nodes per subgraph: 23
+At: 18
+At: 20
+At: 26
+At: 50
+At: 243
+At: 267
+At: 277
+At: 283
+At: 285
+At: 319
+At: 386
+At: 410
+At: 418
+At: 425
+At: 426
+At: 585
+At: 638
+At: 707
+At: 750
+At: 806
+At: 882
+At: 886
+At: 909
+18
+
+ Number of nodes per subgraph: 7
+At: 23
+At: 128
+At: 408
+At: 462
+At: 636
+At: 706
+At: 812
+23
+
+ Number of nodes per subgraph: 21
+At: 25
+At: 60
+At: 134
+At: 163
+At: 215
+At: 271
+At: 316
+At: 349
+At: 375
+At: 448
+At: 488
+At: 529
+At: 535
+At: 735
+At: 747
+At: 760
+At: 846
+At: 881
+At: 915
+At: 917
+At: 948
+25
+
+ Number of nodes per subgraph: 13
+At: 32
+At: 43
+At: 79
+At: 166
+At: 168
+At: 236
+At: 242
+At: 261
+At: 330
+At: 456
+At: 496
+At: 632
+At: 805
+32
+
+ Number of nodes per subgraph: 9
+At: 33
+At: 38
+At: 89
+At: 336
+At: 459
+At: 539
+At: 663
+At: 832
+At: 986
+33
+
+ Number of nodes per subgraph: 35
+At: 34
+At: 54
+At: 82
+At: 87
+At: 96
+At: 101
+At: 164
+At: 202
+At: 250
+At: 296
+At: 311
+At: 332
+At: 365
+At: 407
+At: 454
+At: 458
+At: 481
+At: 490
+At: 503
+At: 524
+At: 554
+At: 564
+At: 591
+At: 622
+At: 670
+At: 730
+At: 761
+At: 765
+At: 770
+At: 810
+At: 840
+At: 868
+At: 913
+At: 932
+At: 966
+34
+
+ Number of nodes per subgraph: 20
+At: 36
+At: 68
+At: 158
+At: 185
+At: 208
+At: 252
+At: 323
+At: 366
+At: 383
+At: 609
+At: 617
+At: 643
+At: 644
+At: 648
+At: 669
+At: 800
+At: 801
+At: 877
+At: 956
+At: 960
+36
+
+ Number of nodes per subgraph: 11
+At: 41
+At: 59
+At: 85
+At: 139
+At: 180
+At: 412
+At: 422
+At: 482
+At: 493
+At: 587
+At: 775
+41
+
+ Number of nodes per subgraph: 15
+At: 42
+At: 99
+At: 146
+At: 171
+At: 237
+At: 256
+At: 379
+At: 393
+At: 431
+At: 510
+At: 525
+At: 570
+At: 602
+At: 681
+At: 945
+42
+
+ Number of nodes per subgraph: 22
+At: 44
+At: 78
+At: 81
+At: 147
+At: 150
+At: 177
+At: 186
+At: 249
+At: 371
+At: 373
+At: 409
+At: 440
+At: 630
+At: 680
+At: 705
+At: 712
+At: 725
+At: 733
+At: 789
+At: 893
+At: 897
+At: 923
+44
+
+ Number of nodes per subgraph: 16
+At: 46
+At: 153
+At: 244
+At: 306
+At: 313
+At: 315
+At: 404
+At: 411
+At: 530
+At: 653
+At: 679
+At: 803
+At: 861
+At: 916
+At: 965
+At: 971
+46
+
+ Number of nodes per subgraph: 6
+At: 52
+At: 214
+At: 278
+At: 731
+At: 769
+At: 828
+52
+
+ Number of nodes per subgraph: 12
+At: 53
+At: 115
+At: 135
+At: 141
+At: 583
+At: 635
+At: 665
+At: 721
+At: 752
+At: 819
+At: 836
+At: 841
+53
+
+ Number of nodes per subgraph: 14
+At: 55
+At: 61
+At: 173
+At: 385
+At: 497
+At: 504
+At: 509
+At: 532
+At: 656
+At: 783
+At: 933
+At: 944
+At: 980
+At: 983
+55
+
+ Number of nodes per subgraph: 16
+At: 62
+At: 149
+At: 197
+At: 204
+At: 206
+At: 480
+At: 549
+At: 592
+At: 611
+At: 646
+At: 683
+At: 689
+At: 732
+At: 782
+At: 898
+At: 921
+62
+
+ Number of nodes per subgraph: 12
+At: 64
+At: 170
+At: 212
+At: 305
+At: 384
+At: 484
+At: 662
+At: 724
+At: 788
+At: 797
+At: 820
+At: 988
+64
+
+ Number of nodes per subgraph: 15
+At: 67
+At: 76
+At: 80
+At: 100
+At: 231
+At: 286
+At: 506
+At: 514
+At: 527
+At: 543
+At: 729
+At: 863
+At: 974
+At: 982
+At: 999
+67
+
+ Number of nodes per subgraph: 11
+At: 70
+At: 176
+At: 318
+At: 415
+At: 694
+At: 739
+At: 826
+At: 833
+At: 839
+At: 876
+At: 885
+70
+
+ Number of nodes per subgraph: 15
+At: 74
+At: 112
+At: 113
+At: 133
+At: 161
+At: 310
+At: 360
+At: 363
+At: 419
+At: 463
+At: 664
+At: 756
+At: 901
+At: 934
+At: 964
+74
+
+ Number of nodes per subgraph: 11
+At: 75
+At: 189
+At: 224
+At: 433
+At: 446
+At: 449
+At: 559
+At: 562
+At: 851
+At: 911
+At: 958
+75
+
+ Number of nodes per subgraph: 10
+At: 92
+At: 137
+At: 368
+At: 424
+At: 430
+At: 520
+At: 693
+At: 700
+At: 884
+At: 963
+92
+
+ Number of nodes per subgraph: 12
+At: 93
+At: 239
+At: 372
+At: 378
+At: 526
+At: 628
+At: 633
+At: 710
+At: 723
+At: 852
+At: 896
+At: 928
+93
+
+ Number of nodes per subgraph: 8
+At: 104
+At: 111
+At: 439
+At: 601
+At: 659
+At: 685
+At: 718
+At: 968
+104
+
+ Number of nodes per subgraph: 11
+At: 105
+At: 138
+At: 314
+At: 417
+At: 571
+At: 577
+At: 687
+At: 771
+At: 858
+At: 900
+At: 902
+105
+
+ Number of nodes per subgraph: 8
+At: 108
+At: 257
+At: 544
+At: 568
+At: 762
+At: 787
+At: 835
+At: 997
+108
+
+ Number of nodes per subgraph: 4
+At: 119
+At: 299
+At: 473
+At: 606
+119
+
+ Number of nodes per subgraph: 8
+At: 123
+At: 155
+At: 175
+At: 219
+At: 355
+At: 485
+At: 576
+At: 961
+123
+
+ Number of nodes per subgraph: 17
+At: 124
+At: 246
+At: 345
+At: 348
+At: 359
+At: 438
+At: 495
+At: 516
+At: 595
+At: 649
+At: 781
+At: 795
+At: 856
+At: 874
+At: 954
+At: 978
+At: 996
+124
+
+ Number of nodes per subgraph: 5
+At: 140
+At: 151
+At: 405
+At: 834
+At: 843
+140
+
+ Number of nodes per subgraph: 7
+At: 145
+At: 241
+At: 293
+At: 749
+At: 758
+At: 848
+At: 894
+145
+
+ Number of nodes per subgraph: 3
+At: 156
+At: 799
+At: 981
+156
+
+ Number of nodes per subgraph: 6
+At: 172
+At: 184
+At: 461
+At: 567
+At: 930
+At: 962
+172
+
+ Number of nodes per subgraph: 5
+At: 178
+At: 322
+At: 441
+At: 492
+At: 837
+178
+
+ Number of nodes per subgraph: 9
+At: 181
+At: 279
+At: 312
+At: 450
+At: 517
+At: 738
+At: 821
+At: 910
+At: 920
+181
+
+ Number of nodes per subgraph: 5
+At: 182
+At: 321
+At: 716
+At: 824
+At: 906
+182
+
+ Number of nodes per subgraph: 9
+At: 183
+At: 270
+At: 413
+At: 427
+At: 671
+At: 686
+At: 713
+At: 759
+At: 859
+183
+
+ Number of nodes per subgraph: 7
+At: 190
+At: 226
+At: 288
+At: 391
+At: 522
+At: 779
+At: 813
+190
+
+ Number of nodes per subgraph: 3
+At: 199
+At: 351
+At: 435
+199
+
+ Number of nodes per subgraph: 12
+At: 200
+At: 287
+At: 289
+At: 338
+At: 398
+At: 511
+At: 548
+At: 566
+At: 657
+At: 786
+At: 802
+At: 993
+200
+
+ Number of nodes per subgraph: 2
+At: 201
+At: 264
+201
+
+ Number of nodes per subgraph: 3
+At: 205
+At: 476
+At: 976
+205
+
+ Number of nodes per subgraph: 4
+At: 209
+At: 258
+At: 844
+At: 908
+209
+
+ Number of nodes per subgraph: 9
+At: 213
+At: 216
+At: 499
+At: 502
+At: 703
+At: 780
+At: 822
+At: 924
+At: 947
+213
+
+ Number of nodes per subgraph: 4
+At: 232
+At: 474
+At: 660
+At: 674
+232
+
+ Number of nodes per subgraph: 4
+At: 233
+At: 272
+At: 403
+At: 746
+233
+
+ Number of nodes per subgraph: 3
+At: 247
+At: 251
+At: 973
+247
+
+ Number of nodes per subgraph: 6
+At: 263
+At: 341
+At: 342
+At: 364
+At: 720
+At: 929
+263
+
+ Number of nodes per subgraph: 3
+At: 274
+At: 442
+At: 642
+274
+
+ Number of nodes per subgraph: 1
+At: 281
+281
+
+ Number of nodes per subgraph: 1
+At: 295
+295
+
+ Number of nodes per subgraph: 3
+At: 297
+At: 298
+At: 975
+297
+
+ Number of nodes per subgraph: 2
+At: 354
+At: 778
+354
+
+ Number of nodes per subgraph: 2
+At: 361
+At: 793
+361
+
+ Number of nodes per subgraph: 2
+At: 369
+At: 621
+369
+
+ Number of nodes per subgraph: 1
+At: 376
+376
+
+ Number of nodes per subgraph: 3
+At: 380
+At: 467
+At: 763
+380
+
+ Number of nodes per subgraph: 1
+At: 382
+382
+
+ Number of nodes per subgraph: 2
+At: 447
+At: 830
+447
+
+ Number of nodes per subgraph: 1
+At: 537
+537
+
+ Number of nodes per subgraph: 2
+At: 578
+At: 612
+578
+
+ Number of nodes per subgraph: 2
+At: 586
+At: 905
+586
+
+ Number of nodes per subgraph: 2
+At: 631
+At: 676
+631
+
+ Number of nodes per subgraph: 2
+At: 668
+At: 695
+668
+
+ Number of nodes per subgraph: 1
+At: 737
+737
+
+ Number of nodes per subgraph: 1
+At: 766
+766
+
+ Number of nodes per subgraph: 1
+At: 817
+817
+
+ Number of nodes per subgraph: 1
+At: 849
+849
+
+ Number of nodes per subgraph: 1
+At: 918
+918
+
+ Number of nodes per subgraph: 1
+At: 959
+959
+
+0
+4
+5
+6
+7
+8
+11
+14
+17
+19
+20
+21
+25
+29
+31
+32
+33
+36
+44
+60
+62
+76
+77
+23
+ Number of nodes per subgraph: 46
+At: 0
+At: 27
+At: 28
+At: 71
+At: 95
+At: 117
+At: 122
+At: 127
+At: 154
+At: 169
+At: 174
+At: 191
+At: 225
+At: 235
+At: 240
+At: 303
+At: 324
+At: 325
+At: 390
+At: 401
+At: 432
+At: 436
+At: 444
+At: 453
+At: 455
+At: 465
+At: 513
+At: 519
+At: 551
+At: 589
+At: 597
+At: 604
+At: 619
+At: 620
+At: 666
+At: 690
+At: 691
+At: 772
+At: 791
+At: 829
+At: 865
+At: 892
+At: 899
+At: 931
+At: 939
+At: 969
+0
+
+ Number of nodes per subgraph: 26
+At: 4
+At: 21
+At: 47
+At: 58
+At: 94
+At: 157
+At: 194
+At: 234
+At: 254
+At: 309
+At: 331
+At: 381
+At: 475
+At: 533
+At: 552
+At: 588
+At: 624
+At: 672
+At: 711
+At: 776
+At: 790
+At: 879
+At: 935
+At: 936
+At: 949
+At: 989
+4
+
+ Number of nodes per subgraph: 42
+At: 5
+At: 30
+At: 49
+At: 56
+At: 114
+At: 159
+At: 160
+At: 167
+At: 207
+At: 217
+At: 223
+At: 268
+At: 284
+At: 334
+At: 347
+At: 356
+At: 357
+At: 367
+At: 428
+At: 486
+At: 501
+At: 534
+At: 536
+At: 569
+At: 581
+At: 593
+At: 608
+At: 634
+At: 639
+At: 655
+At: 701
+At: 727
+At: 785
+At: 798
+At: 842
+At: 847
+At: 860
+At: 870
+At: 888
+At: 907
+At: 914
+At: 977
+5
+
+ Number of nodes per subgraph: 38
+At: 6
+At: 39
+At: 84
+At: 98
+At: 116
+At: 131
+At: 162
+At: 188
+At: 221
+At: 245
+At: 339
+At: 406
+At: 421
+At: 434
+At: 452
+At: 469
+At: 472
+At: 479
+At: 538
+At: 541
+At: 557
+At: 574
+At: 575
+At: 579
+At: 596
+At: 598
+At: 629
+At: 667
+At: 675
+At: 684
+At: 696
+At: 814
+At: 818
+At: 867
+At: 950
+At: 957
+At: 970
+At: 994
+6
+
+ Number of nodes per subgraph: 45
+At: 7
+At: 31
+At: 37
+At: 63
+At: 73
+At: 77
+At: 102
+At: 106
+At: 118
+At: 121
+At: 210
+At: 229
+At: 294
+At: 304
+At: 335
+At: 346
+At: 387
+At: 388
+At: 416
+At: 445
+At: 457
+At: 498
+At: 523
+At: 531
+At: 546
+At: 565
+At: 573
+At: 610
+At: 637
+At: 650
+At: 658
+At: 661
+At: 682
+At: 688
+At: 722
+At: 753
+At: 816
+At: 825
+At: 827
+At: 855
+At: 872
+At: 891
+At: 941
+At: 967
+At: 991
+7
+
+ Number of nodes per subgraph: 25
+At: 8
+At: 24
+At: 326
+At: 340
+At: 358
+At: 377
+At: 468
+At: 505
+At: 550
+At: 561
+At: 599
+At: 641
+At: 698
+At: 726
+At: 748
+At: 774
+At: 794
+At: 808
+At: 857
+At: 871
+At: 873
+At: 904
+At: 927
+At: 979
+At: 992
+8
+
+ Number of nodes per subgraph: 14
+At: 12
+At: 109
+At: 142
+At: 144
+At: 280
+At: 553
+At: 625
+At: 734
+At: 745
+At: 773
+At: 804
+At: 869
+At: 878
+At: 942
+12
+
+ Number of nodes per subgraph: 24
+At: 17
+At: 48
+At: 129
+At: 211
+At: 222
+At: 230
+At: 255
+At: 262
+At: 275
+At: 317
+At: 320
+At: 327
+At: 374
+At: 443
+At: 466
+At: 483
+At: 500
+At: 515
+At: 600
+At: 615
+At: 677
+At: 755
+At: 887
+At: 919
+17
+
+ Number of nodes per subgraph: 21
+At: 25
+At: 60
+At: 134
+At: 163
+At: 215
+At: 271
+At: 316
+At: 349
+At: 375
+At: 448
+At: 488
+At: 529
+At: 535
+At: 735
+At: 747
+At: 760
+At: 846
+At: 881
+At: 915
+At: 917
+At: 948
+25
+
+ Number of nodes per subgraph: 9
+At: 33
+At: 38
+At: 89
+At: 336
+At: 459
+At: 539
+At: 663
+At: 832
+At: 986
+33
+
+ Number of nodes per subgraph: 35
+At: 34
+At: 54
+At: 82
+At: 87
+At: 96
+At: 101
+At: 164
+At: 202
+At: 250
+At: 296
+At: 311
+At: 332
+At: 365
+At: 407
+At: 454
+At: 458
+At: 481
+At: 490
+At: 503
+At: 524
+At: 554
+At: 564
+At: 591
+At: 622
+At: 670
+At: 730
+At: 761
+At: 765
+At: 770
+At: 810
+At: 840
+At: 868
+At: 913
+At: 932
+At: 966
+34
+
+ Number of nodes per subgraph: 20
+At: 36
+At: 68
+At: 158
+At: 185
+At: 208
+At: 252
+At: 323
+At: 366
+At: 383
+At: 609
+At: 617
+At: 643
+At: 644
+At: 648
+At: 669
+At: 800
+At: 801
+At: 877
+At: 956
+At: 960
+36
+
+ Number of nodes per subgraph: 16
+At: 46
+At: 153
+At: 244
+At: 306
+At: 313
+At: 315
+At: 404
+At: 411
+At: 530
+At: 653
+At: 679
+At: 803
+At: 861
+At: 916
+At: 965
+At: 971
+46
+
+ Number of nodes per subgraph: 16
+At: 62
+At: 149
+At: 197
+At: 204
+At: 206
+At: 480
+At: 549
+At: 592
+At: 611
+At: 646
+At: 683
+At: 689
+At: 732
+At: 782
+At: 898
+At: 921
+62
+
+ Number of nodes per subgraph: 15
+At: 67
+At: 76
+At: 80
+At: 100
+At: 231
+At: 286
+At: 506
+At: 514
+At: 527
+At: 543
+At: 729
+At: 863
+At: 974
+At: 982
+At: 999
+67
+
+ Number of nodes per subgraph: 11
+At: 70
+At: 176
+At: 318
+At: 415
+At: 694
+At: 739
+At: 826
+At: 833
+At: 839
+At: 876
+At: 885
+70
+
+ Number of nodes per subgraph: 15
+At: 74
+At: 112
+At: 113
+At: 133
+At: 161
+At: 310
+At: 360
+At: 363
+At: 419
+At: 463
+At: 664
+At: 756
+At: 901
+At: 934
+At: 964
+74
+
+ Number of nodes per subgraph: 12
+At: 93
+At: 239
+At: 372
+At: 378
+At: 526
+At: 628
+At: 633
+At: 710
+At: 723
+At: 852
+At: 896
+At: 928
+93
+
+ Number of nodes per subgraph: 7
+At: 145
+At: 241
+At: 293
+At: 749
+At: 758
+At: 848
+At: 894
+145
+
+ Number of nodes per subgraph: 3
+At: 247
+At: 251
+At: 973
+247
+
+ Number of nodes per subgraph: 3
+At: 274
+At: 442
+At: 642
+274
+
+ Number of nodes per subgraph: 2
+At: 631
+At: 676
+631
+
+ Number of nodes per subgraph: 2
+At: 668
+At: 695
+668
+
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+ERROR THIS SHOULDN'T HAPPEN
+Test case 16: failure
+ Number of nodes per subgraph: 1
+At: 0
+0
+
+ Number of nodes per subgraph: 1
+At: 1
+1
+
+ Number of nodes per subgraph: 1
+At: 2
+2
+
+ Number of nodes per subgraph: 1
+At: 3
+3
+
+ Number of nodes per subgraph: 1
+At: 4
+4
+
+ Number of nodes per subgraph: 1
+At: 5
+5
+
+ Number of nodes per subgraph: 1
+At: 6
+6
+
+ Number of nodes per subgraph: 1
+At: 7
+7
+
+ Number of nodes per subgraph: 1
+At: 8
+8
+
+ Number of nodes per subgraph: 1
+At: 9
+9
+
+ Number of nodes per subgraph: 1
+At: 10
+10
+
+ Number of nodes per subgraph: 1
+At: 11
+11
+
+ Number of nodes per subgraph: 1
+At: 12
+12
+
+ Number of nodes per subgraph: 1
+At: 13
+13
+
+ Number of nodes per subgraph: 1
+At: 14
+14
+
+ Number of nodes per subgraph: 1
+At: 15
+15
+
+ Number of nodes per subgraph: 1
+At: 16
+16
+
+ Number of nodes per subgraph: 1
+At: 17
+17
+
+ Number of nodes per subgraph: 1
+At: 18
+18
+
+ Number of nodes per subgraph: 1
+At: 19
+19
+
+ Number of nodes per subgraph: 1
+At: 20
+20
+
+ Number of nodes per subgraph: 1
+At: 21
+21
+
+ Number of nodes per subgraph: 1
+At: 22
+22
+
+ Number of nodes per subgraph: 1
+At: 23
+23
+
+ Number of nodes per subgraph: 1
+At: 24
+24
+
+ Number of nodes per subgraph: 1
+At: 25
+25
+
+ Number of nodes per subgraph: 1
+At: 26
+26
+
+ Number of nodes per subgraph: 1
+At: 27
+27
+
+ Number of nodes per subgraph: 1
+At: 28
+28
+
+ Number of nodes per subgraph: 1
+At: 29
+29
+
+ Number of nodes per subgraph: 1
+At: 30
+30
+
+ Number of nodes per subgraph: 1
+At: 31
+31
+
+ Number of nodes per subgraph: 1
+At: 32
+32
+
+ Number of nodes per subgraph: 1
+At: 33
+33
+
+ Number of nodes per subgraph: 1
+At: 34
+34
+
+ Number of nodes per subgraph: 1
+At: 35
+35
+
+ Number of nodes per subgraph: 1
+At: 36
+36
+
+ Number of nodes per subgraph: 1
+At: 37
+37
+
+ Number of nodes per subgraph: 1
+At: 38
+38
+
+ Number of nodes per subgraph: 1
+At: 39
+39
+
+ Number of nodes per subgraph: 1
+At: 40
+40
+
+ Number of nodes per subgraph: 1
+At: 41
+41
+
+ Number of nodes per subgraph: 1
+At: 42
+42
+
+ Number of nodes per subgraph: 1
+At: 43
+43
+
+ Number of nodes per subgraph: 1
+At: 44
+44
+
+ Number of nodes per subgraph: 1
+At: 45
+45
+
+ Number of nodes per subgraph: 1
+At: 46
+46
+
+ Number of nodes per subgraph: 1
+At: 47
+47
+
+ Number of nodes per subgraph: 1
+At: 48
+48
+
+ Number of nodes per subgraph: 1
+At: 49
+49
+
+ Number of nodes per subgraph: 1
+At: 50
+50
+
+ Number of nodes per subgraph: 1
+At: 51
+51
+
+ Number of nodes per subgraph: 1
+At: 52
+52
+
+ Number of nodes per subgraph: 1
+At: 53
+53
+
+ Number of nodes per subgraph: 1
+At: 54
+54
+
+ Number of nodes per subgraph: 1
+At: 55
+55
+
+ Number of nodes per subgraph: 1
+At: 56
+56
+
+ Number of nodes per subgraph: 1
+At: 57
+57
+
+ Number of nodes per subgraph: 1
+At: 58
+58
+
+ Number of nodes per subgraph: 1
+At: 59
+59
+
+ Number of nodes per subgraph: 1
+At: 60
+60
+
+ Number of nodes per subgraph: 1
+At: 61
+61
+
+ Number of nodes per subgraph: 1
+At: 62
+62
+
+ Number of nodes per subgraph: 1
+At: 63
+63
+
+ Number of nodes per subgraph: 1
+At: 64
+64
+
+ Number of nodes per subgraph: 1
+At: 65
+65
+
+ Number of nodes per subgraph: 1
+At: 66
+66
+
+ Number of nodes per subgraph: 1
+At: 67
+67
+
+ Number of nodes per subgraph: 1
+At: 68
+68
+
+ Number of nodes per subgraph: 1
+At: 69
+69
+
+ Number of nodes per subgraph: 1
+At: 70
+70
+
+ Number of nodes per subgraph: 1
+At: 71
+71
+
+ Number of nodes per subgraph: 1
+At: 72
+72
+
+ Number of nodes per subgraph: 1
+At: 73
+73
+
+ Number of nodes per subgraph: 1
+At: 74
+74
+
+ Number of nodes per subgraph: 1
+At: 75
+75
+
+ Number of nodes per subgraph: 1
+At: 76
+76
+
+ Number of nodes per subgraph: 1
+At: 77
+77
+
+ Number of nodes per subgraph: 1
+At: 78
+78
+
+ Number of nodes per subgraph: 1
+At: 79
+79
+
+ Number of nodes per subgraph: 1
+At: 80
+80
+
+ Number of nodes per subgraph: 1
+At: 81
+81
+
+ Number of nodes per subgraph: 1
+At: 82
+82
+
+ Number of nodes per subgraph: 1
+At: 83
+83
+
+ Number of nodes per subgraph: 1
+At: 84
+84
+
+ Number of nodes per subgraph: 1
+At: 85
+85
+
+ Number of nodes per subgraph: 1
+At: 86
+86
+
+ Number of nodes per subgraph: 1
+At: 87
+87
+
+ Number of nodes per subgraph: 1
+At: 88
+88
+
+ Number of nodes per subgraph: 1
+At: 89
+89
+
+ Number of nodes per subgraph: 1
+At: 90
+90
+
+ Number of nodes per subgraph: 1
+At: 91
+91
+
+ Number of nodes per subgraph: 1
+At: 92
+92
+
+ Number of nodes per subgraph: 1
+At: 93
+93
+
+ Number of nodes per subgraph: 1
+At: 94
+94
+
+ Number of nodes per subgraph: 1
+At: 95
+95
+
+ Number of nodes per subgraph: 1
+At: 96
+96
+
+ Number of nodes per subgraph: 1
+At: 97
+97
+
+ Number of nodes per subgraph: 1
+At: 98
+98
+
+ Number of nodes per subgraph: 1
+At: 99
+99
+
+3
+4
+5
+6
+9
+10
+15
+16
+18
+19
+20
+22
+26
+29
+32
+35
+39
+42
+44
+46
+63
+64
+65
+67
+74
+75
+79
+83
+89
+98
+0
+Test case 17: failure
+ Number of nodes per subgraph: 42
+At: 0
+At: 22
+At: 66
+At: 77
+At: 101
+At: 144
+At: 150
+At: 156
+At: 197
+At: 434
+At: 483
+At: 518
+At: 572
+At: 603
+At: 608
+At: 641
+At: 670
+At: 767
+At: 811
+At: 859
+At: 1075
+At: 1094
+At: 1101
+At: 1196
+At: 1390
+At: 1398
+At: 1417
+At: 1437
+At: 1450
+At: 1497
+At: 1501
+At: 1504
+At: 1517
+At: 1553
+At: 1571
+At: 1628
+At: 1633
+At: 1759
+At: 1811
+At: 1875
+At: 1957
+At: 1971
+0
+
+ Number of nodes per subgraph: 58
+At: 1
+At: 20
+At: 32
+At: 69
+At: 78
+At: 79
+At: 119
+At: 181
+At: 250
+At: 292
+At: 319
+At: 394
+At: 451
+At: 461
+At: 471
+At: 492
+At: 497
+At: 510
+At: 511
+At: 652
+At: 693
+At: 719
+At: 725
+At: 727
+At: 741
+At: 766
+At: 776
+At: 784
+At: 808
+At: 969
+At: 972
+At: 976
+At: 989
+At: 1005
+At: 1020
+At: 1027
+At: 1047
+At: 1093
+At: 1145
+At: 1211
+At: 1272
+At: 1353
+At: 1382
+At: 1400
+At: 1407
+At: 1487
+At: 1518
+At: 1559
+At: 1624
+At: 1641
+At: 1645
+At: 1729
+At: 1790
+At: 1798
+At: 1859
+At: 1885
+At: 1892
+At: 1927
+1
+
+ Number of nodes per subgraph: 66
+At: 2
+At: 38
+At: 52
+At: 89
+At: 95
+At: 99
+At: 113
+At: 190
+At: 215
+At: 218
+At: 267
+At: 324
+At: 325
+At: 337
+At: 374
+At: 522
+At: 524
+At: 546
+At: 626
+At: 644
+At: 651
+At: 661
+At: 723
+At: 744
+At: 823
+At: 834
+At: 883
+At: 887
+At: 906
+At: 913
+At: 946
+At: 987
+At: 1118
+At: 1137
+At: 1171
+At: 1178
+At: 1222
+At: 1237
+At: 1244
+At: 1251
+At: 1303
+At: 1309
+At: 1324
+At: 1328
+At: 1385
+At: 1418
+At: 1428
+At: 1468
+At: 1478
+At: 1508
+At: 1513
+At: 1538
+At: 1546
+At: 1556
+At: 1576
+At: 1577
+At: 1672
+At: 1735
+At: 1747
+At: 1867
+At: 1903
+At: 1962
+At: 1981
+At: 1987
+At: 1992
+At: 1997
+2
+
+ Number of nodes per subgraph: 37
+At: 3
+At: 25
+At: 42
+At: 147
+At: 186
+At: 220
+At: 221
+At: 284
+At: 318
+At: 384
+At: 464
+At: 481
+At: 517
+At: 523
+At: 704
+At: 768
+At: 826
+At: 934
+At: 936
+At: 983
+At: 1043
+At: 1056
+At: 1061
+At: 1098
+At: 1136
+At: 1186
+At: 1311
+At: 1347
+At: 1360
+At: 1453
+At: 1473
+At: 1483
+At: 1499
+At: 1607
+At: 1757
+At: 1791
+At: 1996
+3
+
+ Number of nodes per subgraph: 91
+At: 4
+At: 6
+At: 11
+At: 21
+At: 105
+At: 132
+At: 133
+At: 164
+At: 172
+At: 178
+At: 187
+At: 232
+At: 235
+At: 238
+At: 261
+At: 262
+At: 281
+At: 316
+At: 357
+At: 365
+At: 375
+At: 411
+At: 419
+At: 422
+At: 431
+At: 435
+At: 438
+At: 457
+At: 477
+At: 498
+At: 526
+At: 560
+At: 562
+At: 573
+At: 596
+At: 630
+At: 635
+At: 663
+At: 667
+At: 688
+At: 699
+At: 746
+At: 778
+At: 781
+At: 801
+At: 827
+At: 863
+At: 870
+At: 940
+At: 948
+At: 990
+At: 1058
+At: 1084
+At: 1091
+At: 1131
+At: 1139
+At: 1170
+At: 1210
+At: 1215
+At: 1224
+At: 1229
+At: 1233
+At: 1235
+At: 1304
+At: 1321
+At: 1330
+At: 1337
+At: 1342
+At: 1402
+At: 1403
+At: 1507
+At: 1510
+At: 1512
+At: 1540
+At: 1590
+At: 1601
+At: 1602
+At: 1619
+At: 1659
+At: 1695
+At: 1726
+At: 1731
+At: 1736
+At: 1756
+At: 1819
+At: 1830
+At: 1852
+At: 1863
+At: 1868
+At: 1963
+At: 1964
+4
+
+ Number of nodes per subgraph: 64
+At: 5
+At: 17
+At: 27
+At: 54
+At: 55
+At: 92
+At: 102
+At: 145
+At: 212
+At: 213
+At: 224
+At: 321
+At: 338
+At: 339
+At: 418
+At: 469
+At: 502
+At: 564
+At: 568
+At: 605
+At: 611
+At: 642
+At: 660
+At: 668
+At: 728
+At: 771
+At: 817
+At: 849
+At: 850
+At: 852
+At: 869
+At: 882
+At: 945
+At: 975
+At: 1004
+At: 1034
+At: 1059
+At: 1076
+At: 1125
+At: 1165
+At: 1200
+At: 1231
+At: 1242
+At: 1265
+At: 1276
+At: 1344
+At: 1364
+At: 1410
+At: 1424
+At: 1433
+At: 1460
+At: 1502
+At: 1567
+At: 1572
+At: 1574
+At: 1612
+At: 1780
+At: 1806
+At: 1837
+At: 1871
+At: 1922
+At: 1933
+At: 1958
+At: 1973
+5
+
+ Number of nodes per subgraph: 24
+At: 7
+At: 167
+At: 188
+At: 287
+At: 335
+At: 349
+At: 452
+At: 530
+At: 737
+At: 749
+At: 854
+At: 881
+At: 1032
+At: 1066
+At: 1234
+At: 1554
+At: 1565
+At: 1632
+At: 1637
+At: 1648
+At: 1714
+At: 1719
+At: 1805
+At: 1915
+7
+
+ Number of nodes per subgraph: 64
+At: 8
+At: 62
+At: 88
+At: 111
+At: 115
+At: 136
+At: 159
+At: 242
+At: 275
+At: 389
+At: 399
+At: 439
+At: 474
+At: 514
+At: 520
+At: 527
+At: 540
+At: 602
+At: 639
+At: 689
+At: 720
+At: 769
+At: 774
+At: 875
+At: 896
+At: 915
+At: 947
+At: 973
+At: 979
+At: 999
+At: 1021
+At: 1024
+At: 1036
+At: 1081
+At: 1103
+At: 1113
+At: 1129
+At: 1143
+At: 1148
+At: 1153
+At: 1190
+At: 1207
+At: 1209
+At: 1308
+At: 1332
+At: 1333
+At: 1334
+At: 1384
+At: 1461
+At: 1474
+At: 1490
+At: 1585
+At: 1670
+At: 1709
+At: 1749
+At: 1787
+At: 1808
+At: 1873
+At: 1881
+At: 1887
+At: 1896
+At: 1913
+At: 1939
+At: 1985
+8
+
+ Number of nodes per subgraph: 96
+At: 9
+At: 34
+At: 60
+At: 70
+At: 94
+At: 96
+At: 100
+At: 104
+At: 124
+At: 128
+At: 141
+At: 151
+At: 175
+At: 180
+At: 191
+At: 198
+At: 199
+At: 216
+At: 229
+At: 243
+At: 245
+At: 274
+At: 300
+At: 301
+At: 309
+At: 330
+At: 332
+At: 334
+At: 346
+At: 370
+At: 396
+At: 467
+At: 503
+At: 537
+At: 565
+At: 575
+At: 597
+At: 615
+At: 620
+At: 624
+At: 698
+At: 752
+At: 786
+At: 788
+At: 809
+At: 846
+At: 851
+At: 855
+At: 856
+At: 857
+At: 912
+At: 914
+At: 925
+At: 966
+At: 971
+At: 1002
+At: 1038
+At: 1083
+At: 1085
+At: 1089
+At: 1092
+At: 1112
+At: 1158
+At: 1197
+At: 1216
+At: 1217
+At: 1266
+At: 1287
+At: 1301
+At: 1313
+At: 1336
+At: 1354
+At: 1359
+At: 1440
+At: 1525
+At: 1530
+At: 1531
+At: 1564
+At: 1582
+At: 1600
+At: 1642
+At: 1643
+At: 1649
+At: 1658
+At: 1666
+At: 1674
+At: 1680
+At: 1699
+At: 1704
+At: 1717
+At: 1738
+At: 1800
+At: 1822
+At: 1925
+At: 1947
+At: 1956
+9
+
+ Number of nodes per subgraph: 36
+At: 10
+At: 153
+At: 183
+At: 189
+At: 194
+At: 200
+At: 217
+At: 259
+At: 373
+At: 454
+At: 465
+At: 473
+At: 528
+At: 555
+At: 570
+At: 586
+At: 637
+At: 730
+At: 743
+At: 841
+At: 904
+At: 926
+At: 1102
+At: 1179
+At: 1338
+At: 1425
+At: 1476
+At: 1578
+At: 1594
+At: 1634
+At: 1660
+At: 1689
+At: 1861
+At: 1900
+At: 1941
+At: 1980
+10
+
+ Number of nodes per subgraph: 30
+At: 12
+At: 74
+At: 279
+At: 463
+At: 487
+At: 724
+At: 731
+At: 758
+At: 779
+At: 795
+At: 1007
+At: 1019
+At: 1063
+At: 1065
+At: 1095
+At: 1155
+At: 1174
+At: 1177
+At: 1255
+At: 1387
+At: 1399
+At: 1427
+At: 1591
+At: 1652
+At: 1769
+At: 1772
+At: 1826
+At: 1829
+At: 1950
+At: 1983
+12
+
+ Number of nodes per subgraph: 39
+At: 13
+At: 143
+At: 185
+At: 193
+At: 223
+At: 369
+At: 491
+At: 525
+At: 585
+At: 592
+At: 628
+At: 674
+At: 735
+At: 787
+At: 800
+At: 820
+At: 871
+At: 941
+At: 1049
+At: 1087
+At: 1124
+At: 1185
+At: 1284
+At: 1361
+At: 1435
+At: 1528
+At: 1544
+At: 1561
+At: 1588
+At: 1610
+At: 1620
+At: 1677
+At: 1681
+At: 1779
+At: 1793
+At: 1841
+At: 1905
+At: 1926
+At: 1998
+13
+
+ Number of nodes per subgraph: 22
+At: 14
+At: 56
+At: 345
+At: 347
+At: 505
+At: 717
+At: 874
+At: 897
+At: 927
+At: 968
+At: 1012
+At: 1033
+At: 1317
+At: 1320
+At: 1374
+At: 1386
+At: 1451
+At: 1454
+At: 1615
+At: 1716
+At: 1750
+At: 1864
+14
+
+ Number of nodes per subgraph: 29
+At: 15
+At: 26
+At: 40
+At: 120
+At: 184
+At: 228
+At: 255
+At: 307
+At: 425
+At: 552
+At: 646
+At: 683
+At: 713
+At: 822
+At: 861
+At: 905
+At: 932
+At: 974
+At: 1031
+At: 1048
+At: 1286
+At: 1456
+At: 1548
+At: 1560
+At: 1599
+At: 1676
+At: 1686
+At: 1767
+At: 1974
+15
+
+ Number of nodes per subgraph: 37
+At: 16
+At: 208
+At: 225
+At: 272
+At: 390
+At: 410
+At: 415
+At: 456
+At: 507
+At: 543
+At: 583
+At: 658
+At: 685
+At: 696
+At: 716
+At: 836
+At: 865
+At: 879
+At: 1044
+At: 1120
+At: 1199
+At: 1249
+At: 1325
+At: 1350
+At: 1388
+At: 1446
+At: 1464
+At: 1522
+At: 1595
+At: 1611
+At: 1654
+At: 1661
+At: 1753
+At: 1817
+At: 1821
+At: 1856
+At: 1924
+16
+
+ Number of nodes per subgraph: 22
+At: 18
+At: 76
+At: 98
+At: 240
+At: 270
+At: 283
+At: 557
+At: 584
+At: 885
+At: 907
+At: 920
+At: 943
+At: 953
+At: 1111
+At: 1123
+At: 1256
+At: 1262
+At: 1423
+At: 1482
+At: 1511
+At: 1690
+At: 1751
+18
+
+ Number of nodes per subgraph: 39
+At: 19
+At: 48
+At: 58
+At: 158
+At: 280
+At: 314
+At: 404
+At: 437
+At: 453
+At: 529
+At: 577
+At: 619
+At: 678
+At: 697
+At: 756
+At: 799
+At: 892
+At: 957
+At: 977
+At: 1090
+At: 1099
+At: 1132
+At: 1135
+At: 1144
+At: 1192
+At: 1247
+At: 1506
+At: 1568
+At: 1616
+At: 1684
+At: 1724
+At: 1742
+At: 1784
+At: 1802
+At: 1824
+At: 1832
+At: 1872
+At: 1932
+At: 1943
+19
+
+ Number of nodes per subgraph: 20
+At: 23
+At: 28
+At: 170
+At: 372
+At: 386
+At: 732
+At: 807
+At: 828
+At: 858
+At: 958
+At: 1006
+At: 1166
+At: 1340
+At: 1391
+At: 1608
+At: 1651
+At: 1663
+At: 1746
+At: 1816
+At: 1823
+23
+
+ Number of nodes per subgraph: 16
+At: 24
+At: 43
+At: 83
+At: 118
+At: 590
+At: 942
+At: 1055
+At: 1146
+At: 1180
+At: 1245
+At: 1258
+At: 1260
+At: 1281
+At: 1470
+At: 1636
+At: 1945
+24
+
+ Number of nodes per subgraph: 32
+At: 29
+At: 68
+At: 103
+At: 263
+At: 264
+At: 304
+At: 331
+At: 445
+At: 484
+At: 650
+At: 777
+At: 785
+At: 819
+At: 864
+At: 918
+At: 928
+At: 964
+At: 1035
+At: 1071
+At: 1127
+At: 1253
+At: 1275
+At: 1285
+At: 1323
+At: 1452
+At: 1552
+At: 1566
+At: 1635
+At: 1656
+At: 1727
+At: 1831
+At: 1848
+29
+
+ Number of nodes per subgraph: 17
+At: 30
+At: 269
+At: 294
+At: 387
+At: 607
+At: 656
+At: 753
+At: 824
+At: 982
+At: 1331
+At: 1505
+At: 1515
+At: 1732
+At: 1789
+At: 1847
+At: 1858
+At: 1894
+30
+
+ Number of nodes per subgraph: 20
+At: 31
+At: 57
+At: 359
+At: 383
+At: 433
+At: 496
+At: 638
+At: 701
+At: 722
+At: 751
+At: 810
+At: 1017
+At: 1037
+At: 1067
+At: 1208
+At: 1481
+At: 1638
+At: 1774
+At: 1951
+At: 1968
+31
+
+ Number of nodes per subgraph: 23
+At: 33
+At: 93
+At: 155
+At: 169
+At: 282
+At: 290
+At: 442
+At: 515
+At: 535
+At: 627
+At: 750
+At: 813
+At: 839
+At: 847
+At: 908
+At: 1016
+At: 1243
+At: 1298
+At: 1667
+At: 1715
+At: 1849
+At: 1954
+At: 1965
+33
+
+ Number of nodes per subgraph: 28
+At: 35
+At: 146
+At: 329
+At: 343
+At: 350
+At: 482
+At: 534
+At: 589
+At: 598
+At: 632
+At: 759
+At: 825
+At: 830
+At: 888
+At: 893
+At: 951
+At: 960
+At: 1088
+At: 1296
+At: 1348
+At: 1441
+At: 1614
+At: 1657
+At: 1665
+At: 1801
+At: 1853
+At: 1899
+At: 1940
+35
+
+ Number of nodes per subgraph: 25
+At: 36
+At: 112
+At: 271
+At: 327
+At: 348
+At: 361
+At: 364
+At: 395
+At: 412
+At: 427
+At: 567
+At: 612
+At: 649
+At: 729
+At: 742
+At: 833
+At: 878
+At: 921
+At: 1168
+At: 1173
+At: 1349
+At: 1380
+At: 1479
+At: 1583
+At: 1895
+36
+
+ Number of nodes per subgraph: 13
+At: 37
+At: 63
+At: 257
+At: 285
+At: 368
+At: 420
+At: 542
+At: 654
+At: 680
+At: 963
+At: 1524
+At: 1696
+At: 1748
+37
+
+ Number of nodes per subgraph: 28
+At: 39
+At: 49
+At: 87
+At: 247
+At: 513
+At: 556
+At: 580
+At: 593
+At: 623
+At: 694
+At: 791
+At: 900
+At: 970
+At: 997
+At: 1138
+At: 1316
+At: 1369
+At: 1377
+At: 1394
+At: 1547
+At: 1725
+At: 1827
+At: 1828
+At: 1845
+At: 1846
+At: 1878
+At: 1890
+At: 1972
+39
+
+ Number of nodes per subgraph: 31
+At: 41
+At: 125
+At: 166
+At: 219
+At: 265
+At: 426
+At: 495
+At: 569
+At: 622
+At: 666
+At: 843
+At: 954
+At: 980
+At: 998
+At: 1042
+At: 1082
+At: 1227
+At: 1241
+At: 1263
+At: 1283
+At: 1312
+At: 1357
+At: 1429
+At: 1605
+At: 1609
+At: 1678
+At: 1707
+At: 1739
+At: 1850
+At: 1929
+At: 1967
+41
+
+ Number of nodes per subgraph: 39
+At: 44
+At: 75
+At: 81
+At: 106
+At: 299
+At: 393
+At: 409
+At: 458
+At: 490
+At: 541
+At: 550
+At: 571
+At: 578
+At: 610
+At: 703
+At: 733
+At: 740
+At: 814
+At: 867
+At: 919
+At: 996
+At: 1078
+At: 1086
+At: 1172
+At: 1193
+At: 1221
+At: 1239
+At: 1290
+At: 1326
+At: 1352
+At: 1365
+At: 1416
+At: 1491
+At: 1596
+At: 1691
+At: 1786
+At: 1799
+At: 1809
+At: 1814
+44
+
+ Number of nodes per subgraph: 29
+At: 45
+At: 90
+At: 107
+At: 114
+At: 211
+At: 352
+At: 358
+At: 388
+At: 486
+At: 601
+At: 706
+At: 798
+At: 831
+At: 884
+At: 944
+At: 1162
+At: 1268
+At: 1305
+At: 1351
+At: 1393
+At: 1415
+At: 1495
+At: 1520
+At: 1712
+At: 1812
+At: 1836
+At: 1874
+At: 1921
+At: 1936
+45
+
+ Number of nodes per subgraph: 9
+At: 46
+At: 59
+At: 130
+At: 291
+At: 840
+At: 1010
+At: 1214
+At: 1575
+At: 1920
+46
+
+ Number of nodes per subgraph: 15
+At: 47
+At: 51
+At: 109
+At: 131
+At: 171
+At: 251
+At: 293
+At: 500
+At: 935
+At: 1040
+At: 1176
+At: 1314
+At: 1700
+At: 1888
+At: 1975
+47
+
+ Number of nodes per subgraph: 15
+At: 50
+At: 206
+At: 244
+At: 249
+At: 558
+At: 672
+At: 700
+At: 748
+At: 1013
+At: 1310
+At: 1463
+At: 1639
+At: 1647
+At: 1775
+At: 1882
+50
+
+ Number of nodes per subgraph: 9
+At: 53
+At: 72
+At: 86
+At: 237
+At: 616
+At: 675
+At: 1070
+At: 1163
+At: 1198
+53
+
+ Number of nodes per subgraph: 9
+At: 61
+At: 323
+At: 381
+At: 718
+At: 815
+At: 1419
+At: 1768
+At: 1866
+At: 1960
+61
+
+ Number of nodes per subgraph: 19
+At: 64
+At: 65
+At: 629
+At: 714
+At: 775
+At: 853
+At: 1022
+At: 1109
+At: 1122
+At: 1201
+At: 1223
+At: 1404
+At: 1494
+At: 1536
+At: 1592
+At: 1737
+At: 1755
+At: 1760
+At: 1764
+64
+
+ Number of nodes per subgraph: 21
+At: 67
+At: 356
+At: 460
+At: 647
+At: 664
+At: 782
+At: 939
+At: 978
+At: 1045
+At: 1064
+At: 1306
+At: 1414
+At: 1472
+At: 1534
+At: 1586
+At: 1754
+At: 1794
+At: 1804
+At: 1820
+At: 1865
+At: 1912
+67
+
+ Number of nodes per subgraph: 20
+At: 71
+At: 160
+At: 222
+At: 246
+At: 512
+At: 516
+At: 591
+At: 648
+At: 736
+At: 754
+At: 772
+At: 868
+At: 873
+At: 898
+At: 1050
+At: 1141
+At: 1236
+At: 1401
+At: 1405
+At: 1740
+71
+
+ Number of nodes per subgraph: 35
+At: 73
+At: 192
+At: 195
+At: 204
+At: 230
+At: 254
+At: 303
+At: 355
+At: 669
+At: 705
+At: 734
+At: 764
+At: 806
+At: 922
+At: 1014
+At: 1160
+At: 1167
+At: 1252
+At: 1257
+At: 1270
+At: 1346
+At: 1412
+At: 1448
+At: 1449
+At: 1465
+At: 1471
+At: 1492
+At: 1498
+At: 1541
+At: 1723
+At: 1840
+At: 1906
+At: 1959
+At: 1970
+At: 1976
+73
+
+ Number of nodes per subgraph: 22
+At: 80
+At: 148
+At: 489
+At: 588
+At: 803
+At: 804
+At: 890
+At: 923
+At: 931
+At: 993
+At: 1119
+At: 1187
+At: 1271
+At: 1379
+At: 1436
+At: 1527
+At: 1529
+At: 1655
+At: 1792
+At: 1893
+At: 1918
+At: 1948
+80
+
+ Number of nodes per subgraph: 15
+At: 82
+At: 162
+At: 397
+At: 430
+At: 493
+At: 538
+At: 677
+At: 1319
+At: 1368
+At: 1421
+At: 1486
+At: 1555
+At: 1617
+At: 1631
+At: 1917
+82
+
+ Number of nodes per subgraph: 12
+At: 84
+At: 123
+At: 248
+At: 310
+At: 311
+At: 392
+At: 548
+At: 614
+At: 617
+At: 686
+At: 1074
+At: 1202
+84
+
+ Number of nodes per subgraph: 10
+At: 85
+At: 139
+At: 149
+At: 382
+At: 417
+At: 1057
+At: 1133
+At: 1685
+At: 1730
+At: 1752
+85
+
+ Number of nodes per subgraph: 19
+At: 91
+At: 157
+At: 253
+At: 305
+At: 504
+At: 643
+At: 721
+At: 745
+At: 812
+At: 903
+At: 930
+At: 1219
+At: 1389
+At: 1467
+At: 1606
+At: 1627
+At: 1807
+At: 1855
+At: 1910
+91
+
+ Number of nodes per subgraph: 29
+At: 97
+At: 140
+At: 179
+At: 278
+At: 351
+At: 353
+At: 466
+At: 470
+At: 532
+At: 554
+At: 574
+At: 657
+At: 665
+At: 687
+At: 1053
+At: 1130
+At: 1140
+At: 1226
+At: 1278
+At: 1339
+At: 1396
+At: 1489
+At: 1618
+At: 1626
+At: 1734
+At: 1744
+At: 1844
+At: 1889
+At: 1935
+97
+
+ Number of nodes per subgraph: 12
+At: 108
+At: 258
+At: 547
+At: 1117
+At: 1147
+At: 1322
+At: 1327
+At: 1455
+At: 1603
+At: 1728
+At: 1982
+At: 1984
+108
+
+ Number of nodes per subgraph: 18
+At: 110
+At: 152
+At: 234
+At: 273
+At: 308
+At: 315
+At: 440
+At: 561
+At: 613
+At: 653
+At: 1151
+At: 1343
+At: 1420
+At: 1443
+At: 1621
+At: 1682
+At: 1795
+At: 1911
+110
+
+ Number of nodes per subgraph: 15
+At: 116
+At: 207
+At: 231
+At: 376
+At: 757
+At: 760
+At: 891
+At: 1150
+At: 1267
+At: 1373
+At: 1381
+At: 1796
+At: 1880
+At: 1908
+At: 1944
+116
+
+ Number of nodes per subgraph: 9
+At: 117
+At: 400
+At: 707
+At: 1181
+At: 1194
+At: 1240
+At: 1246
+At: 1274
+At: 1532
+117
+
+ Number of nodes per subgraph: 17
+At: 121
+At: 236
+At: 450
+At: 691
+At: 762
+At: 805
+At: 984
+At: 1183
+At: 1203
+At: 1469
+At: 1629
+At: 1664
+At: 1710
+At: 1762
+At: 1783
+At: 1854
+At: 1949
+121
+
+ Number of nodes per subgraph: 6
+At: 122
+At: 676
+At: 1279
+At: 1430
+At: 1458
+At: 1573
+122
+
+ Number of nodes per subgraph: 16
+At: 126
+At: 161
+At: 165
+At: 252
+At: 326
+At: 765
+At: 789
+At: 894
+At: 1205
+At: 1212
+At: 1277
+At: 1288
+At: 1537
+At: 1720
+At: 1946
+At: 1999
+126
+
+ Number of nodes per subgraph: 31
+At: 127
+At: 154
+At: 182
+At: 241
+At: 306
+At: 328
+At: 391
+At: 446
+At: 459
+At: 636
+At: 682
+At: 712
+At: 802
+At: 876
+At: 910
+At: 1073
+At: 1182
+At: 1232
+At: 1248
+At: 1273
+At: 1291
+At: 1315
+At: 1439
+At: 1569
+At: 1646
+At: 1692
+At: 1694
+At: 1788
+At: 1898
+At: 1901
+At: 1909
+127
+
+ Number of nodes per subgraph: 13
+At: 129
+At: 196
+At: 233
+At: 312
+At: 354
+At: 432
+At: 462
+At: 618
+At: 702
+At: 1307
+At: 1842
+At: 1916
+At: 1928
+129
+
+ Number of nodes per subgraph: 8
+At: 134
+At: 142
+At: 793
+At: 952
+At: 956
+At: 1269
+At: 1480
+At: 1994
+134
+
+ Number of nodes per subgraph: 20
+At: 135
+At: 227
+At: 401
+At: 485
+At: 499
+At: 519
+At: 600
+At: 625
+At: 679
+At: 880
+At: 937
+At: 1011
+At: 1062
+At: 1431
+At: 1516
+At: 1557
+At: 1558
+At: 1675
+At: 1688
+At: 1838
+135
+
+ Number of nodes per subgraph: 12
+At: 137
+At: 449
+At: 480
+At: 509
+At: 640
+At: 845
+At: 1097
+At: 1188
+At: 1375
+At: 1770
+At: 1776
+At: 1966
+137
+
+ Number of nodes per subgraph: 9
+At: 138
+At: 837
+At: 981
+At: 1159
+At: 1295
+At: 1329
+At: 1335
+At: 1733
+At: 1862
+138
+
+ Number of nodes per subgraph: 18
+At: 163
+At: 176
+At: 226
+At: 366
+At: 379
+At: 690
+At: 708
+At: 794
+At: 829
+At: 933
+At: 1079
+At: 1115
+At: 1345
+At: 1363
+At: 1721
+At: 1763
+At: 1773
+At: 1989
+163
+
+ Number of nodes per subgraph: 9
+At: 168
+At: 455
+At: 842
+At: 1128
+At: 1213
+At: 1292
+At: 1432
+At: 1758
+At: 1851
+168
+
+ Number of nodes per subgraph: 9
+At: 173
+At: 295
+At: 536
+At: 832
+At: 902
+At: 1015
+At: 1152
+At: 1406
+At: 1879
+173
+
+ Number of nodes per subgraph: 28
+At: 174
+At: 398
+At: 414
+At: 436
+At: 443
+At: 508
+At: 531
+At: 551
+At: 606
+At: 681
+At: 695
+At: 877
+At: 962
+At: 1008
+At: 1080
+At: 1108
+At: 1114
+At: 1149
+At: 1189
+At: 1367
+At: 1521
+At: 1545
+At: 1687
+At: 1825
+At: 1923
+At: 1931
+At: 1934
+At: 1991
+174
+
+ Number of nodes per subgraph: 12
+At: 177
+At: 201
+At: 239
+At: 659
+At: 792
+At: 899
+At: 959
+At: 1156
+At: 1161
+At: 1484
+At: 1765
+At: 1953
+177
+
+ Number of nodes per subgraph: 10
+At: 202
+At: 579
+At: 818
+At: 1069
+At: 1121
+At: 1230
+At: 1261
+At: 1477
+At: 1519
+At: 1978
+202
+
+ Number of nodes per subgraph: 19
+At: 203
+At: 276
+At: 342
+At: 478
+At: 549
+At: 594
+At: 895
+At: 911
+At: 965
+At: 1052
+At: 1100
+At: 1228
+At: 1371
+At: 1372
+At: 1523
+At: 1668
+At: 1777
+At: 1877
+At: 1977
+203
+
+ Number of nodes per subgraph: 10
+At: 205
+At: 317
+At: 402
+At: 710
+At: 938
+At: 1025
+At: 1195
+At: 1496
+At: 1671
+At: 1698
+205
+
+ Number of nodes per subgraph: 6
+At: 209
+At: 302
+At: 986
+At: 1068
+At: 1318
+At: 1580
+209
+
+ Number of nodes per subgraph: 5
+At: 210
+At: 488
+At: 1046
+At: 1072
+At: 1604
+210
+
+ Number of nodes per subgraph: 6
+At: 214
+At: 634
+At: 955
+At: 994
+At: 1054
+At: 1475
+214
+
+ Number of nodes per subgraph: 8
+At: 256
+At: 297
+At: 341
+At: 408
+At: 429
+At: 1001
+At: 1096
+At: 1761
+256
+
+ Number of nodes per subgraph: 10
+At: 260
+At: 322
+At: 545
+At: 755
+At: 763
+At: 1028
+At: 1581
+At: 1597
+At: 1771
+At: 1907
+260
+
+ Number of nodes per subgraph: 12
+At: 266
+At: 336
+At: 371
+At: 662
+At: 886
+At: 1154
+At: 1397
+At: 1459
+At: 1526
+At: 1579
+At: 1813
+At: 1904
+266
+
+ Number of nodes per subgraph: 8
+At: 268
+At: 423
+At: 1030
+At: 1300
+At: 1488
+At: 1500
+At: 1843
+At: 1942
+268
+
+ Number of nodes per subgraph: 5
+At: 277
+At: 631
+At: 797
+At: 1392
+At: 1782
+277
+
+ Number of nodes per subgraph: 5
+At: 286
+At: 380
+At: 1341
+At: 1383
+At: 1743
+286
+
+ Number of nodes per subgraph: 5
+At: 288
+At: 296
+At: 377
+At: 521
+At: 595
+288
+
+ Number of nodes per subgraph: 14
+At: 289
+At: 403
+At: 448
+At: 692
+At: 770
+At: 796
+At: 901
+At: 949
+At: 985
+At: 1110
+At: 1116
+At: 1302
+At: 1493
+At: 1625
+289
+
+ Number of nodes per subgraph: 8
+At: 298
+At: 576
+At: 599
+At: 1039
+At: 1358
+At: 1370
+At: 1919
+At: 1969
+298
+
+ Number of nodes per subgraph: 7
+At: 313
+At: 475
+At: 991
+At: 1077
+At: 1444
+At: 1839
+At: 1869
+313
+
+ Number of nodes per subgraph: 6
+At: 320
+At: 866
+At: 889
+At: 924
+At: 1886
+At: 1930
+320
+
+ Number of nodes per subgraph: 11
+At: 333
+At: 405
+At: 780
+At: 783
+At: 816
+At: 929
+At: 1000
+At: 1485
+At: 1563
+At: 1797
+At: 1818
+333
+
+ Number of nodes per subgraph: 3
+At: 340
+At: 479
+At: 1447
+340
+
+ Number of nodes per subgraph: 3
+At: 344
+At: 621
+At: 633
+344
+
+ Number of nodes per subgraph: 4
+At: 360
+At: 1029
+At: 1225
+At: 1955
+360
+
+ Number of nodes per subgraph: 3
+At: 362
+At: 1623
+At: 1653
+362
+
+ Number of nodes per subgraph: 7
+At: 363
+At: 995
+At: 1060
+At: 1220
+At: 1860
+At: 1876
+At: 1961
+363
+
+ Number of nodes per subgraph: 5
+At: 367
+At: 533
+At: 838
+At: 1630
+At: 1897
+367
+
+ Number of nodes per subgraph: 8
+At: 378
+At: 385
+At: 421
+At: 581
+At: 821
+At: 1157
+At: 1640
+At: 1679
+378
+
+ Number of nodes per subgraph: 4
+At: 406
+At: 1706
+At: 1803
+At: 1810
+406
+
+ Number of nodes per subgraph: 2
+At: 407
+At: 1993
+407
+
+ Number of nodes per subgraph: 14
+At: 413
+At: 553
+At: 844
+At: 917
+At: 1164
+At: 1175
+At: 1206
+At: 1238
+At: 1280
+At: 1503
+At: 1550
+At: 1741
+At: 1937
+At: 1979
+413
+
+ Number of nodes per subgraph: 7
+At: 416
+At: 559
+At: 582
+At: 860
+At: 1542
+At: 1745
+At: 1883
+416
+
+ Number of nodes per subgraph: 5
+At: 424
+At: 1413
+At: 1445
+At: 1785
+At: 1938
+424
+
+ Number of nodes per subgraph: 12
+At: 428
+At: 1009
+At: 1107
+At: 1204
+At: 1293
+At: 1378
+At: 1683
+At: 1718
+At: 1778
+At: 1834
+At: 1884
+At: 1986
+428
+
+ Number of nodes per subgraph: 3
+At: 441
+At: 1434
+At: 1650
+441
+
+ Number of nodes per subgraph: 4
+At: 444
+At: 1018
+At: 1218
+At: 1711
+444
+
+ Number of nodes per subgraph: 2
+At: 447
+At: 1990
+447
+
+ Number of nodes per subgraph: 1
+At: 468
+468
+
+ Number of nodes per subgraph: 3
+At: 472
+At: 506
+At: 1105
+472
+
+ Number of nodes per subgraph: 9
+At: 476
+At: 609
+At: 848
+At: 950
+At: 1041
+At: 1169
+At: 1442
+At: 1514
+At: 1622
+476
+
+ Number of nodes per subgraph: 4
+At: 494
+At: 645
+At: 1587
+At: 1697
+494
+
+ Number of nodes per subgraph: 5
+At: 501
+At: 1289
+At: 1426
+At: 1598
+At: 1815
+501
+
+ Number of nodes per subgraph: 2
+At: 539
+At: 1988
+539
+
+ Number of nodes per subgraph: 5
+At: 544
+At: 655
+At: 1126
+At: 1184
+At: 1466
+544
+
+ Number of nodes per subgraph: 6
+At: 563
+At: 1051
+At: 1142
+At: 1356
+At: 1549
+At: 1644
+563
+
+ Number of nodes per subgraph: 7
+At: 566
+At: 992
+At: 1026
+At: 1104
+At: 1250
+At: 1294
+At: 1705
+566
+
+ Number of nodes per subgraph: 5
+At: 587
+At: 988
+At: 1254
+At: 1259
+At: 1702
+587
+
+ Number of nodes per subgraph: 6
+At: 604
+At: 738
+At: 1366
+At: 1539
+At: 1781
+At: 1902
+604
+
+ Number of nodes per subgraph: 3
+At: 671
+At: 1191
+At: 1708
+671
+
+ Number of nodes per subgraph: 4
+At: 673
+At: 761
+At: 1282
+At: 1995
+673
+
+ Number of nodes per subgraph: 2
+At: 684
+At: 790
+684
+
+ Number of nodes per subgraph: 3
+At: 709
+At: 1408
+At: 1701
+709
+
+ Number of nodes per subgraph: 4
+At: 711
+At: 715
+At: 1570
+At: 1589
+711
+
+ Number of nodes per subgraph: 2
+At: 726
+At: 739
+726
+
+ Number of nodes per subgraph: 2
+At: 747
+At: 1662
+747
+
+ Number of nodes per subgraph: 4
+At: 773
+At: 1438
+At: 1593
+At: 1722
+773
+
+ Number of nodes per subgraph: 4
+At: 835
+At: 1106
+At: 1551
+At: 1835
+835
+
+ Number of nodes per subgraph: 5
+At: 862
+At: 1264
+At: 1411
+At: 1584
+At: 1914
+862
+
+ Number of nodes per subgraph: 3
+At: 872
+At: 1023
+At: 1673
+872
+
+ Number of nodes per subgraph: 1
+At: 909
+909
+
+ Number of nodes per subgraph: 7
+At: 916
+At: 967
+At: 1003
+At: 1422
+At: 1457
+At: 1533
+At: 1543
+916
+
+ Number of nodes per subgraph: 3
+At: 961
+At: 1409
+At: 1870
+961
+
+ Number of nodes per subgraph: 1
+At: 1134
+1134
+
+ Number of nodes per subgraph: 1
+At: 1297
+1297
+
+ Number of nodes per subgraph: 5
+At: 1299
+At: 1462
+At: 1509
+At: 1613
+At: 1693
+1299
+
+ Number of nodes per subgraph: 1
+At: 1355
+1355
+
+ Number of nodes per subgraph: 4
+At: 1362
+At: 1376
+At: 1395
+At: 1891
+1362
+
+ Number of nodes per subgraph: 1
+At: 1535
+1535
+
+ Number of nodes per subgraph: 1
+At: 1562
+1562
+
+ Number of nodes per subgraph: 1
+At: 1669
+1669
+
+ Number of nodes per subgraph: 2
+At: 1703
+At: 1952
+1703
+
+ Number of nodes per subgraph: 1
+At: 1713
+1713
+
+ Number of nodes per subgraph: 1
+At: 1766
+1766
+
+ Number of nodes per subgraph: 1
+At: 1833
+1833
+
+ Number of nodes per subgraph: 1
+At: 1857
+1857
+
+0
+1
+3
+4
+5
+6
+7
+8
+9
+10
+14
+15
+16
+18
+19
+20
+21
+22
+23
+24
+25
+26
+28
+29
+34
+35
+36
+37
+38
+40
+43
+44
+47
+49
+50
+51
+52
+53
+55
+57
+58
+61
+65
+66
+70
+75
+76
+77
+80
+83
+84
+85
+91
+98
+102
+104
+114
+117
+121
+124
+126
+127
+133
+61
+ Number of nodes per subgraph: 42
+At: 0
+At: 22
+At: 66
+At: 77
+At: 101
+At: 144
+At: 150
+At: 156
+At: 197
+At: 434
+At: 483
+At: 518
+At: 572
+At: 603
+At: 608
+At: 641
+At: 670
+At: 767
+At: 811
+At: 859
+At: 1075
+At: 1094
+At: 1101
+At: 1196
+At: 1390
+At: 1398
+At: 1417
+At: 1437
+At: 1450
+At: 1497
+At: 1501
+At: 1504
+At: 1517
+At: 1553
+At: 1571
+At: 1628
+At: 1633
+At: 1759
+At: 1811
+At: 1875
+At: 1957
+At: 1971
+0
+
+ Number of nodes per subgraph: 58
+At: 1
+At: 20
+At: 32
+At: 69
+At: 78
+At: 79
+At: 119
+At: 181
+At: 250
+At: 292
+At: 319
+At: 394
+At: 451
+At: 461
+At: 471
+At: 492
+At: 497
+At: 510
+At: 511
+At: 652
+At: 693
+At: 719
+At: 725
+At: 727
+At: 741
+At: 766
+At: 776
+At: 784
+At: 808
+At: 969
+At: 972
+At: 976
+At: 989
+At: 1005
+At: 1020
+At: 1027
+At: 1047
+At: 1093
+At: 1145
+At: 1211
+At: 1272
+At: 1353
+At: 1382
+At: 1400
+At: 1407
+At: 1487
+At: 1518
+At: 1559
+At: 1624
+At: 1641
+At: 1645
+At: 1729
+At: 1790
+At: 1798
+At: 1859
+At: 1885
+At: 1892
+At: 1927
+1
+
+ Number of nodes per subgraph: 37
+At: 3
+At: 25
+At: 42
+At: 147
+At: 186
+At: 220
+At: 221
+At: 284
+At: 318
+At: 384
+At: 464
+At: 481
+At: 517
+At: 523
+At: 704
+At: 768
+At: 826
+At: 934
+At: 936
+At: 983
+At: 1043
+At: 1056
+At: 1061
+At: 1098
+At: 1136
+At: 1186
+At: 1311
+At: 1347
+At: 1360
+At: 1453
+At: 1473
+At: 1483
+At: 1499
+At: 1607
+At: 1757
+At: 1791
+At: 1996
+3
+
+ Number of nodes per subgraph: 91
+At: 4
+At: 6
+At: 11
+At: 21
+At: 105
+At: 132
+At: 133
+At: 164
+At: 172
+At: 178
+At: 187
+At: 232
+At: 235
+At: 238
+At: 261
+At: 262
+At: 281
+At: 316
+At: 357
+At: 365
+At: 375
+At: 411
+At: 419
+At: 422
+At: 431
+At: 435
+At: 438
+At: 457
+At: 477
+At: 498
+At: 526
+At: 560
+At: 562
+At: 573
+At: 596
+At: 630
+At: 635
+At: 663
+At: 667
+At: 688
+At: 699
+At: 746
+At: 778
+At: 781
+At: 801
+At: 827
+At: 863
+At: 870
+At: 940
+At: 948
+At: 990
+At: 1058
+At: 1084
+At: 1091
+At: 1131
+At: 1139
+At: 1170
+At: 1210
+At: 1215
+At: 1224
+At: 1229
+At: 1233
+At: 1235
+At: 1304
+At: 1321
+At: 1330
+At: 1337
+At: 1342
+At: 1402
+At: 1403
+At: 1507
+At: 1510
+At: 1512
+At: 1540
+At: 1590
+At: 1601
+At: 1602
+At: 1619
+At: 1659
+At: 1695
+At: 1726
+At: 1731
+At: 1736
+At: 1756
+At: 1819
+At: 1830
+At: 1852
+At: 1863
+At: 1868
+At: 1963
+At: 1964
+4
+
+ Number of nodes per subgraph: 64
+At: 5
+At: 17
+At: 27
+At: 54
+At: 55
+At: 92
+At: 102
+At: 145
+At: 212
+At: 213
+At: 224
+At: 321
+At: 338
+At: 339
+At: 418
+At: 469
+At: 502
+At: 564
+At: 568
+At: 605
+At: 611
+At: 642
+At: 660
+At: 668
+At: 728
+At: 771
+At: 817
+At: 849
+At: 850
+At: 852
+At: 869
+At: 882
+At: 945
+At: 975
+At: 1004
+At: 1034
+At: 1059
+At: 1076
+At: 1125
+At: 1165
+At: 1200
+At: 1231
+At: 1242
+At: 1265
+At: 1276
+At: 1344
+At: 1364
+At: 1410
+At: 1424
+At: 1433
+At: 1460
+At: 1502
+At: 1567
+At: 1572
+At: 1574
+At: 1612
+At: 1780
+At: 1806
+At: 1837
+At: 1871
+At: 1922
+At: 1933
+At: 1958
+At: 1973
+5
+
+ Number of nodes per subgraph: 24
+At: 7
+At: 167
+At: 188
+At: 287
+At: 335
+At: 349
+At: 452
+At: 530
+At: 737
+At: 749
+At: 854
+At: 881
+At: 1032
+At: 1066
+At: 1234
+At: 1554
+At: 1565
+At: 1632
+At: 1637
+At: 1648
+At: 1714
+At: 1719
+At: 1805
+At: 1915
+7
+
+ Number of nodes per subgraph: 64
+At: 8
+At: 62
+At: 88
+At: 111
+At: 115
+At: 136
+At: 159
+At: 242
+At: 275
+At: 389
+At: 399
+At: 439
+At: 474
+At: 514
+At: 520
+At: 527
+At: 540
+At: 602
+At: 639
+At: 689
+At: 720
+At: 769
+At: 774
+At: 875
+At: 896
+At: 915
+At: 947
+At: 973
+At: 979
+At: 999
+At: 1021
+At: 1024
+At: 1036
+At: 1081
+At: 1103
+At: 1113
+At: 1129
+At: 1143
+At: 1148
+At: 1153
+At: 1190
+At: 1207
+At: 1209
+At: 1308
+At: 1332
+At: 1333
+At: 1334
+At: 1384
+At: 1461
+At: 1474
+At: 1490
+At: 1585
+At: 1670
+At: 1709
+At: 1749
+At: 1787
+At: 1808
+At: 1873
+At: 1881
+At: 1887
+At: 1896
+At: 1913
+At: 1939
+At: 1985
+8
+
+ Number of nodes per subgraph: 96
+At: 9
+At: 34
+At: 60
+At: 70
+At: 94
+At: 96
+At: 100
+At: 104
+At: 124
+At: 128
+At: 141
+At: 151
+At: 175
+At: 180
+At: 191
+At: 198
+At: 199
+At: 216
+At: 229
+At: 243
+At: 245
+At: 274
+At: 300
+At: 301
+At: 309
+At: 330
+At: 332
+At: 334
+At: 346
+At: 370
+At: 396
+At: 467
+At: 503
+At: 537
+At: 565
+At: 575
+At: 597
+At: 615
+At: 620
+At: 624
+At: 698
+At: 752
+At: 786
+At: 788
+At: 809
+At: 846
+At: 851
+At: 855
+At: 856
+At: 857
+At: 912
+At: 914
+At: 925
+At: 966
+At: 971
+At: 1002
+At: 1038
+At: 1083
+At: 1085
+At: 1089
+At: 1092
+At: 1112
+At: 1158
+At: 1197
+At: 1216
+At: 1217
+At: 1266
+At: 1287
+At: 1301
+At: 1313
+At: 1336
+At: 1354
+At: 1359
+At: 1440
+At: 1525
+At: 1530
+At: 1531
+At: 1564
+At: 1582
+At: 1600
+At: 1642
+At: 1643
+At: 1649
+At: 1658
+At: 1666
+At: 1674
+At: 1680
+At: 1699
+At: 1704
+At: 1717
+At: 1738
+At: 1800
+At: 1822
+At: 1925
+At: 1947
+At: 1956
+9
+
+ Number of nodes per subgraph: 36
+At: 10
+At: 153
+At: 183
+At: 189
+At: 194
+At: 200
+At: 217
+At: 259
+At: 373
+At: 454
+At: 465
+At: 473
+At: 528
+At: 555
+At: 570
+At: 586
+At: 637
+At: 730
+At: 743
+At: 841
+At: 904
+At: 926
+At: 1102
+At: 1179
+At: 1338
+At: 1425
+At: 1476
+At: 1578
+At: 1594
+At: 1634
+At: 1660
+At: 1689
+At: 1861
+At: 1900
+At: 1941
+At: 1980
+10
+
+ Number of nodes per subgraph: 30
+At: 12
+At: 74
+At: 279
+At: 463
+At: 487
+At: 724
+At: 731
+At: 758
+At: 779
+At: 795
+At: 1007
+At: 1019
+At: 1063
+At: 1065
+At: 1095
+At: 1155
+At: 1174
+At: 1177
+At: 1255
+At: 1387
+At: 1399
+At: 1427
+At: 1591
+At: 1652
+At: 1769
+At: 1772
+At: 1826
+At: 1829
+At: 1950
+At: 1983
+12
+
+ Number of nodes per subgraph: 37
+At: 16
+At: 208
+At: 225
+At: 272
+At: 390
+At: 410
+At: 415
+At: 456
+At: 507
+At: 543
+At: 583
+At: 658
+At: 685
+At: 696
+At: 716
+At: 836
+At: 865
+At: 879
+At: 1044
+At: 1120
+At: 1199
+At: 1249
+At: 1325
+At: 1350
+At: 1388
+At: 1446
+At: 1464
+At: 1522
+At: 1595
+At: 1611
+At: 1654
+At: 1661
+At: 1753
+At: 1817
+At: 1821
+At: 1856
+At: 1924
+16
+
+ Number of nodes per subgraph: 22
+At: 18
+At: 76
+At: 98
+At: 240
+At: 270
+At: 283
+At: 557
+At: 584
+At: 885
+At: 907
+At: 920
+At: 943
+At: 953
+At: 1111
+At: 1123
+At: 1256
+At: 1262
+At: 1423
+At: 1482
+At: 1511
+At: 1690
+At: 1751
+18
+
+ Number of nodes per subgraph: 39
+At: 19
+At: 48
+At: 58
+At: 158
+At: 280
+At: 314
+At: 404
+At: 437
+At: 453
+At: 529
+At: 577
+At: 619
+At: 678
+At: 697
+At: 756
+At: 799
+At: 892
+At: 957
+At: 977
+At: 1090
+At: 1099
+At: 1132
+At: 1135
+At: 1144
+At: 1192
+At: 1247
+At: 1506
+At: 1568
+At: 1616
+At: 1684
+At: 1724
+At: 1742
+At: 1784
+At: 1802
+At: 1824
+At: 1832
+At: 1872
+At: 1932
+At: 1943
+19
+
+ Number of nodes per subgraph: 16
+At: 24
+At: 43
+At: 83
+At: 118
+At: 590
+At: 942
+At: 1055
+At: 1146
+At: 1180
+At: 1245
+At: 1258
+At: 1260
+At: 1281
+At: 1470
+At: 1636
+At: 1945
+24
+
+ Number of nodes per subgraph: 32
+At: 29
+At: 68
+At: 103
+At: 263
+At: 264
+At: 304
+At: 331
+At: 445
+At: 484
+At: 650
+At: 777
+At: 785
+At: 819
+At: 864
+At: 918
+At: 928
+At: 964
+At: 1035
+At: 1071
+At: 1127
+At: 1253
+At: 1275
+At: 1285
+At: 1323
+At: 1452
+At: 1552
+At: 1566
+At: 1635
+At: 1656
+At: 1727
+At: 1831
+At: 1848
+29
+
+ Number of nodes per subgraph: 17
+At: 30
+At: 269
+At: 294
+At: 387
+At: 607
+At: 656
+At: 753
+At: 824
+At: 982
+At: 1331
+At: 1505
+At: 1515
+At: 1732
+At: 1789
+At: 1847
+At: 1858
+At: 1894
+30
+
+ Number of nodes per subgraph: 20
+At: 31
+At: 57
+At: 359
+At: 383
+At: 433
+At: 496
+At: 638
+At: 701
+At: 722
+At: 751
+At: 810
+At: 1017
+At: 1037
+At: 1067
+At: 1208
+At: 1481
+At: 1638
+At: 1774
+At: 1951
+At: 1968
+31
+
+ Number of nodes per subgraph: 23
+At: 33
+At: 93
+At: 155
+At: 169
+At: 282
+At: 290
+At: 442
+At: 515
+At: 535
+At: 627
+At: 750
+At: 813
+At: 839
+At: 847
+At: 908
+At: 1016
+At: 1243
+At: 1298
+At: 1667
+At: 1715
+At: 1849
+At: 1954
+At: 1965
+33
+
+ Number of nodes per subgraph: 28
+At: 35
+At: 146
+At: 329
+At: 343
+At: 350
+At: 482
+At: 534
+At: 589
+At: 598
+At: 632
+At: 759
+At: 825
+At: 830
+At: 888
+At: 893
+At: 951
+At: 960
+At: 1088
+At: 1296
+At: 1348
+At: 1441
+At: 1614
+At: 1657
+At: 1665
+At: 1801
+At: 1853
+At: 1899
+At: 1940
+35
+
+ Number of nodes per subgraph: 25
+At: 36
+At: 112
+At: 271
+At: 327
+At: 348
+At: 361
+At: 364
+At: 395
+At: 412
+At: 427
+At: 567
+At: 612
+At: 649
+At: 729
+At: 742
+At: 833
+At: 878
+At: 921
+At: 1168
+At: 1173
+At: 1349
+At: 1380
+At: 1479
+At: 1583
+At: 1895
+36
+
+ Number of nodes per subgraph: 13
+At: 37
+At: 63
+At: 257
+At: 285
+At: 368
+At: 420
+At: 542
+At: 654
+At: 680
+At: 963
+At: 1524
+At: 1696
+At: 1748
+37
+
+ Number of nodes per subgraph: 28
+At: 39
+At: 49
+At: 87
+At: 247
+At: 513
+At: 556
+At: 580
+At: 593
+At: 623
+At: 694
+At: 791
+At: 900
+At: 970
+At: 997
+At: 1138
+At: 1316
+At: 1369
+At: 1377
+At: 1394
+At: 1547
+At: 1725
+At: 1827
+At: 1828
+At: 1845
+At: 1846
+At: 1878
+At: 1890
+At: 1972
+39
+
+ Number of nodes per subgraph: 39
+At: 44
+At: 75
+At: 81
+At: 106
+At: 299
+At: 393
+At: 409
+At: 458
+At: 490
+At: 541
+At: 550
+At: 571
+At: 578
+At: 610
+At: 703
+At: 733
+At: 740
+At: 814
+At: 867
+At: 919
+At: 996
+At: 1078
+At: 1086
+At: 1172
+At: 1193
+At: 1221
+At: 1239
+At: 1290
+At: 1326
+At: 1352
+At: 1365
+At: 1416
+At: 1491
+At: 1596
+At: 1691
+At: 1786
+At: 1799
+At: 1809
+At: 1814
+44
+
+ Number of nodes per subgraph: 29
+At: 45
+At: 90
+At: 107
+At: 114
+At: 211
+At: 352
+At: 358
+At: 388
+At: 486
+At: 601
+At: 706
+At: 798
+At: 831
+At: 884
+At: 944
+At: 1162
+At: 1268
+At: 1305
+At: 1351
+At: 1393
+At: 1415
+At: 1495
+At: 1520
+At: 1712
+At: 1812
+At: 1836
+At: 1874
+At: 1921
+At: 1936
+45
+
+ Number of nodes per subgraph: 9
+At: 61
+At: 323
+At: 381
+At: 718
+At: 815
+At: 1419
+At: 1768
+At: 1866
+At: 1960
+61
+
+ Number of nodes per subgraph: 19
+At: 64
+At: 65
+At: 629
+At: 714
+At: 775
+At: 853
+At: 1022
+At: 1109
+At: 1122
+At: 1201
+At: 1223
+At: 1404
+At: 1494
+At: 1536
+At: 1592
+At: 1737
+At: 1755
+At: 1760
+At: 1764
+64
+
+ Number of nodes per subgraph: 21
+At: 67
+At: 356
+At: 460
+At: 647
+At: 664
+At: 782
+At: 939
+At: 978
+At: 1045
+At: 1064
+At: 1306
+At: 1414
+At: 1472
+At: 1534
+At: 1586
+At: 1754
+At: 1794
+At: 1804
+At: 1820
+At: 1865
+At: 1912
+67
+
+ Number of nodes per subgraph: 20
+At: 71
+At: 160
+At: 222
+At: 246
+At: 512
+At: 516
+At: 591
+At: 648
+At: 736
+At: 754
+At: 772
+At: 868
+At: 873
+At: 898
+At: 1050
+At: 1141
+At: 1236
+At: 1401
+At: 1405
+At: 1740
+71
+
+ Number of nodes per subgraph: 35
+At: 73
+At: 192
+At: 195
+At: 204
+At: 230
+At: 254
+At: 303
+At: 355
+At: 669
+At: 705
+At: 734
+At: 764
+At: 806
+At: 922
+At: 1014
+At: 1160
+At: 1167
+At: 1252
+At: 1257
+At: 1270
+At: 1346
+At: 1412
+At: 1448
+At: 1449
+At: 1465
+At: 1471
+At: 1492
+At: 1498
+At: 1541
+At: 1723
+At: 1840
+At: 1906
+At: 1959
+At: 1970
+At: 1976
+73
+
+ Number of nodes per subgraph: 15
+At: 82
+At: 162
+At: 397
+At: 430
+At: 493
+At: 538
+At: 677
+At: 1319
+At: 1368
+At: 1421
+At: 1486
+At: 1555
+At: 1617
+At: 1631
+At: 1917
+82
+
+ Number of nodes per subgraph: 19
+At: 91
+At: 157
+At: 253
+At: 305
+At: 504
+At: 643
+At: 721
+At: 745
+At: 812
+At: 903
+At: 930
+At: 1219
+At: 1389
+At: 1467
+At: 1606
+At: 1627
+At: 1807
+At: 1855
+At: 1910
+91
+
+ Number of nodes per subgraph: 29
+At: 97
+At: 140
+At: 179
+At: 278
+At: 351
+At: 353
+At: 466
+At: 470
+At: 532
+At: 554
+At: 574
+At: 657
+At: 665
+At: 687
+At: 1053
+At: 1130
+At: 1140
+At: 1226
+At: 1278
+At: 1339
+At: 1396
+At: 1489
+At: 1618
+At: 1626
+At: 1734
+At: 1744
+At: 1844
+At: 1889
+At: 1935
+97
+
+ Number of nodes per subgraph: 15
+At: 116
+At: 207
+At: 231
+At: 376
+At: 757
+At: 760
+At: 891
+At: 1150
+At: 1267
+At: 1373
+At: 1381
+At: 1796
+At: 1880
+At: 1908
+At: 1944
+116
+
+ Number of nodes per subgraph: 17
+At: 121
+At: 236
+At: 450
+At: 691
+At: 762
+At: 805
+At: 984
+At: 1183
+At: 1203
+At: 1469
+At: 1629
+At: 1664
+At: 1710
+At: 1762
+At: 1783
+At: 1854
+At: 1949
+121
+
+ Number of nodes per subgraph: 6
+At: 122
+At: 676
+At: 1279
+At: 1430
+At: 1458
+At: 1573
+122
+
+ Number of nodes per subgraph: 16
+At: 126
+At: 161
+At: 165
+At: 252
+At: 326
+At: 765
+At: 789
+At: 894
+At: 1205
+At: 1212
+At: 1277
+At: 1288
+At: 1537
+At: 1720
+At: 1946
+At: 1999
+126
+
+ Number of nodes per subgraph: 31
+At: 127
+At: 154
+At: 182
+At: 241
+At: 306
+At: 328
+At: 391
+At: 446
+At: 459
+At: 636
+At: 682
+At: 712
+At: 802
+At: 876
+At: 910
+At: 1073
+At: 1182
+At: 1232
+At: 1248
+At: 1273
+At: 1291
+At: 1315
+At: 1439
+At: 1569
+At: 1646
+At: 1692
+At: 1694
+At: 1788
+At: 1898
+At: 1901
+At: 1909
+127
+
+ Number of nodes per subgraph: 13
+At: 129
+At: 196
+At: 233
+At: 312
+At: 354
+At: 432
+At: 462
+At: 618
+At: 702
+At: 1307
+At: 1842
+At: 1916
+At: 1928
+129
+
+ Number of nodes per subgraph: 20
+At: 135
+At: 227
+At: 401
+At: 485
+At: 499
+At: 519
+At: 600
+At: 625
+At: 679
+At: 880
+At: 937
+At: 1011
+At: 1062
+At: 1431
+At: 1516
+At: 1557
+At: 1558
+At: 1675
+At: 1688
+At: 1838
+135
+
+ Number of nodes per subgraph: 9
+At: 138
+At: 837
+At: 981
+At: 1159
+At: 1295
+At: 1329
+At: 1335
+At: 1733
+At: 1862
+138
+
+ Number of nodes per subgraph: 18
+At: 163
+At: 176
+At: 226
+At: 366
+At: 379
+At: 690
+At: 708
+At: 794
+At: 829
+At: 933
+At: 1079
+At: 1115
+At: 1345
+At: 1363
+At: 1721
+At: 1763
+At: 1773
+At: 1989
+163
+
+ Number of nodes per subgraph: 28
+At: 174
+At: 398
+At: 414
+At: 436
+At: 443
+At: 508
+At: 531
+At: 551
+At: 606
+At: 681
+At: 695
+At: 877
+At: 962
+At: 1008
+At: 1080
+At: 1108
+At: 1114
+At: 1149
+At: 1189
+At: 1367
+At: 1521
+At: 1545
+At: 1687
+At: 1825
+At: 1923
+At: 1931
+At: 1934
+At: 1991
+174
+
+ Number of nodes per subgraph: 10
+At: 205
+At: 317
+At: 402
+At: 710
+At: 938
+At: 1025
+At: 1195
+At: 1496
+At: 1671
+At: 1698
+205
+
+ Number of nodes per subgraph: 6
+At: 209
+At: 302
+At: 986
+At: 1068
+At: 1318
+At: 1580
+209
+
+ Number of nodes per subgraph: 10
+At: 260
+At: 322
+At: 545
+At: 755
+At: 763
+At: 1028
+At: 1581
+At: 1597
+At: 1771
+At: 1907
+260
+
+ Number of nodes per subgraph: 5
+At: 288
+At: 296
+At: 377
+At: 521
+At: 595
+288
+
+ Number of nodes per subgraph: 14
+At: 289
+At: 403
+At: 448
+At: 692
+At: 770
+At: 796
+At: 901
+At: 949
+At: 985
+At: 1110
+At: 1116
+At: 1302
+At: 1493
+At: 1625
+289
+
+ Number of nodes per subgraph: 8
+At: 298
+At: 576
+At: 599
+At: 1039
+At: 1358
+At: 1370
+At: 1919
+At: 1969
+298
+
+ Number of nodes per subgraph: 11
+At: 333
+At: 405
+At: 780
+At: 783
+At: 816
+At: 929
+At: 1000
+At: 1485
+At: 1563
+At: 1797
+At: 1818
+333
+
+ Number of nodes per subgraph: 4
+At: 360
+At: 1029
+At: 1225
+At: 1955
+360
+
+ Number of nodes per subgraph: 3
+At: 362
+At: 1623
+At: 1653
+362
+
+ Number of nodes per subgraph: 7
+At: 363
+At: 995
+At: 1060
+At: 1220
+At: 1860
+At: 1876
+At: 1961
+363
+
+ Number of nodes per subgraph: 7
+At: 416
+At: 559
+At: 582
+At: 860
+At: 1542
+At: 1745
+At: 1883
+416
+
+ Number of nodes per subgraph: 3
+At: 472
+At: 506
+At: 1105
+472
+
+ Number of nodes per subgraph: 2
+At: 539
+At: 1988
+539
+
+ Number of nodes per subgraph: 6
+At: 563
+At: 1051
+At: 1142
+At: 1356
+At: 1549
+At: 1644
+563
+
+ Number of nodes per subgraph: 2
+At: 747
+At: 1662
+747
+
+ Number of nodes per subgraph: 5
+At: 862
+At: 1264
+At: 1411
+At: 1584
+At: 1914
+862
+
+ Number of nodes per subgraph: 3
+At: 961
+At: 1409
+At: 1870
+961
+
+ Number of nodes per subgraph: 5
+At: 1299
+At: 1462
+At: 1509
+At: 1613
+At: 1693
+1299
+
+ Number of nodes per subgraph: 4
+At: 1362
+At: 1376
+At: 1395
+At: 1891
+1362
+
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+ERROR THIS SHOULDN'T HAPPEN
+Test case 18: failure
+ Number of nodes per subgraph: 9
+At: 0
+At: 3
+At: 26
+At: 37
+At: 41
+At: 48
+At: 60
+At: 73
+At: 96
+0
+
+ Number of nodes per subgraph: 9
+At: 1
+At: 4
+At: 17
+At: 19
+At: 49
+At: 65
+At: 71
+At: 97
+At: 99
+1
+
+ Number of nodes per subgraph: 5
+At: 2
+At: 47
+At: 78
+At: 81
+At: 85
+2
+
+ Number of nodes per subgraph: 8
+At: 5
+At: 13
+At: 15
+At: 21
+At: 40
+At: 53
+At: 66
+At: 77
+5
+
+ Number of nodes per subgraph: 9
+At: 6
+At: 16
+At: 20
+At: 34
+At: 38
+At: 63
+At: 68
+At: 87
+At: 88
+6
+
+ Number of nodes per subgraph: 8
+At: 7
+At: 8
+At: 42
+At: 45
+At: 57
+At: 70
+At: 90
+At: 93
+7
+
+ Number of nodes per subgraph: 8
+At: 9
+At: 14
+At: 18
+At: 25
+At: 35
+At: 52
+At: 69
+At: 98
+9
+
+ Number of nodes per subgraph: 6
+At: 10
+At: 24
+At: 46
+At: 50
+At: 61
+At: 67
+10
+
+ Number of nodes per subgraph: 8
+At: 11
+At: 22
+At: 27
+At: 44
+At: 56
+At: 76
+At: 80
+At: 91
+11
+
+ Number of nodes per subgraph: 6
+At: 12
+At: 23
+At: 43
+At: 51
+At: 86
+At: 89
+12
+
+ Number of nodes per subgraph: 6
+At: 28
+At: 33
+At: 39
+At: 55
+At: 74
+At: 79
+28
+
+ Number of nodes per subgraph: 3
+At: 29
+At: 54
+At: 95
+29
+
+ Number of nodes per subgraph: 1
+At: 30
+30
+
+ Number of nodes per subgraph: 1
+At: 31
+31
+
+ Number of nodes per subgraph: 4
+At: 32
+At: 36
+At: 59
+At: 82
+32
+
+ Number of nodes per subgraph: 6
+At: 58
+At: 62
+At: 72
+At: 75
+At: 84
+At: 92
+58
+
+ Number of nodes per subgraph: 2
+At: 64
+At: 83
+64
+
+ Number of nodes per subgraph: 1
+At: 94
+94
+
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+14
+15
+14
+ Number of nodes per subgraph: 9
+At: 0
+At: 3
+At: 26
+At: 37
+At: 41
+At: 48
+At: 60
+At: 73
+At: 96
+0
+
+ Number of nodes per subgraph: 9
+At: 1
+At: 4
+At: 17
+At: 19
+At: 49
+At: 65
+At: 71
+At: 97
+At: 99
+1
+
+ Number of nodes per subgraph: 5
+At: 2
+At: 47
+At: 78
+At: 81
+At: 85
+2
+
+ Number of nodes per subgraph: 8
+At: 5
+At: 13
+At: 15
+At: 21
+At: 40
+At: 53
+At: 66
+At: 77
+5
+
+ Number of nodes per subgraph: 9
+At: 6
+At: 16
+At: 20
+At: 34
+At: 38
+At: 63
+At: 68
+At: 87
+At: 88
+6
+
+ Number of nodes per subgraph: 8
+At: 7
+At: 8
+At: 42
+At: 45
+At: 57
+At: 70
+At: 90
+At: 93
+7
+
+ Number of nodes per subgraph: 8
+At: 9
+At: 14
+At: 18
+At: 25
+At: 35
+At: 52
+At: 69
+At: 98
+9
+
+ Number of nodes per subgraph: 6
+At: 10
+At: 24
+At: 46
+At: 50
+At: 61
+At: 67
+10
+
+ Number of nodes per subgraph: 8
+At: 11
+At: 22
+At: 27
+At: 44
+At: 56
+At: 76
+At: 80
+At: 91
+11
+
+ Number of nodes per subgraph: 6
+At: 12
+At: 23
+At: 43
+At: 51
+At: 86
+At: 89
+12
+
+ Number of nodes per subgraph: 6
+At: 28
+At: 33
+At: 39
+At: 55
+At: 74
+At: 79
+28
+
+ Number of nodes per subgraph: 3
+At: 29
+At: 54
+At: 95
+29
+
+ Number of nodes per subgraph: 4
+At: 32
+At: 36
+At: 59
+At: 82
+32
+
+ Number of nodes per subgraph: 6
+At: 58
+At: 62
+At: 72
+At: 75
+At: 84
+At: 92
+58
+
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+ERROR THIS SHOULDN'T HAPPEN
+Test case 19: failure
+0/19 correct

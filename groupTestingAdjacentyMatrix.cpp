@@ -4,6 +4,7 @@
 #include <queue>
 #include <algorithm>
 #include <numeric>
+#include <tgmath.h>
 using namespace std;
 
 typedef vector<int> vi;
@@ -12,7 +13,7 @@ typedef pair<int, int> ii;
 typedef vector<ii> vii;
 typedef int64_t ll;
 
-float treshold = 0.8;
+float treshold = 0.25;
 
 struct Point
 {
@@ -121,7 +122,7 @@ public:
         accepted.push_back(currentIndex);
         for (size_t i = 0; i < n; i++)
         {
-            // cerr << "At: " << i << "Difference: " << difference[i] << endl;
+            cerr << "At: " << i << "Difference: " << difference[i] << endl;
 
             if (i == currentIndex)
                 continue;
@@ -138,7 +139,8 @@ public:
     }
     float calcDifference(int arr1[], int arr2[])
     {
-        float diff = nEdges/n;
+        float averageGraphDensity = ceil(nEdges/n);
+        float diff = averageGraphDensity*2;
         for (size_t i = 0; i < n; i++)
         {
             if (arr1[i] == arr2[i] && arr1[i] == 1)
@@ -146,7 +148,7 @@ public:
                 diff--;
             }
         }
-        float answer = diff/(nEdges/n);
+        float answer = diff/(averageGraphDensity*2);
         return answer;
     }
     void bfs(int src)
@@ -264,8 +266,7 @@ void testGraph(vvi pairs, int index)
          << flush << endl;
 }
 
-void testGraph(vi pair, int counter) {
-    counter++;
+void testGraph(vi pair) {
 
     /* DEBUG */
     cerr << " Number of nodes per subgraph: " << pair.size() << endl << flush;
@@ -281,7 +282,7 @@ void testGraph(vi pair, int counter) {
         cout << " ";
         cout << pair.at(j);
     }
-    
+    cout << endl << flush << endl;
     /* DEBUG */
     cerr << pair.at(0) << endl << flush << endl;
     /* DEBUG */
@@ -298,7 +299,6 @@ vvi updateInfected(vvi subgraphs, vector<bool> infected) {
             /* DEBUG */
             cerr << i << endl;
             /* DEBUG */
-
             if (subgraphs.at(i).size() > 1) {
                 toTest.push_back(subgraphs.at(i));
             }
@@ -312,36 +312,35 @@ vvi updateInfected(vvi subgraphs, vector<bool> infected) {
     return toTest;
 }
 
-void manualTest(vvi toTest, int counter, vector<bool> infected) {
+void manualTest(vvi toTest, vector<bool> infected) {
+    cerr << toTest.size() << endl;
     for (size_t i = 0; i < toTest.size(); i++) {
-        testGraph(toTest.at(i), counter);
+        testGraph(toTest.at(i));
     }
 
-    cout << endl << flush << endl;
 
     vvi result = updateInfected(toTest, infected);
-
-    if (result.size()) {
+    if (result.size()!=0) {
         cerr << "ERROR THIS SHOULDN'T HAPPEN" << endl;
     }
 }
 
-void runTestCase(AdjacencyMatrix adjMatrix, int counter, vector<bool> infected) {
+void runTestCase(AdjacencyMatrix adjMatrix, vector<bool> infected) {
     vector<vector<int>> pairs;
 
     pairs = adjMatrix.findDenseSubGraph(0, pairs);
 
     for (size_t i = 0; i < pairs.size(); i++)
     {
-        testGraph(pairs.at(i), counter);
+        testGraph(pairs.at(i));
     }
 
-    cout << endl << flush << endl;
 
     vvi toTest = updateInfected(pairs, infected);
 
     // This can be replaced by recursion later on.
-    manualTest(toTest, counter, infected);
+    manualTest(toTest, infected);
+
 }
 
 void answerTestCase(vector<bool> infected, int nNodes) {
@@ -393,11 +392,10 @@ void runTestCases(int numCase, int numCorrect) {
         Input input = parseInput();
 
         vector<bool> infected(input.nNodes, false);
-        int counter = 0;
 
         AdjacencyMatrix adjMatrix = createAdjacencyMatrix(input);
 
-        runTestCase(adjMatrix, counter, infected);
+        runTestCase(adjMatrix, infected);
 
         answerTestCase(infected, input.nNodes);
 
