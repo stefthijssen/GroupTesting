@@ -1,1 +1,1 @@
-cd build && ncat -c ./GroupTesting group-testing.maarse.xyz 6525
+cd build && make && ncat -c ./GroupTestingAdjacentyMatrix group-testing.maarse.xyz 6525
