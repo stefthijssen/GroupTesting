@@ -123,7 +123,7 @@ public:
                 continue;
 
             float diff = calcDifference(adj[currentIndex], adj[i]);
-            cerr << "At: " << i << "Difference: " << diff << endl;
+            // cerr << "At: " << i << "Difference: " << diff << endl;
 
             if (diff <= acceptable && visited[i] == false)
             {
@@ -148,7 +148,7 @@ public:
         }
         float answer = diff/(averageGraphDensity*2);
         return answer;
-    } 
+    }
     void bfs(int src)
     {
         resetVisited();
@@ -248,7 +248,6 @@ Input parseInput()
 }
 
 void testGraph(vi pair) {
-
     /* DEBUG */
     cerr << " Number of nodes per subgraph: " << pair.size() << endl << flush;
     /* DEBUG */
@@ -362,14 +361,16 @@ void runTestCase(AdjacencyMatrix &adjMatrix, vector<bool> &infected) {
         updateInfected(pairs.at(i), infected, toTest);
     }
 
-    // This can be replaced by recursion later on.
-    manualTest(toTest, infected);
+    // if (toTest.size() > 0) {
+    //     recursiveTest(adjMatrix, toTest, counter, infected, 0);
+    // }
 
     // Test the rest manually
     manualTest(toTest, infected);
 }
 
 void answerTestCase(vector<bool> &infected, int nNodes) {
+    cout << "answer ";
     bool first = true;
     for (int i = 0; i < nNodes; i++)
     {
