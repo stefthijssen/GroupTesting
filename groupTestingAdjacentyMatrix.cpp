@@ -125,7 +125,7 @@ public:
         accepted.push_back(currentIndex);
         for (size_t i = 0; i < n; i++)
         {
-            cerr << "At: " << i << "Difference: " << difference[i] << endl;
+            // cerr << "At: " << i << "Difference: " << difference[i] << endl;
 
             if (i == currentIndex)
                 continue;
@@ -153,7 +153,7 @@ public:
         }
         float answer = diff/(averageGraphDensity*2);
         return answer;
-    }
+    } 
     void bfs(int src)
     {
         resetVisited();
