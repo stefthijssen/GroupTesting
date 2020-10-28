@@ -14,7 +14,7 @@ typedef vector<ii> vii;
 typedef int64_t ll;
 
 float treshold = -0.1;
-int minGroups = 2;
+int minGroups = 4;
 struct Input
 {
     int nNodes;
@@ -114,10 +114,8 @@ public:
         cerr << "max infected: " << input.maxInfected << endl;
         cerr << "N infected: " << input.nInfected << endl;
         cerr << "chance infected: " << input.infectionChance << endl;
-        cerr << "nodes : " << input.nNodes << endl;
 
         float acceptable = 1 - input.infectionChance + treshold;
-
         // cerr << " Acceptable rate: " << acceptable << endl;
         // acceptable = average + (average * treshold);
 
@@ -126,7 +124,6 @@ public:
         int next;
         if (input.nEdges < n || input.infectionChance < 0.1)
         {
-            minGroups = n % input.maxInfected;
             for (size_t i = currentIndex; i < currentIndex + (n / minGroups); i++)
             {
                 if (i == currentIndex)
@@ -219,6 +216,8 @@ public:
         }
     }
 };
+
+
 
 // Parses the cin into the Input struct
 Input parseInput()
