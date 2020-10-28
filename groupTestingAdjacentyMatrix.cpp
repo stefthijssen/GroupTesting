@@ -13,7 +13,8 @@ typedef pair<int, int> ii;
 typedef vector<ii> vii;
 typedef int64_t ll;
 
-float treshold = 0.25;
+float treshold = 0.75;
+int recursionThreshold = 10;
 
 struct Point
 {
@@ -331,10 +332,8 @@ void unvisitPairsInMatrix(vvi pairs, AdjacencyMatrix &adjMatrix) {
     }
 }
 
-void recursiveTest(AdjacencyMatrix &adjMatrix, vvi inputPairs, vector<bool> &infected, int c) {
-    if (c >= 5) {
-        manualTest(inputPairs, infected);
-    }
+void recursiveTest(AdjacencyMatrix &adjMatrix, vvi inputPairs, vector<bool> &infected, int times) {
+    cerr << "recursive test: " << inputPairs.size() << ", times: " << times << endl;
     unvisitPairsInMatrix(inputPairs, adjMatrix);
     vector<vector<int>> pairs;
     pairs = adjMatrix.findDenseSubGraph(0, pairs);
@@ -346,11 +345,21 @@ void recursiveTest(AdjacencyMatrix &adjMatrix, vvi inputPairs, vector<bool> &inf
         updateInfected(pairs.at(i), infected, toTest);
     }
 
-    if (toTest.size() == 0) {
-        return;
-    }
+    if (toTest.size() > 0) {
+        vvi recursiveTestPairs;
+        vvi manualTestPairs;
 
-    recursiveTest(adjMatrix, toTest, infected, c++);
+        for (int i = 0; i < toTest.size(); i++) {
+            if (toTest.at(i).size() > recursionThreshold * times) {
+                recursiveTestPairs.push_back(toTest.at(i));
+            } else {
+                manualTestPairs.push_back(toTest.at(i));
+            }
+        }
+
+        recursiveTest(adjMatrix, recursiveTestPairs, infected, times+1);
+        manualTest(manualTestPairs, infected);
+    }
 }
 
 void runTestCase(AdjacencyMatrix &adjMatrix, vector<bool> &infected) {
@@ -366,12 +375,22 @@ void runTestCase(AdjacencyMatrix &adjMatrix, vector<bool> &infected) {
         updateInfected(pairs.at(i), infected, toTest);
     }
 
-    // if (toTest.size() > 0) {
-    //     recursiveTest(adjMatrix, toTest, counter, infected, 0);
-    // }
+    if (toTest.size() > 0) {
+        vvi recursiveTestPairs;
+        vvi manualTestPairs;
 
-    // Test the rest manually
-    manualTest(toTest, infected);
+        for (int i = 0; i < toTest.size(); i++) {
+            if (toTest.at(i).size() > recursionThreshold) {
+                recursiveTestPairs.push_back(toTest.at(i));
+                cerr << "recursive test: " << toTest.at(i).size() << endl;
+            } else {
+                manualTestPairs.push_back(toTest.at(i));
+            }
+        }
+
+        recursiveTest(adjMatrix, recursiveTestPairs, infected, 1);
+        manualTest(manualTestPairs, infected);
+    }
 }
 
 void answerTestCase(vector<bool> &infected, int nNodes) {
