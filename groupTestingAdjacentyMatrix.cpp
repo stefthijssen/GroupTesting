@@ -248,80 +248,65 @@ Input parseInput()
     return input;
 }
 
-void testGraph(vvi pairs, int index)
-{
-    // cerr << " Number of nodes per subgraph: " << pairs.at(i).size() << endl
-    //      << flush;
-    cout << "test ";
-    for (size_t j = 0; j < pairs.at(index).size(); j++)
-    {
-        // cerr << "At: " << pairs.at(i).at(j) << endl
-        //      << flush;
-        cout << pairs.at(index).at(j);
-        cout << " ";
-    }
-    cout << endl
-         << flush << endl;
-}
-
 void testGraph(vi pair, int counter) {
     counter++;
 
     /* DEBUG */
-    cerr << " Number of nodes per subgraph: " << pair.size() << endl << flush;
+    // cerr << " Number of nodes per subgraph: " << pair.size() << endl << flush;
     /* DEBUG */
 
     cout << "test";
     for (size_t j = 0; j < pair.size(); j++)
     {
         /* DEBUG */
-        cerr << "At: " << pair.at(j) << endl << flush;
+        // cerr << "At: " << pair.at(j) << endl << flush;
         /* DEBUG */
 
         cout << " ";
         cout << pair.at(j);
     }
+
+    cout << endl << flush << endl;
     
     /* DEBUG */
-    cerr << pair.at(0) << endl << flush << endl;
+    // cerr << pair.at(0) << endl << flush << endl;
     /* DEBUG */
 }
 
-vvi updateInfected(vvi subgraphs, vector<bool> infected) {
-    vvi toTest;
-    for (size_t i = 0; i < subgraphs.size(); i++)
+void updateInfected(vi subgraph, vector<bool> infected, vvi toTest) {
+    string result;
+    cin >> result;
+    bool boolResult;
+    if (result == "true")
     {
-        string result;
-        cin >> result;
-        if (result == "true")
-        {
-            /* DEBUG */
-            cerr << i << endl;
-            /* DEBUG */
+        /* DEBUG */
+        // cerr << index << endl;
+        /* DEBUG */
 
-            if (subgraphs.at(i).size() > 1) {
-                toTest.push_back(subgraphs.at(i));
-            }
-
-            for (int j = 0; j < subgraphs.at(i).size(); j++) {
-                infected[j] = true;
-            }
+        if (subgraph.size() > 1) {
+            toTest.push_back(subgraph);
         }
+
+        boolResult = true;
+    } else {
+        boolResult = false;
     }
 
-    return toTest;
+    for (int j = 0; j < subgraph.size(); j++) {
+        infected[subgraph.at(j)] = boolResult;
+    }
 }
 
 void manualTest(vvi toTest, int counter, vector<bool> infected) {
+    vvi result;
+
     for (size_t i = 0; i < toTest.size(); i++) {
         testGraph(toTest.at(i), counter);
+        updateInfected(toTest.at(i), infected, result);
     }
 
-    cout << endl << flush << endl;
-
-    vvi result = updateInfected(toTest, infected);
-
-    if (result.size()) {
+    if (result.size() != 0) {
+        // TODO: remove later
         cerr << "ERROR THIS SHOULDN'T HAPPEN" << endl;
     }
 }
@@ -331,14 +316,13 @@ void runTestCase(AdjacencyMatrix adjMatrix, int counter, vector<bool> infected) 
 
     pairs = adjMatrix.findDenseSubGraph(0, pairs);
 
+    vvi toTest;
+
     for (size_t i = 0; i < pairs.size(); i++)
     {
         testGraph(pairs.at(i), counter);
+        updateInfected(pairs.at(i), infected, toTest);
     }
-
-    cout << endl << flush << endl;
-
-    vvi toTest = updateInfected(pairs, infected);
 
     // This can be replaced by recursion later on.
     manualTest(toTest, counter, infected);
