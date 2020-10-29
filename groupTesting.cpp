@@ -190,14 +190,26 @@ void runTestCases(int numCase, int &numCorrect)
         AdjacencyMatrix adjMatrix = createAdjacencyMatrix(input);
         if (averageInfectionRate >= 0.2)
         {
-            vector<vector<int>> pairs;
-            pairs = adjMatrix.findDenseSubGraph(0, pairs, 0);
             vi nodes;
-            for (size_t i = 0; i < pairs.size(); i++)
+            if (input.infectionChance >= 0.3)
             {
-                for (size_t j = 0; j < pairs.at(i).size(); j++)
+                vector<vector<int>> pairs;
+
+                pairs = adjMatrix.findDenseSubGraph(0, pairs, 0);
+
+                for (size_t i = 0; i < pairs.size(); i++)
                 {
-                    nodes.push_back(pairs.at(i).at(j));
+                    for (size_t j = 0; j < pairs.at(i).size(); j++)
+                    {
+                        nodes.push_back(pairs.at(i).at(j));
+                    }
+                }
+            }
+            else
+            {
+                for (size_t i = 0; i < input.nNodes; i++)
+                {
+                    nodes.push_back(i);
                 }
             }
 
