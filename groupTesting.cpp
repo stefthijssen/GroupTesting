@@ -1,266 +1,169 @@
 #include <iostream>
 #include <fstream>
 #include <vector>
+#include <queue>
+#include <algorithm>
+#include <numeric>
+#include <tgmath.h>
+
+#include "utils/credentials.cpp"
+#include "utils/testHelpers.cpp"
+#include "utils/inputParser.cpp"
+
+#include "algorithms/adjacencyMatrix.cpp"
+#include "algorithms/splitTest.cpp"
+
+#include "structs/input.h"
+
 using namespace std;
 
-typedef vector<int> vi;
-typedef vector<vi> vvi;
-typedef pair<int,int> ii;
-typedef vector<ii> vii;
-typedef int64_t ll;
+float treshold = -0.1;
 
-typedef struct Node {
-	int index;
-	vector<Node> adjacentNodes;
-	vector<Node> visitedNodes;
-	vector<Node> toVisitNodes;
-	struct Node* prev = NULL;
-	bool visited = false;
-	bool partOfSubgraph = false;
-} Node;
+int recursionThreshold = 10;
+float thresholdRecursionStep = 0.1;
 
-struct graphDatastructures {
-	vvi intGraph;
-	vii edges;
-	vector<Node> nodeGraph;
-};
+void recursiveTest(AdjacencyMatrix &adjMatrix, vvi inputPairs, vector<bool> &infected, float threshold)
+{
+    cerr << "recursive test: " << inputPairs.size() << ", threshold: " << threshold << endl;
+    unvisitPairsInMatrix(inputPairs, adjMatrix);
+    vector<vector<int>> pairs;
+    pairs = adjMatrix.findDenseSubGraph(0, pairs, threshold);
+    vvi toTest;
 
-struct Input {
-	int nNodes;
-	int nEdges;
-	int nInfected;
-	long double infectionChance;
-	int minInfected;
-	int maxInfected;
-	vector<Node> nodeGraph;
-	vvi graph;
-	vii edges;
-};
+    for (size_t i = 0; i < pairs.size(); i++)
+    {
+        testGraph(pairs.at(i));
+        updateInfected(pairs.at(i), infected, toTest);
+    }
 
-Node& findOrInitializeNode(vector<Node> graph, int index) {
-	for (Node node : graph) {
-		if (node.index == index) {
-			return node;
-		}
-	}
-	
-	vector<Node> adjacencyList;
-	vector<Node> toVisitNodes;
-	vector<Node> visitedNodes;
-	Node node = {
-		index,
-		adjacencyList,
-		toVisitNodes,
-		visitedNodes
-	};
+    if (toTest.size() > 0)
+    {
+        vvi recursiveTestPairs;
+        vvi manualTestPairs;
 
-	graph.push_back(node);
+        for (int i = 0; i < toTest.size(); i++)
+        {
+            if (toTest.at(i).size() > recursionThreshold)
+            {
+                recursiveTestPairs.push_back(toTest.at(i));
+            }
+            else
+            {
+                manualTestPairs.push_back(toTest.at(i));
+            }
+        }
 
-	return node;
+        float newThreshold = threshold - thresholdRecursionStep;
+        cerr << "newThreshold: " << newThreshold << endl;
+        recursiveTest(adjMatrix, recursiveTestPairs, infected, newThreshold);
+        manualTest(manualTestPairs, infected);
+    }
 }
 
-// Creates a graph adjacency list and a edge pairing list
-graphDatastructures parseGraph(int nEdges, int nNodes) {
-	vvi intGraph(nEdges);
-	vii edges(nEdges);
-	vector<Node> nodeGraph(nNodes);
-	for (int i = 0; i < nEdges; i++) {
-		int a, b;
-		cin >> a >> b;
-		// create node graph
-		Node nodeA = findOrInitializeNode(nodeGraph, a); 
-		Node nodeB = findOrInitializeNode(nodeGraph, b);
-		nodeA.adjacentNodes.push_back(nodeB);
-		nodeB.adjacentNodes.push_back(nodeA);
-		cerr << "size:" << nodeA.adjacentNodes.size() << endl;
+void runTestCaseSpreadGraph(vi nodes, vector<bool> &infected, int maxInfected)
+{
+    int middle = nodes.size() / 2;
+    int infectedCounter = 0;
 
-		// create int graph
-		intGraph[a].push_back(b);
-		intGraph[b].push_back(a);
+    cerr << maxInfected << endl;
 
-		// create edges
-		ii edge1 = { a, b };
-		ii edge2 = { b, a };
-		edges.push_back(edge1);
-		edges.push_back(edge2);
-	}
-
-	graphDatastructures datastructures = { 
-		intGraph, 
-		edges,
-		nodeGraph
-	};
-
-	return datastructures;
+    splitTest(nodes, 0, middle, infected, infectedCounter, maxInfected);
+    splitTest(nodes, middle, nodes.size(), infected, infectedCounter, maxInfected);
 }
 
-// Parses the cin into the Input struct
-Input parseInput() {
-	int nNodes, nEdges, nInfected;
-	cin >> nNodes >> nEdges >> nInfected;
-	long double infectionChance;
-	cin >> infectionChance;
-	int minInfected, maxInfected;
-	cin >> minInfected >> maxInfected;
-	
-	graphDatastructures datastructures = parseGraph(nEdges, nNodes);
-	vvi intGraph = datastructures.intGraph;
-	vii edges = datastructures.edges;
-	vector<Node> nodeGraph = datastructures.nodeGraph;
+void runTestCaseGroupedGraph(AdjacencyMatrix &adjMatrix, vector<bool> &infected)
+{
+    vector<vector<int>> pairs;
+    int minGroups = 2;
+    pairs = adjMatrix.findDenseSubGraph(0, pairs, baseThreshold);
+    std::sort(pairs.begin(), pairs.end(), [](const vector<int> &a, const vector<int> &b) { return a.size() > b.size(); });
+    vvi toTest;
 
-	Input input = {
-		nNodes,
-		nEdges,
-		nInfected,
-		infectionChance,
-		minInfected,
-		maxInfected,
-		nodeGraph,
-		intGraph,
-		edges
-	};
+    for (size_t i = 0; i < pairs.size(); i++)
+    {
+        testGraph(pairs.at(i));
+        updateInfected(pairs.at(i), infected, toTest);
+    }
 
-	return input;
+    if (toTest.size() > 0)
+    {
+        vvi recursiveTestPairs;
+        vvi manualTestPairs;
+
+        for (int i = 0; i < toTest.size(); i++)
+        {
+            if (toTest.at(i).size() > recursionThreshold)
+            {
+                recursiveTestPairs.push_back(toTest.at(i));
+            }
+            else
+            {
+                manualTestPairs.push_back(toTest.at(i));
+            }
+        }
+
+        float newThreshold = baseThreshold - thresholdRecursionStep;
+
+        recursiveTest(adjMatrix, recursiveTestPairs, infected, newThreshold);
+        manualTest(manualTestPairs, infected);
+    }
 }
 
-void visitNode(Node node, vector<vector<Node>> subGraphs, Node* previous) {
-	// Check if node has been visited.
-	if (node.visited == true) {
-		// If there are other nodes left to visit that are not part of an answer visit them.
-		bool backtrack = true;
-		for (Node toVisitNode : node.toVisitNodes) {
-			if (!toVisitNode.partOfSubgraph) {
-				backtrack = false;
-				visitNode(node.toVisitNodes.front(), subGraphs, &node);
-			}
-		}
+void runTestCases(int numCase, int &numCorrect)
+{
+    for (int testcase = 1; testcase <= numCase; testcase++)
+    {
+        Input input = parseInput();
+        vector<bool> infected(input.nNodes, false);
+        cerr << "infection chance: " << input.infectionChance << endl;
+        float nAverageUpperboundInfected = (float)input.maxInfected / (float)input.nNodes;
+        float nAverageLowerboundInfected = (float)input.minInfected / (float)input.nNodes;
+        float averageInfectionRate = (float)(nAverageUpperboundInfected + nAverageLowerboundInfected) / 2;
+        cerr << "average infection rate: " << averageInfectionRate << endl;
+        cerr << "Number of edges: " << input.nEdges << endl;
+        nTests = 0;
+        AdjacencyMatrix adjMatrix = createAdjacencyMatrix(input);
 
-		// Otherwise backtrack further.
-		if (backtrack == true) {
-			// Stop if backtracking isn't possible.
-			if (node.prev == NULL) {
-				return;
-			} else {
-				visitNode(*node.prev, subGraphs, previous);
-			}
-		}
-	}
+        if (input.nEdges < input.nNodes || (input.infectionChance < 0.1 && averageInfectionRate < 0.15))
+        {
+            vi nodes;
+            for (size_t i = 0; i < input.nNodes; i++)
+            {
+                nodes.push_back(i);
+            }
 
-	// Mark this node as visited.
-	node.visited = true;
-	node.prev = previous;
+            runTestCaseSpreadGraph(nodes, infected, input.maxInfected);
+        }
+        else
+        {
+            runTestCaseGroupedGraph(adjMatrix, infected);
+        }
 
-	// Sort nodes based on if they are visited already or not.
-	for (Node adjacentNode : node.adjacentNodes) {
-		if (node.visited == false) {
-			node.toVisitNodes.push_back(adjacentNode);
-		} else {
-			node.visitedNodes.push_back(adjacentNode);
-		}
-	}
+        answerTestCase(infected, input.nNodes);
 
-	// If no nodes are left to visit then create subgraph and start backtracking.
-	if (node.toVisitNodes.empty()) {
-		// Create subGraph
-		vector<Node> subGraph;
-
-		for (Node visitedNode : node.visitedNodes) {
-			visitedNode.partOfSubgraph = true;
-			subGraph.push_back(node);
-		}
-
-		node.partOfSubgraph = true;
-		subGraph.push_back(node);
-
-		// Add Subgraph
-		subGraphs.push_back(subGraph);
-
-		// Backtrack
-		if (node.prev == NULL) {
-			return;
-		} else {
-			visitNode(*node.prev, subGraphs, previous);
-		}
-	}
-
-	// Continue visiting nodes
-	Node next = node.toVisitNodes.front();
-	visitNode(next, subGraphs, &node);
+        // read in the result and show it to the user
+        string result;
+        cin >> result;
+        cerr << "Test case " << testcase << ": " << result << endl;
+        if (result == "success")
+            numCorrect++;
+        cerr << "Number of tests used for: " << nTests << " for a total of nodes: " << input.nNodes << endl;
+    }
 }
 
-vector<vector<Node>> findDenseSubgraphs(vector<Node> graph) {
-	vector<vector<Node>> subGraphs;
+int main()
+{
+    handleCredentials();
 
-	Node node = graph.front();
-	
-	visitNode(node, subGraphs, NULL);
+    int numCase;
+    cin >> numCase;
+    cerr << "number of test cases: " << numCase << endl
+         << flush << endl;
+    int numCorrect = 0;
 
-	return subGraphs;
-}
+    runTestCases(numCase, numCorrect);
 
-int main() {
-	fstream credFile("../credentials");
-	string username, password;
-	credFile >>username >> password;
-	// and send them to the server
-	cout << username << endl << flush;
-	cout << password << endl << flush;
+    cerr << numCorrect << "/" << numCase << " correct" << endl;
 
-	// read the number of cases and report it to the user
-	int numCase;
-	cin >> numCase;
-	// using cerr prints it to console instead of to the server
-	cerr << "number of test cases: " << numCase << endl;
-	int numCorrect = 0;
-	// loop over all testcases
-	for (int testcase = 1; testcase <= numCase; testcase++) {
-		Input input = parseInput();
-
-		vector<vector<Node>> subGraphs = findDenseSubgraphs(input.nodeGraph);
-		cerr << "subGraph size: "<< subGraphs.size() << endl;
-		cerr << "nodeGraph size: " << input.nodeGraph.size() << endl;
-
-		// test everyone individually (basic solution, gets you no points)
-		vector<bool> infected(input.nNodes,false);
-		for (int i = 0; i < input.nNodes; i++) {
-			// always flush after endline, otherwise it might not send it
-			// immediately to the server but keep it in buffer.
-			cout << "test " << i << endl << flush << endl;
-		}
-		// read in results of those tests
-		// note: separating sending/receiving means we don't have to wait
-		// each test for the packet to travel to the server and back.
-		for (int i = 0; i < input.nNodes; i++) {
-			string result;
-			cin >> result;
-			if (result == "true") {
-				infected[i] = true;
-			}
-		}
-
-		// hand in the answer
-		cout << "answer ";
-		bool first = true;
-		for (int i = 0; i < input.nNodes; i++) {
-			if (infected[i]) {
-				if (not first) {
-					cout << " ";
-				}
-				cout << i;
-				first = false;
-			}
-		}
-		cout << endl << flush;
-
-		// read in the result and show it to the user
-		string result;
-		cin >> result;
-		cerr << "Test case " << testcase << ": " << result << endl;
-		if (result == "success") numCorrect++;
-	}
-
-	// tell the user how many testcases were correct
-	cerr << numCorrect << "/" << numCase << " correct" << endl;
-
-	return 0;
+    return 0;
 }
