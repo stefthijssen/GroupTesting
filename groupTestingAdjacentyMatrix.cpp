@@ -101,7 +101,7 @@ public:
     {
         visited[n] = value;
     }
-    vector<vector<int>> findDenseSubGraph(int currentIndex, vector<vector<int>> pairs, float threshold, int minGroups)
+    vector<vector<int>> findDenseSubGraph(int currentIndex, vector<vector<int>> pairs, float threshold)
     {
 
         if (currentIndex >= n)
@@ -111,7 +111,7 @@ public:
         if (visited[currentIndex])
         {
             int next = currentIndex + 1;
-            return findDenseSubGraph(next, pairs, threshold,minGroups);
+            return findDenseSubGraph(next, pairs, threshold);
         }
         visited[currentIndex] = true;
 
@@ -130,41 +130,26 @@ public:
         vector<int> accepted;
         accepted.push_back(currentIndex);
         int next;
-        if (input.nEdges < n || input.infectionChance < 0.1)
-        {
-            for (size_t i = currentIndex; i < currentIndex + (n / minGroups); i++)
-            {
 
-                // cerr << "At: " << i << "Difference: " << difference[i] << endl;
-                if (i == currentIndex || visited[i])
-                    continue;
+        for (size_t i = 0; i < n; i++)
+        {
+            float diff = calcDifference(adj[currentIndex], adj[i]);
+            // cerr << "At: " << i << "Difference: " << diff << endl;
+
+            if (i == currentIndex)
+                continue;
+            // cerr << diff << endl;
+            if (diff <= acceptable && visited[i] == false)
+            {
                 visited[i] = true;
                 accepted.push_back(i);
             }
-
-            next = currentIndex + (n / minGroups);
         }
-        else
-        {
-            for (size_t i = 0; i < n; i++)
-            {
-                float diff = calcDifference(adj[currentIndex], adj[i]);
-                // cerr << "At: " << i << "Difference: " << diff << endl;
 
-                if (i == currentIndex)
-                    continue;
-                // cerr << diff << endl;
-                if (diff <= acceptable && visited[i] == false)
-                {
-                    visited[i] = true;
-                    accepted.push_back(i);
-                }
-            }
+        next = currentIndex + 1;
 
-            next = currentIndex + 1;
-        }
         pairs.push_back(accepted);
-        return findDenseSubGraph(next, pairs, baseThreshold, minGroups);
+        return findDenseSubGraph(next, pairs, baseThreshold);
     }
     float calcDifference(int arr1[], int arr2[])
     {
@@ -369,12 +354,12 @@ void unvisitPairsInMatrix(vvi pairs, AdjacencyMatrix &adjMatrix)
     }
 }
 
-void recursiveTest(AdjacencyMatrix &adjMatrix, vvi inputPairs, vector<bool> &infected, float threshold, int minGroups)
+void recursiveTest(AdjacencyMatrix &adjMatrix, vvi inputPairs, vector<bool> &infected, float threshold)
 {
     cerr << "recursive test: " << inputPairs.size() << ", threshold: " << threshold << endl;
     unvisitPairsInMatrix(inputPairs, adjMatrix);
     vector<vector<int>> pairs;
-    pairs = adjMatrix.findDenseSubGraph(0, pairs, threshold, minGroups);
+    pairs = adjMatrix.findDenseSubGraph(0, pairs, threshold);
     vvi toTest;
 
     for (size_t i = 0; i < pairs.size(); i++)
@@ -402,8 +387,7 @@ void recursiveTest(AdjacencyMatrix &adjMatrix, vvi inputPairs, vector<bool> &inf
 
         float newThreshold = threshold - thresholdRecursionStep;
         cerr << "newThreshold: " << newThreshold << endl;
-        minGroups = minGroups * 2;
-        recursiveTest(adjMatrix, recursiveTestPairs, infected, newThreshold, minGroups);
+        recursiveTest(adjMatrix, recursiveTestPairs, infected, newThreshold);
         manualTest(manualTestPairs, infected);
     }
 }
@@ -412,7 +396,7 @@ void runTestCase(AdjacencyMatrix &adjMatrix, vector<bool> &infected)
 {
     vector<vector<int>> pairs;
     int minGroups = 2;
-    pairs = adjMatrix.findDenseSubGraph(0, pairs, baseThreshold, minGroups);
+    pairs = adjMatrix.findDenseSubGraph(0, pairs, baseThreshold);
 
     vvi toTest;
 
@@ -441,7 +425,7 @@ void runTestCase(AdjacencyMatrix &adjMatrix, vector<bool> &infected)
 
         float newThreshold = baseThreshold - thresholdRecursionStep;
 
-        recursiveTest(adjMatrix, recursiveTestPairs, infected, newThreshold, (minGroups*2));
+        recursiveTest(adjMatrix, recursiveTestPairs, infected, newThreshold);
         manualTest(manualTestPairs, infected);
     }
 }
