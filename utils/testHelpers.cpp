@@ -2,36 +2,23 @@
 #include <fstream>
 #include <vector>
 
-#include "../structs/input.h"
+#include "../headers/input.h"
+#include "../headers/global.h"
 
 using namespace std;
 
-
-
-void testGraph(vi pair)
+void testNodes(vi nodes)
 {
-    /* DEBUG */
-    cerr << " Number of nodes per subgraph: " << pair.size() << endl
-         << flush;
-    /* DEBUG */
-
     cout << "test";
-    for (size_t j = 0; j < pair.size(); j++)
+    for (size_t j = 0; j < nodes.size(); j++)
     {
-        /* DEBUG */
-        // cerr << "At: " << pair.at(j) << endl << flush;
-        /* DEBUG */
-
         cout << " ";
-        cout << pair.at(j);
+        cout << nodes.at(j);
     }
 
     cout << endl
          << flush << endl;
     nTests = nTests + 1;
-    /* DEBUG */
-    // cerr << pair.at(0) << endl << flush << endl;
-    /* DEBUG */
 }
 
 bool retrieveTestResult()
@@ -84,19 +71,15 @@ void manualTest(vvi toTest, vector<bool> &infected)
     {
         for (size_t j = 0; j < toTest.at(i).size(); j++)
         {
-            string result;
-            cin >> result;
-            bool boolResult;
-            if (result == "true")
-            {
-                boolResult = true;
-            }
-            else
-            {
-                boolResult = false;
+            bool result = retrieveTestResult();
+
+            if (result == false) {
+                nonInfectedFound++;
+            } else {
+                infectedFound++;
             }
 
-            infected[toTest.at(i).at(j)] = boolResult;
+            infected[toTest.at(i).at(j)] = result;
         }
     }
 }
@@ -105,13 +88,37 @@ void updateInfected(vi subgraph, vector<bool> &infected, vvi &toTest)
 {
     bool result = retrieveTestResult();
 
-    if (result == true && subgraph.size() > 1)
+    if (result == true)
     {
-        toTest.push_back(subgraph);
+        if (subgraph.size() > 1) {
+            toTest.push_back(subgraph);
+        } else {
+            infectedFound++;
+        }
     }
 
     for (int j = 0; j < subgraph.size(); j++)
     {
         infected[subgraph.at(j)] = result;
     }
+}
+
+bool remainingTestsAreNegative(Input input) {
+    bool remainingTestAreNegative = infectedFound >= input.maxInfected;
+
+    if (remainingTestAreNegative) {
+        cerr << "MaxBound: " << input.maxInfected << endl;
+        cerr << "Infected: " << infectedFound << endl;
+        cerr << "STOP: remaining is negative (maxbound)" << endl;
+    }
+
+    return remainingTestAreNegative;
+}
+
+bool remainingTestsArePositive(Input input) {
+    bool remainingTestArePositive = (input.nNodes - nonInfectedFound) <= input.minInfected;
+    if (remainingTestArePositive) {
+        cerr << "STOP: remaining is positive (minbound)" << endl;
+    }
+    return remainingTestArePositive;
 }

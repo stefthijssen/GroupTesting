@@ -8,8 +8,6 @@ typedef std::vector<vi> vvi;
 typedef std::pair<int, int> ii;
 typedef std::vector<ii> vii;
 
-int nTests;
-
 struct Input
 {
     int nNodes;
