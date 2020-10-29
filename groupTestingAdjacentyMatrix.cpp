@@ -392,7 +392,51 @@ void recursiveTest(AdjacencyMatrix &adjMatrix, vvi inputPairs, vector<bool> &inf
     }
 }
 
-void runTestCase(AdjacencyMatrix &adjMatrix, vector<bool> &infected)
+void splitTest(vi nodes, int left, int right, vector<bool> &infected) {
+    int size = right - left;
+    int middle = size/2;
+
+    // test
+    cout << "test" << endl;
+    for (int i = 0; i < size; i++) {
+        cout << " " << left+i;
+    }
+
+    cout << endl << flush << endl;
+
+    // read
+    string result;
+    cin >> result;
+    bool boolResult;
+    if (result == "true")
+    {
+        boolResult = true;
+    }
+    else
+    {
+        boolResult = false;
+    }
+
+    for (int i = 0; i < size; i++) {
+        infected[left+i] = boolResult;
+    }    
+    
+    if (size <= 2 || boolResult == false) {
+        return;
+    }
+
+    splitTest(nodes, left, middle, infected);
+    splitTest(nodes, middle+1, right, infected);
+}
+
+void runTestCaseSpreadGraph(vi nodes, vector<bool> &infected) {
+    int middle = nodes.size()/2;
+
+    splitTest(nodes, 0, middle, infected);
+    splitTest(nodes, middle+1, nodes.size()/2, infected);
+}
+
+void runTestCaseGroupedGraph(AdjacencyMatrix &adjMatrix, vector<bool> &infected)
 {
     vector<vector<int>> pairs;
     int minGroups = 2;
@@ -484,14 +528,24 @@ void runTestCases(int numCase, int &numCorrect)
     for (int testcase = 1; testcase <= numCase; testcase++)
     {
         Input input = parseInput();
-
         vector<bool> infected(input.nNodes, false);
 
         AdjacencyMatrix adjMatrix = createAdjacencyMatrix(input);
 
-        runTestCase(adjMatrix, infected);
+        if (input.nEdges < input.nNodes || input.infectionChance < 0.1) {
+            vi nodes;
+            for (size_t i = 0; i < input.graph.size(); i++) {
+                nodes.push_back(i);
+            }
 
-        answerTestCase(infected, input.nNodes);
+            runTestCaseSpreadGraph(nodes, infected);
+
+            answerTestCase(infected, input.nNodes);
+        } else {
+            runTestCaseGroupedGraph(adjMatrix, infected);
+
+            answerTestCase(infected, input.nNodes);
+        }
 
         // read in the result and show it to the user
         string result;
