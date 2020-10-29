@@ -1,0 +1,214 @@
+Scanning dependencies of target GroupTestingAdjacentyMatrix
+[ 16%] Building CXX object CMakeFiles/GroupTestingAdjacentyMatrix.dir/groupTestingAdjacentyMatrix.cpp.o
+[ 33%] Linking CXX executable GroupTestingAdjacentyMatrix
+[ 33%] Built target GroupTestingAdjacentyMatrix
+[ 66%] Built target GroupTestingGraph
+[100%] Built target GroupTesting
+number of test cases: 19
+
+ Number of nodes per subgraph: 250
+ Number of nodes per subgraph: 250
+recursive test: 2, threshold: -0.2
+ Number of nodes per subgraph: 125
+ Number of nodes per subgraph: 125
+ Number of nodes per subgraph: 125
+ Number of nodes per subgraph: 125
+newThreshold: -0.3
+recursive test: 4, threshold: -0.3
+ Number of nodes per subgraph: 62
+ Number of nodes per subgraph: 62
+ Number of nodes per subgraph: 62
+ Number of nodes per subgraph: 62
+ Number of nodes per subgraph: 62
+ Number of nodes per subgraph: 62
+ Number of nodes per subgraph: 62
+ Number of nodes per subgraph: 62
+ Number of nodes per subgraph: 62
+newThreshold: -0.4
+recursive test: 9, threshold: -0.4
+ Number of nodes per subgraph: 31
+ Number of nodes per subgraph: 31
+ Number of nodes per subgraph: 31
+ Number of nodes per subgraph: 31
+ Number of nodes per subgraph: 31
+ Number of nodes per subgraph: 31
+ Number of nodes per subgraph: 31
+ Number of nodes per subgraph: 31
+ Number of nodes per subgraph: 31
+ Number of nodes per subgraph: 31
+ Number of nodes per subgraph: 31
+ Number of nodes per subgraph: 31
+ Number of nodes per subgraph: 31
+ Number of nodes per subgraph: 31
+ Number of nodes per subgraph: 31
+ Number of nodes per subgraph: 31
+ Number of nodes per subgraph: 31
+newThreshold: -0.5
+recursive test: 17, threshold: -0.5
+ Number of nodes per subgraph: 15
+ Number of nodes per subgraph: 15
+ Number of nodes per subgraph: 15
+ Number of nodes per subgraph: 15
+ Number of nodes per subgraph: 15
+ Number of nodes per subgraph: 15
+ Number of nodes per subgraph: 15
+ Number of nodes per subgraph: 15
+ Number of nodes per subgraph: 15
+ Number of nodes per subgraph: 15
+ Number of nodes per subgraph: 15
+ Number of nodes per subgraph: 15
+ Number of nodes per subgraph: 15
+ Number of nodes per subgraph: 15
+ Number of nodes per subgraph: 15
+ Number of nodes per subgraph: 15
+ Number of nodes per subgraph: 15
+ Number of nodes per subgraph: 15
+ Number of nodes per subgraph: 15
+ Number of nodes per subgraph: 15
+ Number of nodes per subgraph: 15
+ Number of nodes per subgraph: 15
+ Number of nodes per subgraph: 15
+ Number of nodes per subgraph: 15
+ Number of nodes per subgraph: 15
+ Number of nodes per subgraph: 15
+ Number of nodes per subgraph: 15
+ Number of nodes per subgraph: 15
+ Number of nodes per subgraph: 15
+ Number of nodes per subgraph: 15
+ Number of nodes per subgraph: 15
+ Number of nodes per subgraph: 15
+ Number of nodes per subgraph: 15
+ Number of nodes per subgraph: 15
+newThreshold: -0.6
+recursive test: 33, threshold: -0.6
+ Number of nodes per subgraph: 7
+ Number of nodes per subgraph: 7
+ Number of nodes per subgraph: 7
+ Number of nodes per subgraph: 7
+ Number of nodes per subgraph: 7
+ Number of nodes per subgraph: 7
+ Number of nodes per subgraph: 7
+ Number of nodes per subgraph: 7
+ Number of nodes per subgraph: 7
+ Number of nodes per subgraph: 7
+ Number of nodes per subgraph: 7
+ Number of nodes per subgraph: 7
+ Number of nodes per subgraph: 7
+ Number of nodes per subgraph: 7
+ Number of nodes per subgraph: 7
+ Number of nodes per subgraph: 7
+ Number of nodes per subgraph: 7
+ Number of nodes per subgraph: 7
+ Number of nodes per subgraph: 7
+ Number of nodes per subgraph: 7
+ Number of nodes per subgraph: 7
+ Number of nodes per subgraph: 7
+ Number of nodes per subgraph: 7
+ Number of nodes per subgraph: 7
+ Number of nodes per subgraph: 7
+ Number of nodes per subgraph: 7
+ Number of nodes per subgraph: 7
+ Number of nodes per subgraph: 7
+ Number of nodes per subgraph: 7
+ Number of nodes per subgraph: 7
+ Number of nodes per subgraph: 7
+ Number of nodes per subgraph: 7
+ Number of nodes per subgraph: 7
+ Number of nodes per subgraph: 7
+ Number of nodes per subgraph: 7
+ Number of nodes per subgraph: 7
+ Number of nodes per subgraph: 7
+ Number of nodes per subgraph: 7
+ Number of nodes per subgraph: 7
+ Number of nodes per subgraph: 7
+ Number of nodes per subgraph: 7
+ Number of nodes per subgraph: 7
+ Number of nodes per subgraph: 7
+ Number of nodes per subgraph: 7
+ Number of nodes per subgraph: 7
+ Number of nodes per subgraph: 7
+ Number of nodes per subgraph: 7
+ Number of nodes per subgraph: 7
+ Number of nodes per subgraph: 7
+ Number of nodes per subgraph: 7
+ Number of nodes per subgraph: 7
+ Number of nodes per subgraph: 7
+ Number of nodes per subgraph: 7
+ Number of nodes per subgraph: 7
+ Number of nodes per subgraph: 7
+ Number of nodes per subgraph: 7
+ Number of nodes per subgraph: 7
+ Number of nodes per subgraph: 7
+ Number of nodes per subgraph: 7
+ Number of nodes per subgraph: 7
+ Number of nodes per subgraph: 7
+ Number of nodes per subgraph: 7
+ Number of nodes per subgraph: 7
+ Number of nodes per subgraph: 7
+ Number of nodes per subgraph: 7
+ Number of nodes per subgraph: 7
+ Number of nodes per subgraph: 7
+ Number of nodes per subgraph: 7
+ Number of nodes per subgraph: 7
+ Number of nodes per subgraph: 7
+ Number of nodes per subgraph: 7
+newThreshold: -0.7
+recursive test: 0, threshold: -0.7
+Test case 1: success
+ Number of nodes per subgraph: 50
+ Number of nodes per subgraph: 50
+recursive test: 2, threshold: -0.2
+ Number of nodes per subgraph: 25
+ Number of nodes per subgraph: 25
+ Number of nodes per subgraph: 25
+ Number of nodes per subgraph: 25
+newThreshold: -0.3
+recursive test: 4, threshold: -0.3
+ Number of nodes per subgraph: 12
+ Number of nodes per subgraph: 12
+ Number of nodes per subgraph: 12
+ Number of nodes per subgraph: 12
+ Number of nodes per subgraph: 12
+ Number of nodes per subgraph: 12
+ Number of nodes per subgraph: 12
+ Number of nodes per subgraph: 12
+ Number of nodes per subgraph: 12
+newThreshold: -0.4
+recursive test: 8, threshold: -0.4
+ Number of nodes per subgraph: 6
+ Number of nodes per subgraph: 6
+ Number of nodes per subgraph: 6
+ Number of nodes per subgraph: 6
+ Number of nodes per subgraph: 6
+ Number of nodes per subgraph: 6
+ Number of nodes per subgraph: 6
+ Number of nodes per subgraph: 6
+ Number of nodes per subgraph: 6
+ Number of nodes per subgraph: 6
+ Number of nodes per subgraph: 6
+ Number of nodes per subgraph: 6
+ Number of nodes per subgraph: 6
+ Number of nodes per subgraph: 6
+ Number of nodes per subgraph: 6
+ Number of nodes per subgraph: 6
+newThreshold: -0.5
+recursive test: 0, threshold: -0.5
+Test case 2: success
+ Number of nodes per subgraph: 150
+ Number of nodes per subgraph: 150
+recursive test: 2, threshold: -0.2
+ Number of nodes per subgraph: 75
+ Number of nodes per subgraph: 75
+ Number of nodes per subgraph: 75
+ Number of nodes per subgraph: 75
+newThreshold: -0.3
+recursive test: 4, threshold: -0.3
+ Number of nodes per subgraph: 37
+ Number of nodes per subgraph: 37
+ Number of nodes per subgraph: 37
+ Number of nodes per subgraph: 37
+ Number of nodes per subgraph: 37
+ Number of nodes per subgraph: 37
+ Number of nodes per subgraph: 37
+ Number of nodes per subgraph: 37
+ Number of nodes per subgraph: 37

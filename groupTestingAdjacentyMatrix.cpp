@@ -14,13 +14,17 @@ typedef vector<ii> vii;
 typedef int64_t ll;
 
 float treshold = -0.1;
-int minGroups = 4;
+
+float baseThreshold = -0.1;
+int recursionThreshold = 10;
+float thresholdRecursionStep = 0.1;
+
 struct Input
 {
     int nNodes;
     int nEdges;
     int nInfected;
-    float infectionChance;
+    long double infectionChance;
     int minInfected;
     int maxInfected;
     vvi graph;
@@ -93,7 +97,11 @@ public:
             }
         }
     }
-    vector<vector<int>> findDenseSubGraph(int currentIndex, vector<vector<int>> pairs)
+    void setVisited(int n, bool value)
+    {
+        visited[n] = value;
+    }
+    vector<vector<int>> findDenseSubGraph(int currentIndex, vector<vector<int>> pairs, float threshold, int minGroups)
     {
 
         if (currentIndex >= n)
@@ -103,19 +111,19 @@ public:
         if (visited[currentIndex])
         {
             int next = currentIndex + 1;
-            return findDenseSubGraph(next, pairs);
+            return findDenseSubGraph(next, pairs, threshold,minGroups);
         }
         visited[currentIndex] = true;
 
         // float average = accumulate(difference.begin(), difference.end(), 0.0) / n;
 
         // float acceptable = average;
-        cerr << "min infected: " << input.minInfected << endl;
-        cerr << "max infected: " << input.maxInfected << endl;
-        cerr << "N infected: " << input.nInfected << endl;
-        cerr << "chance infected: " << input.infectionChance << endl;
+        // cerr << "min infected: " << input.minInfected << endl;
+        // cerr << "max infected: " << input.maxInfected << endl;
+        // cerr << "N infected: " << input.nInfected << endl;
+        // cerr << "chance infected: " << input.infectionChance << endl;
 
-        float acceptable = 1 - input.infectionChance + treshold;
+        float acceptable = 1 - input.infectionChance + threshold;
         // cerr << " Acceptable rate: " << acceptable << endl;
         // acceptable = average + (average * treshold);
 
@@ -126,11 +134,14 @@ public:
         {
             for (size_t i = currentIndex; i < currentIndex + (n / minGroups); i++)
             {
+
+                // cerr << "At: " << i << "Difference: " << difference[i] << endl;
                 if (i == currentIndex)
                     continue;
-                accepted.push_back(i);
                 visited[i] = true;
+                accepted.push_back(i);
             }
+
             next = currentIndex + (n / minGroups);
         }
         else
@@ -153,7 +164,7 @@ public:
             next = currentIndex + 1;
         }
         pairs.push_back(accepted);
-        return findDenseSubGraph(next, pairs);
+        return findDenseSubGraph(next, pairs, baseThreshold, minGroups);
     }
     float calcDifference(int arr1[], int arr2[])
     {
@@ -217,12 +228,9 @@ public:
     }
 };
 
-
-
 // Parses the cin into the Input struct
 Input parseInput()
 {
-
     int nNodes, nEdges, nInfected;
     cin >> nNodes >> nEdges >> nInfected;
     float infectionChance;
@@ -262,6 +270,7 @@ Input parseInput()
 
     return input;
 }
+
 void testGraph(vi pair)
 {
     /* DEBUG */
@@ -349,41 +358,61 @@ void manualTest(vvi toTest, vector<bool> &infected)
     }
 }
 
-// void unvisitPairsInMatrix(vvi pairs, AdjacencyMatrix &adjMatrix) {
-//     for (size_t i = 0; i < pairs.size(); i++) {
-//         for (size_t j = 0; j < pairs.at(i).size(); j++) {
-//             adjMatrix.setVisited(pairs.at(i).at(j), false);
-//         }
-//     }
-// }
+void unvisitPairsInMatrix(vvi pairs, AdjacencyMatrix &adjMatrix)
+{
+    for (size_t i = 0; i < pairs.size(); i++)
+    {
+        for (size_t j = 0; j < pairs.at(i).size(); j++)
+        {
+            adjMatrix.setVisited(pairs.at(i).at(j), false);
+        }
+    }
+}
 
-// void recursiveTest(AdjacencyMatrix &adjMatrix, vvi inputPairs, vector<bool> &infected, int c) {
-//     if (c >= 5) {
-//         manualTest(inputPairs, infected);
-//     }
-//     unvisitPairsInMatrix(inputPairs, adjMatrix);
-//     vector<vector<int>> pairs;
-//     pairs = adjMatrix.findDenseSubGraph(0, pairs);
-//     vvi toTest;
+void recursiveTest(AdjacencyMatrix &adjMatrix, vvi inputPairs, vector<bool> &infected, float threshold, int minGroups)
+{
+    cerr << "recursive test: " << inputPairs.size() << ", threshold: " << threshold << endl;
+    unvisitPairsInMatrix(inputPairs, adjMatrix);
+    vector<vector<int>> pairs;
+    pairs = adjMatrix.findDenseSubGraph(0, pairs, threshold, minGroups);
+    vvi toTest;
 
-//     for (size_t i = 0; i < pairs.size(); i++)
-//     {
-//         testGraph(pairs.at(i));
-//         updateInfected(pairs.at(i), infected, toTest);
-//     }
+    for (size_t i = 0; i < pairs.size(); i++)
+    {
+        testGraph(pairs.at(i));
+        updateInfected(pairs.at(i), infected, toTest);
+    }
 
-//     if (toTest.size() == 0) {
-//         return;
-//     }
+    if (toTest.size() > 0)
+    {
+        vvi recursiveTestPairs;
+        vvi manualTestPairs;
 
-//     recursiveTest(adjMatrix, toTest, infected, c++);
-// }
+        for (int i = 0; i < toTest.size(); i++)
+        {
+            if (toTest.at(i).size() > recursionThreshold)
+            {
+                recursiveTestPairs.push_back(toTest.at(i));
+            }
+            else
+            {
+                manualTestPairs.push_back(toTest.at(i));
+            }
+        }
+
+        float newThreshold = threshold - thresholdRecursionStep;
+        cerr << "newThreshold: " << newThreshold << endl;
+        minGroups = minGroups * 2;
+        recursiveTest(adjMatrix, recursiveTestPairs, infected, newThreshold, minGroups);
+        manualTest(manualTestPairs, infected);
+    }
+}
 
 void runTestCase(AdjacencyMatrix &adjMatrix, vector<bool> &infected)
 {
     vector<vector<int>> pairs;
-
-    pairs = adjMatrix.findDenseSubGraph(0, pairs);
+    int minGroups = 2;
+    pairs = adjMatrix.findDenseSubGraph(0, pairs, baseThreshold, minGroups);
 
     vvi toTest;
 
@@ -393,12 +422,28 @@ void runTestCase(AdjacencyMatrix &adjMatrix, vector<bool> &infected)
         updateInfected(pairs.at(i), infected, toTest);
     }
 
-    // if (toTest.size() > 0) {
-    //     recursiveTest(adjMatrix, toTest, counter, infected, 0);
-    // }
+    if (toTest.size() > 0)
+    {
+        vvi recursiveTestPairs;
+        vvi manualTestPairs;
 
-    // Test the rest manually
-    manualTest(toTest, infected);
+        for (int i = 0; i < toTest.size(); i++)
+        {
+            if (toTest.at(i).size() > recursionThreshold)
+            {
+                recursiveTestPairs.push_back(toTest.at(i));
+            }
+            else
+            {
+                manualTestPairs.push_back(toTest.at(i));
+            }
+        }
+
+        float newThreshold = baseThreshold - thresholdRecursionStep;
+
+        recursiveTest(adjMatrix, recursiveTestPairs, infected, newThreshold, (minGroups*2));
+        manualTest(manualTestPairs, infected);
+    }
 }
 
 void answerTestCase(vector<bool> &infected, int nNodes)
