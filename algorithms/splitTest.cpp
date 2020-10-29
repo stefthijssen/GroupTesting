@@ -3,7 +3,7 @@
 #include <vector>
 using namespace std;
 
-void splitTest(vi nodes, int left, int right, vector<bool> &infected, int &infectedCounter, int maxInfected, bool isLeft) {
+void splitTest(vi nodes, int left, int right, vector<bool> &infected, int &infectedCounter, int maxInfected) {
     if (infectedCounter > maxInfected) {
         return;
     }

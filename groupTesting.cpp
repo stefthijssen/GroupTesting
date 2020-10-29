@@ -66,8 +66,8 @@ void runTestCaseSpreadGraph(vi nodes, vector<bool> &infected, int maxInfected) {
 
     cerr << maxInfected << endl;
 
-    splitTest(nodes, 0, middle, infected, infectedCounter, maxInfected, true);
-    splitTest(nodes, middle, nodes.size(), infected, infectedCounter, maxInfected, false);
+    splitTest(nodes, 0, middle, infected, infectedCounter, maxInfected);
+    splitTest(nodes, middle, nodes.size(), infected, infectedCounter, maxInfected);
 }
 
 void runTestCaseGroupedGraph(AdjacencyMatrix &adjMatrix, vector<bool> &infected)
