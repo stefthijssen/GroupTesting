@@ -13,24 +13,27 @@
 #include "algorithms/adjacencyMatrix.cpp"
 #include "algorithms/splitTest.cpp"
 
-#include "structs/input.h"
+#include "headers/input.h"
+#include "headers/global.h"
 
 using namespace std;
+
 int groupSize = 8;
 int recursionThreshold = 10;
 float thresholdRecursionStep = 0.1;
 
 void recursiveTest(AdjacencyMatrix &adjMatrix, vvi inputPairs, vector<bool> &infected, float threshold)
 {
-    cerr << "recursive test: " << inputPairs.size() << ", threshold: " << threshold << endl;
     unvisitPairsInMatrix(inputPairs, adjMatrix);
     vector<vector<int>> pairs;
     pairs = adjMatrix.findDenseSubGraph(0, pairs, threshold);
+
+    std::sort(pairs.begin(), pairs.end(), [](const vector<int> &a, const vector<int> &b) { return a.size() > b.size(); });
     vvi toTest;
 
     for (size_t i = 0; i < pairs.size(); i++)
     {
-        testGraph(pairs.at(i));
+        testNodes(pairs.at(i));
         updateInfected(pairs.at(i), infected, toTest);
     }
 
@@ -52,7 +55,6 @@ void recursiveTest(AdjacencyMatrix &adjMatrix, vvi inputPairs, vector<bool> &inf
         }
 
         float newThreshold = threshold - thresholdRecursionStep;
-        cerr << "newThreshold: " << newThreshold << endl;
         recursiveTest(adjMatrix, recursiveTestPairs, infected, newThreshold);
         manualTest(manualTestPairs, infected);
     }
@@ -126,18 +128,16 @@ void runTestCaseGrouped(int groupSize, vi nodes, vector<bool> &infected, int max
     manualTest(pairs, infected);
 }
 
-void runTestCaseSpreadGraph(vi nodes, vector<bool> &infected, int maxInfected)
+void runTestCaseSpreadGraph(vi nodes, vector<bool> &infected, Input input)
 {
     int middle = nodes.size() / 2;
     int infectedCounter = 0;
 
-    cerr << maxInfected << endl;
-
-    splitTest(nodes, 0, middle, infected, infectedCounter, maxInfected);
-    splitTest(nodes, middle, nodes.size(), infected, infectedCounter, maxInfected);
+    splitTest(nodes, 0, middle, infected, input);
+    splitTest(nodes, middle, nodes.size(), infected, input);
 }
 
-void runTestCaseGroupedGraph(AdjacencyMatrix &adjMatrix, vector<bool> &infected)
+void runTestCaseGroupedGraph(AdjacencyMatrix &adjMatrix, vector<bool> &infected, Input input)
 {
     vector<vector<int>> pairs;
     pairs = adjMatrix.findDenseSubGraph(0, pairs, baseThreshold);
@@ -146,8 +146,11 @@ void runTestCaseGroupedGraph(AdjacencyMatrix &adjMatrix, vector<bool> &infected)
 
     for (size_t i = 0; i < pairs.size(); i++)
     {
-        testGraph(pairs.at(i));
+        testNodes(pairs.at(i));
         updateInfected(pairs.at(i), infected, toTest);
+        if (remainingTestsAreNegative(input)) {
+            return;
+        }
     }
 
     if (toTest.size() > 0)
@@ -180,14 +183,18 @@ void runTestCases(int numCase, int &numCorrect)
     {
         Input input = parseInput();
         vector<bool> infected(input.nNodes, false);
-        cerr << "infection chance: " << input.infectionChance << endl;
+        cerr << "   infection chance: " << input.infectionChance << endl;
         float nAverageUpperboundInfected = (float)input.maxInfected / (float)input.nNodes;
         float nAverageLowerboundInfected = (float)input.minInfected / (float)input.nNodes;
         float averageInfectionRate = (float)(nAverageUpperboundInfected + nAverageLowerboundInfected) / 2;
-        cerr << "average infection rate: " << averageInfectionRate << endl;
-        cerr << "Number of edges: " << input.nEdges << endl;
+        cerr << "   nodes: " << input.nNodes << endl;
+        cerr << "   average infection rate: " << averageInfectionRate << endl;
+        cerr << "   number of edges: " << input.nEdges << endl;
         nTests = 0;
+        infectedFound = 0;
+        nonInfectedFound = 0;
         AdjacencyMatrix adjMatrix = createAdjacencyMatrix(input);
+
         if (averageInfectionRate >= 0.2)
         {
             vi nodes;
@@ -213,24 +220,23 @@ void runTestCases(int numCase, int &numCorrect)
                 }
             }
 
-            cerr << "multiple group strategy" << endl;
+            cerr << "METHOD: Group" << endl;
             runTestCaseGrouped(groupSize, nodes, infected, input.maxInfected);
         }
-        else if (input.nEdges < input.nNodes || input.infectionChance < 0.1)
+        else if (input.nEdges < input.nNodes || input.infectionChance < 0.1) // (input.infectionChance < 0.1 && averageInfectionRate < 0.15)
         {
-            cerr << "splitting group strategy" << endl;
             vi nodes;
             for (size_t i = 0; i < input.nNodes; i++)
             {
                 nodes.push_back(i);
             }
 
-            runTestCaseSpreadGraph(nodes, infected, input.maxInfected);
+            runTestCaseSpreadGraph(nodes, infected, input);
         }
         else
         {
-            cerr << "coherant groupping strategy" << endl;
-            runTestCaseGroupedGraph(adjMatrix, infected);
+            cerr << "METHOD: Grouped" << endl;
+            runTestCaseGroupedGraph(adjMatrix, infected, input);
         }
 
         answerTestCase(infected, input.nNodes);
@@ -239,8 +245,13 @@ void runTestCases(int numCase, int &numCorrect)
         string result;
         cin >> result;
         cerr << "Test case " << testcase << ": " << result << endl;
-        if (result == "success")
+        if (result == "success") {
             numCorrect++;
+        } else {
+            for (int i = 0; i < infected.size(); i++) {
+                cerr << i << ": " << infected.at(i) << endl;
+            }
+        }
         cerr << "Number of tests used for: " << nTests << " for a total of nodes: " << input.nNodes << endl;
     }
 }

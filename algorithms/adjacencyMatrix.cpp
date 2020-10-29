@@ -2,8 +2,10 @@
 #include <fstream>
 #include <vector>
 #include <queue>
+#include <numeric>
 
-#include "../structs/input.h"
+#include "../headers/input.h"
+#include "../headers/global.h"
 
 using namespace std;
 

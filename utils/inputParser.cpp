@@ -2,7 +2,7 @@
 #include <fstream>
 #include <vector>
 
-#include "../structs/input.h"
+#include "../headers/input.h"
 
 using namespace std;
 
