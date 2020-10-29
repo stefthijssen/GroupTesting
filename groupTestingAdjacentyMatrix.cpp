@@ -18,6 +18,7 @@ float treshold = -0.1;
 float baseThreshold = -0.1;
 int recursionThreshold = 10;
 float thresholdRecursionStep = 0.1;
+bool skipNextTest = false;
 
 struct Input
 {
@@ -397,9 +398,7 @@ void recursiveTest(AdjacencyMatrix &adjMatrix, vvi inputPairs, vector<bool> &inf
     }
 }
 
-// bool skipNextTest = false;
-
-void splitTest(vi nodes, int left, int right, vector<bool> &infected, int &infectedCounter, int maxInfected) {
+void splitTest(vi nodes, int left, int right, vector<bool> &infected, int &infectedCounter, int maxInfected, bool isLeft) {
     if (infectedCounter > maxInfected) {
         return;
     }
@@ -407,8 +406,7 @@ void splitTest(vi nodes, int left, int right, vector<bool> &infected, int &infec
     int size = right - left;
     int middle = (size/2)+left;
 
-    // if (skipNextTest != false) {
-        cerr << "test" << endl;
+    if (skipNextTest == false) {
         cout << "test";
         for (int i = 0; i < size; i++) {
             cout << " " << left+i;
@@ -423,7 +421,9 @@ void splitTest(vi nodes, int left, int right, vector<bool> &infected, int &infec
             boolResult = true;
         } else {
             boolResult = false;
-            // skipNextTest = true;
+            if (isLeft) {
+                // skipNextTest = true;
+            }
         }
 
         for (int i = 0; i < size; i++) {
@@ -436,13 +436,14 @@ void splitTest(vi nodes, int left, int right, vector<bool> &infected, int &infec
         if (size < 2 || boolResult == false) {
             return;
         }
-    // } else {
-    //     cerr << "skip" << endl;
-    //     skipNextTest = false;
-    // }
+    }
 
-    splitTest(nodes, left, middle, infected, infectedCounter, maxInfected);
-    splitTest(nodes, middle, right, infected, infectedCounter, maxInfected);
+    if (skipNextTest == true) {
+        skipNextTest = false;
+    }
+
+    splitTest(nodes, left, middle, infected, infectedCounter, maxInfected, true);
+    splitTest(nodes, middle, right, infected, infectedCounter, maxInfected, false);
 }
 
 void runTestCaseSpreadGraph(vi nodes, vector<bool> &infected, int maxInfected) {
@@ -451,8 +452,8 @@ void runTestCaseSpreadGraph(vi nodes, vector<bool> &infected, int maxInfected) {
 
     cerr << maxInfected << endl;
 
-    splitTest(nodes, 0, middle, infected, infectedCounter, maxInfected);
-    splitTest(nodes, middle, nodes.size(), infected, infectedCounter, maxInfected);
+    splitTest(nodes, 0, middle, infected, infectedCounter, maxInfected, true);
+    splitTest(nodes, middle, nodes.size(), infected, infectedCounter, maxInfected, false);
 }
 
 void runTestCaseGroupedGraph(AdjacencyMatrix &adjMatrix, vector<bool> &infected)
