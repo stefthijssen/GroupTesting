@@ -15,9 +15,11 @@ typedef int64_t ll;
 
 float treshold = -0.1;
 
-float baseThreshold = -0.1;
+float baseThreshold = 0;
 int recursionThreshold = 10;
 float thresholdRecursionStep = 0.1;
+
+int nTests = 0;
 
 struct Input
 {
@@ -125,10 +127,10 @@ public:
 
         float nAverageUpperboundInfected = (float)input.maxInfected / (float)n;
         float nAverageLowerboundInfected = (float)input.minInfected / (float)n;
-        float averageInfectionRate = (float)(nAverageUpperboundInfected+nAverageLowerboundInfected)/2;
+        float averageInfectionRate = (float)(nAverageUpperboundInfected + nAverageLowerboundInfected) / 2;
         // cerr << averageInfectionRate << endl;
         // cerr << input.infectionChance << endl;
-        float acceptable = 1 - input.infectionChance + threshold - averageInfectionRate; // Higher means less difference will be accepted 
+        float acceptable = 1 - input.infectionChance + threshold - averageInfectionRate; // Higher means less difference will be accepted
         // cerr << " Acceptable rate: " << acceptable << endl;
         // acceptable = average + (average * treshold);
 
@@ -281,7 +283,7 @@ void testGraph(vi pair)
 
     cout << endl
          << flush << endl;
-
+    nTests = nTests + 1;
     /* DEBUG */
     // cerr << pair.at(0) << endl << flush << endl;
     /* DEBUG */
@@ -318,12 +320,14 @@ void updateInfected(vi subgraph, vector<bool> &infected, vvi &toTest)
 
 void manualTest(vvi toTest, vector<bool> &infected)
 {
+
     for (size_t i = 0; i < toTest.size(); i++)
     {
         for (size_t j = 0; j < toTest.at(i).size(); j++)
         {
             cout << "test " << toTest.at(i).at(j) << endl
                  << flush << endl;
+            nTests = nTests + 1;
         }
     }
 
@@ -359,18 +363,24 @@ void unvisitPairsInMatrix(vvi pairs, AdjacencyMatrix &adjMatrix)
     }
 }
 
-void recursiveTest(AdjacencyMatrix &adjMatrix, vvi inputPairs, vector<bool> &infected, float threshold)
+void recursiveTest(AdjacencyMatrix &adjMatrix, vvi inputPairs, vector<bool> &infected, float threshold, Input input)
 {
     cerr << "recursive test: " << inputPairs.size() << ", threshold: " << threshold << endl;
     unvisitPairsInMatrix(inputPairs, adjMatrix);
     vector<vector<int>> pairs;
     pairs = adjMatrix.findDenseSubGraph(0, pairs, threshold);
+
+    std::sort(pairs.begin(), pairs.end(), [](const vector<int> &a, const vector<int> &b) { return a.size() > b.size(); });
     vvi toTest;
 
     for (size_t i = 0; i < pairs.size(); i++)
     {
         testGraph(pairs.at(i));
         updateInfected(pairs.at(i), infected, toTest);
+        if (infected.size() == input.maxInfected)
+        {
+            return;
+        }
     }
 
     if (toTest.size() > 0)
@@ -392,50 +402,61 @@ void recursiveTest(AdjacencyMatrix &adjMatrix, vvi inputPairs, vector<bool> &inf
 
         float newThreshold = threshold - thresholdRecursionStep;
         cerr << "newThreshold: " << newThreshold << endl;
-        recursiveTest(adjMatrix, recursiveTestPairs, infected, newThreshold);
+        recursiveTest(adjMatrix, recursiveTestPairs, infected, newThreshold, input);
         manualTest(manualTestPairs, infected);
     }
 }
 
 // bool skipNextTest = false;
 
-void splitTest(vi nodes, int left, int right, vector<bool> &infected, int &infectedCounter, int maxInfected) {
-    if (infectedCounter > maxInfected) {
+void splitTest(vi nodes, int left, int right, vector<bool> &infected, int &infectedCounter, int maxInfected)
+{
+    if (infectedCounter > maxInfected)
+    {
         return;
     }
 
     int size = right - left;
-    int middle = (size/2)+left;
+    int middle = (size / 2) + left;
 
     // if (skipNextTest != false) {
-        cerr << "test" << endl;
-        cout << "test";
-        for (int i = 0; i < size; i++) {
-            cout << " " << left+i;
-        }
+    // cerr << "test" << endl;
+    cout << "test";
+    for (int i = 0; i < size; i++)
+    {
+        cout << " " << left + i;
+    }
 
-        cout << endl << flush << endl;
+    cout << endl
+         << flush << endl;
+    nTests = nTests + 1;
 
-        string result;
-        cin >> result;
-        bool boolResult;
-        if (result == "true") {
-            boolResult = true;
-        } else {
-            boolResult = false;
-            // skipNextTest = true;
-        }
+    string result;
+    cin >> result;
+    bool boolResult;
+    if (result == "true")
+    {
+        boolResult = true;
+    }
+    else
+    {
+        boolResult = false;
+        // skipNextTest = true;
+    }
 
-        for (int i = 0; i < size; i++) {
-            if (boolResult == true && size == 1) {
-                infectedCounter++;
-            }
-            infected[left+i] = boolResult;
+    for (int i = 0; i < size; i++)
+    {
+        if (boolResult == true && size == 1)
+        {
+            infectedCounter++;
         }
-        
-        if (size < 2 || boolResult == false) {
-            return;
-        }
+        infected[left + i] = boolResult;
+    }
+
+    if (size < 2 || boolResult == false)
+    {
+        return;
+    }
     // } else {
     //     cerr << "skip" << endl;
     //     skipNextTest = false;
@@ -445,8 +466,9 @@ void splitTest(vi nodes, int left, int right, vector<bool> &infected, int &infec
     splitTest(nodes, middle, right, infected, infectedCounter, maxInfected);
 }
 
-void runTestCaseSpreadGraph(vi nodes, vector<bool> &infected, int maxInfected) {
-    int middle = nodes.size()/2;
+void runTestCaseSpreadGraph(vi nodes, vector<bool> &infected, int maxInfected)
+{
+    int middle = nodes.size() / 2;
     int infectedCounter = 0;
 
     cerr << maxInfected << endl;
@@ -455,10 +477,9 @@ void runTestCaseSpreadGraph(vi nodes, vector<bool> &infected, int maxInfected) {
     splitTest(nodes, middle, nodes.size(), infected, infectedCounter, maxInfected);
 }
 
-void runTestCaseGroupedGraph(AdjacencyMatrix &adjMatrix, vector<bool> &infected)
+void runTestCaseGroupedGraph(AdjacencyMatrix &adjMatrix, vector<bool> &infected, Input input)
 {
     vector<vector<int>> pairs;
-    int minGroups = 2;
     pairs = adjMatrix.findDenseSubGraph(0, pairs, baseThreshold);
 
     vvi toTest;
@@ -487,8 +508,8 @@ void runTestCaseGroupedGraph(AdjacencyMatrix &adjMatrix, vector<bool> &infected)
         }
 
         float newThreshold = baseThreshold - thresholdRecursionStep;
+        recursiveTest(adjMatrix, recursiveTestPairs, infected, newThreshold, input);
 
-        recursiveTest(adjMatrix, recursiveTestPairs, infected, newThreshold);
         manualTest(manualTestPairs, infected);
     }
 }
@@ -549,24 +570,31 @@ void runTestCases(int numCase, int &numCorrect)
         Input input = parseInput();
         vector<bool> infected(input.nNodes, false);
 
+        cerr << "infection chance: " << input.infectionChance << endl;
+        float nAverageUpperboundInfected = (float)input.maxInfected / (float)input.nNodes;
+        float nAverageLowerboundInfected = (float)input.minInfected / (float)input.nNodes;
+        float averageInfectionRate = (float)(nAverageUpperboundInfected + nAverageLowerboundInfected) / 2;
+        cerr << "average infection rate: " << averageInfectionRate << endl;
+        nTests = 0;
         AdjacencyMatrix adjMatrix = createAdjacencyMatrix(input);
 
-        if (input.nEdges < input.nNodes || input.infectionChance < 0.1) {
+        if (input.nEdges < input.nNodes || (input.infectionChance < 0.1 && averageInfectionRate < 0.15))
+        {
+            cerr << "using split algorithm" << endl;
             vi nodes;
-            for (size_t i = 0; i < input.nNodes; i++) {
+            for (size_t i = 0; i < input.nNodes; i++)
+            {
                 nodes.push_back(i);
             }
-
-            cerr << "MIDDLE: " << nodes.size()/2 << endl;
-            cerr << "nNodes: " << input.nNodes << endl;
-            cerr << "nEdges: " << input.nEdges << endl;
-            cerr << "infection chance: " << input.infectionChance << endl;
 
             runTestCaseSpreadGraph(nodes, infected, input.maxInfected);
 
             answerTestCase(infected, input.nNodes);
-        } else {
-            runTestCaseGroupedGraph(adjMatrix, infected);
+        }
+        else
+        {
+            cerr << "using grouping algorithm" << endl;
+            runTestCaseGroupedGraph(adjMatrix, infected, input);
 
             answerTestCase(infected, input.nNodes);
         }
@@ -577,6 +605,7 @@ void runTestCases(int numCase, int &numCorrect)
         cerr << "Test case " << testcase << ": " << result << endl;
         if (result == "success")
             numCorrect++;
+        cerr << "Number of tests used for: " << nTests << " for a total of nodes: " << input.nNodes << endl;
     }
 }
 
