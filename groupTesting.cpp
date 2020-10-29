@@ -207,7 +207,11 @@ void runTestCases(int numCase, int &numCorrect)
 
             runTestCaseSpreadGraph(nodes, infected, input);
         }
-        else if (averageInfectionRate >= 0.5)
+        else if (averageInfectionRate <= 0.15)
+        {
+            cerr << "METHOD: Coherant group" << endl;
+            runTestCaseGroupedGraph(adjMatrix, infected, input);
+        } else if (averageInfectionRate <= 0.2)
         {
             vi nodes;
             if (input.infectionChance >= 0.3)
@@ -234,10 +238,18 @@ void runTestCases(int numCase, int &numCorrect)
 
             cerr << "METHOD: Group" << endl;
             runTestCaseGrouped(groupSize, nodes, infected, input.maxInfected);
-        } else
-        {
-            cerr << "METHOD: Coherant group" << endl;
-            runTestCaseGroupedGraph(adjMatrix, infected, input);
+        } else {
+            cerr << "METHOD: Test all" << endl;
+            vvi NodesArray;
+            vi nodes;
+
+            for (size_t i = 0; i < input.nNodes; i++)
+            {
+                nodes.push_back(i);
+            }
+
+            NodesArray.push_back(nodes);
+            manualTest(NodesArray, infected);
         }
 
         answerTestCase(infected, input.nNodes);
