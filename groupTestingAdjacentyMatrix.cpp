@@ -136,7 +136,7 @@ public:
             {
 
                 // cerr << "At: " << i << "Difference: " << difference[i] << endl;
-                if (i == currentIndex)
+                if (i == currentIndex || visited[i])
                     continue;
                 visited[i] = true;
                 accepted.push_back(i);
