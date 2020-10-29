@@ -31,6 +31,6 @@ void splitTest(vi nodes, int left, int right, vector<bool> &infected, int &infec
         return;
     }
 
-    splitTest(nodes, left, middle, infected, infectedCounter, maxInfected, true);
-    splitTest(nodes, middle, right, infected, infectedCounter, maxInfected, false);
+    splitTest(nodes, left, middle, infected, infectedCounter, maxInfected);
+    splitTest(nodes, middle, right, infected, infectedCounter, maxInfected);
 }
