@@ -123,7 +123,12 @@ public:
         // cerr << "N infected: " << input.nInfected << endl;
         // cerr << "chance infected: " << input.infectionChance << endl;
 
-        float acceptable = 1 - input.infectionChance + threshold;
+        float nAverageUpperboundInfected = (float)input.maxInfected / (float)n;
+        float nAverageLowerboundInfected = (float)input.minInfected / (float)n;
+        float averageInfectionRate = (float)(nAverageUpperboundInfected+nAverageLowerboundInfected)/2;
+        // cerr << averageInfectionRate << endl;
+        // cerr << input.infectionChance << endl;
+        float acceptable = 1 - input.infectionChance + threshold - averageInfectionRate; // Higher means less difference will be accepted 
         // cerr << " Acceptable rate: " << acceptable << endl;
         // acceptable = average + (average * treshold);
 
@@ -392,48 +397,62 @@ void recursiveTest(AdjacencyMatrix &adjMatrix, vvi inputPairs, vector<bool> &inf
     }
 }
 
-void splitTest(vi nodes, int left, int right, vector<bool> &infected) {
-    int size = right - left;
-    int middle = size/2;
+// bool skipNextTest = false;
 
-    // test
-    cout << "test" << endl;
-    for (int i = 0; i < size; i++) {
-        cout << " " << left+i;
-    }
-
-    cout << endl << flush << endl;
-
-    // read
-    string result;
-    cin >> result;
-    bool boolResult;
-    if (result == "true")
-    {
-        boolResult = true;
-    }
-    else
-    {
-        boolResult = false;
-    }
-
-    for (int i = 0; i < size; i++) {
-        infected[left+i] = boolResult;
-    }    
-    
-    if (size <= 2 || boolResult == false) {
+void splitTest(vi nodes, int left, int right, vector<bool> &infected, int &infectedCounter, int maxInfected) {
+    if (infectedCounter > maxInfected) {
         return;
     }
 
-    splitTest(nodes, left, middle, infected);
-    splitTest(nodes, middle+1, right, infected);
+    int size = right - left;
+    int middle = (size/2)+left;
+
+    // if (skipNextTest != false) {
+        cerr << "test" << endl;
+        cout << "test";
+        for (int i = 0; i < size; i++) {
+            cout << " " << left+i;
+        }
+
+        cout << endl << flush << endl;
+
+        string result;
+        cin >> result;
+        bool boolResult;
+        if (result == "true") {
+            boolResult = true;
+        } else {
+            boolResult = false;
+            // skipNextTest = true;
+        }
+
+        for (int i = 0; i < size; i++) {
+            if (boolResult == true && size == 1) {
+                infectedCounter++;
+            }
+            infected[left+i] = boolResult;
+        }
+        
+        if (size < 2 || boolResult == false) {
+            return;
+        }
+    // } else {
+    //     cerr << "skip" << endl;
+    //     skipNextTest = false;
+    // }
+
+    splitTest(nodes, left, middle, infected, infectedCounter, maxInfected);
+    splitTest(nodes, middle, right, infected, infectedCounter, maxInfected);
 }
 
-void runTestCaseSpreadGraph(vi nodes, vector<bool> &infected) {
+void runTestCaseSpreadGraph(vi nodes, vector<bool> &infected, int maxInfected) {
     int middle = nodes.size()/2;
+    int infectedCounter = 0;
 
-    splitTest(nodes, 0, middle, infected);
-    splitTest(nodes, middle+1, nodes.size()/2, infected);
+    cerr << maxInfected << endl;
+
+    splitTest(nodes, 0, middle, infected, infectedCounter, maxInfected);
+    splitTest(nodes, middle, nodes.size(), infected, infectedCounter, maxInfected);
 }
 
 void runTestCaseGroupedGraph(AdjacencyMatrix &adjMatrix, vector<bool> &infected)
@@ -534,11 +553,16 @@ void runTestCases(int numCase, int &numCorrect)
 
         if (input.nEdges < input.nNodes || input.infectionChance < 0.1) {
             vi nodes;
-            for (size_t i = 0; i < input.graph.size(); i++) {
+            for (size_t i = 0; i < input.nNodes; i++) {
                 nodes.push_back(i);
             }
 
-            runTestCaseSpreadGraph(nodes, infected);
+            cerr << "MIDDLE: " << nodes.size()/2 << endl;
+            cerr << "nNodes: " << input.nNodes << endl;
+            cerr << "nEdges: " << input.nEdges << endl;
+            cerr << "infection chance: " << input.infectionChance << endl;
+
+            runTestCaseSpreadGraph(nodes, infected, input.maxInfected);
 
             answerTestCase(infected, input.nNodes);
         } else {
