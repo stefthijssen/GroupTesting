@@ -104,21 +104,9 @@ void updateInfected(vi subgraph, vector<bool> &infected, vvi &toTest)
 }
 
 bool remainingTestsAreNegative(Input input) {
-    bool remainingTestAreNegative = infectedFound >= input.maxInfected;
-
-    if (remainingTestAreNegative) {
-        cerr << "MaxBound: " << input.maxInfected << endl;
-        cerr << "Infected: " << infectedFound << endl;
-        cerr << "STOP: remaining is negative (maxbound)" << endl;
-    }
-
-    return remainingTestAreNegative;
+    return infectedFound >= input.maxInfected;
 }
 
 bool remainingTestsArePositive(Input input) {
-    bool remainingTestArePositive = (input.nNodes - nonInfectedFound) <= input.minInfected;
-    if (remainingTestArePositive) {
-        cerr << "STOP: remaining is positive (minbound)" << endl;
-    }
-    return remainingTestArePositive;
+    return (input.nNodes - nonInfectedFound) <= input.minInfected;
 }

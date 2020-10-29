@@ -195,7 +195,19 @@ void runTestCases(int numCase, int &numCorrect)
         nonInfectedFound = 0;
         AdjacencyMatrix adjMatrix = createAdjacencyMatrix(input);
 
-        if (averageInfectionRate >= 0.2)
+        
+        if (input.infectionChance <= 0.1 && averageInfectionRate <= 0.15)
+        {
+            cerr << "METHOD: Split" << endl;
+            vi nodes;
+            for (size_t i = 0; i < input.nNodes; i++)
+            {
+                nodes.push_back(i);
+            }
+
+            runTestCaseSpreadGraph(nodes, infected, input);
+        }
+        else if (averageInfectionRate >= 0.5)
         {
             vi nodes;
             if (input.infectionChance >= 0.3)
@@ -222,20 +234,9 @@ void runTestCases(int numCase, int &numCorrect)
 
             cerr << "METHOD: Group" << endl;
             runTestCaseGrouped(groupSize, nodes, infected, input.maxInfected);
-        }
-        else if (input.nEdges < input.nNodes || input.infectionChance < 0.1) // (input.infectionChance < 0.1 && averageInfectionRate < 0.15)
+        } else
         {
-            vi nodes;
-            for (size_t i = 0; i < input.nNodes; i++)
-            {
-                nodes.push_back(i);
-            }
-
-            runTestCaseSpreadGraph(nodes, infected, input);
-        }
-        else
-        {
-            cerr << "METHOD: Grouped" << endl;
+            cerr << "METHOD: Coherant group" << endl;
             runTestCaseGroupedGraph(adjMatrix, infected, input);
         }
 
