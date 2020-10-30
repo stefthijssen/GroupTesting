@@ -60,6 +60,7 @@ public:
             }
             tmpOutgoingEdges[i] = pair<int,int>(i,edgeCounter);
         }
+        //  display();
 
         std::sort(tmpOutgoingEdges.begin(), tmpOutgoingEdges.end(), [](const pair<int,int> &a, const pair<int,int> &b) { return a.second > b.second; });
         for (size_t i = 0; i < tmpOutgoingEdges.size(); i++)
@@ -126,7 +127,7 @@ public:
         // // cerr << averageInfectionRate << endl;
         // // cerr << input.infectionChance << endl;
         float acceptable = 1 - input.infectionChance + threshold - averageInfectionRate; // Higher means less difference will be accepted
-        // float acceptable = 0.3;
+        // float acceptable = 0.2;
 
         vector<int> accepted;
         accepted.push_back(currentIndex);
@@ -135,7 +136,7 @@ public:
         for (size_t i = 0; i < n; i++)
         {
             float diff = calcDifference(adj[currentIndex], adj[i]);
-            // cerr << "At: " << i << "Difference: " << diff << endl;
+            // cerr <<"For: " << currentIndex << "At: " << i << "Difference: " << diff << endl;
 
             if (i == currentIndex)
                 continue;
@@ -151,7 +152,7 @@ public:
                 next = bestNextCandidate;
             }
         }
-
+       
         pairs.push_back(accepted);
         return findDenseSubGraph(next, pairs, baseThreshold);
     }

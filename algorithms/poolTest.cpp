@@ -74,9 +74,13 @@ void poolTest(int groupSize, vi nodes, vector<bool> &infected, Input input)
 
         if (result.size() > 1)
         {
-            oneByOneTest(result, infected, input);
+            bool isDone = oneByOneTest(result, infected, input);
             size = calculateK(input);
+            if(isDone == true){
+                return;
+            }
         }
+        
     }
 }
 

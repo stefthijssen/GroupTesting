@@ -16,12 +16,13 @@ bool remainingTestsAreNegative(Input input)
 
 bool remainingTestsArePositive(Input input)
 {
-    return (input.nNodes - nonInfectedFound) <= input.minInfected;
+    return (input.nNodes - nonInfectedFound) == input.maxInfected;
 }
 
-void testNode(int node) {
+void testNode(int node)
+{
     cout << "test " << node << endl
-        << flush << endl;
+         << flush << endl;
     nTests = nTests + 1;
 }
 
@@ -99,7 +100,7 @@ void updateInfected(vi subgraph, vector<bool> &infected, vvi &toTest)
     }
 }
 
-void oneByOneTest(vi toTest, vector<bool> &infected, Input input)
+bool oneByOneTest(vi toTest, vector<bool> &infected, Input input)
 {
     bool done = false;
     int at;
@@ -130,9 +131,12 @@ void oneByOneTest(vi toTest, vector<bool> &infected, Input input)
 
     if (done)
     {
-        for (size_t i = at+1; i < toTest.size(); i++)
+        for (size_t i = at + 1; i < toTest.size(); i++)
         {
             infected[toTest.at(i)] = false;
+            nonInfectedFound++;
         }
+        return true;
     }
+    return false;
 }

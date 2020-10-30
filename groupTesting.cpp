@@ -65,7 +65,6 @@ void runTestCases(int numCase, int &numCorrect)
         AdjacencyMatrix adjMatrix = createAdjacencyMatrix(input);
 
         Algorithm algorithmCase = checkWhichAlgorithmToUse(input, calculateP(input));
-
         switch (algorithmCase) {
             case split:
                 useSplitTest(input, infected);
