@@ -3,9 +3,10 @@
 #include <vector>
 #include <queue>
 #include <numeric>
+#include <math.h>
 
-#include "../headers/input.h"
-#include "../headers/global.h"
+#include "../headers/input.hpp"
+#include "../headers/global.hpp"
 
 using namespace std;
 
