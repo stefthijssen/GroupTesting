@@ -7,6 +7,16 @@
 
 using namespace std;
 
+bool remainingTestsAreNegative(Input input)
+{
+    return infectedFound >= input.maxInfected;
+}
+
+bool remainingTestsArePositive(Input input)
+{
+    return (input.nNodes - nonInfectedFound) <= input.minInfected;
+}
+
 void testNodes(vi nodes)
 {
     cout << "test";
@@ -55,44 +65,18 @@ void answerTestCase(vector<bool> &infected, int nNodes)
          << flush;
 }
 
-void manualTest(vvi toTest, vector<bool> &infected)
-{
-    for (size_t i = 0; i < toTest.size(); i++)
-    {
-        for (size_t j = 0; j < toTest.at(i).size(); j++)
-        {
-            cout << "test " << toTest.at(i).at(j) << endl
-                 << flush << endl;
-            nTests = nTests + 1;
-        }
-    }
-
-    for (size_t i = 0; i < toTest.size(); i++)
-    {
-        for (size_t j = 0; j < toTest.at(i).size(); j++)
-        {
-            bool result = retrieveTestResult();
-
-            if (result == false) {
-                nonInfectedFound++;
-            } else {
-                infectedFound++;
-            }
-
-            infected[toTest.at(i).at(j)] = result;
-        }
-    }
-}
-
 void updateInfected(vi subgraph, vector<bool> &infected, vvi &toTest)
 {
     bool result = retrieveTestResult();
 
     if (result == true)
     {
-        if (subgraph.size() > 1) {
+        if (subgraph.size() > 1)
+        {
             toTest.push_back(subgraph);
-        } else {
+        }
+        else
+        {
             infectedFound++;
         }
     }
@@ -103,10 +87,62 @@ void updateInfected(vi subgraph, vector<bool> &infected, vvi &toTest)
     }
 }
 
-bool remainingTestsAreNegative(Input input) {
-    return infectedFound >= input.maxInfected;
+void oneByOneTest(vi toTest, vector<bool> &infected, Input input)
+{
+    for (size_t i = 0; i < toTest.size(); i++)
+    {
+
+        cout << "test " << toTest.at(i) << endl
+             << flush << endl;
+        nTests = nTests + 1;
+
+        bool result = retrieveTestResult();
+        infected[toTest.at(i)] = result;
+
+        if (result == true)
+        {
+            infectedFound++;
+        }
+        else
+        {
+            nonInfectedFound++;
+        }
+    }
+
+    if (remainingTestsAreNegative(input))
+    {
+        cerr << "I am done found maximum infected " << infectedFound << " " << input.maxInfected << endl;
+        return;
+    }
 }
 
-bool remainingTestsArePositive(Input input) {
-    return (input.nNodes - nonInfectedFound) <= input.minInfected;
+void manualTest(vvi toTest, vector<bool> &infected, Input input)
+{
+    for (size_t i = 0; i < toTest.size(); i++)
+    {
+        for (size_t j = 0; j < toTest.at(i).size(); j++)
+        {
+            cout << "test " << toTest.at(i).at(j) << endl
+                 << flush << endl;
+            nTests = nTests + 1;
+
+            bool result = retrieveTestResult();
+            infected[toTest.at(i).at(j)] = result;
+
+            if (result == true)
+            {
+                infectedFound++;
+            }
+            else
+            {
+                nonInfectedFound++;
+            }
+        }
+
+        if (remainingTestsAreNegative(input))
+        {
+            cerr << "I am done found maximum infected " << infectedFound << " " << input.maxInfected << endl;
+            return;
+        }
+    }
 }

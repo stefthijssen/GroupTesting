@@ -18,11 +18,39 @@
 
 using namespace std;
 
-int groupSize = 8;
 int recursionThreshold = 10;
 float thresholdRecursionStep = 0.1;
 
-void recursiveTest(AdjacencyMatrix &adjMatrix, vvi inputPairs, vector<bool> &infected, float threshold)
+int calculateK(Input input)
+{
+    //default to k = 8
+    int k = 8;
+    float nAverageUpperboundInfected = (float)input.maxInfected;
+    float nAverageLowerboundInfected = (float)input.minInfected;
+    float averageInfectionRate = (float)(nAverageUpperboundInfected + nAverageLowerboundInfected) / (input.nNodes * 2);
+
+    // P the chance a sample is positive increases when average infection rate is high and infection chacnce is also high.
+    float p = (float)averageInfectionRate + ((float)averageInfectionRate * (float)input.infectionChance);
+    if (p >= 0.15)
+    {
+        k = 3;
+    }
+    if (p >= 0.1)
+    {
+        k = 4;
+    }
+    if (p >= 0.05)
+    {
+        k = 7;
+    }
+    if (p >= 0.01)
+    {
+        k = 11;
+    }
+    return k;
+}
+
+void recursiveTest(AdjacencyMatrix &adjMatrix, vvi inputPairs, vector<bool> &infected, float threshold, Input input)
 {
     unvisitPairsInMatrix(inputPairs, adjMatrix);
     vector<vector<int>> pairs;
@@ -55,12 +83,12 @@ void recursiveTest(AdjacencyMatrix &adjMatrix, vvi inputPairs, vector<bool> &inf
         }
 
         float newThreshold = threshold - thresholdRecursionStep;
-        recursiveTest(adjMatrix, recursiveTestPairs, infected, newThreshold);
-        manualTest(manualTestPairs, infected);
+        recursiveTest(adjMatrix, recursiveTestPairs, infected, newThreshold, input);
+        manualTest(manualTestPairs, infected, input);
     }
 }
 
-vi customGroupTestSplit(vi nodes, vector<bool> &infected, int infectedCounter, int maxInfected)
+vi customGroupTestSplit(vi nodes, vector<bool> &infected, Input input)
 {
 
     int size = nodes.size();
@@ -76,16 +104,18 @@ vi customGroupTestSplit(vi nodes, vector<bool> &infected, int infectedCounter, i
     nTests = nTests + 1;
     bool result = retrieveTestResult();
 
+    if (result == true && size == 1)
+    {
+        infectedFound++;
+    }
     for (int i = 0; i < size; i++)
     {
-        if (result == true && size == 1)
-        {
-            infectedCounter++;
-        }
         infected[nodes.at(i)] = result;
     }
-    if (result == true)
+
+    if (result == true && size != 1)
     {
+        // cerr << "size is " << size << endl;
         return nodes;
     }
     else
@@ -95,11 +125,10 @@ vi customGroupTestSplit(vi nodes, vector<bool> &infected, int infectedCounter, i
     }
 }
 
-void runTestCaseGrouped(int groupSize, vi nodes, vector<bool> &infected, int maxInfected)
+void runTestCaseGrouped(int groupSize, vi nodes, vector<bool> &infected, Input input)
 {
     int size = groupSize;
     int currentIndex = 0;
-    int infectedCounter = 0;
     vvi pairs;
 
     while (currentIndex <= nodes.size())
@@ -109,23 +138,42 @@ void runTestCaseGrouped(int groupSize, vi nodes, vector<bool> &infected, int max
         {
             end = nodes.size();
         }
+
         vector<int>::const_iterator first = nodes.begin() + currentIndex;
         vector<int>::const_iterator last = nodes.begin() + end;
         vector<int> subgroup(first, last);
-        vi result = customGroupTestSplit(subgroup, infected, infectedCounter, maxInfected);
-
+        vi result = customGroupTestSplit(subgroup, infected, input);
+        // cerr << "begin " << currentIndex << " end " << end;
         currentIndex = currentIndex + size;
-        if (infectedCounter == maxInfected)
-        {
-            return;
-        }
-        if (result.size() > 2)
+
+        if (result.size() > 1)
         {
             pairs.push_back(result);
         }
-    }
 
-    manualTest(pairs, infected);
+        // if (remainingTestsAreNegative(input))
+        // {
+        //     return;
+        // }
+    }
+    if (groupSize >= 8 && pairs.size() > 2)
+    {
+
+        vi newNodes;
+        for (size_t i = 0; i < pairs.size(); i++)
+        {
+            for (size_t j = 0; j < pairs.at(i).size(); j++)
+            {
+                newNodes.push_back(pairs.at(i).at(j));
+            }
+        }
+        groupSize = groupSize / 2;
+        runTestCaseGrouped(groupSize, newNodes, infected, input);
+    }
+    else
+    {
+        manualTest(pairs, infected, input);
+    }
 }
 
 void runTestCaseSpreadGraph(vi nodes, vector<bool> &infected, Input input)
@@ -148,7 +196,8 @@ void runTestCaseGroupedGraph(AdjacencyMatrix &adjMatrix, vector<bool> &infected,
     {
         testNodes(pairs.at(i));
         updateInfected(pairs.at(i), infected, toTest);
-        if (remainingTestsAreNegative(input)) {
+        if (remainingTestsAreNegative(input))
+        {
             return;
         }
     }
@@ -172,10 +221,11 @@ void runTestCaseGroupedGraph(AdjacencyMatrix &adjMatrix, vector<bool> &infected,
 
         float newThreshold = baseThreshold - thresholdRecursionStep;
 
-        recursiveTest(adjMatrix, recursiveTestPairs, infected, newThreshold);
-        manualTest(manualTestPairs, infected);
+        recursiveTest(adjMatrix, recursiveTestPairs, infected, newThreshold, input);
+        manualTest(manualTestPairs, infected, input);
     }
 }
+
 
 void runTestCases(int numCase, int &numCorrect)
 {
@@ -187,6 +237,10 @@ void runTestCases(int numCase, int &numCorrect)
         float nAverageUpperboundInfected = (float)input.maxInfected / (float)input.nNodes;
         float nAverageLowerboundInfected = (float)input.minInfected / (float)input.nNodes;
         float averageInfectionRate = (float)(nAverageUpperboundInfected + nAverageLowerboundInfected) / 2;
+
+        // P the chance a sample is positive increases when average infection rate is high and infection chacnce is also high.
+        float p = (float)averageInfectionRate + ((float)averageInfectionRate * (float)input.infectionChance);
+        cerr << "   p(robabilty) sample is infected: " << p << endl;
         cerr << "   nodes: " << input.nNodes << endl;
         cerr << "   average infection rate: " << averageInfectionRate << endl;
         cerr << "   number of edges: " << input.nEdges << endl;
@@ -194,51 +248,65 @@ void runTestCases(int numCase, int &numCorrect)
         infectedFound = 0;
         nonInfectedFound = 0;
         AdjacencyMatrix adjMatrix = createAdjacencyMatrix(input);
+        // if (averageInfectionRate >= 0.3)
+        // {
+        //     vvi base;
+        //     vi base1;
+        //     for (size_t i = 0; i < input.nNodes; i++)
+        //     {
 
-        
-        if (input.infectionChance <= 0.1 && averageInfectionRate <= 0.15)
+        //         base1.push_back(i);
+        //     }
+        //     base.push_back(base1);
+        //     manualTest(base, infected, input);
+        // }
+        // else if (input.infectionChance <= 0.1 && averageInfectionRate < 0.1)
+        // {
+        //     cerr << "METHOD: Split" << endl;
+        //     vi nodes;
+        //     for (size_t i = 0; i < input.nNodes; i++)
+        //     {
+        //         nodes.push_back(i);
+        //     }
+
+        //     runTestCaseSpreadGraph(nodes, infected, input);
+        // }
+        // else if (averageInfectionRate > 0.2 || input.infectionChance < 0.3)
+        // {
+            // if(input.infectionChance >= 0.3 && averageInfectionRate > )
+        vi nodes;
+
+        vector<vector<int>> pairs;
+
+        pairs = adjMatrix.findDenseSubGraph(0, pairs, 0);
+        // pairs = adjMatrix.bfs(0);
+        std::sort(pairs.begin(), pairs.end(), [](const vector<int> &a, const vector<int> &b) { return a.size() > b.size(); });
+
+        for (size_t i = 0; i < pairs.size(); i++)
         {
-            cerr << "METHOD: Split" << endl;
-            vi nodes;
-            for (size_t i = 0; i < input.nNodes; i++)
+            for (size_t j = 0; j < pairs.at(i).size(); j++)
             {
-                nodes.push_back(i);
+                nodes.push_back(pairs.at(i).at(j));
             }
-
-            runTestCaseSpreadGraph(nodes, infected, input);
         }
-        else if (averageInfectionRate >= 0.5)
-        {
-            vi nodes;
-            if (input.infectionChance >= 0.3)
-            {
-                vector<vector<int>> pairs;
+        // }
+        // else
+        // {
+        //     for (size_t i = 0; i < input.nNodes; i++)
+        //     {
+        //         nodes.push_back(i);
+        //     }
+        // }
 
-                pairs = adjMatrix.findDenseSubGraph(0, pairs, 0);
-
-                for (size_t i = 0; i < pairs.size(); i++)
-                {
-                    for (size_t j = 0; j < pairs.at(i).size(); j++)
-                    {
-                        nodes.push_back(pairs.at(i).at(j));
-                    }
-                }
-            }
-            else
-            {
-                for (size_t i = 0; i < input.nNodes; i++)
-                {
-                    nodes.push_back(i);
-                }
-            }
-
-            cerr << "METHOD: Group" << endl;
-            runTestCaseGrouped(groupSize, nodes, infected, input.maxInfected);
-        } else
-        {
-            cerr << "METHOD: Coherant group" << endl;
-            runTestCaseGroupedGraph(adjMatrix, infected, input);
-        }
+        cerr << "METHOD: Group" << endl;
+        int k = calculateK(input);
+        runTestCaseGrouped(k, nodes, infected, input);
+        // }
+        // else
+        // {
+        //     cerr << "METHOD: Coherant group" << endl;
+        //     runTestCaseGroupedGraph(adjMatrix, infected, input);
+        // }
 
         answerTestCase(infected, input.nNodes);
 
@@ -246,14 +314,19 @@ void runTestCases(int numCase, int &numCorrect)
         string result;
         cin >> result;
         cerr << "Test case " << testcase << ": " << result << endl;
-        if (result == "success") {
+        if (result == "success")
+        {
             numCorrect++;
-        } else {
-            for (int i = 0; i < infected.size(); i++) {
+        }
+        else
+        {
+            for (int i = 0; i < infected.size(); i++)
+            {
                 cerr << i << ": " << infected.at(i) << endl;
             }
         }
         cerr << "Number of tests used for: " << nTests << " for a total of nodes: " << input.nNodes << endl;
+        cerr << "Number of predicited infected for: " << input.maxInfected << " actual # of infected: " << infectedFound << endl;
     }
 }
 

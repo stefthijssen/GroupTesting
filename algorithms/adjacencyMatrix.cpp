@@ -105,10 +105,10 @@ public:
 
         float nAverageUpperboundInfected = (float)input.maxInfected / (float)n;
         float nAverageLowerboundInfected = (float)input.minInfected / (float)n;
-        float averageInfectionRate = (float)(nAverageUpperboundInfected+nAverageLowerboundInfected)/2;
+        float averageInfectionRate = (float)(nAverageUpperboundInfected + nAverageLowerboundInfected) / 2;
         // cerr << averageInfectionRate << endl;
         // cerr << input.infectionChance << endl;
-        float acceptable = 1 - input.infectionChance + threshold - averageInfectionRate; // Higher means less difference will be accepted 
+        float acceptable = 1 - input.infectionChance + threshold - averageInfectionRate; // Higher means less difference will be accepted
         // cerr << " Acceptable rate: " << acceptable << endl;
         // acceptable = average + (average * treshold);
 
@@ -155,9 +155,9 @@ public:
         float answer = diff / (averageGraphDensity * 2);
         return answer;
     }
-    void bfs(int src)
+    vector<vector<int>> bfs(int src)
     {
-        resetVisited();
+        // resetVisited();
         queue<int> q;
         vector<vector<int>> r;
 
@@ -171,17 +171,33 @@ public:
             // cerr << current << endl;
             vector<int> rs;
             rs.push_back(current);
+            visited[current] = true;
+
             for (size_t i = 0; i < n; i++)
             {
-                if (adj[current][i] == 1 && (!visited[i]))
+                if (adj[current][i] == 1 && (visited[i] == false))
                 {
+                    visited[i] = true;
                     rs.push_back(i);
                     q.push(i);
                 }
             }
+
             q.pop();
             r.push_back(rs);
+            if (q.empty())
+            {
+                for (size_t i = 0; i < n; i++)
+                {
+                    if (visited[i] == false)
+                    {
+                        q.push(i);
+                        break;
+                    }
+                }
+            }
         }
+        return r;
     }
     void display()
     {
