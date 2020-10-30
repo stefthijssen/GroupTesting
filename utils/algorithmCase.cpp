@@ -15,7 +15,7 @@ Algorithm checkWhichAlgorithmToUse(Input input) {
     float averageAmountInfected = ((float) (input.maxInfected + input.minInfected)) / 2;
     float amountInfectedFactor = (averageAmountInfected / (float) input.nNodes);
 
-    if (maxInfectedFactor <= 0.02) {
+    if (calculateP(input) <= 0.03) {
         cerr << "METHOD: Split" << endl;
         return split;
     }
