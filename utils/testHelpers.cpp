@@ -79,8 +79,10 @@ void updateInfected(vi subgraph, vector<bool> &infected, vvi &toTest)
         {
             infectedFound++;
         }
-    }else if(result == false && subgraph.size() == 1){
-        nonInfectedFound ++;
+    }
+    else if (result == false && subgraph.size() == 1)
+    {
+        nonInfectedFound++;
     }
 
     for (int j = 0; j < subgraph.size(); j++)
@@ -91,6 +93,8 @@ void updateInfected(vi subgraph, vector<bool> &infected, vvi &toTest)
 
 void oneByOneTest(vi toTest, vector<bool> &infected, Input input)
 {
+    bool done = false;
+    int at;
     for (size_t i = 0; i < toTest.size(); i++)
     {
 
@@ -109,12 +113,21 @@ void oneByOneTest(vi toTest, vector<bool> &infected, Input input)
         {
             nonInfectedFound++;
         }
+        if (remainingTestsAreNegative(input))
+        {
+            cerr << "I am done found maximum infected " << infectedFound << " " << input.maxInfected << endl;
+            at = i;
+            done = true;
+            break;
+        }
     }
 
-    if (remainingTestsAreNegative(input))
+    if (done)
     {
-        cerr << "I am done found maximum infected " << infectedFound << " " << input.maxInfected << endl;
-        return;
+        for (size_t i = at+1; i < toTest.size(); i++)
+        {
+            infected[toTest.at(i)] = false;
+        }
     }
 }
 
