@@ -79,6 +79,8 @@ void updateInfected(vi subgraph, vector<bool> &infected, vvi &toTest)
         {
             infectedFound++;
         }
+    }else if(result == false && subgraph.size() == 1){
+        nonInfectedFound ++;
     }
 
     for (int j = 0; j < subgraph.size(); j++)

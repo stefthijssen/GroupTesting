@@ -106,11 +106,9 @@ public:
         float nAverageUpperboundInfected = (float)input.maxInfected / (float)n;
         float nAverageLowerboundInfected = (float)input.minInfected / (float)n;
         float averageInfectionRate = (float)(nAverageUpperboundInfected + nAverageLowerboundInfected) / 2;
-        // cerr << averageInfectionRate << endl;
-        // cerr << input.infectionChance << endl;
+        // // cerr << averageInfectionRate << endl;
+        // // cerr << input.infectionChance << endl;
         float acceptable = 1 - input.infectionChance + threshold - averageInfectionRate; // Higher means less difference will be accepted
-        // cerr << " Acceptable rate: " << acceptable << endl;
-        // acceptable = average + (average * treshold);
 
         vector<int> accepted;
         accepted.push_back(currentIndex);
