@@ -9,6 +9,7 @@
 #include "utils/credentials.cpp"
 #include "utils/testHelpers.cpp"
 #include "utils/inputParser.cpp"
+#include "utils/algorithmCase.cpp"
 
 #include "algorithms/adjacencyMatrix.cpp"
 #include "algorithms/splitTest.cpp"
@@ -20,41 +21,6 @@ using namespace std;
 
 int recursionThreshold = 10;
 float thresholdRecursionStep = 0.1;
-
-float calculateP(Input input)
-{
-    float nAverageUpperboundInfected = (float)input.maxInfected - infectedFound;
-    float nAverageLowerboundInfected = (float)input.minInfected - infectedFound;
-    float averageInfectionRate = (float)(nAverageUpperboundInfected + nAverageLowerboundInfected) / ((input.nNodes - nonInfectedFound) * 2);
-
-    // P the chance a sample is positive increases when average infection rate is high and infection chacnce is also high.
-    float p = (float)averageInfectionRate + ((float)averageInfectionRate * (float)input.infectionChance);
-    return p;
-}
-
-int calculateK(Input input)
-{
-    //default to k = 8
-    int k = 8;
-    float p = calculateP(input);
-    if (p >= 0.15)
-    {
-        k = 3;
-    }
-    else if (p >= 0.1)
-    {
-        k = 4;
-    }
-    else if (p >= 0.05)
-    {
-        k = 7;
-    }
-    else if (p >= 0.01)
-    {
-        k = 11;
-    }
-    return k;
-}
 
 void recursiveTest(AdjacencyMatrix &adjMatrix, vvi inputPairs, vector<bool> &infected, float threshold, Input input)
 {
@@ -239,12 +205,85 @@ void runTestCaseGroupedGraph(AdjacencyMatrix &adjMatrix, vector<bool> &infected,
     }
 }
 
+void useOneByOne(Input input, vector<bool> &infected) {
+    vi nodes;
+    for (size_t i = 0; i < input.nNodes; i++)
+    {
+        nodes.push_back(i);
+    }
+
+    oneByOneTest(nodes, infected, input);
+}
+
+void useSplit(Input input, vector<bool> &infected) {
+    vi nodes;
+    for (size_t i = 0; i < input.nNodes; i++)
+    {
+        nodes.push_back(i);
+    }
+
+    runTestCaseSpreadGraph(nodes, infected, input);
+}
+
+void usePool(Input input, AdjacencyMatrix adjMatrix, vector<bool> &infected) {
+        vi nodes;
+
+        vector<vector<int>> pairs;
+
+        pairs = adjMatrix.findDenseSubGraph(0, pairs, 0);
+        std::sort(pairs.begin(), pairs.end(), [](const vector<int> &a, const vector<int> &b) { return a.size() > b.size(); });
+
+        for (size_t i = 0; i < pairs.size(); i++)
+        {
+            for (size_t j = 0; j < pairs.at(i).size(); j++)
+            {
+                nodes.push_back(pairs.at(i).at(j));
+            }
+        }
+
+        int k = calculateK(input);
+        runTestCaseGrouped(k, nodes, infected, input);
+}
+
+void usePoolHighInfection(Input input, AdjacencyMatrix adjMatrix, vector<bool> &infected) {
+    vector<vector<int>> pairs;
+    pairs = adjMatrix.findDenseSubGraph(0, pairs, 0);
+
+    std::sort(pairs.begin(), pairs.end(), [](const vector<int> &a, const vector<int> &b) { return a.size() > b.size(); });
+    for (size_t i = 0; i < pairs.size() / 3; i++)
+    {
+        oneByOneTest(pairs.at(i), infected, input);
+    }
+
+    int k = calculateK(input);
+
+    vi nodes;
+
+    for (size_t i = pairs.size() / 3; i < pairs.size(); i++)
+    {
+        for (size_t j = 0; j < pairs.at(i).size(); j++)
+        {
+            nodes.push_back(pairs.at(i).at(j));
+        }
+    }
+    runTestCaseGrouped(k, nodes, infected, input);
+}
+
+void resetGlobals() {
+    nTests = 0;
+    infectedFound = 0;
+    nonInfectedFound = 0;
+}
+
 void runTestCases(int numCase, int &numCorrect)
 {
     for (int testcase = 1; testcase <= numCase; testcase++)
     {
         Input input = parseInput();
         vector<bool> infected(input.nNodes, false);
+
+        resetGlobals();
+
         cerr << "   infection chance: " << input.infectionChance << endl;
         float nAverageUpperboundInfected = (float)input.maxInfected / (float)input.nNodes;
         float nAverageLowerboundInfected = (float)input.minInfected / (float)input.nNodes;
@@ -256,88 +295,28 @@ void runTestCases(int numCase, int &numCorrect)
         cerr << "   nodes: " << input.nNodes << endl;
         cerr << "   average infection rate: " << averageInfectionRate << endl;
         cerr << "   number of edges: " << input.nEdges << endl;
-        nTests = 0;
-        infectedFound = 0;
-        nonInfectedFound = 0;
+        
         AdjacencyMatrix adjMatrix = createAdjacencyMatrix(input);
-        if (calculateP(input) >= 0.45)
-        {
 
-            vector<vector<int>> pairs;
-            pairs = adjMatrix.findDenseSubGraph(0, pairs, 0);
+        Algorithm algorithmCase = checkWhichAlgorithmToUse(input);
 
-            std::sort(pairs.begin(), pairs.end(), [](const vector<int> &a, const vector<int> &b) { return a.size() > b.size(); });
-            for (size_t i = 0; i < pairs.size() / 3; i++)
-            {
-                oneByOneTest(pairs.at(i), infected, input);
-            }
-
-            int k = calculateK(input);
-
-            vi nodes;
-
-            // pairs = adjMatrix.bfs(0);
-
-            for (size_t i = pairs.size() / 3; i < pairs.size(); i++)
-            {
-                for (size_t j = 0; j < pairs.at(i).size(); j++)
-                {
-                    nodes.push_back(pairs.at(i).at(j));
-                }
-            }
-            runTestCaseGrouped(k, nodes, infected, input);
-            cerr << "METHOD: Test and group" << endl;
+        switch (algorithmCase) {
+            case split:
+                useSplit(input, infected);
+                break;
+            case pool:
+                usePool(input, adjMatrix, infected);
+                break;
+            case oneByOne:
+                useOneByOne(input, infected);
+                break;
+            case poolHighInfection:
+                usePoolHighInfection(input, adjMatrix, infected);
+                break;
+            default:
+                useOneByOne(input, infected);
+                break;
         }
-        else
-        {
-
-            // else if (input.infectionChance <= 0.1 && averageInfectionRate < 0.1)
-            // {
-            //     cerr << "METHOD: Split" << endl;
-            //     vi nodes;
-            //     for (size_t i = 0; i < input.nNodes; i++)
-            //     {
-            //         nodes.push_back(i);
-            //     }
-
-            //     runTestCaseSpreadGraph(nodes, infected, input);
-            // }
-            // else if (averageInfectionRate > 0.2 || input.infectionChance < 0.3)
-            // {
-            vi nodes;
-
-            vector<vector<int>> pairs;
-
-            pairs = adjMatrix.findDenseSubGraph(0, pairs, 0);
-            // pairs = adjMatrix.bfs(0);
-            std::sort(pairs.begin(), pairs.end(), [](const vector<int> &a, const vector<int> &b) { return a.size() > b.size(); });
-
-            for (size_t i = 0; i < pairs.size(); i++)
-            {
-                for (size_t j = 0; j < pairs.at(i).size(); j++)
-                {
-                    nodes.push_back(pairs.at(i).at(j));
-                }
-            }
-            // }
-            // else
-            // {
-            //     for (size_t i = 0; i < input.nNodes; i++)
-            //     {
-            //         nodes.push_back(i);
-            //     }
-            // }
-
-            cerr << "METHOD: Group" << endl;
-            int k = calculateK(input);
-            runTestCaseGrouped(k, nodes, infected, input);
-        }
-        // }
-        // else
-        // {
-        //     cerr << "METHOD: Coherant group" << endl;
-        //     runTestCaseGroupedGraph(adjMatrix, infected, input);
-        // }
 
         answerTestCase(infected, input.nNodes);
 

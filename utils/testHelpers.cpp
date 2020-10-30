@@ -97,7 +97,6 @@ void oneByOneTest(vi toTest, vector<bool> &infected, Input input)
     int at;
     for (size_t i = 0; i < toTest.size(); i++)
     {
-
         cout << "test " << toTest.at(i) << endl
              << flush << endl;
         nTests = nTests + 1;
