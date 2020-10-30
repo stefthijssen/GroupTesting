@@ -155,56 +155,6 @@ void runTestCaseGrouped(int groupSize, vi nodes, vector<bool> &infected, Input i
     // }
 }
 
-void runTestCaseSpreadGraph(vi nodes, vector<bool> &infected, Input input)
-{
-    int middle = nodes.size() / 2;
-    int infectedCounter = 0;
-
-    splitTest(nodes, 0, middle, infected, input);
-    splitTest(nodes, middle, nodes.size(), infected, input);
-}
-
-void runTestCaseGroupedGraph(AdjacencyMatrix &adjMatrix, vector<bool> &infected, Input input)
-{
-    vector<vector<int>> pairs;
-    pairs = adjMatrix.findDenseSubGraph(0, pairs, baseThreshold);
-    std::sort(pairs.begin(), pairs.end(), [](const vector<int> &a, const vector<int> &b) { return a.size() > b.size(); });
-    vvi toTest;
-
-    for (size_t i = 0; i < pairs.size(); i++)
-    {
-        testNodes(pairs.at(i));
-        updateInfected(pairs.at(i), infected, toTest);
-        if (remainingTestsAreNegative(input))
-        {
-            return;
-        }
-    }
-
-    if (toTest.size() > 0)
-    {
-        vvi recursiveTestPairs;
-        vvi manualTestPairs;
-
-        for (int i = 0; i < toTest.size(); i++)
-        {
-            if (toTest.at(i).size() > recursionThreshold)
-            {
-                recursiveTestPairs.push_back(toTest.at(i));
-            }
-            else
-            {
-                manualTestPairs.push_back(toTest.at(i));
-            }
-        }
-
-        float newThreshold = baseThreshold - thresholdRecursionStep;
-
-        recursiveTest(adjMatrix, recursiveTestPairs, infected, newThreshold, input);
-        manualTest(manualTestPairs, infected, input);
-    }
-}
-
 void useOneByOne(Input input, vector<bool> &infected) {
     vi nodes;
     for (size_t i = 0; i < input.nNodes; i++)
@@ -222,50 +172,30 @@ void useSplit(Input input, vector<bool> &infected) {
         nodes.push_back(i);
     }
 
-    runTestCaseSpreadGraph(nodes, infected, input);
+    int middle = nodes.size() / 2;
+    int infectedCounter = 0;
+
+    splitTest(nodes, 0, middle, infected, input);
+    splitTest(nodes, middle, nodes.size(), infected, input);
 }
 
 void usePool(Input input, AdjacencyMatrix adjMatrix, vector<bool> &infected) {
-        vi nodes;
-
-        vector<vector<int>> pairs;
-
-        pairs = adjMatrix.findDenseSubGraph(0, pairs, 0);
-        std::sort(pairs.begin(), pairs.end(), [](const vector<int> &a, const vector<int> &b) { return a.size() > b.size(); });
-
-        for (size_t i = 0; i < pairs.size(); i++)
-        {
-            for (size_t j = 0; j < pairs.at(i).size(); j++)
-            {
-                nodes.push_back(pairs.at(i).at(j));
-            }
-        }
-
-        int k = calculateK(input);
-        runTestCaseGrouped(k, nodes, infected, input);
-}
-
-void usePoolHighInfection(Input input, AdjacencyMatrix adjMatrix, vector<bool> &infected) {
-    vector<vector<int>> pairs;
-    pairs = adjMatrix.findDenseSubGraph(0, pairs, 0);
-
-    std::sort(pairs.begin(), pairs.end(), [](const vector<int> &a, const vector<int> &b) { return a.size() > b.size(); });
-    for (size_t i = 0; i < pairs.size() / 3; i++)
-    {
-        oneByOneTest(pairs.at(i), infected, input);
-    }
-
-    int k = calculateK(input);
-
     vi nodes;
 
-    for (size_t i = pairs.size() / 3; i < pairs.size(); i++)
+    vector<vector<int>> pairs;
+
+    pairs = adjMatrix.findDenseSubGraph(0, pairs, 0);
+    std::sort(pairs.begin(), pairs.end(), [](const vector<int> &a, const vector<int> &b) { return a.size() > b.size(); });
+
+    for (size_t i = 0; i < pairs.size(); i++)
     {
         for (size_t j = 0; j < pairs.at(i).size(); j++)
         {
             nodes.push_back(pairs.at(i).at(j));
         }
     }
+
+    int k = calculateK(input);
     runTestCaseGrouped(k, nodes, infected, input);
 }
 
@@ -309,9 +239,6 @@ void runTestCases(int numCase, int &numCorrect)
                 break;
             case oneByOne:
                 useOneByOne(input, infected);
-                break;
-            case poolHighInfection:
-                usePoolHighInfection(input, adjMatrix, infected);
                 break;
             default:
                 useOneByOne(input, infected);
