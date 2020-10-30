@@ -273,7 +273,6 @@ void runTestCases(int numCase, int &numCorrect)
         // }
         // else if (averageInfectionRate > 0.2 || input.infectionChance < 0.3)
         // {
-            // if(input.infectionChance >= 0.3 && averageInfectionRate > )
         vi nodes;
 
         vector<vector<int>> pairs;
