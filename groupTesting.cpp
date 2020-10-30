@@ -183,8 +183,8 @@ void usePool(Input input, AdjacencyMatrix adjMatrix, vector<bool> &infected) {
     vi nodes;
 
     vector<vector<int>> pairs;
-
-    pairs = adjMatrix.findDenseSubGraph(0, pairs, 0);
+    int bestStart = adjMatrix.outgoingEdgesArray();
+    pairs = adjMatrix.findDenseSubGraph(bestStart, pairs, 0);
     std::sort(pairs.begin(), pairs.end(), [](const vector<int> &a, const vector<int> &b) { return a.size() > b.size(); });
 
     for (size_t i = 0; i < pairs.size(); i++)

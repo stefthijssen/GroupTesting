@@ -18,7 +18,7 @@ private:
     Input input;
     int **adj;
     bool *visited;
-
+    vector<int> outgoingEdges;
     void resetVisited()
     {
         for (int i = 0; i < n; i++)
@@ -43,19 +43,35 @@ public:
         this->input = input;
         visited = new bool[n];
         adj = new int *[n];
+        vector<pair<int,int>> tmpOutgoingEdges = vector<pair<int,int>>(n);
         for (size_t i = 0; i < n; i++)
         {
             adj[i] = new int[n];
+            int edgeCounter = 0;
             for (size_t j = 0; j < n; j++)
             {
                 adj[i][j] = 0;
                 if (i == j)
                 {
                     adj[i][j] = 1;
+                    edgeCounter++;
                 }
             }
+            tmpOutgoingEdges[i] = pair<int,int>(i,edgeCounter);
         }
+
+        std::sort(tmpOutgoingEdges.begin(), tmpOutgoingEdges.end(), [](const pair<int,int> &a, const pair<int,int> &b) { return a.second > b.second; });
+        for (size_t i = 0; i < tmpOutgoingEdges.size(); i++)
+        {
+            outgoingEdges.push_back(tmpOutgoingEdges[i].first);
+        }
+        
+
         resetVisited();
+    }
+    int outgoingEdgesArray()
+    {
+        return distance(outgoingEdges.begin(), max_element(outgoingEdges.begin(), outgoingEdges.end()));
     }
     int size()
     {
@@ -109,10 +125,11 @@ public:
         // // cerr << averageInfectionRate << endl;
         // // cerr << input.infectionChance << endl;
         float acceptable = 1 - input.infectionChance + threshold - averageInfectionRate; // Higher means less difference will be accepted
+        // float acceptable = 0.3;
 
         vector<int> accepted;
         accepted.push_back(currentIndex);
-        int next;
+        int next = currentIndex + 1;
 
         for (size_t i = 0; i < n; i++)
         {
@@ -127,13 +144,17 @@ public:
                 visited[i] = true;
                 accepted.push_back(i);
             }
+            int bestNextCandidate = outgoingEdges[i];
+            if (visited[bestNextCandidate] == false)
+            {
+                next = bestNextCandidate;
+            }
         }
-
-        next = currentIndex + 1;
 
         pairs.push_back(accepted);
         return findDenseSubGraph(next, pairs, baseThreshold);
     }
+
     float calcDifference(int arr1[], int arr2[])
     {
         if (input.nEdges < 1)
