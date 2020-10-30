@@ -1,5 +1,7 @@
-#include "../headers/input.h"
-#include "../headers/global.h"
+#include "../headers/input.hpp"
+#include "../headers/global.hpp"
+
+#pragma once
 
 using namespace std;
 
@@ -7,10 +9,14 @@ float calculateP(Input input)
 {
     float nAverageUpperboundInfected = (float)input.maxInfected - infectedFound;
     float nAverageLowerboundInfected = (float)input.minInfected - infectedFound;
-    float averageInfectionRate = (float)(nAverageUpperboundInfected + nAverageLowerboundInfected) / ((input.nNodes - nonInfectedFound) * 2);
+    float averageInfectionRate = ((float)(nAverageUpperboundInfected + nAverageLowerboundInfected) / 2) / (input.nNodes - nonInfectedFound);
+    float spreadFactor = (float)input.infectionChance * (input.nEdges / input.nNodes);
 
     // P the chance a sample is positive increases when average infection rate is high and infection chacnce is also high.
-    float p = (float)averageInfectionRate + ((float)averageInfectionRate * (float)input.infectionChance);
+    float p;
+
+    p = (float)averageInfectionRate + ((float)averageInfectionRate * spreadFactor);
+
     return p;
 }
 

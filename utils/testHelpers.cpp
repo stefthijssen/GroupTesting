@@ -2,8 +2,10 @@
 #include <fstream>
 #include <vector>
 
-#include "../headers/input.h"
-#include "../headers/global.h"
+#include "../headers/input.hpp"
+#include "../headers/global.hpp"
+
+#pragma once
 
 using namespace std;
 
@@ -15,6 +17,12 @@ bool remainingTestsAreNegative(Input input)
 bool remainingTestsArePositive(Input input)
 {
     return (input.nNodes - nonInfectedFound) <= input.minInfected;
+}
+
+void testNode(int node) {
+    cout << "test " << node << endl
+        << flush << endl;
+    nTests = nTests + 1;
 }
 
 void testNodes(vi nodes)
@@ -97,9 +105,7 @@ void oneByOneTest(vi toTest, vector<bool> &infected, Input input)
     int at;
     for (size_t i = 0; i < toTest.size(); i++)
     {
-        cout << "test " << toTest.at(i) << endl
-             << flush << endl;
-        nTests = nTests + 1;
+        testNode(toTest.at(i));
 
         bool result = retrieveTestResult();
         infected[toTest.at(i)] = result;
@@ -112,6 +118,7 @@ void oneByOneTest(vi toTest, vector<bool> &infected, Input input)
         {
             nonInfectedFound++;
         }
+
         if (remainingTestsAreNegative(input))
         {
             cerr << "I am done found maximum infected " << infectedFound << " " << input.maxInfected << endl;
@@ -126,37 +133,6 @@ void oneByOneTest(vi toTest, vector<bool> &infected, Input input)
         for (size_t i = at+1; i < toTest.size(); i++)
         {
             infected[toTest.at(i)] = false;
-        }
-    }
-}
-
-void manualTest(vvi toTest, vector<bool> &infected, Input input)
-{
-    for (size_t i = 0; i < toTest.size(); i++)
-    {
-        for (size_t j = 0; j < toTest.at(i).size(); j++)
-        {
-            cout << "test " << toTest.at(i).at(j) << endl
-                 << flush << endl;
-            nTests = nTests + 1;
-
-            bool result = retrieveTestResult();
-            infected[toTest.at(i).at(j)] = result;
-
-            if (result == true)
-            {
-                infectedFound++;
-            }
-            else
-            {
-                nonInfectedFound++;
-            }
-        }
-
-        if (remainingTestsAreNegative(input))
-        {
-            cerr << "I am done found maximum infected " << infectedFound << " " << input.maxInfected << endl;
-            return;
         }
     }
 }

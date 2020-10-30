@@ -1,5 +1,4 @@
-#include "../headers/input.h"
-#include "formulas.cpp"
+#include "../headers/input.hpp"
 
 using namespace std;
 
@@ -9,13 +8,13 @@ enum Algorithm {
     oneByOne
 };
 
-Algorithm checkWhichAlgorithmToUse(Input input) {
-    if (calculateP(input) <= 0.03) {
+Algorithm checkWhichAlgorithmToUse(Input input, float p) {
+    if (p <= 0.03) {
         cerr << "METHOD: Split" << endl;
         return split;
     }
 
-    if (calculateP(input) >= 0.45) {
+    if (p >= 0.4) {
         cerr << "METHOD: oneByOne" << endl;
         return oneByOne;
     }

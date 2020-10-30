@@ -2,8 +2,10 @@
 #include <fstream>
 #include <vector>
 
-#include "../headers/input.h"
-#include "../headers/global.h"
+#include "../headers/input.hpp"
+#include "../headers/global.hpp"
+
+#include "../utils/testHelpers.cpp"
 
 using namespace std;
 
@@ -51,4 +53,17 @@ void splitTest(vi nodes, int left, int right, vector<bool> &infected, Input inpu
 
     splitTest(nodes, left, middle, infected, input);
     splitTest(nodes, middle, right, infected, input);
+}
+
+void useSplitTest(Input input, vector<bool> &infected) {
+    vi nodes;
+    for (size_t i = 0; i < input.nNodes; i++)
+    {
+        nodes.push_back(i);
+    }
+
+    int middle = nodes.size() / 2;
+
+    splitTest(nodes, 0, middle, infected, input);
+    splitTest(nodes, middle, nodes.size(), infected, input);
 }
