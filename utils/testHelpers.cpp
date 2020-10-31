@@ -11,7 +11,11 @@ using namespace std;
 
 bool remainingTestsAreNegative(Input input)
 {
-    return infectedFound >= input.maxInfected;
+    bool remainingAreNegative = infectedFound >= input.maxInfected;
+    if (remainingAreNegative) {
+        cerr << "I am done found maximum infected " << infectedFound << endl;
+    }
+    return remainingAreNegative;
 }
 
 bool remainingTestsArePositive(Input input)
@@ -102,7 +106,8 @@ void updateInfected(vi subgraph, vector<bool> &infected, vvi &toTest)
 
 bool oneByOneTest(vi toTest, vector<bool> &infected, Input input)
 {
-    bool done = false;
+    bool remainingNegative = false;
+    bool remainingPostive = false;
     int at;
     for (size_t i = 0; i < toTest.size(); i++)
     {
@@ -122,19 +127,29 @@ bool oneByOneTest(vi toTest, vector<bool> &infected, Input input)
 
         if (remainingTestsAreNegative(input))
         {
-            cerr << "I am done found maximum infected " << infectedFound << " " << input.maxInfected << endl;
             at = i;
-            done = true;
+            remainingNegative = true;
+            break;
+        } else if (remainingTestsArePositive(input)) {
+            at = i;
+            remainingPostive = true;
             break;
         }
     }
 
-    if (done)
+    if (remainingNegative)
     {
         for (size_t i = at + 1; i < toTest.size(); i++)
         {
             infected[toTest.at(i)] = false;
             nonInfectedFound++;
+        }
+        return true;
+    } else if (remainingPostive) {
+        for (size_t i = at + 1; i < toTest.size(); i++)
+        {
+            infected[toTest.at(i)] = true;
+            infectedFound++;
         }
         return true;
     }

@@ -212,3 +212,6 @@ average infection rate: 0.105
 number of edges: 1968
 number of infected: 31 - 74
 METHOD: Pool
+Test case 19: success
+Number of tests used for: 274 for a total of nodes: 500
+19/19 correct
