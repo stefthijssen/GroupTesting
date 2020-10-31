@@ -31,24 +31,19 @@ vi customGroupTestSplit(vi nodes, vector<bool> &infected, Input input)
     {
         infectedFound++;
     }
-
-    for (int i = 0; i < size; i++)
+    if (result == false)
     {
-        infected[nodes.at(i)] = result;
-        if (result == false)
+        for (int i = 0; i < size; i++)
         {
+
             nonInfectedFound++;
         }
-    }
-
-    if (result == true && size != 1)
-    {
-        return nodes;
-    }
-    else
-    {
         vi empty;
         return empty;
+    }
+    else if (result == true && size != 1)
+    {
+        return nodes;
     }
 }
 
@@ -70,7 +65,6 @@ void poolTest(int groupSize, vi nodes, vector<bool> &infected, Input input)
         vector<int>::const_iterator last = nodes.begin() + end;
         vector<int> subgroup(first, last);
         vi result = customGroupTestSplit(subgroup, infected, input);
-        currentIndex = currentIndex + size;
         if (result.size() == 2)
         {
             testNode(result.at(0));
@@ -113,6 +107,7 @@ void poolTest(int groupSize, vi nodes, vector<bool> &infected, Input input)
                 return;
             }
         }
+        currentIndex = currentIndex + size;
     }
 }
 
