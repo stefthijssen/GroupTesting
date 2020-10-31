@@ -31,7 +31,7 @@ vi customGroupTestSplit(vi nodes, vector<bool> &infected, Input input)
     {
         infectedFound++;
     }
-    
+
     for (int i = 0; i < size; i++)
     {
         infected[nodes.at(i)] = result;
@@ -71,26 +71,61 @@ void poolTest(int groupSize, vi nodes, vector<bool> &infected, Input input)
         vector<int> subgroup(first, last);
         vi result = customGroupTestSplit(subgroup, infected, input);
         currentIndex = currentIndex + size;
-
-        if (result.size() > 1)
+        if (result.size() == 2)
         {
-            bool isDone = oneByOneTest(result, infected, input);
+            testNode(result.at(0));
+            bool r = retrieveTestResult();
+            infected[result.at(0)] = r;
+            if (r == false)
+            {
+                infected[result.at(1)] = true;
+            }
+            else
+            {
+                testNode(result.at(1));
+                bool r2 = retrieveTestResult();
+                infected[result.at(1)] = r2;
+                if (r2 == true)
+                {
+                    infectedFound++;
+                }
+            }
+            infectedFound++;
+
             size = calculateK(input);
-            if(isDone == true){
+            if (remainingTestsAreNegative(input))
+            {
+                cerr << "I am done found maximum infected " << infectedFound << " " << input.maxInfected << endl;
                 return;
             }
         }
-        
+        else if (result.size() > 1)
+        {
+            bool isDone = oneByOneTest(result, infected, input);
+            size = calculateK(input);
+            if (isDone == true)
+            {
+                return;
+            }
+        }
     }
 }
 
-void usePoolTest(Input input, AdjacencyMatrix adjMatrix, vector<bool> &infected) {
+void usePoolTest(Input input, AdjacencyMatrix adjMatrix, vector<bool> &infected)
+{
     vi nodes;
 
     vector<vector<int>> pairs;
 
     pairs = adjMatrix.findDenseSubGraph(0, pairs, 0);
-    std::sort(pairs.begin(), pairs.end(), [](const vector<int> &a, const vector<int> &b) { return a.size() > b.size(); });
+    if (input.infectionChance >= 0.6) // High infection chance, lets first check less likely nodes, with less edges and less matching edges. Pair them in groups to eliminate slightly faster.
+    {
+        std::sort(pairs.begin(), pairs.end(), [](const vector<int> &a, const vector<int> &b) { return a.size() < b.size(); });
+    }
+    else
+    {
+        std::sort(pairs.begin(), pairs.end(), [](const vector<int> &a, const vector<int> &b) { return a.size() > b.size(); });
+    }
 
     for (size_t i = 0; i < pairs.size(); i++)
     {

@@ -25,7 +25,11 @@ int calculateK(Input input)
     //default to k = 8
     int k = 8;
     float p = calculateP(input);
-    if (p >= 0.15)
+    if (p >= 0.3)
+    {
+        k = 2;
+    }
+    else if (p >= 0.15)
     {
         k = 3;
     }
