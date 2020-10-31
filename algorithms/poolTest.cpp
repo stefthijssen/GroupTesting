@@ -62,27 +62,37 @@ void poolTest(int groupSize, vi nodes, vector<bool> &infected, Input input)
         vector<int>::const_iterator first = nodes.begin() + currentIndex;
         vector<int>::const_iterator last = nodes.begin() + end;
         vector<int> subgroup(first, last);
-       
-        if (subgroup.size() == 1) // Only possible when at the end.
+        if (!remainingTestsArePositive(input))
         {
-            testNode(subgroup.at(0));
-            bool r = retrieveTestResult();
-            infected[subgroup.at(0)] = r;
-            return;
+            if (subgroup.size() == 1) // Only possible when at the end.
+            {
+                testNode(subgroup.at(0));
+                bool r = retrieveTestResult();
+                infected[subgroup.at(0)] = r;
+                return;
+            }
+            vi result = customGroupTestSplit(subgroup, infected, input);
+            if (result.size() == 2)
+            {
+                pair<int, int> aPair(result.at(0), result.at(1));
+                testOfKnownPositivePair(aPair, infected);
+            }
+            else if (result.size() > 2)
+            {
+                oneByOneTest(result, infected, input);
+            }
+            if (remainingTestsAreNegative(input))
+            {
+                return;
+            }
         }
-        vi result = customGroupTestSplit(subgroup, infected, input);
-        if (result.size() == 2)
+        else
         {
-            pair<int, int> aPair(result.at(0), result.at(1));
-            testOfKnownPositivePair(aPair, infected);
-        }
-        else if (result.size() > 2)
-        {
-            oneByOneTest(result, infected, input);
-        }
-        if (remainingTestsAreNegative(input))
-        {
-            return;
+            cerr << "A really rare case just happends" << endl;
+            for (size_t i = 0; i < subgroup.size(); i++)
+            {
+                infected[subgroup.at(i)] = true;
+            }
         }
         currentIndex = currentIndex + size;
         size = calculateK(input);
