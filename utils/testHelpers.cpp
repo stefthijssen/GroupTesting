@@ -20,7 +20,11 @@ bool remainingTestsAreNegative(Input input)
 
 bool remainingTestsArePositive(Input input)
 {
-    return (input.nNodes - nonInfectedFound) == input.minInfected;
+    bool remainingIsPositive = (input.nNodes - nonInfectedFound) <= input.minInfected;
+    if (remainingIsPositive) {
+        cerr << "I am done found maximum nonInfected " << infectedFound << endl;
+    }
+    return remainingIsPositive;
 }
 
 void testNode(int node)
