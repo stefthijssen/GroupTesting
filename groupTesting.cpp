@@ -15,13 +15,15 @@
 
 using namespace std;
 
-void resetGlobals() {
+void resetGlobals()
+{
     nTests = 0;
     infectedFound = 0;
     nonInfectedFound = 0;
 }
 
-void giveFeedbackOnTest(Input input, int testcase, int &numCorrect, vector<bool> infected) {
+void giveFeedbackOnTest(Input input, int testcase, int &numCorrect, vector<bool> infected)
+{
     string result;
     cin >> result;
     cerr << "Test case " << testcase << ": " << result << endl;
@@ -39,13 +41,16 @@ void giveFeedbackOnTest(Input input, int testcase, int &numCorrect, vector<bool>
     cerr << "Number of tests used for: " << nTests << " for a total of nodes: " << input.nNodes << endl;
 }
 
-
 void runTestCases(int numCase, int &numCorrect)
 {
     for (int testcase = 1; testcase <= numCase; testcase++)
     {
         Input input = parseInput();
         vector<bool> infected(input.nNodes, false);
+        for (size_t i = 0; i < input.nNodes; i++)
+        {
+            infected[i] = false;
+        }
 
         resetGlobals();
 
@@ -54,30 +59,32 @@ void runTestCases(int numCase, int &numCorrect)
         // P the chance a sample is positive increases when average infection rate is high and infection chacnce is also high.
         float p = calculateP(input);
 
-        cerr << endl << endl;
+        cerr << endl
+             << endl;
         cerr << "infection chance: " << input.infectionChance << endl;
         cerr << "p(robabilty) sample is infected: " << p << endl;
         cerr << "nodes: " << input.nNodes << endl;
         cerr << "average infection rate: " << averageInfectionRate << endl;
         cerr << "number of edges: " << input.nEdges << endl;
         cerr << "number of infected: " << input.minInfected << " - " << input.maxInfected << endl;
-        
+
         AdjacencyMatrix adjMatrix = createAdjacencyMatrix(input);
 
         Algorithm algorithmCase = checkWhichAlgorithmToUse(input, calculateP(input));
-        switch (algorithmCase) {
-            case split:
-                useSplitTest(input, infected);
-                break;
-            case pool:
-                usePoolTest(input, adjMatrix, infected);
-                break;
-            case oneByOne:
-                useOneByOne(input, infected);
-                break;
-            default:
-                useOneByOne(input, infected);
-                break;
+        switch (algorithmCase)
+        {
+        case split:
+            useSplitTest(input, infected);
+            break;
+        case pool:
+            usePoolTest(input, adjMatrix, infected);
+            break;
+        case oneByOne:
+            useOneByOne(input, infected);
+            break;
+        default:
+            useOneByOne(input, infected);
+            break;
         }
 
         answerTestCase(infected, input.nNodes);
