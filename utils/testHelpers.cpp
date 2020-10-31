@@ -141,7 +141,7 @@ bool oneByOneTest(vi toTest, vector<bool> &infected, Input input)
         }
     }
 
-    if (remainingNegative)
+    if (remainingNegative == true)
     {
         for (size_t i = at + 1; i < toTest.size(); i++)
         {
@@ -149,7 +149,7 @@ bool oneByOneTest(vi toTest, vector<bool> &infected, Input input)
             nonInfectedFound++;
         }
         return true;
-    } else if (remainingPostive) {
+    } else if (remainingPostive == true) {
         for (size_t i = at + 1; i < toTest.size(); i++)
         {
             infected[toTest.at(i)] = true;
