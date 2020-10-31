@@ -104,7 +104,7 @@ void poolTest(int groupSize, vi nodes, vector<bool> &infected, Input input)
             {
                 for (size_t i = currentIndex + 1; i < infected.size(); i++)
                 {
-                   infected[i] = true;
+                   infected[nodes.at(i)] = true;
                 }
                 
                 return;
