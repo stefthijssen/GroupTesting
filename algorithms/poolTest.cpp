@@ -89,6 +89,8 @@ void poolTest(int groupSize, vi nodes, vector<bool> &infected, Input input)
                 if (r2 == true)
                 {
                     infectedFound++;
+                } else {
+                    nonInfectedFound++;
                 }
             }
             infectedFound++;
@@ -96,12 +98,10 @@ void poolTest(int groupSize, vi nodes, vector<bool> &infected, Input input)
             size = calculateK(input);
             if (remainingTestsAreNegative(input))
             {
-                cerr << "I am done found maximum infected " << infectedFound << " " << input.maxInfected << endl;
                 return;
             }
             if (remainingTestsArePositive(input))
             {
-                cerr << "I am done found maximum infected " << infectedFound << " " << input.maxInfected << endl;
                 for (size_t i = currentIndex + 1; i < infected.size(); i++)
                 {
                    infected[i] = true;

@@ -12,7 +12,7 @@ using namespace std;
 bool remainingTestsAreNegative(Input input)
 {
     bool remainingAreNegative = infectedFound >= input.maxInfected;
-    if (remainingAreNegative) {
+    if (remainingAreNegative == true) {
         cerr << "I am done found maximum infected " << infectedFound << endl;
     }
     return remainingAreNegative;
@@ -21,7 +21,7 @@ bool remainingTestsAreNegative(Input input)
 bool remainingTestsArePositive(Input input)
 {
     bool remainingIsPositive = (input.nNodes - nonInfectedFound) <= input.minInfected;
-    if (remainingIsPositive) {
+    if (remainingIsPositive == true) {
         cerr << "I am done found maximum nonInfected " << infectedFound << endl;
     }
     return remainingIsPositive;
