@@ -9,12 +9,17 @@
 
 using namespace std;
 
-typedef pair<Status, int> ReturnStatus;
+// typedef pair<Status, int> ReturnStatus;
 
 enum Status {
     NegativeRemaining,
     PositiveRemaining,
     Continue
+};
+
+struct ReturnStatus {
+    Status status;
+    int index;
 };
 
 bool remainingTestsAreNegative(Input input)

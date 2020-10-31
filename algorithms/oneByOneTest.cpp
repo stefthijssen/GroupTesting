@@ -12,18 +12,18 @@ void useOneByOne(Input input, vector<bool> &infected) {
         nodes.push_back(i);
     }
 
-    ReturnStatus status = oneByOneTest(nodes, infected, input);
+    ReturnStatus returnStatus = oneByOneTest(nodes, infected, input);
 
-    if (status.first == NegativeRemaining)
+    if (returnStatus.status == NegativeRemaining)
     {
-        for (size_t i = status.second; i < nodes.size(); i++)
+        for (size_t i = returnStatus.index; i < nodes.size(); i++)
         {
             infected[i] = false;
             nonInfectedFound++;
         }
     }
-    else if (status.first == PositiveRemaining) {
-        for (size_t i = status.second; i < nodes.size(); i++)
+    else if (returnStatus.status == PositiveRemaining) {
+        for (size_t i = returnStatus.index; i < nodes.size(); i++)
         {
             infected[nodes.at(i)] = true;
             infectedFound++;

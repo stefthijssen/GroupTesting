@@ -118,19 +118,19 @@ void poolTest(int groupSize, vi nodes, vector<bool> &infected, Input input)
         }
         else if (result.size() > 1)
         {
-            ReturnStatus status = oneByOneTest(result, infected, input);
+            ReturnStatus returnStatus = oneByOneTest(result, infected, input);
             size = calculateK(input);
-            if (status.first == NegativeRemaining)
+            if (returnStatus.status == NegativeRemaining)
             {
-                for (size_t i = currentIndex + status.second + 1; i < nodes.size(); i++)
+                for (size_t i = currentIndex + returnStatus.index; i < nodes.size(); i++)
                 {
                     infected[nodes.at(i)] = false;
                     nonInfectedFound++;
                 }
                 return;
             }
-            else if (status.first == PositiveRemaining) {
-                for (size_t i = currentIndex + status.second + 1; i < nodes.size(); i++)
+            else if (returnStatus.status == PositiveRemaining) {
+                for (size_t i = currentIndex + returnStatus.index; i < nodes.size(); i++)
                 {
                     infected[nodes.at(i)] = true;
                     infectedFound++;
