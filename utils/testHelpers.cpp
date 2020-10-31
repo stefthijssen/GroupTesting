@@ -22,7 +22,7 @@ bool remainingTestsArePositive(Input input)
 {
     bool remainingIsPositive = (input.nNodes - nonInfectedFound) <= input.minInfected;
     if (remainingIsPositive == true) {
-        cerr << "I am done found maximum nonInfected " << infectedFound << endl;
+        cerr << "I am done found maximum nonInfected " << nonInfectedFound << endl;
     }
     return remainingIsPositive;
 }
