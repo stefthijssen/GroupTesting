@@ -1,0 +1,12 @@
+Scanning dependencies of target GroupTesting
+[ 50%] Building CXX object CMakeFiles/GroupTesting.dir/groupTesting.cpp.o
+In file included from /Users/twanbolwerk/Documents/premaster-software-science/algoritms-datastructures/assignment1/GroupTesting/groupTesting.cpp:9:
+In file included from /Users/twanbolwerk/Documents/premaster-software-science/algoritms-datastructures/assignment1/GroupTesting/algorithms/splitTest.cpp:8:
+/Users/twanbolwerk/Documents/premaster-software-science/algoritms-datastructures/assignment1/GroupTesting/algorithms/../utils/testHelpers.cpp:19:66: error: expected ';' after return statement
+    return (input.nNodes - nonInfectedFound) <= input.minInfected
+                                                                 ^
+                                                                 ;
+1 error generated.
+make[2]: *** [CMakeFiles/GroupTesting.dir/groupTesting.cpp.o] Error 1
+make[1]: *** [CMakeFiles/GroupTesting.dir/all] Error 2
+make: *** [all] Error 2
