@@ -25,6 +25,10 @@ void giveFeedbackOnTest(Input input, int testcase, int &numCorrect, vector<bool>
     string result;
     cin >> result;
     cerr << "Test case " << testcase << ": " << result << endl;
+    cerr << "Infected found: " << infectedFound << endl;
+    cerr << "Noninfected found: " << nonInfectedFound << endl;
+    cerr << "Nodes not tested: " << input.nNodes - (infectedFound + nonInfectedFound) << endl;
+    cerr << "Number of tests used for: " << nTests << " for a total of nodes: " << input.nNodes << endl;
     if (result == "success")
     {
         numCorrect++;
@@ -36,10 +40,6 @@ void giveFeedbackOnTest(Input input, int testcase, int &numCorrect, vector<bool>
             cerr << i << ": " << infected.at(i) << endl;
         }
     }
-    cerr << "Infected found: " << infectedFound << endl;
-    cerr << "Noninfected found: " << nonInfectedFound << endl;
-    cerr << "Nodes not tested: " << input.nNodes - (infectedFound + nonInfectedFound) << endl;
-    cerr << "Number of tests used for: " << nTests << " for a total of nodes: " << input.nNodes << endl;
 }
 
 
