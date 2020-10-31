@@ -2,4 +2,5 @@ credentials
 /build
 /.vscode
 output.*
-testcase.*
+*.txt
+*.text
