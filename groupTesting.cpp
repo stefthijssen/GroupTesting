@@ -47,10 +47,6 @@ void runTestCases(int numCase, int &numCorrect)
     {
         Input input = parseInput();
         vector<bool> infected(input.nNodes, false);
-        for (size_t i = 0; i < input.nNodes; i++)
-        {
-            infected[i] = false;
-        }
 
         resetGlobals();
 

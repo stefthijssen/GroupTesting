@@ -100,7 +100,35 @@ void updateInfected(vi subgraph, vector<bool> &infected, vvi &toTest)
     }
 }
 
-bool oneByOneTest(vi toTest, vector<bool> &infected, Input input)
+void testOfKnownPositivePair(pair<int, int> aPair, vector<bool> &infected)
+{
+    testNode(aPair.first);
+    bool r = retrieveTestResult();
+    infected[aPair.first] = r;
+    if (r == false)
+    {
+        infected[aPair.second] = true;
+
+        nonInfectedFound++;
+    }
+    else
+    {
+        testNode(aPair.second);
+        bool r2 = retrieveTestResult();
+        infected[aPair.second] = r2;
+        if (r2 == true)
+        {
+            infectedFound++;
+        }
+        else
+        {
+            nonInfectedFound++;
+        }
+    }
+    infectedFound++;
+}
+
+void oneByOneTest(vi toTest, vector<bool> &infected, Input input)
 {
     for (size_t i = 0; i < toTest.size(); i++)
     {
