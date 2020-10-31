@@ -143,16 +143,18 @@ bool oneByOneTest(vi toTest, vector<bool> &infected, Input input)
 
     if (remainingNegative == true)
     {
-        for (size_t i = at + 1; i < toTest.size(); i++)
+        int startIndex = toTest.at(at) + 1;
+        for (size_t i = startIndex; i < infected.size(); i++)
         {
-            infected[toTest.at(i)] = false;
+            infected[i] = false;
             nonInfectedFound++;
         }
         return true;
     } else if (remainingPostive == true) {
-        for (size_t i = at + 1; i < toTest.size(); i++)
+        int startIndex = toTest.at(at) + 1;
+        for (size_t i = startIndex; i < infected.size(); i++)
         {
-            infected[toTest.at(i)] = true;
+            infected[i] = true;
             infectedFound++;
         }
         return true;
