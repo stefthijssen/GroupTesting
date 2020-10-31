@@ -12,5 +12,21 @@ void useOneByOne(Input input, vector<bool> &infected) {
         nodes.push_back(i);
     }
 
-    oneByOneTest(nodes, infected, input);
+    ReturnStatus status = oneByOneTest(nodes, infected, input);
+
+    if (status.first == NegativeRemaining)
+    {
+        for (size_t i = status.second; i < nodes.size(); i++)
+        {
+            infected[i] = false;
+            nonInfectedFound++;
+        }
+    }
+    else if (status.first == PositiveRemaining) {
+        for (size_t i = status.second; i < nodes.size(); i++)
+        {
+            infected[nodes.at(i)] = true;
+            infectedFound++;
+        }
+    }
 }

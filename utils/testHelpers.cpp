@@ -9,6 +9,8 @@
 
 using namespace std;
 
+typedef pair<Status, int> ReturnStatus;
+
 enum Status {
     NegativeRemaining,
     PositiveRemaining,
@@ -19,7 +21,7 @@ bool remainingTestsAreNegative(Input input)
 {
     bool remainingAreNegative = infectedFound >= input.maxInfected;
     if (remainingAreNegative == true) {
-        cerr << "I am done found maximum infected " << infectedFound << endl;
+        cerr << "Optimization: Found maximum infected " << infectedFound << endl;
     }
     return remainingAreNegative;
 }
@@ -28,7 +30,7 @@ bool remainingTestsArePositive(Input input)
 {
     bool remainingIsPositive = (input.nNodes - nonInfectedFound) <= input.minInfected;
     if (remainingIsPositive == true) {
-        cerr << "I am done found maximum nonInfected " << nonInfectedFound << endl;
+        cerr << "Optimization: Found maximum nonInfected " << nonInfectedFound << endl;
     }
     return remainingIsPositive;
 }
@@ -114,7 +116,7 @@ void updateInfected(vi subgraph, vector<bool> &infected, vvi &toTest)
     }
 }
 
-Status oneByOneTest(vi toTest, vector<bool> &infected, Input input)
+ReturnStatus oneByOneTest(vi toTest, vector<bool> &infected, Input input)
 {
     for (size_t i = 0; i < toTest.size(); i++)
     {
@@ -132,15 +134,13 @@ Status oneByOneTest(vi toTest, vector<bool> &infected, Input input)
             nonInfectedFound++;
         }
 
-        cerr << "order: " << toTest.at(i) << endl;
-
         if (remainingTestsAreNegative(input))
         {
-            return NegativeRemaining;
+            return { NegativeRemaining, i };
         } else if (remainingTestsArePositive(input)) {
-            return PositiveRemaining;
+            return { PositiveRemaining, i };
         }
     }
 
-    return Continue;
+    return { Continue, NULL };
 }

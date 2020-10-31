@@ -79,7 +79,7 @@ void poolTest(int groupSize, vi nodes, vector<bool> &infected, Input input)
             if (r == false)
             {
                 infected[result.at(1)] = true;
-                nonInfectedFound ++ ;
+                nonInfectedFound ++;
             }
             else
             {
@@ -98,6 +98,11 @@ void poolTest(int groupSize, vi nodes, vector<bool> &infected, Input input)
             size = calculateK(input);
             if (remainingTestsAreNegative(input))
             {
+                for (size_t i = currentIndex + 1; i < infected.size(); i++)
+                {
+                   infected[nodes.at(i)] = false;
+                   nonInfectedFound++;
+                }
                 return;
             }
             if (remainingTestsArePositive(input))
@@ -105,6 +110,7 @@ void poolTest(int groupSize, vi nodes, vector<bool> &infected, Input input)
                 for (size_t i = currentIndex + 1; i < infected.size(); i++)
                 {
                    infected[nodes.at(i)] = true;
+                   infectedFound++;
                 }
                 
                 return;
@@ -112,21 +118,21 @@ void poolTest(int groupSize, vi nodes, vector<bool> &infected, Input input)
         }
         else if (result.size() > 1)
         {
-            Status status = oneByOneTest(result, infected, input);
+            ReturnStatus status = oneByOneTest(result, infected, input);
             size = calculateK(input);
-            if (status == NegativeRemaining)
+            if (status.first == NegativeRemaining)
             {
-                for (size_t i = currentIndex + 1; i < nodes.size(); i++)
+                for (size_t i = currentIndex + status.second + 1; i < nodes.size(); i++)
                 {
-                    infected[i] = false;
+                    infected[nodes.at(i)] = false;
                     nonInfectedFound++;
                 }
                 return;
             }
-            else if (status == PositiveRemaining) {
-                for (size_t i = currentIndex + 1; i < nodes.size(); i++)
+            else if (status.first == PositiveRemaining) {
+                for (size_t i = currentIndex + status.second + 1; i < nodes.size(); i++)
                 {
-                    infected[i] = true;
+                    infected[nodes.at(i)] = true;
                     infectedFound++;
                 }
                 return;
