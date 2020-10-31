@@ -16,7 +16,7 @@ bool remainingTestsAreNegative(Input input)
 
 bool remainingTestsArePositive(Input input)
 {
-    return (input.nNodes - nonInfectedFound) == input.maxInfected;
+    return (input.nNodes - nonInfectedFound) == input.minInfected;
 }
 
 void testNode(int node)
