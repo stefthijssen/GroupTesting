@@ -9,6 +9,12 @@
 
 using namespace std;
 
+enum Status {
+    NegativeRemaining,
+    PositiveRemaining,
+    Continue
+};
+
 bool remainingTestsAreNegative(Input input)
 {
     bool remainingAreNegative = infectedFound >= input.maxInfected;
@@ -108,11 +114,8 @@ void updateInfected(vi subgraph, vector<bool> &infected, vvi &toTest)
     }
 }
 
-bool oneByOneTest(vi toTest, vector<bool> &infected, Input input)
+Status oneByOneTest(vi toTest, vector<bool> &infected, Input input)
 {
-    bool remainingNegative = false;
-    bool remainingPostive = false;
-    int at;
     for (size_t i = 0; i < toTest.size(); i++)
     {
         testNode(toTest.at(i));
@@ -129,35 +132,15 @@ bool oneByOneTest(vi toTest, vector<bool> &infected, Input input)
             nonInfectedFound++;
         }
 
+        cerr << "order: " << toTest.at(i) << endl;
+
         if (remainingTestsAreNegative(input))
         {
-            at = i;
-            remainingNegative = true;
-            break;
+            return NegativeRemaining;
         } else if (remainingTestsArePositive(input)) {
-            at = i;
-            remainingPostive = true;
-            break;
+            return PositiveRemaining;
         }
     }
 
-    if (remainingNegative == true)
-    {
-        int startIndex = toTest.at(at) + 1;
-        for (size_t i = startIndex; i < infected.size(); i++)
-        {
-            infected[i] = false;
-            nonInfectedFound++;
-        }
-        return true;
-    } else if (remainingPostive == true) {
-        int startIndex = toTest.at(at) + 1;
-        for (size_t i = startIndex; i < infected.size(); i++)
-        {
-            infected[i] = true;
-            infectedFound++;
-        }
-        return true;
-    }
-    return false;
+    return Continue;
 }
