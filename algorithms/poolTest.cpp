@@ -25,25 +25,25 @@ vi customGroupTestSplit(vi nodes, vector<bool> &infected, Input input)
     cout << endl
          << flush << endl;
     nTests = nTests + 1;
+
     bool result = retrieveTestResult();
 
-    if (result == true && size == 1)
-    {
-        infectedFound++;
-    }
     if (result == false)
     {
         for (int i = 0; i < size; i++)
         {
-
             nonInfectedFound++;
         }
-        vi empty;
-        return empty;
     }
-    else if (result == true && size != 1)
+
+    if (result == true)
     {
         return nodes;
+    }
+    else
+    {
+        vi empty;
+        return empty;
     }
 }
 
@@ -53,17 +53,23 @@ void poolTest(int groupSize, vi nodes, vector<bool> &infected, Input input)
     int currentIndex = 0;
     vvi pairs;
 
-    while (currentIndex <= nodes.size())
+    while (currentIndex < nodes.size())
     {
         int end = currentIndex + size;
         if (currentIndex + size > nodes.size())
         {
             end = nodes.size();
         }
-
         vector<int>::const_iterator first = nodes.begin() + currentIndex;
         vector<int>::const_iterator last = nodes.begin() + end;
         vector<int> subgroup(first, last);
+        if (subgroup.size() == 1) // Only possible when at the end.
+        {
+            testNode(subgroup.at(0));
+            bool r = retrieveTestResult();
+            infected[subgroup.at(0)] = r;
+            break;
+        }
         vi result = customGroupTestSplit(subgroup, infected, input);
         if (result.size() == 2)
         {
@@ -91,7 +97,6 @@ void poolTest(int groupSize, vi nodes, vector<bool> &infected, Input input)
             }
             infectedFound++;
 
-            size = calculateK(input);
             if (remainingTestsAreNegative(input))
             {
                 cerr << "I am done found maximum infected " << infectedFound << " " << input.maxInfected << endl;
@@ -101,13 +106,13 @@ void poolTest(int groupSize, vi nodes, vector<bool> &infected, Input input)
         else if (result.size() > 1)
         {
             bool isDone = oneByOneTest(result, infected, input);
-            size = calculateK(input);
             if (isDone == true)
             {
                 return;
             }
         }
         currentIndex = currentIndex + size;
+        size = calculateK(input);
     }
 }
 

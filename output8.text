@@ -1,0 +1,76 @@
+Scanning dependencies of target GroupTesting
+[ 50%] Building CXX object CMakeFiles/GroupTesting.dir/groupTesting.cpp.o
+In file included from /Users/twanbolwerk/Documents/premaster-software-science/algoritms-datastructures/assignment1/GroupTesting/groupTesting.cpp:9:
+In file included from /Users/twanbolwerk/Documents/premaster-software-science/algoritms-datastructures/assignment1/GroupTesting/algorithms/splitTest.cpp:8:
+/Users/twanbolwerk/Documents/premaster-software-science/algoritms-datastructures/assignment1/GroupTesting/algorithms/../utils/testHelpers.cpp:126:1: warning: non-void function does not return a value [-Wreturn-type]
+}
+^
+1 warning generated.
+[100%] Linking CXX executable GroupTesting
+[100%] Built target GroupTesting
+number of test cases: 19
+
+
+
+infection chance: 0.1
+p(robabilty) sample is infected: 0.336
+nodes: 100
+average infection rate: 0.24
+number of edges: 485
+number of infected: 20 - 28
+METHOD: Pool
+Test case 1: success
+Number of tests used for: 98 for a total of nodes: 100
+
+
+infection chance: 0.3
+p(robabilty) sample is infected: 0.808
+nodes: 100
+average infection rate: 0.505
+number of edges: 269
+number of infected: 49 - 52
+METHOD: oneByOne
+Test case 2: success
+Number of tests used for: 100 for a total of nodes: 100
+
+
+infection chance: 0.3
+p(robabilty) sample is infected: 0.0944
+nodes: 500
+average infection rate: 0.059
+number of edges: 1404
+number of infected: 27 - 32
+METHOD: Pool
+Test case 3: success
+Number of tests used for: 227 for a total of nodes: 500
+
+
+infection chance: 0.6
+p(robabilty) sample is infected: 0.424
+nodes: 100
+average infection rate: 0.265
+number of edges: 186
+number of infected: 25 - 28
+METHOD: Pool
+Test case 4: success
+Number of tests used for: 89 for a total of nodes: 100
+
+
+infection chance: 0.012
+p(robabilty) sample is infected: 0.441464
+nodes: 500
+average infection rate: 0.278
+number of edges: 24943
+number of infected: 102 - 176
+METHOD: Pool
+Test case 5: success
+Number of tests used for: 524 for a total of nodes: 500
+
+
+infection chance: 0.13
+p(robabilty) sample is infected: 0.0126
+nodes: 1000
+average infection rate: 0.01
+number of edges: 2910
+number of infected: 9 - 11
+METHOD: Split

@@ -102,8 +102,6 @@ void updateInfected(vi subgraph, vector<bool> &infected, vvi &toTest)
 
 bool oneByOneTest(vi toTest, vector<bool> &infected, Input input)
 {
-    bool done = false;
-    int at;
     for (size_t i = 0; i < toTest.size(); i++)
     {
         testNode(toTest.at(i));
@@ -122,21 +120,7 @@ bool oneByOneTest(vi toTest, vector<bool> &infected, Input input)
 
         if (remainingTestsAreNegative(input))
         {
-            cerr << "I am done found maximum infected " << infectedFound << " " << input.maxInfected << endl;
-            at = i;
-            done = true;
             break;
         }
     }
-
-    if (done)
-    {
-        for (size_t i = at + 1; i < toTest.size(); i++)
-        {
-            infected[toTest.at(i)] = false;
-            nonInfectedFound++;
-        }
-        return true;
-    }
-    return false;
 }
