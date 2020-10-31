@@ -1103,3 +1103,60 @@ average infection rate: 0.059
 number of edges: 1404
 number of infected: 27 - 32
 METHOD: Pool
+Test case 9: success
+Number of tests used for: 234 for a total of nodes: 500
+
+
+infection chance: 0.6
+p(robabilty) sample is infected: 0.424
+nodes: 100
+average infection rate: 0.265
+number of edges: 186
+number of infected: 25 - 28
+METHOD: Pool
+I am done found maximum infected 28 28
+Test case 10: success
+Number of tests used for: 92 for a total of nodes: 100
+
+
+infection chance: 0.1
+p(robabilty) sample is infected: 0.0742
+nodes: 2000
+average infection rate: 0.053
+number of edges: 9336
+number of infected: 91 - 121
+METHOD: Pool
+Test case 11: success
+Number of tests used for: 1054 for a total of nodes: 2000
+
+
+infection chance: 0.14
+p(robabilty) sample is infected: 0.04118
+nodes: 1000
+average infection rate: 0.029
+number of edges: 3728
+number of infected: 16 - 42
+METHOD: Pool
+Test case 12: success
+Number of tests used for: 267 for a total of nodes: 1000
+
+
+infection chance: 0.0333333
+p(robabilty) sample is infected: 0.0333333
+nodes: 300
+average infection rate: 0.0333333
+number of edges: 0
+number of infected: 10 - 10
+METHOD: Pool
+I am done found maximum infected 10 10
+Test case 13: success
+Number of tests used for: 104 for a total of nodes: 300
+
+
+infection chance: 0.6
+p(robabilty) sample is infected: 0.638
+nodes: 100
+average infection rate: 0.29
+number of edges: 294
+number of infected: 27 - 31
+METHOD: Pool

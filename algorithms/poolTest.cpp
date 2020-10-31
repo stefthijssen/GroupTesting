@@ -79,6 +79,7 @@ void poolTest(int groupSize, vi nodes, vector<bool> &infected, Input input)
             if (r == false)
             {
                 infected[result.at(1)] = true;
+                nonInfectedFound++;
             }
             else
             {
@@ -88,6 +89,10 @@ void poolTest(int groupSize, vi nodes, vector<bool> &infected, Input input)
                 if (r2 == true)
                 {
                     infectedFound++;
+                }
+                else
+                {
+                    nonInfectedFound++;
                 }
             }
             infectedFound++;
