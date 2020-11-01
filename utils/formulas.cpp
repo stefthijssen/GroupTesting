@@ -9,12 +9,11 @@ float calculateP(Input input)
 {
     float nAverageUpperboundInfected = (float)input.maxInfected - infectedFound;
     float nAverageLowerboundInfected = (float)input.minInfected - infectedFound;
-    float averageInfectionRate = ((float)(nAverageUpperboundInfected + nAverageLowerboundInfected) / 2) / (input.nNodes - nonInfectedFound);
+    float averageInfectionRate = ((float)(nAverageUpperboundInfected + nAverageLowerboundInfected) / 2) / (input.nNodes - (nonInfectedFound + infectedFound));
     float spreadFactor = (float)input.infectionChance * (input.nEdges / input.nNodes);
 
     // P the chance a sample is positive increases when average infection rate is high and infection chacnce is also high.
     float p;
-
     p = (float)averageInfectionRate + ((float)averageInfectionRate * spreadFactor);
 
     return p;

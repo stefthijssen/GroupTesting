@@ -1,116 +1,203 @@
+Scanning dependencies of target GroupTesting
+[ 50%] Building CXX object CMakeFiles/GroupTesting.dir/groupTesting.cpp.o
+[100%] Linking CXX executable GroupTesting
 [100%] Built target GroupTesting
 number of test cases: 19
 
 
 
-infection chance: 0.16
-p(robabilty) sample is infected: 0.05772
+infection chance: 0.14
+p(robabilty) sample is infected: 0.04118
 nodes: 1000
-average infection rate: 0.039
-number of edges: 3583
-number of infected: 24 - 54
+average infection rate: 0.029
+number of edges: 3728
+number of infected: 16 - 42
 METHOD: Pool
+current k value would be: 11
+current k value is: 11
+current k value would be: 11
+current k value is: 11
+current k value would be: 11
+current k value is: 11
+current k value would be: 11
+current k value is: 11
+current k value would be: 11
+current k value is: 11
+current k value would be: 11
+current k value is: 11
+current k value would be: 11
+current k value is: 11
+current k value would be: 11
+current k value is: 11
+current k value would be: 11
+current k value is: 11
+current k value would be: 11
+current k value is: 11
+current k value would be: 11
+current k value is: 11
+current k value would be: 11
+current k value is: 11
+current k value would be: 11
+current k value is: 11
+current k value would be: 11
+current k value is: 11
+current k value would be: 11
+current k value is: 11
+current k value would be: 11
+current k value is: 11
+current k value would be: 11
+current k value is: 11
+current k value would be: 11
+current k value is: 11
+current k value would be: 11
+current k value is: 11
+current k value would be: 11
+current k value is: 11
+current k value would be: 11
+current k value is: 11
+current k value would be: 11
+current k value is: 11
+current k value would be: 11
+current k value is: 11
+current k value would be: 11
+current k value is: 11
+current k value would be: 11
+current k value is: 11
+current k value would be: 11
+current k value is: 11
+current k value would be: 11
+current k value is: 11
+current k value would be: 11
+current k value is: 11
+current k value would be: 11
+current k value is: 11
+current k value would be: 11
+current k value is: 11
+current k value would be: 11
+current k value is: 11
+current k value would be: 11
+current k value is: 11
+current k value would be: 11
+current k value is: 11
+current k value would be: 11
+current k value is: 11
+current k value would be: 11
+current k value is: 11
+current k value would be: 11
+current k value is: 11
+current k value would be: 11
+current k value is: 11
+current k value would be: 11
+current k value is: 11
+current k value would be: 11
+current k value is: 11
+current k value would be: 11
+current k value is: 11
+current k value would be: 11
+current k value is: 11
+current k value would be: 11
+current k value is: 11
+current k value would be: 11
+current k value is: 11
+current k value would be: 11
+current k value is: 11
+current k value would be: 11
+current k value is: 11
+current k value would be: 11
+current k value is: 11
+current k value would be: 11
+current k value is: 11
+current k value would be: 11
+current k value is: 11
+current k value would be: 11
+current k value is: 11
+current k value would be: 11
+current k value is: 11
+current k value would be: 7
+current k value is: 11
+current k value would be: 7
+current k value is: 11
+current k value would be: 7
+current k value is: 11
+current k value would be: 7
+current k value is: 11
+current k value would be: 7
+current k value is: 11
+current k value would be: 7
+current k value is: 11
+current k value would be: 7
+current k value is: 11
+current k value would be: 7
+current k value is: 11
+current k value would be: 7
+current k value is: 11
+current k value would be: 7
+current k value is: 11
+current k value would be: 7
+current k value is: 11
+current k value would be: 7
+current k value is: 11
+current k value would be: 7
+current k value is: 11
+current k value would be: 7
+current k value is: 11
+current k value would be: 7
+current k value is: 11
+current k value would be: 7
+current k value is: 11
+current k value would be: 7
+current k value is: 11
+current k value would be: 7
+current k value is: 11
+current k value would be: 7
+current k value is: 11
+current k value would be: 7
+current k value is: 11
+current k value would be: 7
+current k value is: 11
+current k value would be: 7
+current k value is: 11
+current k value would be: 7
+current k value is: 11
+current k value would be: 7
+current k value is: 11
+current k value would be: 4
+current k value is: 11
+current k value would be: 4
+current k value is: 11
+current k value would be: 4
+current k value is: 11
+current k value would be: 4
+current k value is: 11
+current k value would be: 4
+current k value is: 11
+current k value would be: 4
+current k value is: 11
+current k value would be: 4
+current k value is: 11
+current k value would be: 4
+current k value is: 11
+current k value would be: 3
+current k value is: 11
+current k value would be: 3
+current k value is: 11
+current k value would be: 3
+current k value is: 11
+current k value would be: 3
+current k value is: 11
+current k value would be: 3
+current k value is: 11
+current k value would be: 2
+current k value is: 11
+current k value would be: 2
+current k value is: 11
+current k value would be: 2
+current k value is: 11
+current k value would be: 2
+current k value is: 11
 Test case 1: success
-Number of tests used for: 332 for a total of nodes: 1000
-
-
-infection chance: 0.055
-p(robabilty) sample is infected: 0.023865
-nodes: 1000
-average infection rate: 0.0215
-number of edges: 2984
-number of infected: 21 - 22
-METHOD: Split
-Test case 2: success
-Number of tests used for: 242 for a total of nodes: 1000
-
-
-infection chance: 0.01
-p(robabilty) sample is infected: 0.01
-nodes: 100
-average infection rate: 0.01
-number of edges: 0
-number of infected: 1 - 1
-METHOD: Split
-Test case 3: success
-Number of tests used for: 10 for a total of nodes: 100
-
-
-infection chance: 0.008
-p(robabilty) sample is infected: 0.244992
-nodes: 500
-average infection rate: 0.176
-number of edges: 24912
-number of infected: 83 - 93
-METHOD: Pool
-Test case 4: success
-Number of tests used for: 393 for a total of nodes: 500
-
-
-infection chance: 0.0333333
-p(robabilty) sample is infected: 0.0333333
-nodes: 300
-average infection rate: 0.0333333
-number of edges: 0
-number of infected: 10 - 10
-METHOD: Pool
-Test case 5: success
-Number of tests used for: 115 for a total of nodes: 300
-
-
-infection chance: 0.012
-p(robabilty) sample is infected: 0.441464
-nodes: 500
-average infection rate: 0.278
-number of edges: 24943
-number of infected: 102 - 176
-METHOD: Pool
-Test case 6: success
-Number of tests used for: 492 for a total of nodes: 500
-
-
-infection chance: 0.08
-p(robabilty) sample is infected: 0.2046
-nodes: 100
-average infection rate: 0.155
-number of edges: 486
-number of infected: 13 - 18
-METHOD: Pool
-Test case 7: success
-Number of tests used for: 66 for a total of nodes: 100
-
-
-infection chance: 0.13
-p(robabilty) sample is infected: 0.0126
-nodes: 1000
-average infection rate: 0.01
-number of edges: 2910
-number of infected: 9 - 11
-METHOD: Split
-Test case 8: success
-Number of tests used for: 132 for a total of nodes: 1000
-
-
-infection chance: 0.1
-p(robabilty) sample is infected: 0.0742
-nodes: 2000
-average infection rate: 0.053
-number of edges: 9336
-number of infected: 91 - 121
-METHOD: Pool
-Test case 9: success
-Number of tests used for: 891 for a total of nodes: 2000
-
-
-infection chance: 0.1
-p(robabilty) sample is infected: 0.1
-nodes: 100
-average infection rate: 0.1
-number of edges: 0
-number of infected: 10 - 10
-METHOD: Pool
-Test case 10: success
-Number of tests used for: 63 for a total of nodes: 100
+Number of tests used for: 276 for a total of nodes: 1000
+Number of infected found: 18 Number of noninfected found: 982
 
 
 infection chance: 0.3
@@ -120,41 +207,421 @@ average infection rate: 0.505
 number of edges: 269
 number of infected: 49 - 52
 METHOD: oneByOne
-Test case 11: success
+Test case 2: success
 Number of tests used for: 100 for a total of nodes: 100
+Number of infected found: 49 Number of noninfected found: 51
 
 
-infection chance: 0.6
-p(robabilty) sample is infected: 0.424
-nodes: 100
-average infection rate: 0.265
-number of edges: 186
-number of infected: 25 - 28
+infection chance: 0.16
+p(robabilty) sample is infected: 0.05772
+nodes: 1000
+average infection rate: 0.039
+number of edges: 3583
+number of infected: 24 - 54
 METHOD: Pool
-Test case 12: success
-Number of tests used for: 87 for a total of nodes: 100
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 11
+current k value is: 7
+current k value would be: 11
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 11
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 11
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 11
+current k value is: 7
+current k value would be: 11
+current k value is: 7
+current k value would be: 11
+current k value is: 7
+current k value would be: 11
+current k value is: 7
+current k value would be: 11
+current k value is: 7
+current k value would be: 11
+current k value is: 7
+current k value would be: 11
+current k value is: 7
+current k value would be: 11
+current k value is: 7
+current k value would be: 11
+current k value is: 7
+current k value would be: 11
+current k value is: 7
+current k value would be: 11
+current k value is: 7
+current k value would be: 11
+current k value is: 7
+current k value would be: 11
+current k value is: 7
+current k value would be: 11
+current k value is: 7
+current k value would be: 11
+current k value is: 7
+current k value would be: 11
+current k value is: 7
+current k value would be: 11
+current k value is: 7
+current k value would be: 11
+current k value is: 7
+current k value would be: 11
+current k value is: 7
+current k value would be: 11
+current k value is: 7
+current k value would be: 11
+current k value is: 7
+current k value would be: 11
+current k value is: 7
+current k value would be: 11
+current k value is: 7
+current k value would be: 11
+current k value is: 7
+current k value would be: 11
+current k value is: 7
+current k value would be: 11
+current k value is: 7
+current k value would be: 11
+current k value is: 7
+current k value would be: 11
+current k value is: 7
+current k value would be: 11
+current k value is: 7
+current k value would be: 8
+current k value is: 7
+current k value would be: 8
+current k value is: 7
+current k value would be: 8
+current k value is: 7
+current k value would be: 8
+current k value is: 7
+current k value would be: 8
+current k value is: 7
+current k value would be: 8
+current k value is: 7
+current k value would be: 8
+current k value is: 7
+current k value would be: 8
+current k value is: 7
+current k value would be: 8
+current k value is: 7
+current k value would be: 8
+current k value is: 7
+current k value would be: 8
+current k value is: 7
+current k value would be: 8
+current k value is: 7
+current k value would be: 8
+current k value is: 7
+current k value would be: 8
+current k value is: 7
+current k value would be: 8
+current k value is: 7
+current k value would be: 8
+current k value is: 7
+current k value would be: 8
+current k value is: 7
+current k value would be: 8
+current k value is: 7
+current k value would be: 8
+current k value is: 7
+current k value would be: 8
+current k value is: 7
+current k value would be: 8
+current k value is: 7
+current k value would be: 8
+current k value is: 7
+current k value would be: 8
+current k value is: 7
+current k value would be: 8
+current k value is: 7
+current k value would be: 8
+current k value is: 7
+current k value would be: 8
+current k value is: 7
+current k value would be: 8
+current k value is: 7
+current k value would be: 8
+current k value is: 7
+current k value would be: 8
+current k value is: 7
+Test case 3: success
+Number of tests used for: 425 for a total of nodes: 1000
+Number of infected found: 46 Number of noninfected found: 954
 
 
-infection chance: 0.1
-p(robabilty) sample is infected: 0.336
+infection chance: 0.5
+p(robabilty) sample is infected: 0.41
 nodes: 100
-average infection rate: 0.24
-number of edges: 485
-number of infected: 20 - 28
+average infection rate: 0.205
+number of edges: 235
+number of infected: 19 - 22
 METHOD: Pool
-Test case 13: success
-Number of tests used for: 101 for a total of nodes: 100
-
-
-infection chance: 0.3
-p(robabilty) sample is infected: 0.3
-nodes: 100
-average infection rate: 0.3
-number of edges: 0
-number of infected: 30 - 30
-METHOD: Pool
-Test case 14: success
-Number of tests used for: 92 for a total of nodes: 100
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 4
+current k value is: 2
+current k value would be: 4
+current k value is: 2
+current k value would be: 4
+current k value is: 2
+current k value would be: 4
+current k value is: 2
+current k value would be: 7
+current k value is: 2
+current k value would be: 7
+current k value is: 2
+current k value would be: 7
+current k value is: 2
+current k value would be: 7
+current k value is: 2
+current k value would be: 4
+current k value is: 2
+current k value would be: 11
+current k value is: 2
+current k value would be: 11
+current k value is: 2
+current k value would be: 8
+current k value is: 2
+current k value would be: 8
+current k value is: 2
+current k value would be: 8
+current k value is: 2
+current k value would be: 8
+current k value is: 2
+Test case 4: success
+Number of tests used for: 80 for a total of nodes: 100
+Number of infected found: 21 Number of noninfected found: 79
 
 
 infection chance: 0.155
@@ -164,3 +631,2633 @@ average infection rate: 0.105
 number of edges: 1968
 number of infected: 31 - 74
 METHOD: Pool
+current k value would be: 3
+current k value is: 3
+current k value would be: 4
+current k value is: 3
+current k value would be: 4
+current k value is: 3
+current k value would be: 4
+current k value is: 3
+current k value would be: 4
+current k value is: 3
+current k value would be: 4
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 4
+current k value is: 3
+current k value would be: 4
+current k value is: 3
+current k value would be: 4
+current k value is: 3
+current k value would be: 4
+current k value is: 3
+current k value would be: 4
+current k value is: 3
+current k value would be: 4
+current k value is: 3
+current k value would be: 4
+current k value is: 3
+current k value would be: 4
+current k value is: 3
+current k value would be: 4
+current k value is: 3
+current k value would be: 4
+current k value is: 3
+current k value would be: 4
+current k value is: 3
+current k value would be: 4
+current k value is: 3
+current k value would be: 4
+current k value is: 3
+current k value would be: 4
+current k value is: 3
+current k value would be: 4
+current k value is: 3
+current k value would be: 4
+current k value is: 3
+current k value would be: 4
+current k value is: 3
+current k value would be: 4
+current k value is: 3
+current k value would be: 4
+current k value is: 3
+current k value would be: 4
+current k value is: 3
+current k value would be: 4
+current k value is: 3
+current k value would be: 4
+current k value is: 3
+current k value would be: 4
+current k value is: 3
+current k value would be: 4
+current k value is: 3
+current k value would be: 4
+current k value is: 3
+current k value would be: 4
+current k value is: 3
+current k value would be: 4
+current k value is: 3
+current k value would be: 4
+current k value is: 3
+current k value would be: 4
+current k value is: 3
+current k value would be: 4
+current k value is: 3
+current k value would be: 4
+current k value is: 3
+current k value would be: 4
+current k value is: 3
+current k value would be: 4
+current k value is: 3
+current k value would be: 4
+current k value is: 3
+current k value would be: 4
+current k value is: 3
+current k value would be: 4
+current k value is: 3
+current k value would be: 4
+current k value is: 3
+current k value would be: 4
+current k value is: 3
+current k value would be: 4
+current k value is: 3
+current k value would be: 4
+current k value is: 3
+current k value would be: 4
+current k value is: 3
+current k value would be: 4
+current k value is: 3
+current k value would be: 4
+current k value is: 3
+current k value would be: 4
+current k value is: 3
+current k value would be: 4
+current k value is: 3
+current k value would be: 4
+current k value is: 3
+current k value would be: 4
+current k value is: 3
+current k value would be: 7
+current k value is: 3
+current k value would be: 7
+current k value is: 3
+current k value would be: 7
+current k value is: 3
+current k value would be: 7
+current k value is: 3
+current k value would be: 7
+current k value is: 3
+current k value would be: 7
+current k value is: 3
+current k value would be: 7
+current k value is: 3
+current k value would be: 7
+current k value is: 3
+current k value would be: 7
+current k value is: 3
+current k value would be: 7
+current k value is: 3
+current k value would be: 7
+current k value is: 3
+current k value would be: 7
+current k value is: 3
+current k value would be: 7
+current k value is: 3
+current k value would be: 7
+current k value is: 3
+current k value would be: 7
+current k value is: 3
+current k value would be: 7
+current k value is: 3
+current k value would be: 7
+current k value is: 3
+current k value would be: 7
+current k value is: 3
+current k value would be: 7
+current k value is: 3
+current k value would be: 7
+current k value is: 3
+current k value would be: 7
+current k value is: 3
+current k value would be: 7
+current k value is: 3
+current k value would be: 7
+current k value is: 3
+current k value would be: 7
+current k value is: 3
+current k value would be: 7
+current k value is: 3
+current k value would be: 7
+current k value is: 3
+current k value would be: 7
+current k value is: 3
+current k value would be: 7
+current k value is: 3
+current k value would be: 7
+current k value is: 3
+current k value would be: 7
+current k value is: 3
+current k value would be: 7
+current k value is: 3
+current k value would be: 7
+current k value is: 3
+current k value would be: 7
+current k value is: 3
+current k value would be: 7
+current k value is: 3
+current k value would be: 7
+current k value is: 3
+current k value would be: 7
+current k value is: 3
+current k value would be: 7
+current k value is: 3
+current k value would be: 7
+current k value is: 3
+current k value would be: 7
+current k value is: 3
+current k value would be: 7
+current k value is: 3
+current k value would be: 7
+current k value is: 3
+current k value would be: 7
+current k value is: 3
+current k value would be: 7
+current k value is: 3
+current k value would be: 7
+current k value is: 3
+current k value would be: 7
+current k value is: 3
+current k value would be: 7
+current k value is: 3
+current k value would be: 7
+current k value is: 3
+current k value would be: 7
+current k value is: 3
+current k value would be: 7
+current k value is: 3
+current k value would be: 7
+current k value is: 3
+current k value would be: 11
+current k value is: 3
+current k value would be: 11
+current k value is: 3
+current k value would be: 11
+current k value is: 3
+current k value would be: 11
+current k value is: 3
+current k value would be: 11
+current k value is: 3
+current k value would be: 11
+current k value is: 3
+current k value would be: 11
+current k value is: 3
+current k value would be: 11
+current k value is: 3
+current k value would be: 11
+current k value is: 3
+current k value would be: 11
+current k value is: 3
+current k value would be: 11
+current k value is: 3
+current k value would be: 11
+current k value is: 3
+current k value would be: 11
+current k value is: 3
+current k value would be: 11
+current k value is: 3
+current k value would be: 11
+current k value is: 3
+current k value would be: 11
+current k value is: 3
+current k value would be: 11
+current k value is: 3
+current k value would be: 11
+current k value is: 3
+current k value would be: 11
+current k value is: 3
+current k value would be: 8
+current k value is: 3
+current k value would be: 8
+current k value is: 3
+current k value would be: 8
+current k value is: 3
+current k value would be: 8
+current k value is: 3
+current k value would be: 8
+current k value is: 3
+current k value would be: 8
+current k value is: 3
+current k value would be: 8
+current k value is: 3
+current k value would be: 8
+current k value is: 3
+current k value would be: 8
+current k value is: 3
+current k value would be: 8
+current k value is: 3
+current k value would be: 8
+current k value is: 3
+current k value would be: 8
+current k value is: 3
+current k value would be: 8
+current k value is: 3
+current k value would be: 8
+current k value is: 3
+current k value would be: 8
+current k value is: 3
+current k value would be: 8
+current k value is: 3
+current k value would be: 8
+current k value is: 3
+current k value would be: 8
+current k value is: 3
+current k value would be: 8
+current k value is: 3
+current k value would be: 8
+current k value is: 3
+current k value would be: 8
+current k value is: 3
+current k value would be: 8
+current k value is: 3
+current k value would be: 8
+current k value is: 3
+current k value would be: 8
+current k value is: 3
+current k value would be: 8
+current k value is: 3
+current k value would be: 8
+current k value is: 3
+current k value would be: 8
+current k value is: 3
+current k value would be: 8
+current k value is: 3
+current k value would be: 8
+current k value is: 3
+current k value would be: 8
+current k value is: 3
+current k value would be: 8
+current k value is: 3
+current k value would be: 8
+current k value is: 3
+current k value would be: 8
+current k value is: 3
+current k value would be: 8
+current k value is: 3
+current k value would be: 8
+current k value is: 3
+current k value would be: 8
+current k value is: 3
+current k value would be: 8
+current k value is: 3
+current k value would be: 8
+current k value is: 3
+current k value would be: 8
+current k value is: 3
+current k value would be: 8
+current k value is: 3
+current k value would be: 8
+current k value is: 3
+current k value would be: 8
+current k value is: 3
+current k value would be: 8
+current k value is: 3
+current k value would be: 8
+current k value is: 3
+Test case 5: success
+Number of tests used for: 331 for a total of nodes: 500
+Number of infected found: 65 Number of noninfected found: 435
+
+
+infection chance: 0.1
+p(robabilty) sample is infected: 0.336
+nodes: 100
+average infection rate: 0.24
+number of edges: 485
+number of infected: 20 - 28
+METHOD: Pool
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 4
+current k value is: 2
+current k value would be: 4
+current k value is: 2
+current k value would be: 4
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 4
+current k value is: 2
+current k value would be: 4
+current k value is: 2
+current k value would be: 4
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 4
+current k value is: 2
+current k value would be: 11
+current k value is: 2
+current k value would be: 7
+current k value is: 2
+current k value would be: 8
+current k value is: 2
+current k value would be: 8
+current k value is: 2
+current k value would be: 8
+current k value is: 2
+Test case 6: success
+Number of tests used for: 88 for a total of nodes: 100
+Number of infected found: 25 Number of noninfected found: 75
+
+
+infection chance: 0.3
+p(robabilty) sample is infected: 0.0944
+nodes: 500
+average infection rate: 0.059
+number of edges: 1404
+number of infected: 27 - 32
+METHOD: Pool
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 4
+current k value is: 7
+current k value would be: 4
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 4
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 4
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 4
+current k value is: 7
+current k value would be: 4
+current k value is: 7
+current k value would be: 4
+current k value is: 7
+current k value would be: 4
+current k value is: 7
+current k value would be: 4
+current k value is: 7
+current k value would be: 4
+current k value is: 7
+current k value would be: 4
+current k value is: 7
+current k value would be: 4
+current k value is: 7
+current k value would be: 4
+current k value is: 7
+current k value would be: 4
+current k value is: 7
+current k value would be: 4
+current k value is: 7
+current k value would be: 4
+current k value is: 7
+current k value would be: 4
+current k value is: 7
+current k value would be: 4
+current k value is: 7
+current k value would be: 3
+current k value is: 7
+current k value would be: 3
+current k value is: 7
+current k value would be: 3
+current k value is: 7
+current k value would be: 3
+current k value is: 7
+current k value would be: 3
+current k value is: 7
+current k value would be: 3
+current k value is: 7
+current k value would be: 3
+current k value is: 7
+current k value would be: 3
+current k value is: 7
+current k value would be: 3
+current k value is: 7
+current k value would be: 3
+current k value is: 7
+current k value would be: 3
+current k value is: 7
+current k value would be: 3
+current k value is: 7
+current k value would be: 3
+current k value is: 7
+current k value would be: 3
+current k value is: 7
+current k value would be: 4
+current k value is: 7
+current k value would be: 4
+current k value is: 7
+Test case 7: success
+Number of tests used for: 232 for a total of nodes: 500
+Number of infected found: 27 Number of noninfected found: 473
+
+
+infection chance: 0.3
+p(robabilty) sample is infected: 0.3
+nodes: 100
+average infection rate: 0.3
+number of edges: 0
+number of infected: 30 - 30
+METHOD: Pool
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 4
+current k value is: 2
+current k value would be: 4
+current k value is: 2
+current k value would be: 4
+current k value is: 2
+current k value would be: 4
+current k value is: 2
+current k value would be: 4
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 4
+current k value is: 2
+current k value would be: 7
+current k value is: 2
+current k value would be: 7
+current k value is: 2
+current k value would be: 11
+current k value is: 2
+current k value would be: 11
+current k value is: 2
+current k value would be: 11
+current k value is: 2
+current k value would be: 8
+current k value is: 2
+Test case 8: success
+Number of tests used for: 87 for a total of nodes: 100
+Number of infected found: 30 Number of noninfected found: 70
+
+
+infection chance: 0.0333333
+p(robabilty) sample is infected: 0.0333333
+nodes: 300
+average infection rate: 0.0333333
+number of edges: 0
+number of infected: 10 - 10
+METHOD: Pool
+current k value would be: 11
+current k value is: 11
+current k value would be: 11
+current k value is: 11
+current k value would be: 11
+current k value is: 11
+current k value would be: 11
+current k value is: 11
+current k value would be: 11
+current k value is: 11
+current k value would be: 11
+current k value is: 11
+current k value would be: 11
+current k value is: 11
+current k value would be: 11
+current k value is: 11
+current k value would be: 11
+current k value is: 11
+current k value would be: 11
+current k value is: 11
+current k value would be: 11
+current k value is: 11
+current k value would be: 11
+current k value is: 11
+current k value would be: 11
+current k value is: 11
+current k value would be: 11
+current k value is: 11
+current k value would be: 11
+current k value is: 11
+current k value would be: 11
+current k value is: 11
+current k value would be: 11
+current k value is: 11
+current k value would be: 11
+current k value is: 11
+current k value would be: 11
+current k value is: 11
+current k value would be: 11
+current k value is: 11
+current k value would be: 11
+current k value is: 11
+current k value would be: 11
+current k value is: 11
+current k value would be: 11
+current k value is: 11
+current k value would be: 11
+current k value is: 11
+current k value would be: 7
+current k value is: 11
+current k value would be: 11
+current k value is: 11
+current k value would be: 7
+current k value is: 11
+current k value would be: 8
+current k value is: 11
+Test case 9: success
+Number of tests used for: 129 for a total of nodes: 300
+Number of infected found: 10 Number of noninfected found: 290
+
+
+infection chance: 0.1
+p(robabilty) sample is infected: 0.1
+nodes: 100
+average infection rate: 0.1
+number of edges: 0
+number of infected: 10 - 10
+METHOD: Pool
+current k value would be: 7
+current k value is: 4
+current k value would be: 7
+current k value is: 4
+current k value would be: 7
+current k value is: 4
+current k value would be: 7
+current k value is: 4
+current k value would be: 7
+current k value is: 4
+current k value would be: 7
+current k value is: 4
+current k value would be: 7
+current k value is: 4
+current k value would be: 7
+current k value is: 4
+current k value would be: 7
+current k value is: 4
+current k value would be: 7
+current k value is: 4
+current k value would be: 7
+current k value is: 4
+current k value would be: 7
+current k value is: 4
+current k value would be: 7
+current k value is: 4
+current k value would be: 7
+current k value is: 4
+current k value would be: 7
+current k value is: 4
+current k value would be: 11
+current k value is: 4
+current k value would be: 7
+current k value is: 4
+current k value would be: 7
+current k value is: 4
+current k value would be: 7
+current k value is: 4
+current k value would be: 7
+current k value is: 4
+current k value would be: 11
+current k value is: 4
+current k value would be: 8
+current k value is: 4
+Test case 10: success
+Number of tests used for: 51 for a total of nodes: 100
+Number of infected found: 10 Number of noninfected found: 90
+
+
+infection chance: 0.13
+p(robabilty) sample is infected: 0.0126
+nodes: 1000
+average infection rate: 0.01
+number of edges: 2910
+number of infected: 9 - 11
+METHOD: Split
+Test case 11: success
+Number of tests used for: 148 for a total of nodes: 1000
+Number of infected found: 11 Number of noninfected found: 989
+
+
+infection chance: 0.1
+p(robabilty) sample is infected: 0.0742
+nodes: 2000
+average infection rate: 0.053
+number of edges: 9336
+number of infected: 91 - 121
+METHOD: Pool
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 7
+current k value is: 7
+current k value would be: 11
+current k value is: 7
+current k value would be: 11
+current k value is: 7
+current k value would be: 11
+current k value is: 7
+current k value would be: 11
+current k value is: 7
+current k value would be: 11
+current k value is: 7
+current k value would be: 11
+current k value is: 7
+current k value would be: 11
+current k value is: 7
+current k value would be: 11
+current k value is: 7
+current k value would be: 11
+current k value is: 7
+current k value would be: 11
+current k value is: 7
+current k value would be: 11
+current k value is: 7
+current k value would be: 11
+current k value is: 7
+current k value would be: 11
+current k value is: 7
+current k value would be: 11
+current k value is: 7
+current k value would be: 11
+current k value is: 7
+current k value would be: 11
+current k value is: 7
+current k value would be: 11
+current k value is: 7
+current k value would be: 11
+current k value is: 7
+current k value would be: 11
+current k value is: 7
+current k value would be: 11
+current k value is: 7
+current k value would be: 11
+current k value is: 7
+current k value would be: 11
+current k value is: 7
+current k value would be: 11
+current k value is: 7
+Test case 12: success
+Number of tests used for: 929 for a total of nodes: 2000
+Number of infected found: 105 Number of noninfected found: 1895
+
+
+infection chance: 0.008
+p(robabilty) sample is infected: 0.244992
+nodes: 500
+average infection rate: 0.176
+number of edges: 24912
+number of infected: 83 - 93
+METHOD: Pool
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 4
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 4
+current k value is: 3
+current k value would be: 4
+current k value is: 3
+current k value would be: 4
+current k value is: 3
+current k value would be: 4
+current k value is: 3
+current k value would be: 4
+current k value is: 3
+current k value would be: 4
+current k value is: 3
+current k value would be: 4
+current k value is: 3
+current k value would be: 4
+current k value is: 3
+current k value would be: 4
+current k value is: 3
+current k value would be: 4
+current k value is: 3
+current k value would be: 4
+current k value is: 3
+current k value would be: 4
+current k value is: 3
+current k value would be: 4
+current k value is: 3
+current k value would be: 4
+current k value is: 3
+current k value would be: 4
+current k value is: 3
+current k value would be: 4
+current k value is: 3
+current k value would be: 4
+current k value is: 3
+current k value would be: 4
+current k value is: 3
+current k value would be: 4
+current k value is: 3
+current k value would be: 7
+current k value is: 3
+current k value would be: 7
+current k value is: 3
+current k value would be: 7
+current k value is: 3
+current k value would be: 7
+current k value is: 3
+current k value would be: 7
+current k value is: 3
+current k value would be: 7
+current k value is: 3
+current k value would be: 7
+current k value is: 3
+current k value would be: 7
+current k value is: 3
+current k value would be: 7
+current k value is: 3
+current k value would be: 7
+current k value is: 3
+current k value would be: 7
+current k value is: 3
+current k value would be: 7
+current k value is: 3
+current k value would be: 7
+current k value is: 3
+current k value would be: 7
+current k value is: 3
+current k value would be: 7
+current k value is: 3
+current k value would be: 7
+current k value is: 3
+current k value would be: 7
+current k value is: 3
+current k value would be: 7
+current k value is: 3
+current k value would be: 7
+current k value is: 3
+current k value would be: 7
+current k value is: 3
+current k value would be: 7
+current k value is: 3
+current k value would be: 7
+current k value is: 3
+current k value would be: 7
+current k value is: 3
+current k value would be: 11
+current k value is: 3
+current k value would be: 11
+current k value is: 3
+current k value would be: 11
+current k value is: 3
+current k value would be: 11
+current k value is: 3
+current k value would be: 11
+current k value is: 3
+current k value would be: 11
+current k value is: 3
+current k value would be: 11
+current k value is: 3
+current k value would be: 11
+current k value is: 3
+current k value would be: 11
+current k value is: 3
+current k value would be: 8
+current k value is: 3
+current k value would be: 8
+current k value is: 3
+Test case 13: success
+Number of tests used for: 379 for a total of nodes: 500
+Number of infected found: 88 Number of noninfected found: 412
+
+
+infection chance: 0.012
+p(robabilty) sample is infected: 0.441464
+nodes: 500
+average infection rate: 0.278
+number of edges: 24943
+number of infected: 102 - 176
+METHOD: Pool
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 4
+current k value is: 2
+current k value would be: 4
+current k value is: 2
+current k value would be: 4
+current k value is: 2
+current k value would be: 4
+current k value is: 2
+current k value would be: 4
+current k value is: 2
+current k value would be: 7
+current k value is: 2
+current k value would be: 7
+current k value is: 2
+current k value would be: 7
+current k value is: 2
+current k value would be: 7
+current k value is: 2
+current k value would be: 7
+current k value is: 2
+current k value would be: 7
+current k value is: 2
+current k value would be: 11
+current k value is: 2
+current k value would be: 11
+current k value is: 2
+current k value would be: 11
+current k value is: 2
+Test case 14: success
+Number of tests used for: 439 for a total of nodes: 500
+Number of infected found: 136 Number of noninfected found: 364
+
+
+infection chance: 0.08
+p(robabilty) sample is infected: 0.2046
+nodes: 100
+average infection rate: 0.155
+number of edges: 486
+number of infected: 13 - 18
+METHOD: Pool
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 4
+current k value is: 3
+current k value would be: 4
+current k value is: 3
+current k value would be: 4
+current k value is: 3
+current k value would be: 4
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 4
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 4
+current k value is: 3
+current k value would be: 4
+current k value is: 3
+current k value would be: 4
+current k value is: 3
+current k value would be: 4
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 4
+current k value is: 3
+current k value would be: 4
+current k value is: 3
+current k value would be: 4
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 4
+current k value is: 3
+current k value would be: 4
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 3
+current k value is: 3
+current k value would be: 4
+current k value is: 3
+current k value would be: 4
+current k value is: 3
+Test case 15: success
+Number of tests used for: 67 for a total of nodes: 100
+Number of infected found: 14 Number of noninfected found: 86
+
+
+infection chance: 0.055
+p(robabilty) sample is infected: 0.023865
+nodes: 1000
+average infection rate: 0.0215
+number of edges: 2984
+number of infected: 21 - 22
+METHOD: Split
+Test case 16: success
+Number of tests used for: 249 for a total of nodes: 1000
+Number of infected found: 22 Number of noninfected found: 978
+
+
+infection chance: 0.01
+p(robabilty) sample is infected: 0.01
+nodes: 100
+average infection rate: 0.01
+number of edges: 0
+number of infected: 1 - 1
+METHOD: Split
+Test case 17: success
+Number of tests used for: 9 for a total of nodes: 100
+Number of infected found: 1 Number of noninfected found: 99
+
+
+infection chance: 0.6
+p(robabilty) sample is infected: 0.638
+nodes: 100
+average infection rate: 0.29
+number of edges: 294
+number of infected: 27 - 31
+METHOD: Pool
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 7
+current k value is: 2
+current k value would be: 7
+current k value is: 2
+Test case 18: success
+Number of tests used for: 92 for a total of nodes: 100
+Number of infected found: 28 Number of noninfected found: 72
+
+
+infection chance: 0.6
+p(robabilty) sample is infected: 0.424
+nodes: 100
+average infection rate: 0.265
+number of edges: 186
+number of infected: 25 - 28
+METHOD: Pool
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 2
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 3
+current k value is: 2
+current k value would be: 4
+current k value is: 2
+current k value would be: 4
+current k value is: 2
+current k value would be: 7
+current k value is: 2
+current k value would be: 7
+current k value is: 2
+current k value would be: 7
+current k value is: 2
+current k value would be: 7
+current k value is: 2
+current k value would be: 7
+current k value is: 2
+current k value would be: 7
+current k value is: 2
+current k value would be: 7
+current k value is: 2
+current k value would be: 7
+current k value is: 2
+current k value would be: 11
+current k value is: 2
+current k value would be: 11
+current k value is: 2
+current k value would be: 11
+current k value is: 2
+current k value would be: 11
+current k value is: 2
+current k value would be: 8
+current k value is: 2
+current k value would be: 8
+current k value is: 2
+Test case 19: success
+Number of tests used for: 89 for a total of nodes: 100
+Number of infected found: 27 Number of noninfected found: 73
+19/19 correct
