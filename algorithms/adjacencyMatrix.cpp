@@ -84,17 +84,6 @@ public:
         adj[u][v] = 1;
         adj[v][u] = 1;
     }
-    void dfs(int src)
-    {
-        visited[src] = true;
-        for (size_t i = 0; i < n; i++)
-        {
-            if (adj[src][i] == 1 && (!visited[i]))
-            {
-                dfs(i);
-            }
-        }
-    }
     void setVisited(int n, bool value)
     {
         visited[n] = value;
@@ -113,21 +102,10 @@ public:
         }
         visited[currentIndex] = true;
 
-        // float average = accumulate(difference.begin(), difference.end(), 0.0) / n;
-
-        // float acceptable = average;
-        // cerr << "min infected: " << input.minInfected << endl;
-        // cerr << "max infected: " << input.maxInfected << endl;
-        // cerr << "N infected: " << input.nInfected << endl;
-        // cerr << "chance infected: " << input.infectionChance << endl;
-
         float nAverageUpperboundInfected = (float)input.maxInfected / (float)n;
         float nAverageLowerboundInfected = (float)input.minInfected / (float)n;
         float averageInfectionRate = (float)(nAverageUpperboundInfected + nAverageLowerboundInfected) / 2;
-        // // cerr << averageInfectionRate << endl;
-        // // cerr << input.infectionChance << endl;
         float acceptable = 1 - input.infectionChance + threshold - averageInfectionRate; // Higher means less difference will be accepted
-        // float acceptable = 0.2;
 
         vector<int> accepted;
         accepted.push_back(currentIndex);
@@ -136,11 +114,9 @@ public:
         for (size_t i = 0; i < n; i++)
         {
             float diff = calcDifference(adj[currentIndex], adj[i]);
-            // cerr <<"For: " << currentIndex << "At: " << i << "Difference: " << diff << endl;
 
             if (i == currentIndex)
                 continue;
-            // cerr << diff << endl;
             if (diff <= acceptable && visited[i] == false)
             {
                 visited[i] = true;
@@ -172,53 +148,8 @@ public:
                 diff--;
             }
         }
-        // cerr << averageGraphDensity << diff << endl;
         float answer = diff / (averageGraphDensity * 2);
         return answer;
-    }
-    vector<vector<int>> bfs(int src)
-    {
-        // resetVisited();
-        queue<int> q;
-        vector<vector<int>> r;
-
-        // Initialize source
-        visited[src] = true;
-        q.push(src);
-
-        while (!q.empty())
-        {
-            int current = q.front();
-            // cerr << current << endl;
-            vector<int> rs;
-            rs.push_back(current);
-            visited[current] = true;
-
-            for (size_t i = 0; i < n; i++)
-            {
-                if (adj[current][i] == 1 && (visited[i] == false))
-                {
-                    visited[i] = true;
-                    rs.push_back(i);
-                    q.push(i);
-                }
-            }
-
-            q.pop();
-            r.push_back(rs);
-            if (q.empty())
-            {
-                for (size_t i = 0; i < n; i++)
-                {
-                    if (visited[i] == false)
-                    {
-                        q.push(i);
-                        break;
-                    }
-                }
-            }
-        }
-        return r;
     }
     void display()
     {
@@ -250,15 +181,4 @@ AdjacencyMatrix createAdjacencyMatrix(Input input)
     }
 
     return adjMatrix;
-}
-
-void unvisitPairsInMatrix(vvi pairs, AdjacencyMatrix &adjMatrix)
-{
-    for (size_t i = 0; i < pairs.size(); i++)
-    {
-        for (size_t j = 0; j < pairs.at(i).size(); j++)
-        {
-            adjMatrix.setVisited(pairs.at(i).at(j), false);
-        }
-    }
 }
