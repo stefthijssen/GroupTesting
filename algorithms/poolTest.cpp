@@ -52,7 +52,7 @@ void poolTest(vi nodes, vector<bool> &infected, Input input)
     int currentIndex = 0;
     int k = calculateK(input);
 
-    while (currentIndex <= nodes.size())
+    while (currentIndex < nodes.size())
     {
         if ((input.maxInfected - input.minInfected) == 0)
         {
