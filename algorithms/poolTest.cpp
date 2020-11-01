@@ -50,10 +50,10 @@ vi customGroupTestSplit(vi nodes, vector<bool> &infected, Input input)
 void poolTest(vi nodes, vector<bool> &infected, Input input)
 {
     int currentIndex = 0;
+    int k = calculateK(input);
 
     while (currentIndex <= nodes.size())
     {
-        int k = calculateK(input);
 
         int start = currentIndex;
         int end = currentIndex + k;
@@ -61,12 +61,6 @@ void poolTest(vi nodes, vector<bool> &infected, Input input)
         if (end > nodes.size())
         {
             end = nodes.size();
-        }
-
-        if (currentIndex - end == 1)
-        {
-            testIndividual(nodes.at(currentIndex));
-            break;
         }
 
         if (remainingTestsAreNegative(input))
@@ -89,6 +83,13 @@ void poolTest(vi nodes, vector<bool> &infected, Input input)
             break;
         }
 
+        if (currentIndex - end == 1)
+        {
+            testIndividual(nodes.at(currentIndex));
+            currentIndex = end;
+            continue
+        }
+
         vector<int>::const_iterator first = nodes.begin() + start;
         vector<int>::const_iterator last = nodes.begin() + end;
         vector<int> subgroup(first, last);
@@ -98,7 +99,7 @@ void poolTest(vi nodes, vector<bool> &infected, Input input)
         {
             testOneByOneEfficient(subgroup, infected, input, true);
         }
-        currentIndex = currentIndex + k;
+        currentIndex = end;
     }
 }
 
