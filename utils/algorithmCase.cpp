@@ -14,7 +14,7 @@ Algorithm checkWhichAlgorithmToUse(Input input, float p) {
         return split;
     }
 
-    if (p >= 0.8) {
+    if (p >= 0.65) {
         cerr << "METHOD: oneByOne" << endl;
         return oneByOne;
     }

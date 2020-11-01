@@ -15,8 +15,14 @@ float calculateInfectionRate(Input input)
 float calculateP(Input input)
 {
     float averageInfectionRate = calculateInfectionRate(input);
-    float spreadFactor = (float)input.infectionChance * (input.nEdges / input.nNodes);
+    float spreadFactor = (float)input.infectionChance;
+    float contactFactor = 0;
 
+    if (input.nEdges > 0 && input.nNodes > 0)
+    {
+        contactFactor = (input.nEdges / input.nNodes) * averageInfectionRate;
+        spreadFactor = spreadFactor * contactFactor;
+    }
     // P the chance a sample is positive increases when average infection rate is high and infection chacnce is also high.
     float p;
     p = (float)averageInfectionRate + ((float)averageInfectionRate * spreadFactor);

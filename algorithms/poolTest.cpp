@@ -59,6 +59,11 @@ void poolTest(vi nodes, vector<bool> &infected, Input input)
         {
             p = calculateInfectionRate(input);
             k = calculateK(input, p);
+            if (p <= 0)
+            {
+                break;
+            }
+            // cerr << "Used K: " << k << " p(robabilty): " << p << " current position: " << currentIndex << " # left: " << input.nNodes - (infectedFound + nonInfectedFound) << " of: " << input.maxInfected - infectedFound << endl;
         }
         int start = currentIndex;
         int end = currentIndex + k;
@@ -100,6 +105,7 @@ void poolTest(vi nodes, vector<bool> &infected, Input input)
         vector<int> subgroup(first, last);
 
         bool isGroupInfected = testPooledSamples(subgroup);
+
         if (isGroupInfected == true)
         {
             testOneByOneEfficient(subgroup, infected, input, true);

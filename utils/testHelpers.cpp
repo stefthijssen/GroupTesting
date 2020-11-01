@@ -191,11 +191,11 @@ void testOneByOneEfficient(vi samples, vector<bool> &infected, Input input, bool
     int infectedFoundSoFar = 0;
     for (size_t i = 0; i < samples.size(); i++)
     {
-        if (remainingTestsAreNegative(input))
+        if (remainingTestsAreNegative(input) == true)
         {
             isInfected = false;
         }
-        else if (remainingTestsArePositive(input))
+        else if (remainingTestsArePositive(input) == true)
         {
             isInfected = true;
         }
