@@ -42,6 +42,16 @@ void giveFeedbackOnTest(Input input, int testcase, int &numCorrect, vector<bool>
     cerr << "Number of infected found: " << infectedFound << " Number of noninfected found: " << nonInfectedFound << endl;
 }
 
+void printMetrics(Input input, float p, float averageInfectionRate) {
+    cerr << endl << endl;
+    cerr << "infection chance: " << input.infectionChance << endl;
+    cerr << "p(robabilty) sample is infected: " << p << endl;
+    cerr << "nodes: " << input.nNodes << endl;
+    cerr << "average infection rate: " << averageInfectionRate << endl;
+    cerr << "number of edges: " << input.nEdges << endl;
+    cerr << "number of infected: " << input.minInfected << " - " << input.maxInfected << endl;
+}
+
 void runTestCases(int numCase, int &numCorrect)
 {
     for (int testcase = 1; testcase <= numCase; testcase++)
@@ -56,14 +66,7 @@ void runTestCases(int numCase, int &numCorrect)
         // P the chance a sample is positive increases when average infection rate is high and infection chacnce is also high.
         float p = calculateP(input);
 
-        cerr << endl
-             << endl;
-        cerr << "infection chance: " << input.infectionChance << endl;
-        cerr << "p(robabilty) sample is infected: " << p << endl;
-        cerr << "nodes: " << input.nNodes << endl;
-        cerr << "average infection rate: " << averageInfectionRate << endl;
-        cerr << "number of edges: " << input.nEdges << endl;
-        cerr << "number of infected: " << input.minInfected << " - " << input.maxInfected << endl;
+        printMetrics(input, p, averageInfectionRate);
 
         AdjacencyMatrix adjMatrix = createAdjacencyMatrix(input);
 
