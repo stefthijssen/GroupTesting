@@ -88,7 +88,7 @@ void runTestCases(int numCase, int &numCorrect)
         }
 
         answerTestCase(infected, input.nNodes);
-
+        
         giveFeedbackOnTest(input, testcase, numCorrect, infected);
     }
 }

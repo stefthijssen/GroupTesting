@@ -47,17 +47,18 @@ vi customGroupTestSplit(vi nodes, vector<bool> &infected, Input input)
     }
 }
 
-void poolTest(int groupSize, vi nodes, vector<bool> &infected, Input input)
+void poolTest(vi nodes, vector<bool> &infected, Input input)
 {
-    int size = groupSize;
     int currentIndex = 0;
 
     while (currentIndex <= nodes.size())
     {
+        int k = calculateK(input);
 
-        int end = currentIndex + size;
+        int start = currentIndex;
+        int end = currentIndex + k;
 
-        if (currentIndex + size > nodes.size())
+        if (end > nodes.size())
         {
             end = nodes.size();
         }
@@ -88,7 +89,7 @@ void poolTest(int groupSize, vi nodes, vector<bool> &infected, Input input)
             break;
         }
 
-        vector<int>::const_iterator first = nodes.begin() + currentIndex;
+        vector<int>::const_iterator first = nodes.begin() + start;
         vector<int>::const_iterator last = nodes.begin() + end;
         vector<int> subgroup(first, last);
 
@@ -97,9 +98,7 @@ void poolTest(int groupSize, vi nodes, vector<bool> &infected, Input input)
         {
             testOneByOneEfficient(subgroup, infected, input, true);
         }
-
-        currentIndex = currentIndex + size;
-        // size = calculateK(input);
+        currentIndex = currentIndex + k;
     }
 }
 
@@ -127,6 +126,5 @@ void usePoolTest(Input input, AdjacencyMatrix adjMatrix, vector<bool> &infected)
         }
     }
 
-    int k = calculateK(input);
-    poolTest(k, nodes, infected, input);
+    poolTest(nodes, infected, input);
 }
