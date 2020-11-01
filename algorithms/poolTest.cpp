@@ -54,7 +54,10 @@ void poolTest(vi nodes, vector<bool> &infected, Input input)
 
     while (currentIndex <= nodes.size())
     {
-
+        if ((input.maxInfected - input.minInfected) == 0)
+        {
+            k = calculateK(input);
+        }
         int start = currentIndex;
         int end = currentIndex + k;
 
@@ -87,7 +90,7 @@ void poolTest(vi nodes, vector<bool> &infected, Input input)
         {
             testIndividual(nodes.at(currentIndex));
             currentIndex = end;
-            continue
+            continue;
         }
 
         vector<int>::const_iterator first = nodes.begin() + start;
