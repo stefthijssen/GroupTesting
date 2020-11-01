@@ -50,13 +50,15 @@ vi customGroupTestSplit(vi nodes, vector<bool> &infected, Input input)
 void poolTest(vi nodes, vector<bool> &infected, Input input)
 {
     int currentIndex = 0;
-    int k = calculateK(input);
+    float p = calculateP(input);
+    int k = calculateK(input, p);
 
     while (currentIndex < nodes.size())
     {
         if ((input.maxInfected - input.minInfected) == 0)
         {
-            k = calculateK(input);
+            p = calculateInfectionRate(input);
+            k = calculateK(input, p);
         }
         int start = currentIndex;
         int end = currentIndex + k;
