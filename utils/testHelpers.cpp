@@ -152,3 +152,73 @@ void oneByOneTest(vi toTest, vector<bool> &infected, Input input)
         }
     }
 }
+
+bool testPooledSamples(vi samples)
+{
+    testNodes(samples);
+    bool result = retrieveTestResult();
+    if (result == true)
+    {
+        return true;
+    }
+    else
+    {
+        for (size_t i = 0; i < samples.size(); i++)
+        {
+            nonInfectedFound++;
+        }
+        return false;
+    }
+}
+
+bool testIndividual(int sample)
+{
+    testNode(sample);
+    bool result = retrieveTestResult();
+    if (result == true)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}
+
+void testOneByOneEfficient(vi samples, vector<bool> &infected, Input input, bool isAtleastOneInfected)
+{
+    bool isInfected = false;
+    int infectedFoundSoFar = 0;
+    for (size_t i = 0; i < samples.size(); i++)
+    {
+        if (remainingTestsAreNegative(input))
+        {
+            isInfected = false;
+        }
+        else if (remainingTestsArePositive(input))
+        {
+            isInfected = true;
+        }
+        else if (samples.size() - 1 == i && isAtleastOneInfected == true && infectedFoundSoFar == 0)
+        {
+            isInfected = true;
+        }
+        else
+        {
+            isInfected = testIndividual(samples.at(i));
+        }
+
+        
+        if (isInfected == true)
+        {
+            infected[samples.at(i)] = true;
+            infectedFound++;
+            infectedFoundSoFar++;
+        }
+        else
+        {
+            infected[samples.at(i)] = false;
+            nonInfectedFound++;
+        }
+    }
+}

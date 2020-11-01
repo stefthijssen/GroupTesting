@@ -52,50 +52,54 @@ void poolTest(int groupSize, vi nodes, vector<bool> &infected, Input input)
     int size = groupSize;
     int currentIndex = 0;
 
-    while (currentIndex < nodes.size())
+    while (currentIndex <= nodes.size())
     {
+
         int end = currentIndex + size;
+
         if (currentIndex + size > nodes.size())
         {
             end = nodes.size();
         }
+
+        if (currentIndex - end == 1)
+        {
+            testIndividual(nodes.at(currentIndex));
+            break;
+        }
+
+        if (remainingTestsAreNegative(input))
+        {
+            for (size_t i = currentIndex; i < nodes.size(); i++)
+            {
+                infected[nodes.at(i)] = false;
+                nonInfectedFound++;
+            }
+            break;
+        }
+
+        if (remainingTestsArePositive(input))
+        {
+            for (size_t i = currentIndex; i < nodes.size(); i++)
+            {
+                infected[nodes.at(i)] = true;
+                infectedFound++;
+            }
+            break;
+        }
+
         vector<int>::const_iterator first = nodes.begin() + currentIndex;
         vector<int>::const_iterator last = nodes.begin() + end;
         vector<int> subgroup(first, last);
-        if (!remainingTestsArePositive(input))
+
+        bool isGroupInfected = testPooledSamples(subgroup);
+        if (isGroupInfected == true)
         {
-            if (subgroup.size() == 1) // Only possible when at the end.
-            {
-                testNode(subgroup.at(0));
-                bool r = retrieveTestResult();
-                infected[subgroup.at(0)] = r;
-                return;
-            }
-            vi result = customGroupTestSplit(subgroup, infected, input);
-            if (result.size() == 2)
-            {
-                pair<int, int> aPair(result.at(0), result.at(1));
-                testOfKnownPositivePair(aPair, infected);
-            }
-            else if (result.size() > 2)
-            {
-                oneByOneTest(result, infected, input);
-            }
-            if (remainingTestsAreNegative(input))
-            {
-                return;
-            }
+            testOneByOneEfficient(subgroup, infected, input, true);
         }
-        else
-        {
-            cerr << "A really rare case just happends" << endl;
-            for (size_t i = 0; i < subgroup.size(); i++)
-            {
-                infected[subgroup.at(i)] = true;
-            }
-        }
+
         currentIndex = currentIndex + size;
-        size = calculateK(input);
+        // size = calculateK(input);
     }
 }
 

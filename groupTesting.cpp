@@ -39,6 +39,7 @@ void giveFeedbackOnTest(Input input, int testcase, int &numCorrect, vector<bool>
         }
     }
     cerr << "Number of tests used for: " << nTests << " for a total of nodes: " << input.nNodes << endl;
+    cerr << "Number of infected found: " << infectedFound << " Number of noninfected found: " << nonInfectedFound << endl;
 }
 
 void runTestCases(int numCase, int &numCorrect)
