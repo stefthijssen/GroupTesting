@@ -70,7 +70,7 @@ void runTestCases(int numCase, int &numCorrect)
 
         AdjacencyMatrix adjMatrix = createAdjacencyMatrix(input);
 
-        Algorithm algorithmCase = checkWhichAlgorithmToUse(input, calculateP(input));
+        Algorithm algorithmCase = checkWhichAlgorithmToUse(input, p);
         switch (algorithmCase)
         {
         case split:
