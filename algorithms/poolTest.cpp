@@ -108,6 +108,26 @@ void poolTest(vi nodes, vector<bool> &infected, Input input)
 
         if (isGroupInfected == true)
         {
+            if (k >= 4)
+            {
+                int middle = (start + end) / 2;
+                vector<int>::const_iterator lfirst = nodes.begin() + start;
+                vector<int>::const_iterator llast = nodes.begin() + middle;
+                vector<int> left(lfirst, llast);
+                vector<int>::const_iterator rfirst = nodes.begin() + middle;
+                vector<int>::const_iterator rlast = nodes.begin() + end;
+                vector<int> right(rfirst, rlast);
+                bool leftInfected = testPooledSamples(left);
+                bool rightInfected = testPooledSamples(right);
+                if (leftInfected != true && rightInfected == true)
+                {
+                    subgroup = right;
+                }
+                if (leftInfected == true && rightInfected != true)
+                {
+                    subgroup = left;
+                }
+            }
             testOneByOneEfficient(subgroup, infected, input, true);
         }
         currentIndex = end;
