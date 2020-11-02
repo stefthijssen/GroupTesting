@@ -9,12 +9,12 @@ enum Algorithm {
 };
 
 Algorithm checkWhichAlgorithmToUse(Input input, float p) {
-    if (p <= 0.03) {
+    if (p <= 0.01) {
         cerr << "METHOD: Split" << endl;
         return split;
     }
 
-    if (p >= 0.65) {
+    if (p >= 0.5) {
         cerr << "METHOD: oneByOne" << endl;
         return oneByOne;
     }

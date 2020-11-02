@@ -25,32 +25,35 @@ float calculateP(Input input)
     }
     // P the chance a sample is positive increases when average infection rate is high and infection chacnce is also high.
     float p;
-    p = (float)averageInfectionRate + ((float)averageInfectionRate * spreadFactor);
+    p = (float)averageInfectionRate;
 
     return p;
 }
 
 int calculateK(Input input, float p)
 {
-    //default to k = 8
-    int k = 8;
-    if (p >= 0.3)
+    int k;
+    if (p >= 0.25) // 0.3 optimal
     {
         k = 2;
     }
-    else if (p >= 0.15)
+    else if (p >= 0.13) // 0.15 optimal
     {
         k = 3;
     }
-    else if (p >= 0.1)
+    else if (p >= 0.08) // 0.1 optimal
     {
         k = 4;
     }
-    else if (p >= 0.05)
+    else if (p >= 0.045) // 0.05 optimal
+    {
+        k = 5;
+    }
+    else if (p >= 0.022) // 0.025 optimal
     {
         k = 7;
     }
-    else if (p >= 0.01)
+    else // 0.01 optimal
     {
         k = 11;
     }
