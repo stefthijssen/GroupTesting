@@ -4,30 +4,15 @@
 #pragma once
 
 using namespace std;
-float calculateInfectionRate(Input input)
-{
-    float nAverageUpperboundInfected = (float)input.maxInfected - infectedFound;
-    float nAverageLowerboundInfected = (float)input.minInfected - infectedFound;
-    float averageInfectionRate = ((float)(nAverageUpperboundInfected + nAverageLowerboundInfected) / 2) / (input.nNodes - (nonInfectedFound + infectedFound));
-    return averageInfectionRate;
-}
 
 float calculateP(Input input)
 {
-    float averageInfectionRate = calculateInfectionRate(input);
-    float spreadFactor = (float)input.infectionChance;
-    float contactFactor = 0;
+    float nAverageUpperboundInfected = (float)input.maxInfected - infectedFound;
+    float nAverageLowerboundInfected = (float)input.minInfected - infectedFound;
+    float nAverageInfectedNodes = (float)(nAverageUpperboundInfected + nAverageLowerboundInfected) / 2;
+    float averageInfectionRate = nAverageInfectedNodes / (input.nNodes - (nonInfectedFound + infectedFound));
 
-    if (input.nEdges > 0 && input.nNodes > 0)
-    {
-        contactFactor = (input.nEdges / input.nNodes) * averageInfectionRate;
-        spreadFactor = spreadFactor * contactFactor;
-    }
-    // P the chance a sample is positive increases when average infection rate is high and infection chacnce is also high.
-    float p;
-    p = (float)averageInfectionRate;
-
-    return p;
+    return averageInfectionRate;
 }
 
 int calculateK(Input input, float p)
