@@ -57,13 +57,12 @@ void poolTest(vi nodes, vector<bool> &infected, Input input)
     {
         if ((input.maxInfected - input.minInfected) == 0)
         {
-            p = calculateInfectionRate(input);
+            p = calculateP(input);
             k = calculateK(input, p);
             if (p <= 0)
             {
                 break;
             }
-            // cerr << "Used K: " << k << " p(robabilty): " << p << " current position: " << currentIndex << " # left: " << input.nNodes - (infectedFound + nonInfectedFound) << " of: " << input.maxInfected - infectedFound << endl;
         }
         int start = currentIndex;
         int end = currentIndex + k;
