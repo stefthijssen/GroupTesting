@@ -12,5 +12,7 @@ void useOneByOne(Input input, vector<bool> &infected)
     {
         nodes.push_back(i);
     }
-    testOneByOneEfficient(nodes, infected, input, false);
+    
+    bool atleastOneInfection = input.minInfected > 0;
+    testOneByOneEfficient(nodes, infected, input, atleastOneInfection);
 }
