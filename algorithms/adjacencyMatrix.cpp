@@ -18,6 +18,8 @@ private:
     int n;
     Input input;
     int **adj;
+    int **degree;
+    float **affinity;
     bool *visited;
     vector<int> outgoingEdges;
     void resetVisited()
@@ -44,32 +46,79 @@ public:
         this->input = input;
         visited = new bool[n];
         adj = new int *[n];
-        vector<pair<int,int>> tmpOutgoingEdges = vector<pair<int,int>>(n);
+        affinity = new float *[n];
+        degree = new int *[n];
+        vector<pair<int, int>> tmpOutgoingEdges = vector<pair<int, int>>(n);
         for (size_t i = 0; i < n; i++)
         {
             adj[i] = new int[n];
-            int edgeCounter = 0;
+            affinity[i] = new float[n];
+            degree[i] = new int[n];
             for (size_t j = 0; j < n; j++)
             {
                 adj[i][j] = 0;
+                degree[i][j] = 0;
+                affinity[i][j] = 0;
                 if (i == j)
                 {
                     adj[i][j] = 1;
-                    edgeCounter++;
                 }
             }
-            tmpOutgoingEdges[i] = pair<int,int>(i,edgeCounter);
         }
-        //  display();
-
-        std::sort(tmpOutgoingEdges.begin(), tmpOutgoingEdges.end(), [](const pair<int,int> &a, const pair<int,int> &b) { return a.second > b.second; });
-        for (size_t i = 0; i < tmpOutgoingEdges.size(); i++)
-        {
-            outgoingEdges.push_back(tmpOutgoingEdges[i].first);
-        }
-        
 
         resetVisited();
+    }
+    int findMinIndex(int **arr)
+    {
+        int currentMinVal = input.nEdges + 1;
+        int resultIndex = -1;
+        for (size_t i = 0; i < n; i++)
+        {
+            if (arr[i][i] < currentMinVal && visited[i] == false)
+            {
+                currentMinVal = arr[i][i];
+                resultIndex = i;
+            }
+        }
+        return resultIndex;
+    }
+    int findMaxIndex(int **arr)
+    {
+        int currentMaxVal = -1;
+        int resultIndex = -1;
+        for (size_t i = 0; i < n; i++)
+        {
+            if (arr[i][i] > currentMaxVal && visited[i] == false)
+            {
+                currentMaxVal = arr[i][i];
+                resultIndex = i;
+            }
+        }
+        return resultIndex;
+    }
+    vector<int> maxSubArray(float *arr)
+    {
+        float currentMax = -1;
+        vector<int> maxArray;
+        for (size_t i = 0; i < n; i++)
+        {
+            // cerr << arr[i] << endl;
+            if (visited[i] == true)
+            {
+                continue;
+            }
+            if (currentMax < arr[i])
+            {
+                maxArray.clear();
+                maxArray.push_back(i);
+                currentMax = arr[i];
+            }
+            else if (currentMax == arr[i])
+            {
+                maxArray.push_back(i);
+            }
+        }
+        return maxArray;
     }
     int outgoingEdgesArray()
     {
@@ -83,73 +132,78 @@ public:
     {
         adj[u][v] = 1;
         adj[v][u] = 1;
+        degree[u][u]++;
+        degree[v][v]++;
     }
     void setVisited(int n, bool value)
     {
         visited[n] = value;
     }
-    vector<vector<int>> findDenseSubGraph(int currentIndex, vector<vector<int>> pairs, float threshold)
+    vector<vector<int>> findDenseSubGraph(int currentIndex, vector<vector<int>> pairs)
     {
-
-        if (currentIndex >= n)
+        float p = calculateP(input);
+        if (p >= 0.5)
         {
-            return pairs;
+            currentIndex = findMaxIndex(degree);
         }
-        if (visited[currentIndex])
+        else
         {
-            int next = currentIndex + 1;
-            return findDenseSubGraph(next, pairs, threshold);
+            currentIndex = findMinIndex(degree);
         }
-        visited[currentIndex] = true;
+        while (currentIndex != -1)
+        {
+            visited[currentIndex] = true;
+            vi cluster;
+            cluster = maxSubArray(affinity[currentIndex]);
+            for (size_t i = 0; i < cluster.size(); i++)
+            {
+                visited[cluster.at(i)] = true;
+            }
+            cluster.push_back(currentIndex);
 
-        float nAverageUpperboundInfected = (float)input.maxInfected / (float)n;
-        float nAverageLowerboundInfected = (float)input.minInfected / (float)n;
-        float averageInfectionRate = (float)(nAverageUpperboundInfected + nAverageLowerboundInfected) / 2;
-        float acceptable = 1 - input.infectionChance + threshold - averageInfectionRate; // Higher means less difference will be accepted
+            pairs.push_back(cluster);
 
-        vector<int> accepted;
-        accepted.push_back(currentIndex);
-        int next = currentIndex + 1;
+            if (p >= 0.5)
+            {
+                currentIndex = findMaxIndex(degree);
+            }
+            else
+            {
+                currentIndex = findMinIndex(degree);
+            }
+        }
+        // display();
 
+        return pairs;
+    }
+    void calculateAffinity()
+    {
         for (size_t i = 0; i < n; i++)
         {
-            float diff = calcDifference(adj[currentIndex], adj[i]);
-
-            if (i == currentIndex)
-                continue;
-            if (diff <= acceptable && visited[i] == false)
+            for (size_t j = 0; j < n; j++)
             {
-                visited[i] = true;
-                accepted.push_back(i);
-            }
-            int bestNextCandidate = outgoingEdges[i];
-            if (visited[bestNextCandidate] == false)
-            {
-                next = bestNextCandidate;
+                affinity[i][j] = calcAffinity(adj[i], adj[j]);
             }
         }
-       
-        pairs.push_back(accepted);
-        return findDenseSubGraph(next, pairs, baseThreshold);
     }
-
-    float calcDifference(int arr1[], int arr2[])
+    float calcAffinity(int arr1[], int arr2[])
     {
         if (input.nEdges < 1)
         {
-            return 1;
+            return 0;
         }
-        float averageGraphDensity = ceil(input.nEdges / n);
-        float diff = averageGraphDensity * 2;
+        float max = n;
+        float min = 0;
         for (size_t i = 0; i < n; i++)
         {
             if (arr1[i] == arr2[i] && arr1[i] == 1)
             {
-                diff--;
+                min++;
             }
         }
-        float answer = diff / (averageGraphDensity * 2);
-        return answer;
+        // cerr << min << endl;
+        // cerr << min / max << endl;
+        return min / max;
     }
     void display()
     {
@@ -158,7 +212,7 @@ public:
         {
             for (j = 0; j < n; j++)
             {
-                cerr << adj[i][j] << " ";
+                cerr << affinity[i][j] << " ";
             }
             cerr << endl
                  << flush << endl;

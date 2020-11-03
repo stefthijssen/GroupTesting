@@ -18,11 +18,12 @@ float calculateP(Input input)
 int calculateK(Input input, float p)
 {
     int k;
-    if (p >= 0.25) // 0.3 optimal
-    {
-        k = 2;
-    }
-    else if (p >= 0.13) // 0.15 optimal
+    // if (p >= 0.25) // 0.3 optimal
+    // {
+    //     k = 2;
+    // }
+    // else 
+    if (p >= 0.13) // 0.15 optimal
     {
         k = 3;
     }
