@@ -52,17 +52,14 @@ void poolTest(vi nodes, vector<bool> &infected, Input input)
     int currentIndex = 0;
     float p = calculateP(input);
     int k = calculateK(input, p);
+    
 
     while (currentIndex < nodes.size())
     {
-        if ((input.maxInfected - input.minInfected) == 0)
+        if ((input.maxInfected - input.minInfected) <= 5)
         {
             p = calculateInfectionRate(input);
             k = calculateK(input, p);
-            if (p <= 0)
-            {
-                break;
-            }
         }
         int start = currentIndex;
         int end = currentIndex + k;
@@ -142,17 +139,20 @@ void usePoolTest(Input input, AdjacencyMatrix adjMatrix, vector<bool> &infected)
 
     clusters = adjMatrix.findDenseSubGraph(0, clusters);
     float p = calculateP(input);
-    if (p >= 0.65) // High infection chance, lets first check less likely nodes, with less edges and less matching edges. Pair them in groups to eliminate slightly faster.
+    if (input.infectionChance >= 0.3 && input.nEdges > 0) // High infection chance, lets first check less likely nodes, with less edges and less matching edges. Pair them in groups to eliminate slightly faster.
     {
-        std::sort(clusters.begin(), clusters.end(), [](const vector<int> &a, const vector<int> &b) { return a.size() < b.size(); });
+        //Large to small
+        std::sort(clusters.begin(), clusters.end(), [](const vector<int> &a, const vector<int> &b) { return a.size() > b.size(); });
     }
     else
     {
-        std::sort(clusters.begin(), clusters.end(), [](const vector<int> &a, const vector<int> &b) { return a.size() > b.size(); });
+        // Small to large
+        std::sort(clusters.begin(), clusters.end(), [](const vector<int> &a, const vector<int> &b) { return a.size() < b.size(); });
     }
 
     for (size_t i = 0; i < clusters.size(); i++)
     {
+        cerr << clusters.at(i).size() << endl;
         for (size_t j = 0; j < clusters.at(i).size(); j++)
         {
             nodes.push_back(clusters.at(i).at(j));
