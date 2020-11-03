@@ -52,7 +52,6 @@ void poolTest(vi nodes, vector<bool> &infected, Input input)
     int currentIndex = 0;
     float p = calculateP(input);
     int k = calculateK(input, p);
-    
 
     while (currentIndex < nodes.size())
     {
@@ -152,10 +151,18 @@ void usePoolTest(Input input, AdjacencyMatrix adjMatrix, vector<bool> &infected)
 
     for (size_t i = 0; i < clusters.size(); i++)
     {
-        cerr << clusters.at(i).size() << endl;
-        for (size_t j = 0; j < clusters.at(i).size(); j++)
+        bool result = true;
+        // if (clusters.at(i).size() > 8)
+        // {
+        //     result = testPooledSamples(clusters.at(i));
+            
+        // }
+        if (result == true)
         {
-            nodes.push_back(clusters.at(i).at(j));
+            for (size_t j = 0; j < clusters.at(i).size(); j++)
+            {
+                nodes.push_back(clusters.at(i).at(j));
+            }
         }
     }
 
