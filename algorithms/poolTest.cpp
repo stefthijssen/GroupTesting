@@ -57,7 +57,7 @@ void poolTest(vi nodes, vector<bool> &infected, Input input)
     {
         if ((input.maxInfected - input.minInfected) == 0)
         {
-            p = calculateP(input);
+            p = calculateInfectionRate(input);
             k = calculateK(input, p);
             if (p <= 0)
             {
@@ -137,16 +137,25 @@ void usePoolTest(Input input, AdjacencyMatrix adjMatrix, vector<bool> &infected)
 {
     vi nodes;
 
-    vector<vector<int>> pairs;
+    vector<vector<int>> clusters;
     adjMatrix.calculateAffinity();
-    
-    pairs = adjMatrix.findDenseSubGraph(0, pairs);
 
-    for (size_t i = 0; i < pairs.size(); i++)
+    clusters = adjMatrix.findDenseSubGraph(0, clusters);
+    float p = calculateP(input);
+    if (p >= 0.65) // High infection chance, lets first check less likely nodes, with less edges and less matching edges. Pair them in groups to eliminate slightly faster.
     {
-        for (size_t j = 0; j < pairs.at(i).size(); j++)
+        std::sort(clusters.begin(), clusters.end(), [](const vector<int> &a, const vector<int> &b) { return a.size() < b.size(); });
+    }
+    else
+    {
+        std::sort(clusters.begin(), clusters.end(), [](const vector<int> &a, const vector<int> &b) { return a.size() > b.size(); });
+    }
+
+    for (size_t i = 0; i < clusters.size(); i++)
+    {
+        for (size_t j = 0; j < clusters.at(i).size(); j++)
         {
-            nodes.push_back(pairs.at(i).at(j));
+            nodes.push_back(clusters.at(i).at(j));
         }
     }
 

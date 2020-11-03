@@ -14,10 +14,10 @@ Algorithm checkWhichAlgorithmToUse(Input input, float p) {
         return split;
     }
 
-    // if (p >= 0.5) {
-    //     cerr << "METHOD: oneByOne" << endl;
-    //     return oneByOne;
-    // }
+    if (p >= 0.65) {
+        cerr << "METHOD: oneByOne" << endl;
+        return oneByOne;
+    }
 
     cerr << "METHOD: Pool" << endl;
     return pool;

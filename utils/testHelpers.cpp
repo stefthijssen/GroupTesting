@@ -163,10 +163,7 @@ bool testPooledSamples(vi samples)
     }
     else
     {
-        for (size_t i = 0; i < samples.size(); i++)
-        {
-            nonInfectedFound++;
-        }
+        nonInfectedFound = nonInfectedFound + samples.size();
         return false;
     }
 }

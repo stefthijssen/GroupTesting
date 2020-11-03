@@ -141,15 +141,7 @@ public:
     }
     vector<vector<int>> findDenseSubGraph(int currentIndex, vector<vector<int>> pairs)
     {
-        float p = calculateP(input);
-        if (p >= 0.5)
-        {
-            currentIndex = findMaxIndex(degree);
-        }
-        else
-        {
-            currentIndex = findMinIndex(degree);
-        }
+        currentIndex = findMaxIndex(degree);
         while (currentIndex != -1)
         {
             visited[currentIndex] = true;
@@ -163,14 +155,7 @@ public:
 
             pairs.push_back(cluster);
 
-            if (p >= 0.5)
-            {
-                currentIndex = findMaxIndex(degree);
-            }
-            else
-            {
-                currentIndex = findMinIndex(degree);
-            }
+            currentIndex = findMaxIndex(degree);
         }
         // display();
 
